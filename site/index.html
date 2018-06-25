@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>South Platte and Metro Basin Water Entities </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jquery.fullpage-2.9.7.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/custom-leaflet-style.css" rel="stylesheet">
+
+    <!-- icon -->
+    <link id="czr-favicon" rel="icon" href="images/co-triangle-favicon.ico" type="image/png">
+
+    <!-- MapBox Leaflet -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>
+
+   <!-- Javscript files included near bottom of page -->
+  </head>
+
+  <body>
+
+    <div class="loader"></div>
+
+    <div id="allContent" style="opacity:0;">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#top">South Platte and Metro Basin Water Entities</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#munic">Municipalities</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#ag">Agriculture</a>
+            </li>			
+           <li class="nav-item">
+              <a class="nav-link" href="#environment">Environment</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#recreation">Recreation</a>
+            </li>				
+           <li class="nav-item">
+              <a class="nav-link" href="#industry">Industry</a>
+            </li>				
+            <li class="nav-item">
+              <a class="nav-link" href="#resources">Resources</a>
+            </li>						
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Title Page -->
+    <div id="fullpage">
+      <div class="section">
+          <header class="text-white">
+		    <div class="container text-center">
+            <h1 style="color:white; margin-top:5vh; float:top;"> (**Draft**) South Platte and Metro Basin Water Entities (**Draft**)</h1>
+              <p style="color:white; font-size:22px;">This story highlights the various types of water entities in the South Platte and Metro basins, such as municipalities, municipal 
+			  water providers, agriculture, environmental, recreational and industrial entities.</p>
+			  <p style="color:white; font-size:22px;">The purpose of this story is to provide general context for the number, location and extent of such entities in the basin.</p>
+            </div>
+	  </div>
+<!-- Municipalities Section -->
+  <!-- Municipalities - Basic Map of Locations -->	  	
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 text-left-custom">
+              <h2>Municipalities</h2>
+              <p><i>Introduction of municipalities.</p>  
+              <p><b>Map on right is a screenshot of interactive Leaflet map; placeholder until we decide how to link to Leaflet maps (possibly Leaflet maps saved as .js files that are 
+			  read in.)</b>  Maybe want to highlight the 10 most-populous cities in a different color?</i></p>
+            </div>
+		    <div class="col-lg-6 side-content">
+              <img src="images/municipalities-general-map.png" frameborder="0"></img>
+            </div>			
+          </div>
+        </div>
+      </div>
+  <!-- Municipalities - Map of Population from 1980-2016 -->	  		  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 text-left-custom">
+              <h2>Municipal Population Data</h2>
+              <p><i>This page will display a map of municipalities as points, sized by population.  Population data have been retrieved directly from the web from DOLA.  
+			  It is possible to have a time slider that can move through the years from 1980 to 2016 and the size of each municipality's point will change with change 
+			  in population.  Need Justin or Marcel to figure this out, but Kristin has links to sources that describe how to do this.</p>  
+			  <p>Could possibly also color-code the points based on percent change in population since a specific year.  This would really highlight the population growth that 
+			  the basin has experienced.</p>
+			  <p>Map on right is a screenshot of interactive Leaflet map; placeholder until we decide how to link to Leaflet maps (possibly Leaflet maps saved as .js files that are 
+			  read in.)</i></p>
+            </div>
+		    <div class="col-lg-6 side-content">
+              <img class="image-centered" src="images/municipalities-general-map.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>
+  <!-- Municipalities - Population Projections to 2050 -->	  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+              <h2>Population Projections to 2050</h2>
+			  <p>Population growth is the single largest driver of the need for additional water supplies in the South Platte River Basin (BIP, p.1-17).</p>
+			  <p><i>Do not have municipal projections.  However, county projections to 2050 are available from DOLA.  Here can add in the county choropleth map.  It may 
+			  even be good to include the whole state to highlight how the basin will see the largest increases.</p>
+			  <p>It may be good to include a table that shows the county population for a given year and as a percent of the total state population, like what was 
+			  done for the gap analysis.  Curious if can embed a table into the narrative.</p>
+			  <p>County choropleth map could have a time slider for the years 2018-2050, as explained previously.  Or can try something like the heatmap shown at 
+			  right.  Note that this is just a screenshot; heatmap would be interactive.</p>
+			  <p>Maybe need to include here some discussion of the SWSI Update population scenarios, such as Hot Growth.</i></p>
+            </div>
+		    <div class="col-lg-7 side-content">
+              <img class="image-centered" src="images/percent-change-county-pop.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>
+  <!-- Municipal Water Providers -->	  	  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+              <h2>Municipal Water Providers</h2>
+			  <p><i>Discussion of what water providers are, that in many cases it is the municipality itself, or may be a metropolitan district, water and sanitation 
+			  district, etc.</p>
+			  <p>Map of water providers as points, color-coded by type of provider, such as municipality, water and sanitation district, water company, etc.  Mouse-over 
+			  will have link to website.</i></p>
+            </div>
+		    <div class="col-lg-7 side-content">
+              <img class="image-centered" src="images/percent-change-county-pop.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>	
+  <!-- Municipal Water Use -->	  	  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+              <h2>Municipal Water Use</h2>
+			  <p><i>Background on how water use is classified -- metered, distributed, potable/non-potable, etc.</p>
+			  <p>Discussion of HB-1051 data and the data portal, with links to website.</p>
+			  <p>Map of HB-1051 data, shown at right.  Justin and Kristin have worked on this map; can select a year from the list at top right to see change over time.</p>
+			  <p>Perhaps also use population data provided by HB-1051 to calculate GPCD and display that in some fashion.  This could then show how some of the big cities 
+			  are actually pretty efficient in their water use.</i></p>
+            </div>
+		    <div class="col-lg-7 side-content">
+              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>	
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+              <h2>Municipal Water Use and Efficiency</h2>
+			  <p>Cities in the South Platte and Metro basins are national leaders in water conservation and reuse (BIP, p.1-17).  Municipal conservation programs have already 
+			  been heavily implemented in the larger cities.  This map shows water providers that have water efficiency plans.</p>
+			  <p><i>Map shows the municipalities that have plans in a different color.  Maybe size the municipalities by current population to see that the largest cities 
+			  are the ones that have efficiency plans.  Can click on links to plan websites in the mouse-over.</i></p>
+			  <p>Additional reuse of water supply components including nontributary groundwater, the consumptive use component of changed native water rights and 
+			  transbasin imports is possible but may affect downstream water availability, water management flexibility and interstate water compact compliance (BIP, p.1-17).
+            </div>
+		    <div class="col-lg-7 side-content">
+              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>		  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+              <h2>Municipal Water Use -- Examples?</h2>
+			  <p><i>Curious if we should include an example of how a municipality receives and delivers its water.  Map could show water sources (rivers), treatment plants, 
+			  means of conveyance (ditches, pipelines), storage (reservoirs).  Ideally would be neat to do for all municipalities, but way too time-consuming.  Is one example 
+			  worth it, just to show how complicated things are (especially if this involves C-BT or water from the Moffat Project)?</i></p>
+            </div>
+		    <div class="col-lg-7 side-content">
+              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>		  
+<!-- Agriculture Section -->
+  <!-- Agricultural Maps -->		  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+             <h2>Agricultural Entities</h2>
+			  <p><i>Map of ditch companies in the basin, or perhaps a map of the ditches in the basin (from CDSS).</p>
+			  <p>Map of irrigated lands and the crops that are grown on those lands.  Get some data from National Agricultural Statistics Service?</p>
+			  <p>Map of ditch service areas?  Perhaps the headgates that are associated with them.</p>
+			  <p>Can we show change in irrigation practices over time, such as change from flood to sprinklers?  Are these data available?</i></p>
+            </div>
+            <div class="col-lg-7 side-content">
+              <img src="" frameborder="0"></img>			  
+            </div>			
+          </div>
+        </div>
+      </div>
+  <!-- "Juxtapose" images of changes in agricultural lands -->		  
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+             <h2>Changes to Agricultural Lands</h2>
+			  <p><i>Use the "Juxtapose" feature here for a few (several?) areas where there have been large reductions in agricultural land.</i></p>
+            </div>
+            <div class="col-lg-7 side-content">
+              <img src="images/greeley-juxtapose.png" frameborder="0"></img>			  
+            </div>			
+          </div>
+        </div>
+      </div>	  
+<!-- Environment Section -->		  
+	  <div class="section">
+        <div class="row">
+          <div class="col-lg-4 text-left-custom">
+            <h2>Environmental Entities</h2>
+			<p><i>Map of instream flow reaches from CWCB?  ISF reaches are not really an entity.  May want to color-code reaches by the amount of 
+			flow, or maybe change the width based on the amount of flow, but don't know how to do this yet.  Need to add some value to the ISF 
+			reaches rather than just a map with the reaches highlighted.</p>
+			<p>Maybe environmental entities need to be thought of as "attributes" rather than entities.  This could bring in some discussion of 
+			threatened and endangered species, Gold Medal streams, etc.  Don't think we have much data for this though; wait until SWSI Update is 
+			complete to get the data?</p>
+			<p>Map of watershed groups to show which areas are being protected; maybe do this by HUC to be more interactive.</i></p>	
+          </div>
+          <div class="col-lg-8">
+            <div id="mapbox4" class="map-right"></div>
+          </div>		  
+        </div>		
+      </div>	
+<!-- Recreation Section -->		  
+	  <div class="section">
+        <div class="row">
+          <div class="col-lg-4 text-left-custom">
+            <h2>Recreational Entities</h2>
+			<p><i>Some discussion of rafting companies.  The primary rivers for the rafting industry in the basin are the Cache la Poudre River and Clear Creek.</p>
+			<p>Any recreational map layers from SWSI?</i></p>
+          </div>
+          <div class="col-lg-8">
+            <div id="mapbox4" class="map-right"></div>
+          </div>		  
+        </div>		
+      </div>
+<!-- Industry Section -->		  
+	  <div class="section">
+        <div class="row">
+          <div class="col-lg-4 text-left-custom">
+            <h2>Industrial Entities</h2>
+			<p><i>Dairy industry.  OWF started this dataset but beyond locations, there are not yet a whole lot of data.</p>
+			<p>Beer industry.  OWF started this dataset but beyond locations, there are not yet a whole lot of data.</p>
+			<p>Skiing industry.</p>
+			<p>Thermoelectric power generation.</p>
+			<p>Oil and Gas - hydraulic fracturing.</p>
+			<p>The BIP cites some information from the Headwaters issue titled "The Energy Issue".  It also mentions Appendix H of SWSI 2010 for data related to 
+			SSI.  May want to read through this to see if we can find some data for visualizations.</i></p>
+          </div>
+          <div class="col-lg-8">
+            <div id="mapbox4" class="map-right"></div>
+          </div>		  
+        </div>		
+      </div>
+<!-- Resources Section -->		  	  
+      <div class="section">
+          <div class="container text-center blue-bkgd-text">
+            <div class="row">
+              <div class="col-lg-12">
+                <div style="max-height:80vh; overflow:auto;">
+                <h2>Resources</h2>
+        			  <p>This Water Entities story has been created during the <a href="http://projects.openwaterfoundation.org/owf-proj-south-platte-data-platform/stories/" 
+        			  target="_blank">South Platte Data Platform Project</a>.  Additional information can be found at the following:</p> 
+        			  <p><a href="http://cwcbweblink.state.co.us/WebLink/ElectronicFile.aspx?docid=144066&searchid=2c16c041-d0b2-4ec5-ac42-8b95aa0c04e3&dbid=0" 
+        			  target="_blank">Statewide Water Supply Initiative (SWSI) 2004 (PDF)</a> and <a href="http://cwcb.state.co.us/water-management/water-supply-planning/Pages/SWSI2010.aspx" 
+        			  target="_blank">SWSI 2010</a></p>
+        			  <p><a href="http://cwcb.state.co.us/water-management/water-supply-planning/Pages/SWSIUpdate.aspx" target="_blank">SWSI Update</a></p>
+        			  <p><a href="http://southplattebasin.com/wp-content/uploads/2016/06/South-Platte-Basin-Implementation-Plan-April-17-2015.pdf" target="_blank">South 
+        			  Platte Basin Implementation Plan (PDF)</a></p>
+                     <p><a href="https://www.colorado.gov/cowaterplan" target="_blank">Colorado Water Plan</a></p>
+                     <p><a href="http://southplattebasin.com/" target="_blank">southplattebasin.com</a></p>
+                     <p><a href="http://cwcb.state.co.us/water-management/basin-roundtables/Pages/SouthPlatteBasinRoundtable.aspx" target="_blank">South Platte Basin Roundtable</a></p>
+                     <p><a href="http://cwcb.state.co.us/water-management/basin-roundtables/Pages/MetroRoundtable.aspx" target="_blank">Metro Basin Roundtable</a></p>			 
+        			 <p><a href="http://cwcb.state.co.us/water-management/water-supply-planning/Pages/main.aspx" target="_blank">Colorado Water 
+        			  Conservation Board Water Supply Planning Section</a></p>
+        			  <p>------------------------------------------------------------------------------------------------------------------------------------</p>
+        			  <p>Questions or feedback?  Contact xxxx@xxxx.com (placeholder for Basin Roundtable member)
+        			  <p>Last update:  June 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+          <div class="container text-center blue-bkgd-text">
+              <h2>Sources</h2>
+			  <p><i>Fill this in as needed.</i></p>
+          </div>	
+      </div>	  
+     </div>	  
+    </div>
+  </body>
+
+    <!-- JQuery JavaScript -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Fullpage minified Javscript file -->
+    <script type="text/javascript" src="js/jquery.fullpage-2.9.7.min.js"></script>
+    <!-- Fullpage minified Javscript file -->
+    <script type="text/javascript" src="js/scrolloverflow-0.0.8.min.js"></script>
+    <!-- Bootstrap Javascript File -->
+    <script type="text/javascript" src="js/bootstrap-4.0.0.js"></script>
+	<!-- Leaflet GeoPackage Javascript File -->
+    <script type="text/javascript" src="js/leaflet-geopackage-1.1.3.js"></script>
+	<!-- IPP dataset -->
+	<script src="data/SouthPlatteMetro-IPPs.geojson"></script>	
+    <script>
+
+      window.onload = function(){
+        $("#allContent").css("opacity", 1)
+        $(".loader").css("display", "none")
+      }
+
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors:['top','munic','municpophist', 'countypop', 'waterproviders', 'wateruse', 'exwateruse', 'ag', 'landuse', 'environment', 'recreation', 'industry', 'resources', 'sources'],
+          sectionsColor:['#386981','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#386981','#386981'],
+          navigation:true,
+          navigationPosition:'right',
+          navigationTooltips:['South Platte and Metro Basin Water Entities','Municipalities','Municipal Populations','Population Projections','Water Providers','Water Use','Water Use Example','Agriculture','Land Use','Environment','Recreation','Industry','Resources', 'Sources'],
+          recordHistory:false,
+          menu:"#navbarResponsive",
+          paddingTop:'75px'
+        });
+      });
+
+ 
+    </script>
+
+</html>
