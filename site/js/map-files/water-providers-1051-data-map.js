@@ -3,7 +3,7 @@
 
 (function(){
 
-	var map = L.map('mapbox3').setView([40.072, -104.048], 9);
+	var map = L.map('mapbox4').setView([40.072, -104.048], 9);
 
 	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
