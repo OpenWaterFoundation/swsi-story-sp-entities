@@ -154,3 +154,18 @@ small{
 	bottom: 0; 
 	margin-bottom: 15px;
 }
+
+table {
+        border: 1px solid black
+}
+
+th {
+	text-align:center;
+	padding:5px;
+        border: 1px solid black
+}
+
+td {
+	text-align:center;
+	border: 1px solid black
+}

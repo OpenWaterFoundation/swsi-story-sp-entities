@@ -140,25 +140,25 @@
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
-             <h2 style="color:white; margin-top:10vh; float:top;">Colorado Water Rights Concepts</h2>			  
-			  <p style="color:white; font-size:18px;">The following information is derived from the <a href="https://www.yourwatercolorado.org/component/virtuemart/view/productdetails/virtuemart_product_id/2/virtuemart_category_id/1" target="_blank">
+             <h2 style="margin-top:10vh; float:top;">Colorado Water Rights Concepts</h2>			  
+			  <p style="font-size:18px;">The following information is derived from the <a href="https://www.yourwatercolorado.org/component/virtuemart/view/productdetails/virtuemart_product_id/2/virtuemart_category_id/1" target="_blank">
 			  Citizen's Guide to Colorado Water Law</a>.
-			  <p style="color:white; font-size:18px;">The Colorado Doctrine is a set of laws regarding water use and land ownership, adopted by Coloradans in the 1860s.  
+			  <p style="font-size:18px;">The Colorado Doctrine is a set of laws regarding water use and land ownership, adopted by Coloradans in the 1860s.  
 			  One of its essential principles is that water is a public resource and can be used for beneficial use by public agencies, 
 			  private persons and entities.  Beneficial uses include uses for municipal water supply, agriculture, industry and 
 			  recreation, among others.</p>
-			  <p style="color:white; font-size:18px;">A legal framework called the prior appropriation doctrine regulates the use of surface water and tributary groundwater 
+			  <p style="font-size:18px;">A legal framework called the prior appropriation doctrine regulates the use of surface water and tributary groundwater 
 			  that is connected to streams.  This doctrine is also referred to by the phrase "first in time, first in right".  This means 
 			  that in times of short water supply, court-decreed water rights holders who obtained their rights earlier (senior rights) 
 			  can use water before decreed rights with later dates (junior rights) may use any remaining water.  The water user must 
 			  have a definite plan to divert, store or otherwise capture, possess and control water, and must specify the place of 
 			  diversion or storage, amount of water, type of use and place of use.  Water is administered by the 
 			  <a href="http://water.state.co.us/Home/Pages/default.aspx" target="_blank">Colorado Division of Water Resources</a>.</p>
-              <p style="color:white; font-size:18px;">Water rights holders are typically organizations such as municipal utilities, ditch companies, natural resource 
+              <p style="font-size:18px;">Water rights holders are typically organizations such as municipal utilities, ditch companies, natural resource 
               organizations or industries, although individuals can also own water rights.  The costs for water rights are passed 
 			  on to water users.  For example, utility customers or farmers in a ditch company pay for the delivery of water and 
 			  those payments cover the costs of acquiring water and the infrastructure to deliver the water.</p>
-			  <p style="color:white; font-size:18px;">Another important beneficial use of water in Colorado is to keep the water in the stream.  The Colorado Water 
+			  <p style="font-size:18px;">Another important beneficial use of water in Colorado is to keep the water in the stream.  The Colorado Water 
 			  Conservation Board is legally permitted under state law to make instream flow appropriations.  These are meant 
 			  to assist in preserving the natural environment to a reasonable degree by ensuring minimum flows.  However, these 
 			  instream flow rights typically are junior rights.</p>
@@ -196,8 +196,7 @@
 			  surface water users with less water than they had previously.  In these situations, engineering plans called 
 			  "augmentation plans" are required to ensure that water extracted from groundwater wells does not unfairly take water 
               from surface water users or senior well users.  These plans must be approved in a water court.  Permits for new wells 
-              are frequently denied unless they also contain an augmentation plan (Citizen's Guide to Where Your Water Comes From, p.17).</p>  
-			  <p style="color:white; font-size:18px;"><i>Wondering if we need to discuss topics like water storage, treatment or conveyance?</i></p>			  
+              are frequently denied unless they also contain an augmentation plan (Citizen's Guide to Where Your Water Comes From, p.17).</p>			  
               </div>			
             </div>
         </div>
@@ -212,13 +211,14 @@
 			  Colorado.  Approximately 85% of Colorado's population resides in the Basin.  By 2050, the Basin's population may nearly double from 
 			  approximately 3.5 million people to 6 million people (CWP, p.3-12).</p>  
               <p>The 10 largest cities in the Basin, based on 2016 population data, from largest to smallest, are:  Denver, Aurora, Fort Collins, 
-			  Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Greeley.  Each contains over 100,000 people.</p>
+			  Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Greeley.  Each contains over 100,000 people.  Except for Colorado Springs and 
+			  Pueblo, these are also the largest cities in the State (Colorado Springs is the second largest city; Pueblo is the ninth largest).</p>
 			  <p>The greatest changes in population since 2006 are those municipalities in the more northern part of the Front Range and 
 			  include Firestone, Frederick, Johnstown, Mead, Severance, Timnath, Wellington and Windsor.</p>
             </div>
 		    <div class="col-lg-8">
               <div id="mapbox1" class="map-right"></div>
-			  <script src="js/map-files/municipalities-southplatte-metro-map.js"></script>
+                <script src="js/map-files/municipalities-southplatte-metro-map.js"></script>
             </div>			
         </div>
       </div>
@@ -226,8 +226,8 @@
       <div class="section">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 text-left-custom">
-              <h2>Municipal Population Data</h2>
+            <div class="col-lg-4 text-left-custom">
+              <h2>Municipal Population Data</h2>			  
 			  <p>It is important to discuss population trends and projections because more people equals more water use.</p>
               <p><i>This page will display a map of municipalities as points, sized by population.  Population data have been retrieved directly from the web from DOLA.  
 			  It is possible to have a time slider that can move through the years from 1980 to 2016 and the size of each municipality's point will change with change 
@@ -236,26 +236,52 @@
 			  the basin has experienced.</p>
 			  <p>Map on right is a screenshot of interactive Leaflet map; placeholder until we decide how to link to Leaflet maps (possibly Leaflet maps saved as .js files that are 
 			  read in.)</i></p>
+			  <p>The table below shows the 2016 population (the most recent year of available data) for the 10 largest cities in the Basin, as well as the percent of the total 
+			  state population.</p>
+			  <table>
+				<tr> <th>Municipality</th> <th>2016 Population</th> <th>% of State Population</th> </tr>
+				<tr> <td>Denver</td> <td>693,292</td> <td>12.5</td> </tr>
+				<tr> <td>Aurora</td> <td>361,967</td> <td>6.5</td> </tr>
+				<tr> <td>Fort Collins</td> <td>162,919</td> <td>2.9</td> </tr>
+				<tr> <td>Lakewood</td> <td>155,072</td> <td>2.8</td> </tr>
+				<tr> <td>Thornton</td> <td>134,845</td> <td>2.4</td> </tr>
+				<tr> <td>Arvada</td> <td>117,260</td> <td>2.1</td> </tr>
+				<tr> <td>Westminster</td> <td>113,181</td> <td>2.0</td> </tr>
+				<tr> <td>Centennial</td> <td>109,439</td> <td>2.0</td> </tr>
+				<tr> <td>Boulder</td> <td>107,789</td> <td>1.9</td> </tr>
+				<tr> <td>Greeley</td> <td>104,557</td> <td>1.9</td> </tr>								
+			  </table>
             </div>
-		    <div class="col-lg-6 side-content">
+		    <div class="col-lg-8 side-content">
               <img class="image-centered" src="images/municipalities-general-map.png" frameborder="0"></img>
             </div>				
           </div>
-        </div> 
-      </div>
+        </div>
+	  </div>	
   <!-- Municipalities - Population Projections to 2050 -->	  
       <div class="section">
           <div class="row">
             <div class="col-lg-4 text-left-custom">
               <h2>Population Projections to 2050</h2>
 			  <p>Population growth is the single largest driver of the need for additional water supplies in the South Platte River Basin (BIP, p.1-17).</p>
-			  <p><i>Do not have municipal projections.  However, county projections to 2050 are available from DOLA.  Here can add in the county choropleth map.  It may 
-			  even be good to include the whole state to highlight how the basin will see the largest increases.</p>
-			  <p>It may be good to include a table that shows the county population for a given year and as a percent of the total state population, like what was 
-			  done for the gap analysis.  Curious if can embed a table into the narrative.</p>
-			  <p>County choropleth map could have a time slider for the years 2018-2050, as explained previously.  Or can try something like the heatmap shown at 
-			  right.  Note that this is just a screenshot; heatmap would be interactive.</p>
-			  <p>Maybe need to include here some discussion of the SWSI Update population scenarios, such as Hot Growth.</i></p>
+			  <p>The Department of Local Affairs (DOLA)'s <a href="https://demography.dola.colorado.gov/" target="_blank">State Demography Office</a> provides 
+			  population projections to the year 2050 for each of Colorado's counties.  This choropleth map shows county populations for the years 2018 to 2050.</p>
+			  <p>As part of the Colorado Water Plan, five planning scenarios were developed that represent how the State's alternative water futures may look in 2050.  The 
+			  scenarios are based on drivers such as population, land use, climate predictions, social values, etc.  These scenarios are described briefly below in terms 
+			  of how population may affect water supplies (<a href="http://cwcbweblink.state.co.us/WebLink/ElectronicFile.aspx?docid=199504&searchid=80d50cb3-95bf-405c-bfa5-587c633c7136&dbid=0" 
+			  target="_blank">Colorado Water Plan</a>, p.6-7).</p>
+			  <ul>
+			    <li>Hot Growth - the economy is thriving, which fuels development.  A warming climate draws people to relatively cool Colorado and communities struggle to provide 
+				needed services.  Families seek low-density housing and rural mountain living, resulting in rapid development of open lands.</li>
+				<li>Adaptive Innovation - again, the economy is thriving, and the warm climate draws people to a relatively cool Colorado.  But in this scenario, high-density 
+				housing predominates and strong investments in research lead to greater efficiencies in water use.</li>
+				<li>Business As Usual - the economy grows slowly with anticipated spikes and falls and most Coloradans live in single-family homes.  Water conservation has 
+				slowly increased.</li>
+				<li>Cooperative Growth - population growth is concentrated in cities and resort communities and water and energy conservation measures are willingly adopted.</li>
+				<li>Weak Economy - the economy struggles in Colorado and the nation as a whole; population growth is less than expected.</li>
+			  </ul>
+			  <p>The SWSI Update is incorporating these planning scenarios into its estimates of the water supply gap in 2050.  It is not currently understood how the Update will use 
+			  the population projections quantified by DOLA.</p>
             </div>
 		    <div class="col-lg-8">
               <div id="mapbox5" class="map-right"></div>
@@ -310,8 +336,6 @@
 			  <p>Municipal water providers generally have a board of directors and hold public meetings.</p>
 			  <p>Large water providers are required by federal law to annually publish a water quality annual report or "Consumer 
 			  Confidence Report" (CCR).  These are often available on the water provider's website under headings related to water quality.</p>
-			  <p><i>Map of water providers as points, color-coded by type of provider, such as municipality, water and sanitation district, water company, etc.  Mouse-over 
-			  will have link to website.</i></p>
             </div>
 		    <div class="col-lg-8">			
 			  <div id="mapbox2" class="map-right"></div>

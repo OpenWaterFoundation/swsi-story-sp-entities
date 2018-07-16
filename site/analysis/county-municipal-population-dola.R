@@ -287,8 +287,40 @@ muni_pop_2006_2016 = inner_join(spmetro_muni, muni_pop_2006_2016)
 write.csv(muni_pop_2006_2016, file="municipal-population-2006-2016.csv", 
 row.names=FALSE)
 ###########################################################################
+# 3) Compare municipal 2016 population to 2016 state population
+# First get the State historical data
+state_historical = historical_population %>%
+  filter(placefips == 0) %>%
+  filter(countyfips == 0) %>%
+  rename(State = municipalityname) %>%
+  rename(Year = year) %>%
+  rename(Population = totalpopulation) %>%
+  select(State, Year, Population)
 
+# Correct misspellings
+state_historical$State = replace(state_historical$State, 
+  state_historical$State=="Colorad", "Colorado")
+state_historical$State = replace(state_historical$State, 
+  state_historical$State=="COLORADO STATE", "Colorado")
 
+# State 2016 population is 5538180; will use to create new variable
+
+# Access the "muni_pop_2016" dataset and join the state data to it
+muni_state_2016 = muni_pop_2016
+
+# Create new variable of 2016 state population
+muni_state_2016$StatePop2016 = rep(5538180, 271)
+
+# Calculate municipality's percent of state pop
+muni_state_2016 = muni_state_2016 %>%
+  mutate(Percent_State = Pop2016 / StatePop2016 * 100) %>%
+  arrange(desc(Pop2016))
+# Round to 1 decimal place
+muni_state_2016$Percent_State = round(muni_state_2016$Percent_State, digits=1)
+
+print(muni_state_2016, n=15)
+
+#######################
 # Read in county geojson file (test of adding in spatial data; note that you need 
 # to remove the "var = Name" part of the file)
 # May use this command later when more time is available
