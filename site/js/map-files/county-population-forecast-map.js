@@ -5,7 +5,7 @@
 
 (function(){
 
-	var map = L.map('mapbox5').setView([39.14, -105.40], 7);
+	var map = L.map('mapbox2').setView([39.14, -105.40], 7);
 	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
 		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation </a>' + 
@@ -73,12 +73,12 @@
 		}
 		info.update(layer.feature.properties);
 	}
-	
-	var countypopforecast;
+
+	var countypopforecastMarkers;
 
 // Reset the color after hovering over
 	function resetHighlight(e) {
-		countypopforecast.resetStyle(e.target);
+		countypopforecastMarkers.resetStyle(e.target);
 		info.update();
 	} 		
 
@@ -95,7 +95,7 @@
 		});
 	}
 
-	countypopforecast = L.geoJson(countypopforecast, {
+	countypopforecastMarkers = L.geoJson(countypopforecast, {
 		style: style,
 		onEachFeature: onEachFeature
 	}).addTo(map);
