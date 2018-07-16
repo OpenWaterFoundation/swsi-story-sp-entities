@@ -20,18 +20,37 @@
 
     <!-- icon -->
     <link id="czr-favicon" rel="icon" href="images/co-triangle-favicon.ico" type="image/png">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
 
     <!-- MapBox Leaflet -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-   crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-   crossorigin=""></script>
+    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin=""></script>
 
-   <!-- Javscript files included near bottom of page -->
+    <!-- JQuery JavaScript -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Fullpage minified Javscript file -->
+    <script type="text/javascript" src="js/jquery.fullpage-2.9.7.min.js"></script>
+    <!-- Fullpage minified Javscript file -->
+    <script type="text/javascript" src="js/scrolloverflow-0.0.8.min.js"></script>
+    <!-- Bootstrap Javascript File -->
+    <script type="text/javascript" src="js/bootstrap-4.0.0.js"></script>
+    <!-- Leaflet GeoPackage Javascript File -->
+    <script type="text/javascript" src="js/leaflet-geopackage-1.1.3.js"></script>
+	<!-- Population, Water Use Files -->
+	<script src="data/municipal-population-2006-2016.geojson"></script>
+	<script src="data/Colorado-Municipal-Water-Providers-SouthPlatte-Metro.geojson"></script>
+	<script src="data/waterproviders-wedp-population-wateruse.geojson"></script>
+	<script src="data/county-population-forecast.geojson"></script>
+	<!-- Boundary Files -->	
+	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>
+	<!-- Juxtapose Files -->		
+
+
   </head>
 
   <body>
@@ -48,6 +67,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#waterresources">Background</a>
+            </li>		  
             <li class="nav-item">
               <a class="nav-link" href="#munic">Municipalities</a>
             </li>
@@ -79,6 +101,7 @@
               <p style="color:white; font-size:22px;">This story highlights the various types of water entities in the South Platte and Metro basins, such as municipalities, municipal 
 			  water providers, agriculture, environmental, recreational and industrial entities.</p>
 			  <p style="color:white; font-size:22px;">The purpose of this story is to provide general context for the number, location and extent of such entities in the basin.</p>
+			  <p style="color:white; font-size:22px;">Background on Colorado water law and other topics is included to provide context and references for Colorado water resources.</p>
             </div>
 	  </div>
 <!-- Water Rights/Resources/Use Section -->
@@ -98,7 +121,7 @@
               <p style="color:white; font-size:18px;">The following is a concise summary of the surface water network of the South Platte Basin 
 			  (<a href="https://www.yourwatercolorado.org/component/virtuemart/view/productdetails/virtuemart_product_id/6/virtuemart_category_id/1)" target="_blank">Citizen's 
 			  Guide to Where Your Water Comes From</a>, p.20):</p>
-			  <p style="color:white; font-size:18px;"><i>"The headwaters of the South Platte River are fromed by the combination of several smaller rivers--the north, 
+			  <p style="color:white; font-size:18px;"><i>"The headwaters of the South Platte River are formed by the combination of several smaller rivers--the north, 
 			  middle and south forks...The north fork of the river originates in the peaks around Mt. Evans while the south fork 
 			  originates in the South Park area.  In South Park, the south fork is impounded by multiple reservoirs:  Antero, 
 			  Spinney Mountain and Eleven Mile Canyon.  It drops many feet in elevation before exiting the mountains and flowing 
@@ -113,7 +136,7 @@
         </div>
       </div>
   <!-- Water Rights Section -->
-      <div class="section" style="background-image:url('images/colorado-2064510_1920.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/H4-HorseTeam_DigginDitch.jpg'); height:100vh!important;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
@@ -124,8 +147,8 @@
 			  One of its essential principles is that water is a public resource and can be used for beneficial use by public agencies, 
 			  private persons and entities.  Beneficial uses include uses for municipal water supply, agriculture, industry and 
 			  recreation, among others.</p>
-			  <p style="color:white; font-size:18px;">A legal framework called the prior appropriation system regulates the use of surface water and tributary groundwater 
-			  that is connected to streams.  This system is also referred to by the phrase "first in time, first in right".  This means 
+			  <p style="color:white; font-size:18px;">A legal framework called the prior appropriation doctrine regulates the use of surface water and tributary groundwater 
+			  that is connected to streams.  This doctrine is also referred to by the phrase "first in time, first in right".  This means 
 			  that in times of short water supply, court-decreed water rights holders who obtained their rights earlier (senior rights) 
 			  can use water before decreed rights with later dates (junior rights) may use any remaining water.  The water user must 
 			  have a definite plan to divert, store or otherwise capture, possess and control water, and must specify the place of 
@@ -133,13 +156,12 @@
 			  <a href="http://water.state.co.us/Home/Pages/default.aspx" target="_blank">Colorado Division of Water Resources</a>.</p>
               <p style="color:white; font-size:18px;">Water rights holders are typically organizations such as municipal utilities, ditch companies, natural resource 
               organizations or industries, although individuals can also own water rights.  The costs for water rights are passed 
-			  on to individuals.  For example, utility customers or farmers in a ditch company pay for the delivery of water and 
+			  on to water users.  For example, utility customers or farmers in a ditch company pay for the delivery of water and 
 			  those payments cover the costs of acquiring water and the infrastructure to deliver the water.</p>
 			  <p style="color:white; font-size:18px;">Another important beneficial use of water in Colorado is to keep the water in the stream.  The Colorado Water 
 			  Conservation Board is legally permitted under state law to make instream flow appropriations.  These are meant 
 			  to assist in preserving the natural environment to a reasonable degree by ensuring minimum flows.  However, these 
 			  instream flow rights typically are junior rights.</p>
-			  <p style="color:white; font-size:18px;"><i>Would like to have a historical photo for this page.</i></p>
               </div>			
             </div>
         </div>
@@ -168,7 +190,8 @@
 			  <p style="color:white; font-size:18px;">However, while agriculture consumes the most water, the U.S. Geological Survey has estimated 
 			  that approximately only 37% of the water diverted statewide for agriculture is actually consumed 
 			  (<a href="https://www.yourwatercolorado.org/component/virtuemart/view/productdetails/virtuemart_product_id/6/virtuemart_category_id/1)" target="_blank">Citizen's 
-			  Guide to Where Your Water Comes From</a>, p.12). The resulting irrigation return flows are often reused multiple times.</p> 
+			  Guide to Where Your Water Comes From</a>, p.12). The resulting irrigation return flows are often reused multiple times.  Because of this repeated reuse 
+			  of water, the annual diversions in a river basin can be multiple times the natural water supply.</p> 
 			  <p style="color:white; font-size:18px;">Pumping of alluvial groundwater for urban and agricultural uses can remove water from the river and leave senior 
 			  surface water users with less water than they had previously.  In these situations, engineering plans called 
 			  "augmentation plans" are required to ensure that water extracted from groundwater wells does not unfairly take water 
@@ -182,20 +205,21 @@
 <!-- Municipalities Section -->
   <!-- Municipalities - Basic Map of Locations -->	  	
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 text-left-custom">
+            <div class="col-lg-4 text-left-custom">
               <h2>Municipalities</h2>
-              <p>Collectively, the South Platte and Metro Basin is the most populous basin in Colorado.  Approximately 85% 
-              of Colorado's population resides in the Basin.  By 2050, the Basin's population may nearly double from 
+              <p>There are 117 municipalities in the South Platte and Metro Basin.  Collectively, the South Platte and Metro Basin is the most populous basin in 
+			  Colorado.  Approximately 85% of Colorado's population resides in the Basin.  By 2050, the Basin's population may nearly double from 
 			  approximately 3.5 million people to 6 million people (CWP, p.3-12).</p>  
-              <p><i><b>Map on right is a screenshot of interactive Leaflet map; placeholder until we decide how to link to Leaflet maps (possibly Leaflet maps saved as .js files that are 
-			  read in.)</b>  Maybe want to highlight the 10 most-populous cities in a different color?</i></p>
+              <p>The 10 largest cities in the Basin, based on 2016 population data, from largest to smallest, are:  Denver, Aurora, Fort Collins, 
+			  Lakewood, Thornton, Arvada, Westminster, Centennial, Boulder and Greeley.  Each contains over 100,000 people.</p>
+			  <p>The greatest changes in population since 2006 are those municipalities in the more northern part of the Front Range and 
+			  include Firestone, Frederick, Johnstown, Mead, Severance, Timnath, Wellington and Windsor.</p>
             </div>
-		    <div class="col-lg-6 side-content">
-              <img src="images/municipalities-general-map.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+              <div id="mapbox1" class="map-right"></div>
+			  <script src="js/map-files/municipalities-southplatte-metro-map.js"></script>
             </div>			
-          </div>
         </div>
       </div>
   <!-- Municipalities - Map of Population from 1980-2016 -->	  		  
@@ -221,9 +245,8 @@
       </div>
   <!-- Municipalities - Population Projections to 2050 -->	  
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 text-left-custom">
+            <div class="col-lg-4 text-left-custom">
               <h2>Population Projections to 2050</h2>
 			  <p>Population growth is the single largest driver of the need for additional water supplies in the South Platte River Basin (BIP, p.1-17).</p>
 			  <p><i>Do not have municipal projections.  However, county projections to 2050 are available from DOLA.  Here can add in the county choropleth map.  It may 
@@ -234,17 +257,45 @@
 			  right.  Note that this is just a screenshot; heatmap would be interactive.</p>
 			  <p>Maybe need to include here some discussion of the SWSI Update population scenarios, such as Hot Growth.</i></p>
             </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/percent-change-county-pop.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+              <div id="mapbox5" class="map-right"></div>
+			  <script src="js/map-files/county-population-forecast-map.js"></script>
+            </div>	
+        </div> 
+      </div>
+  <!-- Municipal Water Supply Examples -->	  		
+      <div class="section" style="background-image:url('images/water-1761027_1920.jpg'); height:100vh!important;">
+        <div class="row">
+            <div class="col-lg-12">
+			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
+              <h2 style="color:white; margin-top:15vh; float:top;">Municipal Water Supply -- Examples</h2>
+			  <p style="color:white; font-size:18px;">How a municipality collects, stores, treats and ultimately distributes water to its customers can be a complex process.  If this also includes the use of transbasin 
+			  water, or water diverted from watersheds west of the Continental Divide to east of the Divide, then this process becomes even more complicated.</p>
+			  <p style="color:white; font-size:18px;">For example, here is how Denver Water, the municipal water provider for the City and County of Denver, collects and stores its water.  The primary water sources are the South 
+			  Platte and Blue rivers.  Secondary water sources include the Fraser River, Williams Fork River, South Boulder Creek, Ralston Creek and Bear Creek.  The water 
+			  is stored in 13 main reservoirs.  The largest is Dillon Reservoir with 254,036 acre-feet of active capacity, followed by Eleven Mile Canyon (97,779 acre-feet), 
+			  Cheesman (79,064 acre-feet) and Gross (41,811 acre-feet) reservoirs.  Additional reservoirs include Antero, Marston, Ralston, Strontia Springs, Long Lakes, Platte 
+              Canyon and Soda Lakes.  Williams Fork and Wolford Mountain reservoirs are also used, primarily for water exchanges necessary to meet the needs of downstream water 
+			  water rights or endangered species requirements (<a href="https://www.yourwatercolorado.org/component/virtuemart/view/productdetails/virtuemart_product_id/6/virtuemart_category_id/1)" 
+			  target="_blank">Citizen's Guide to Where Your Water Comes From</a>, p.23).  Transbasin water is diverted via the Roberts Tunnel Collection System and Moffat Collection
+			  System.  For more information, go to the <a href="https://www.denverwater.org/your-water/water-supply-and-planning" target="_blank">Your Water</a> section of 
+			  Denver Water's website.</p>
+			  <p style="color:white; font-size:18px;">As another example, <a href="https://www.denverwater.org/your-water/water-supply-and-planning/wise" target="_blank"> WISE (Water, 
+			  Infrastructure and Supply Efficiency)</a> is a regional partnership that provides new supply to 10 Douglas County entities by combining unused capacities in Aurora 
+			  Water's <a href="https://www.auroragov.org/cms/one.aspx?portalId=1881221&pageId=2036986" target="_blank"> Prairie Waters Project</a> with unused supplies from 
+			  Denver and Aurora.  During years that Denver and Aurora don't need all of their water supply, and when excess capacity is available in Prairie Waters, these entities 
+			  can buy the unused water, which helps reduce their reliance on nonrenewable groundwater.  The 10 entities are:  Town of Castle Rock, Centennial Water and Sanitation 
+			  District (WSD), Cottonwood WSD, Dominion WSD, Inverness WSD, Meridian Metropolitan District (MD), Parker WSD, Pinery Water and Wastewater District, Rangeview 
+			  MD and Stonegate Village MD.</p>
+			  <p style="color:white; font-size:18px;">The treatment and conveyance of a municipality's water supply may be covered more thoroughly in future stories.</p>
             </div>				
           </div>
         </div> 
-      </div>
+      </div>		  
   <!-- Municipal Water Providers -->	  	  
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 text-left-custom">
+            <div class="col-lg-4 text-left-custom">
               <h2>Municipal Water Providers</h2>
 			  <p>Most residents of Colorado get their water via a water provider.  The provider may be a municipal utility, 
 			  a special district or a private company.  Municipal utilities are often organized as enterprise funds that have 
@@ -262,36 +313,36 @@
 			  <p><i>Map of water providers as points, color-coded by type of provider, such as municipality, water and sanitation district, water company, etc.  Mouse-over 
 			  will have link to website.</i></p>
             </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/water-providers-general-map.png" frameborder="0"></img>
+		    <div class="col-lg-8">			
+			  <div id="mapbox2" class="map-right"></div>
+			  <script src="js/map-files/water-providers-southplatte-metro-map.js"></script>
             </div>				
           </div>
-        </div> 
-      </div>	
-  <!-- Municipal Water Use -->	  	  
+      </div> 	
+  <!-- Municipal Water Use -->
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 text-left-custom">
+            <div class="col-lg-4 text-left-custom">
               <h2>Municipal Water Use</h2>
 			  <p><i>Background on how water use is classified -- metered, distributed, potable/non-potable, etc.</p>
 			  <p>Discussion of HB-1051 data and the data portal, with links to website.</p>
-			  <p>Map of HB-1051 data, shown at right.  Justin and Kristin have worked on this map; can select a year from the list at top right to see change over time.</p>
+			  <p>Map of HB-1051 data, shown at right.  Justin and Kristin have worked on this map; can select a year from the list at top right 
+			  to see change over time.  Need to describe how points are color-coded and sized.</p>
 			  <p>Perhaps also use population data provided by HB-1051 to calculate GPCD and display that in some fashion.  This could then show how some of the big cities 
 			  are actually pretty efficient in their water use.</p>
 			  <p>Image below is statewide--maybe use 1051 data to get this info for just South Platte Basin?</i></p>
 			  <p><img class="image-centered" src="images/municipal-use-pie-chart.png" frameborder="0"></img></p>
             </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+              <div id="mapbox3" class="map-right"></div>
+			  <script src="js/map-files/water-providers-1051-data-map.js"></script>
             </div>				
-          </div>
-        </div> 
-      </div>	
+          </div> 
+      </div>
+  <!-- Municipal Water Efficiency -->	  
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 text-left-custom">
+            <div class="col-lg-4 text-left-custom">
               <h2>Municipal Water Use and Efficiency</h2>
 			  <p>Water Conservation vs. Water Efficiency:  these terms are often used interchangeably but have different meanings.  Efficiency is using the least amount 
 			  of water necessary to achieve a result and focuses on reducing water waste.  Conservation is the act of increasing efficiency and refers to methods that 
@@ -316,29 +367,12 @@
 			  <p><a href="coloradowaterwise.org" target="_blank">Colorado WaterWise</a>, a non-profit organization, has information about resources for the efficient use of 
               urban water.</p>			  
             </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+              <div id="mapbox4" class="map-right"></div>
+			  <script src="js/map-files/water-providers-efficiency-plans-map.js"></script>
             </div>				
           </div>
-        </div> 
-      </div>		  
-      <div class="section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-5 text-left-custom">
-              <h2>Municipal Water Use -- Examples?</h2>
-			  <p><i>Curious if we should include an example of how a municipality receives and delivers its water.  Map could show water sources (rivers), treatment plants, 
-			  means of conveyance (ditches, pipelines), storage (reservoirs).  Ideally would be neat to do for all municipalities, but way too time-consuming.  Is one example 
-			  worth it, just to show how complicated things are (especially if this involves C-BT or water from the Moffat Project)?</p>
-			  <p>Maybe highlight the WISE project in Aurora as well.</i></p>
-			  <p><i>Refer to the Citizen's Guide to Where Your Water Comes From.  It contains a description for Denver Water.</i></p>
-            </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
-            </div>				
-          </div>
-        </div> 
-      </div>		  
+        </div> 		  
 <!-- Agriculture Section -->
   <!-- Agriculture Intro -->		  
       <div class="section" style="background-image:url('images/agriculture-cereal-clouds-175389.jpg'); height:100vh!important;">
@@ -352,7 +386,8 @@
 			  (<a href="http://southplattebasin.com/wp-content/uploads/2016/06/South-Platte-Basin-Implementation-Plan-April-17-2015.pdf" target="_blank">BIP</a>, p.2-20).</p>
 			  <p style="color:white; font-size:18px;">In 2012, seven of the top ten agriculture-producing counties in Colorado 
 			  were located in the South Platte Basin.  Agricultural sales in the Basin for that year were $5.8 billion, representing 75% of 
-			  the statewide total (BIP, p.2-15).</p>
+			  the statewide total (BIP, p.2-15).  These counties, in order of production, are:  Weld, Yuma, Morgan, Logan, Kit Carson, Washington 
+			  and Phillips.</p>
 			  <p style="color:white; font-size:18px;">With the exception of dryland wheat, most of the agricultural production 
 			  in the Basin (and the State as a whole) requires irrigation to generate sufficient crop yields.  Within the Basin, agriculture 
 			  accounts for 85% of total water diversions (<a href="https://www.colorado.gov/cowaterplan" target="_blank">Colorado Water Plan</a>, p.3-13).</p>  
@@ -391,21 +426,67 @@
           </div>
         </div> 
       </div>		  	  
-  <!-- "Juxtapose" images of changes in agricultural lands -->		  
-      <div class="section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-5 text-left-custom">
-             <h2>Changes to Agricultural Lands</h2>
-			  <p><i>Use the "Juxtapose" feature here for a few (several?) areas where there have been large reductions in agricultural land.</i></p>
+  <!-- "Juxtapose" images of changes in agricultural lands -->	
+    <!-- Greeley -->  
+        <div class="section">
+          <div class="row" style="margin-left: 15px">
+		    <div class="col-lg-4 text-left-custom">
+			  <h2>Changes in Agricultural Lands</h2>
+			  <p>Text here</p>
+			</div>  
+            <div class="col-lg-8">
+              <div class="juxtapose-container">
+                <div id="juxtapose-wrapper" class="juxtapose">
+                  <img src="images/Greeley-2005.jpg" data-label="Greeley 2005" data-credit="Google Earth"/>
+                  <img src="images/Greeley-2017.jpg" data-label="Greeley 2017" data-credit="Google Earth"/>
+                </div>
+              </div>
+    <script src="js/juxtapose-1.2.0.js"></script>
+    <!-- This script was found on GitHub, written by username willwong89 to make juxtapose responsive to window size changes -->
+    <script>
+    var $juxtapose = $('.juxtapose'), $juxtapose_container = $('.juxtapose-container'), juxtapose_ratio;
+    $(window).on('load', function(){juxtapose_ratio = $juxtapose.outerHeight() / $juxtapose.outerWidth();});
+    $(window).on('resize', function() {
+    var new_width = $juxtapose_container.outerWidth(), 
+    new_height = new_width*juxtapose_ratio;
+    $juxtapose.css({width: new_width, height: new_height})
+    });
+    </script>
+    <link href="css/juxtapose-1.2.0.css" rel="stylesheet">	
             </div>
-            <div class="col-lg-7 side-content">
-              <img src="images/greeley-juxtapose.png" frameborder="0"></img>			  
-            </div>			
           </div>
         </div>
-      </div>	  
-<!-- Environment Section -->		  
+   <!-- Firestone -->  
+        <div class="section">
+          <div class="row" style="margin-left: 15px">
+		    <div class="col-lg-4 text-left-custom">
+			  <h2>Changes in Agricultural Lands</h2>
+			  <p>Text here</p>
+			</div>  
+            <div class="col-lg-8">
+              <div class="juxtapose-container">
+                <div id="juxtapose-wrapper2" class="juxtapose">
+                  <img src="images/Firestone-2005.jpg" data-label="Firestone 2005" data-credit="Google Earth"/>
+                  <img src="images/Firestone-2017.jpg" data-label="Firestone 2017" data-credit="Google Earth"/>
+                </div>
+              </div>
+    <script src="js/juxtapose-1.2.0.js"></script>
+    <!-- This script was found on GitHub, written by username willwong89 to make juxtapose responsive to window size changes -->
+    <script>
+    var $juxtapose = $('.juxtapose'), $juxtapose_container = $('.juxtapose-container'), juxtapose_ratio;
+    $(window).on('load', function(){juxtapose_ratio = $juxtapose.outerHeight() / $juxtapose.outerWidth();});
+    $(window).on('resize', function() {
+    var new_width = $juxtapose_container.outerWidth(), 
+    new_height = new_width*juxtapose_ratio;
+    $juxtapose.css({width: new_width, height: new_height})
+    });
+    </script>
+    <link href="css/juxtapose-1.2.0.css" rel="stylesheet">	
+            </div>
+          </div>
+        </div> 		
+<!-- Environment Section -->
+  <!-- Environmental Attributes -->		  
       <div class="section" style="background-image:url('images/colorado-1680302_1920.jpg'); height:100vh!important;">
         <div class="row">
             <div class="col-lg-12">
@@ -413,18 +494,72 @@
              <h2 style="color:white; margin-top:5vh; float:top;">Environmental Entities</h2>
 			<p style="color:white; font-size:18px;">It may be thought that the value of water can only be placed on consumptive water use.  However, water that remains in a stream 
 			has what are known as non-consumptive uses.  The non-consumptive use of water provides benefits to fish, wildlife, riparian habitat, 
-            wetlands and recreation.  These uses also have economic value and are some of the important qualities that people associate with Colorado.</p>			
-			<p style="color:white; font-size:18px;"><i>Map of instream flow reaches from CWCB?  ISF reaches are not really an entity.  May want to color-code reaches by the amount of 
-			flow, or maybe change the width based on the amount of flow, but don't know how to do this yet.  Need to add some value to the ISF 
-			reaches rather than just a map with the reaches highlighted.</p>
-			<p style="color:white; font-size:18px;">Maybe environmental entities need to be thought of as "attributes" rather than entities.  This could bring in some discussion of 
-			threatened and endangered species, Gold Medal streams, etc.  Don't think we have much data for this though; wait until SWSI Update is 
-			complete to get the data?</p>
-			<p style="color:white; font-size:18px;">Map of watershed groups to show which areas are being protected; maybe do this by HUC to be more interactive.</i></p>	
-              </div>
-		    </div>
-        </div>		
-      </div>	
+            wetlands and recreation.  These uses also have economic value and are some of the important qualities that people associate with Colorado.</p>
+            <p style="color:white; font-size:18px;">The environment does consume water though, from evaporation from water surfaces to evapotranspiration of plants.  Therefore, 
+            environmental uses of water are not completely non-consumptive.</p>
+            <p style="color:white; font-size:18px;">It is perhaps better to think of environmental entities as attributes rather than entities.  In the South Platte and Metro basins, these attributes include the 
+			following (Basin Implementation Plan, p.2-25):</p>
+               <ul style="color:white; font-size:18px;">
+                 <li>Rare aquatic-dependent plants</li>
+                 <li>Significant riparian plant communities</li>
+                 <li>Plains fish that are either state-endangered, threatened or species of special concern, such as:  Brassy Minnow, Common Shiner, Northern Redbelly Dace, Plains 
+				 Minnow, Stonecat, Suckermouth Minnow, Iowa Darter and Plains Orangethroat Darter</li>
+                 <li>State-endangered, threatened or species of special concern, such as:  Boreal Toad, Lake Chub, River Otter, Yellow Mud Turtle, Northern Leopard Frog, Northern 
+				 Cricket Frog, Plains Leopard Frog, Preble's Meadow Jumping Mouse, Common Garter Snake and Wood Frog</li>
+               </ul>
+            <p style="color:white; font-size:18px;">As part of the <a href="http://cwcb.state.co.us/water-management/water-supply-planning/Pages/SWSIUpdate.aspx" target="_blank">SWSI Update</a>, 
+			the Environmental and Recreational Database (formerly the Nonconsumptive Needs Database) will be updated and will build upon these attributes.  For more information see the 
+			<a href="http://cwcb.state.co.us/water-management/water-supply-planning/Documents/SWSI2016/FactSheets/4_EnvAndRec.pdf" target="_blank">SWSI Update Environmental and Recreational 
+			Methodology Fact Sheet</a>.</p>			   
+			  </div>
+			</div>
+		</div>
+	  </div>
+  <!-- CWCB Instream Flow Rights Map -->	
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 text-left-custom">
+            <h2>Environmental Flow Protection</h2>			
+			<p>The primary means of protecting these environmental attributes is through the protection of flows.  A range of flows are 
+			generally needed to protect aquatic species and their associated habitats.  For example, minimum flows are the minimum amounts of water needed to preserve the aquatic 
+            environment, whereas peak flows can be cues for fish to spawn, flush sediment and deposit sediment to create new habitat.</p>			
+			<p>The Colorado Water Conservation Board's <a href="http://cwcb.state.co.us/environment/instream-flow-program/Pages/main.aspx" 
+			target="_blank">Instream Flow Program</a> is tasked with the "appropriation, acquisition, protection and monitoring of instream flow and natural lake level water rights 
+			to preserve and improve the natural environment to a reasonable degree".  This map shows CWCB decreed instream flow reaches in the South Platte and Metro basins.  Clicking 
+			on the radio buttons on the right side of the map allows you to see the decreed flow amounts for each month of the year.  Hover over a stream reach to obtain more information, 
+			such as the number of miles of stream that are protected.</p>
+			<p><i>Map is just a screen shot; will be interactive and contain radio buttons to select for each month.</i></p>	
+             </div>
+		    <div class="col-lg-7 side-content">
+              <img class="image-centered" src="images/instream-flows.png" frameborder="0"></img>
+            </div>				
+          </div>
+        </div> 
+      </div>
+  <!-- Environmental Entities -->
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 text-left-custom">
+            <h2>Environmental Entities</h2>			
+			<p>Entities do exist that provide stewardship, conservation or other services to protect and enhance environmental attributes.  The <a 
+			href="http://www.coloradowater.org/" target="_blank">Colorado Watershed Assembly</a> maintains a 
+			<a href="https://static1.squarespace.com/static/53f664ede4b032c1fade347d/t/59e0f59a03596e4763b51b3d/1507915163576/CWAwatershedgroupdirectory2017.pdf" 
+			target="_blank">directory</a> of watershed groups.</p>			
+			<p>Additionally, the Open Water Foundation, in coordination with the CWCB, created this interactive visualization of watershed plans in Colorado.  
+			The State is divided into Hydrologic Unit Code (HUC)8 watersheds and the number of plans in each watershed is indicated.  By 
+			choosing a watershed ("Select Basin" dropdown), it is possible to view the names of watershed plans, who wrote them (Organization), and links to the plans.  
+			Many of the organizations are local river coalitions whose missions are to protect and/or restore their local watershed.</p>  
+			<p>The South Platte Basin has the highest concentration of watershed plans.</p>
+			<p>This visualization can also be viewed <a href="http://viz.openwaterfoundation.org/co/cwcb-viz-co-watershed-plans/index.html" target="_blank">here.</a></p>
+             </div>
+		    <div class="col-lg-9 side-content">
+              <iframe data-src="http://viz.openwaterfoundation.org/co/cwcb-viz-co-watershed-plans/index.html" scrolling="no" frameborder="0"></iframe>
+            </div>				
+          </div>
+        </div> 
+      </div>  
 <!-- Recreation Section -->	
       <div class="section" style="background-image:url('images/rafting-444743_1920.jpg'); height:100vh!important;">
         <div class="row">
@@ -432,6 +567,8 @@
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
              <h2 style="color:white; margin-top:5vh; float:top;">Recreational Entities</h2>
 			<p style="color:white; font-size:18px;"><i>Some discussion of rafting companies.  The primary rivers for the rafting industry in the basin are the Cache la Poudre River and Clear Creek.</p>
+			<p style="color:white; font-size:18px;"><i>Gold Medal streams, Colorado Outstanding Waters, Wild and Scenic Rivers (70-mile stretch of the 
+			Poudre is the only Wild and Scenic River in Colorado).</p>
 			<p style="color:white; font-size:18px;">Any recreational map layers from SWSI?</i></p>
               </div>
             </div>		  
@@ -489,24 +626,14 @@
               <h2>Sources</h2>
 			  <p>Tractor image available from <a href="https://www.pexels.com/" target="_blank">Pexels</a>.</p>
 			  <p>Stream image, white water rafting image and image of Rocky Mountain National Park available from <a href="https://pixabay.com/" target="_blank">Pixabay</a>.</p>
+			  <p>Horses digging ditch courtesy of the <a href="https://www.poudreheritage.org/" target="_blank">Poudre Heritage Alliance</a>.</p>
           </div>	
       </div>	  
      </div>	  
     </div>
   </body>
 
-    <!-- JQuery JavaScript -->
-    <script src="js/jquery-3.3.1.js"></script>
-    <!-- Fullpage minified Javscript file -->
-    <script type="text/javascript" src="js/jquery.fullpage-2.9.7.min.js"></script>
-    <!-- Fullpage minified Javscript file -->
-    <script type="text/javascript" src="js/scrolloverflow-0.0.8.min.js"></script>
-    <!-- Bootstrap Javascript File -->
-    <script type="text/javascript" src="js/bootstrap-4.0.0.js"></script>
-	<!-- Leaflet GeoPackage Javascript File -->
-    <script type="text/javascript" src="js/leaflet-geopackage-1.1.3.js"></script>
-	<!-- IPP dataset -->
-	<script src="data/SouthPlatteMetro-IPPs.geojson"></script>	
+
     <script>
 
       window.onload = function(){
@@ -516,11 +643,15 @@
 
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          anchors:['top','munic','municpophist', 'countypop', 'waterproviders', 'wateruse', 'exwateruse', 'ag', 'landuse', 'environment', 'recreation', 'industry', 'resources', 'sources'],
-          sectionsColor:['#386981','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#386981','#386981'],
+          anchors:['top', 'waterresources', 'waterrights', 'wateruseconcepts', 'munic','municpophist', 'countypop', 'muniwatersupply', 'waterproviders', 'wateruse', 'efficiency', 'ag', 'ag2', 'landusechange1', 
+		  'landusechange2', 'environment', 'flowprotection', 'envrentities', 'recreation', 'industry', 'resources', 'sources'],
+          sectionsColor:['#386981','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf',
+		   '#c3c5bf','#c3c5bf','#c3c5bf','#386981','#386981'],
           navigation:true,
           navigationPosition:'right',
-          navigationTooltips:['South Platte and Metro Basin Water Entities','Municipalities','Municipal Populations','Population Projections','Water Providers','Water Use','Water Use Example','Agriculture','Land Use','Environment','Recreation','Industry','Resources', 'Sources'],
+          navigationTooltips:['South Platte and Metro Basin Water Entities', 'Water Resources', 'Water Rights', 'Water Use Concepts', 'Municipalities', 'Municipal Populations', 'Population Projections',
+		  'Water Supply Examples', 'Water Providers', 'Water Use', 'Water Efficiency', 'Agriculture', 'Agriculture', 'Land Use Change', 'Land Use Change', 'Environment', 'Flow Protection', 'Envr. Entities',
+		  'Recreation', 'Industry','Resources', 'Sources'],
           recordHistory:false,
           menu:"#navbarResponsive",
           paddingTop:'75px'
