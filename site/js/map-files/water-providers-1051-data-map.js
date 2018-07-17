@@ -1,9 +1,9 @@
 // South Platte Data Platform - Water Providers Map with Population and Water Use from the Water Efficiency Data Portal (WEDP)
-//id='mapbox4'
+//id='mapbox5'
 
 (function(){
 
-	var map = L.map('mapbox4').setView([40.072, -104.048], 9);
+	var map = L.map('mapbox5').setView([40.072, -104.048], 9);
 
 	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
@@ -100,8 +100,7 @@
 	info.update = function (props, year) {
 		this._div.innerHTML = '<h5>WATER PROVIDERS</h5>' +  (props ?
 			'' + '<b>Name: </b>' + props.WaterProviderName + '<br/>' + '<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' + '<b>County(s): </b>' + props.County_CSV + '<br />' +
-			'<b>Provider Type: </b>' + props.LocalGovtType + '<br />' + '<b>Website: </b>' + props.Website + '<br />' + '<b>Water Efficiency Plan: </b>' + 
-			props.WaterEfficiencyPlan_URL + '<br />' + '<b>Water Forecasts: </b>' + props.WaterForecast_URL  + '<br />' + '<b>Population Served: </b>' + props['Population_Served_' + year]
+			'<b>Provider Type: </b>' + props.LocalGovtType + '<br />' + '<b>Website: </b>' + props.Website  + '<br />' + '<b>Population Served: </b>' + props['Population_Served_' + year]
  			  + '<br />' + '<b>Water Use (acre-feet): </b>' + props['WaterUse_' + year].toFixed(0)
 			: 'Hover on a circle for more information');
 	};

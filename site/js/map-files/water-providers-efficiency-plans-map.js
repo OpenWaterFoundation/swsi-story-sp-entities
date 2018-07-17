@@ -1,11 +1,11 @@
 // South Platte Data Platform - Map of Municipal Water Providers in the South Platte and Metro Basins
 // that have water efficiency plans
 
-//id='mapbox5'
+//id='mapbox6'
 
 (function(){
 
-	var map = L.map('mapbox5').setView([40.072, -104.048], 9);
+	var map = L.map('mapbox6').setView([40.072, -104.048], 9);
 
 	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
@@ -83,7 +83,7 @@
     	function getwaterprovidercolor(point){
     		if (point === "None") colorwaterprovider = '#595959';
     	   else if (point === "") colorwaterprovider = '#595959';		   
-    	   else colorwaterprovider = "red";
+    	   else colorwaterprovider = "blue";
     	    return colorwaterprovider;
     	}
 	

@@ -68,7 +68,8 @@
   	<script src="data/waterproviders-wedp-population-wateruse.geojson"></script>
   	<script src="data/county-population-forecast.geojson"></script>
   	<script src="data/Colorado_Counties.geojson"></script>
-  	<script src="data/county-population-forecast-yearsinsinglecolumn.csv"></script>		
+  	<script src="data/county-population-forecast-yearsinsinglecolumn.csv"></script>	
+  	<script src="data/municipal-population-historical-change.geojson"></script>		
   	<!-- Boundary Files -->	
   	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
 
@@ -245,18 +246,12 @@
       </div>
   <!-- Municipalities - Map of Population from 1980-2016 -->	  		  
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-4 text-left-custom">
               <h2>Municipal Population Data</h2>			  
-			  <p>It is important to discuss population trends and projections because more people equals more water use.</p>
-              <p><i>This page will display a map of municipalities as points, sized by population.  Population data have been retrieved directly from the web from DOLA.  
-			  It is possible to have a time slider that can move through the years from 1980 to 2016 and the size of each municipality's point will change with change 
-			  in population.  Need Justin or Marcel to figure this out, but Kristin has links to sources that describe how to do this.</p>  
-			  <p>Could possibly also color-code the points based on percent change in population since a specific year.  This would really highlight the population growth that 
-			  the basin has experienced.</p>
-			  <p>Map on right is a screenshot of interactive Leaflet map; placeholder until we decide how to link to Leaflet maps (possibly Leaflet maps saved as .js files that are 
-			  read in.)</i></p>
+			  <p>It is important to discuss population trends and projections because more people equals more water use.</p>  
+			  <p>This map shows municipal population from 1980 to 2016.  Click the "Play" button on the lower-left side of the map to automatically move 
+			  through the years.  Municipalities are color-coded by population and sized by percent change since 1980.</p> 	
 			  <p>The table below shows the 2016 population (the most recent year of available data) for the 10 largest cities in the Basin, as well as the percent of the total 
 			  state population.</p>
 			  <table>
@@ -273,11 +268,11 @@
 				<tr> <td>Greeley</td> <td>104,557</td> <td>1.9</td> </tr>								
 			  </table>
             </div>
-		    <div class="col-lg-8 side-content">
-              <img class="image-centered" src="images/municipalities-general-map.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+               <div id="mapbox2" class="map-right"></div>
+			       <script src="js/map-files/municipal-population-historical-map.js"></script>
             </div>				
           </div>
-        </div>
 	  </div>	
   <!-- Municipalities - Population Projections to 2050 -->	  
       <div class="section">
@@ -286,7 +281,8 @@
               <h2>Population Projections to 2050</h2>
 			  <p>Population growth is the single largest driver of the need for additional water supplies in the South Platte River Basin (BIP, p.1-17).</p>
 			  <p>The Department of Local Affairs (DOLA)'s <a href="https://demography.dola.colorado.gov/" target="_blank">State Demography Office</a> provides 
-			  population projections to the year 2050 for each of Colorado's counties.  This choropleth map shows county populations for the years 2018 to 2050.</p>
+			  population projections to the year 2050 for each of Colorado's counties.  This choropleth map shows county populations for the years 2018 to 2050. 
+			  Click the "Play" button on the lower-left side of the map to automatically move through the years.</p>
 			  <p>As part of the Colorado Water Plan, five planning scenarios were developed that represent how the State's alternative water futures may look in 2050.  The 
 			  scenarios are based on drivers such as population, land use, climate predictions, social values, etc.  These scenarios are described briefly below in terms 
 			  of how population may affect water supplies (<a href="http://cwcbweblink.state.co.us/WebLink/ElectronicFile.aspx?docid=199504&searchid=80d50cb3-95bf-405c-bfa5-587c633c7136&dbid=0" 
@@ -305,11 +301,11 @@
 			  the population projections quantified by DOLA.</p>
             </div>
 		    <div class="col-lg-8">
-              <div id="mapbox2" class="map-right"></div>
+              <div id="mapbox3" class="map-right"></div>
 			       <script src="js/map-files/county-population-forecast-map.js"></script>
             </div>	
+		  </div>	
         </div> 
-      </div>
   <!-- Municipal Water Supply -->	  		
       <div class="section" style="background-image:url('images/water-1761027_1920.jpg'); height:100vh!important;">
         <div class="row">
@@ -359,7 +355,7 @@
 			  Confidence Report" (CCR).  These are often available on the water provider's website under headings related to water quality.</p>
             </div>
 		    <div class="col-lg-8">			
-			       <div id="mapbox3" class="map-right"></div>
+			       <div id="mapbox4" class="map-right"></div>
 			       <script src="js/map-files/water-providers-southplatte-metro-map.js"></script>
             </div>			
           </div>
@@ -393,7 +389,7 @@
 			  <p><img class="image-centered" src="images/municipal-use-pie-chart.png" frameborder="0"></img></p>
             </div>
 		    <div class="col-lg-8">
-              <div id="mapbox4" class="map-right"></div>
+              <div id="mapbox5" class="map-right"></div>
 			  <script src="js/map-files/water-providers-1051-data-map.js"></script>
             </div>				
           </div> 
@@ -425,7 +421,7 @@
               urban water.</p>			  
             </div>
 		    <div class="col-lg-8">
-              <div id="mapbox5" class="map-right"></div>
+              <div id="mapbox6" class="map-right"></div>
 			  <script src="js/map-files/water-providers-efficiency-plans-map.js"></script>
             </div>				
           </div>
@@ -672,7 +668,7 @@
         			  Conservation Board Water Supply Planning Section</a></p>
         			  <p>------------------------------------------------------------------------------------------------------------------------------------</p>
         			  <p>Questions or feedback?  Contact xxxx@xxxx.com (placeholder for Basin Roundtable member) </p>
-        			  <p>Last update:  June 2018</p>
+        			  <p>Last update:  July 2018</p>
               </div>
             </div>
           </div>

@@ -1,0 +1,118 @@
+MunicipalityName,FIPS_ID,FIPS_ID_Flag,GNIS_ID,GNIS_ID_Flag,DOLA_LG_ID,DOLA_LG_ID_Flag,OWF_ID,OWF_ID_Flag,PWS_ID,PWS_ID_Flag,DWR_WaterDistrict_ID,DWR_WaterDistrict_ID_Flag,County_CSV,NumCounty,IBCC_Basin_CSV,Num_IBCC_Basin,Latitude,Longitude,Lat_Long_Flag,Website,Website_Flag,Comment
+Akron,00925,G,2412340,G,61002,G,Akron,G,CO0161001,G,,x,Washington,1,South Platte,1,40.163374,-103.220269,,www.townofakron.com,G,
+Alma,01530,G,2412350,G,47001,G,Alma,G,CO0147001,G,,x,Park,1,South Platte,1,39.285945,-106.067034,,http://www.townofalma.com/,G,
+Arriba,03235,G,2411647,G,37002,G,Arriba,G,CO0137001,G,,x,Lincoln,1,South Platte,1,39.284338,-103.274051,,https://www.colorado.gov/arriba,G,
+Arvada,03455,G,2409737,G,64009,G,Arvada,G,CO0130001,G,,x,"Adams, Jefferson",2,"Metro, South Platte",2,39.832067,-105.151037,,http://arvada.org/,G,
+Ault,03950,G,2411653,G,62003,G,Ault,G,CO0162125,G,,x,Weld,1,South Platte,1,40.589343,-104.740423,,http://www.townofault.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Aurora,04000,G,2409757,G,64010,G,Aurora,G,CO0103005,G,,x,"Adams, Arapahoe, Douglas",3,"Metro, South Platte",2,39.70837,-104.727501,,https://www.auroragov.org/,G,
+Bennett,06090,G,2411676,G,64258,G,Bennett,G,CO0101020,G,,x,"Adams, Arapahoe",2,South Platte,1,39.736358,-104.428527,,https://www.colorado.gov/townofbennett,G,
+Berthoud,06255,G,2411681,G,64237,G,Berthoud,G,CO0135138,G,,x,"Larimer, Weld",2,South Platte,1,40.307017,-105.041523,,http://www.berthoud.org/,G,
+Bethune,06530,G,2411684,G,32001,G,Bethune,G,CO0132001,G,,x,Kit Carson,1,South Platte,1,39.303822,-102.423414,,,N,
+Black Hawk,07025,G,2409856,G,24001,G,BlackHawk,G,CO0124147,G,,x,Gilpin,1,South Platte,1,39.804295,-105.494544,,http://www.cityofblackhawk.org/,G,
+Boulder,07850,G,2409883,G,07006,G,Boulder,G,CO0107152,G,,x,Boulder,1,South Platte,1,40.027293,-105.251551,,https://bouldercolorado.gov/,G,
+Bow Mar,08070,G,2411713,G,64026,G,BowMar,G,,M,,x,"Arapahoe, Jefferson",2,Metro,1,39.625265,-105.051222,,https://www.colorado.gov/townofbowmar,G,New BNDSS ID; did not have an ID in original BNDSS
+Brighton,08675,G,2409911,G,64029,G,Brighton,G,CO0101025,G,,x,"Adams, Weld",2,"Metro, South Platte",2,39.971612,-104.796089,,http://www.brightonco.gov/,G,
+Broomfield,09280,G,2409919,G,64030,G,Broomfield,G,CO0107155,G,,x,Broomfield,1,"Metro, South Platte",2,39.954161,-105.052589,,https://www.broomfield.org/,G,
+Brush,09555,G,2409926,G,44001,G,Brush,G,CO0144001,G,,x,Morgan,1,South Platte,1,40.258147,-103.632022,,http://www.brushcolo.com/,G,
+Burlington,10600,G,2409946,G,32004,G,Burlington,G,CO0132005,G,,x,Kit Carson,1,South Platte,1,39.304205,-102.271483,,http://www.burlingtoncolo.com/,G,
+Castle Pines,12387,G,2500981,G,65986,G,CastlePines,G,,M,,x,Douglas,1,Metro,1,39.462491,-104.8706,,http://www.castlepinesgov.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Castle Rock,12415,G,2413179,G,18003,G,CastleRock,G,CO0118010,G,,x,Douglas,1,Metro,1,39.376152,-104.853344,,http://crgov.com/,G,
+Centennial,12815,G,2409422,G,03163,G,Centennial,G,,M,,x,Arapahoe,1,Metro,1,39.592608,-104.86728,,http://www.centennialco.gov/,G,New BNDSS ID; did not have an ID in original BNDSS
+Central City,12910,G,2409427,G,64263,G,CentralCity,G,CO0124171,G,,x,"Clear Creek, Gilpin",2,South Platte,1,39.797462,-105.516892,,https://www.colorado.gov/centralcity,G,
+Cherry Hills Village,13845,G,2409443,G,03023,G,CherryHlsVlg,G,,M,,x,Arapahoe,1,Metro,1,39.637547,-104.948028,,https://www.cherryhillsvillage.com/,G,
+Cheyenne Wells,14175,G,2413197,G,09007,G,CheyenneWells,G,CO0109006,G,,x,Cheyenne,1,South Platte,1,38.819202,-102.35203,,http://townofcheyennewells.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Columbine Valley,16385,G,2413232,G,03029,G,ColumbineVly,G,,M,,x,Arapahoe,1,Metro,1,39.599294,-105.035295,,http://www.columbinevalley.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Commerce City,16495,G,2410212,G,01005,G,CommerceCity,G,,M,,x,Adams,1,"Metro, South Platte",2,39.863975,-104.843441,,http://www.c3gov.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Crook,18640,G,2412389,G,38002,G,Crook,G,CO0138005,G,,x,Logan,1,South Platte,1,40.859165,-102.801366,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Dacono,19080,G,2410283,G,62007,G,Dacono,G,CO0162200,G,,x,Weld,1,South Platte,1,40.062017,-104.948282,,http://www.ci.dacono.co.us/,G,
+Deer Trail,19630,G,2412415,G,03033,G,DeerTrail,G,CO0103030,G,,x,Arapahoe,1,South Platte,1,39.615363,-104.043303,,http://www.townofdeertrail.co/,G,New BNDSS ID; did not have an ID in original BNDSS
+Denver,20000,G,2410324,G,16002,G,Denver,G,CO0116001,G,,x,Denver,1,"Metro, South Platte",2,39.761976,-104.875766,,http://www.denvergov.org/,G,
+Eaton,22860,G,2412462,G,62008,G,Eaton,G,CO0162233,G,,x,Weld,1,South Platte,1,40.527223,-104.712559,,http://www.eatonco.org/,G,
+Eckley,23025,G,2412464,G,63003,G,Eckley,G,CO0163001,G,,x,Yuma,1,South Platte,1,40.112252,-102.488307,,http://townofeckley.weebly.com/,G,
+Edgewater,23135,G,2410399,G,30020,G,Edgewater,G,CO0130237,G,,x,Jefferson,1,Metro,1,39.750853,-105.062633,,http://www.edgewaterco.com/,G,
+Elizabeth,23740,G,2412474,G,20004,G,Elizabeth,G,CO0120010,G,,x,Elbert,1,South Platte,1,39.361015,-104.606172,,http://www.townofelizabeth.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Empire,24620,G,2412485,G,10005,G,Empire,G,CO0110010,G,,x,Clear Creek,1,South Platte,1,39.759449,-105.682783,,,N,
+Englewood,24785,G,2410441,G,03041,G,Englewood,G,CO0103045,G,,x,Arapahoe,1,Metro,1,39.646791,-104.994293,,http://www.englewoodco.gov/,G,
+Erie,24950,G,2412599,G,64060,G,Erie,G,CO0162255,G,,x,"Boulder, Weld",2,South Platte,1,40.040157,-105.040252,,https://www.erieco.gov/,G,
+Estes Park,25115,G,2412603,G,35004,G,EstesPark,G,CO0135257,G,,x,Larimer,1,South Platte,1,40.36987,-105.521623,,https://www.colorado.gov/townofestespark,G,
+Evans,25280,G,2410467,G,62011,G,Evans,G,CO0162260,G,,x,Weld,1,South Platte,1,40.366034,-104.738911,,http://www.evanscolorado.gov/,G,
+Fairplay,25610,G,2412616,G,47005,G,Fairplay,G,CO0147020,G,,x,Park,1,South Platte,1,39.224496,-105.996948,,http://fairplayco.us/,G,
+Federal Heights,26270,G,2410493,G,01009,G,FederalHts,G,CO0101055,G,,x,Adams,1,Metro,1,39.865026,-105.015469,,http://www.fedheights.org/,G,
+Firestone,26600,G,2412626,G,62012,G,Firestone,G,CO0162476,G,,x,Weld,1,South Platte,1,40.156383,-104.94947,,http://www.firestoneco.gov/,G,
+Flagler,26765,G,2412628,G,32010,G,Flagler,G,CO0132010,G,,x,Kit Carson,1,South Platte,1,39.294399,-103.075062,,http://flaglercolorado.com/,G,
+Fleming,26875,G,2412631,G,38005,G,Fleming,G,CO0138010,G,,x,Logan,1,South Platte,1,40.681191,-102.839506,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Fort Collins,27425,G,2410526,G,35009,G,FtCollins,G,CO0135291,G,,x,Larimer,1,South Platte,1,40.54776,-105.065725,,https://www.fcgov.com/,G,
+Fort Lupton,27700,G,2410528,G,62014,G,FtLupton,G,CO0162291,G,,x,Weld,1,South Platte,1,40.084165,-104.802365,,http://www.fortlupton.org/,G,
+Fort Morgan,27810,G,2410529,G,44006,G,FtMorgan,G,CO0144005,G,,x,Morgan,1,South Platte,1,40.255795,-103.790371,,http://www.cityoffortmorgan.com/,G,
+Foxfield,28105,G,2412649,G,03134,G,Foxfield,G,,M,,x,Arapahoe,1,Metro,1,39.588175,-104.785483,,http://foxfieldcolorado.com/,G,
+Frederick,28360,G,2412656,G,62016,G,Frederick,G,CO0162288,G,,x,Weld,1,South Platte,1,40.109531,-104.966881,,http://www.frederickco.gov/,G,
+Garden City,29185,G,2412667,G,62018,G,GardenCity,G,CO0140897,G,,x,Weld,1,South Platte,1,40.394586,-104.689525,,http://townofgardencity.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Genoa,29680,G,2412675,G,37004,G,Genoa,G,CO0137005,G,,x,Lincoln,1,South Platte,1,39.278264,-103.49931,,https://www.colorado.gov/townofgenoa,G,New BNDSS ID; did not have an ID in original BNDSS
+Georgetown,29735,G,2412677,G,10007,G,Georgetown,G,CO0110015,G,,x,Clear Creek,1,South Platte,1,39.717971,-105.694229,,https://www.georgetown-colorado.org/,G,
+Gilcrest,29955,G,2412683,G,62020,G,Gilcrest,G,CO0162310,G,,x,Weld,1,South Platte,1,40.284171,-104.782024,,http://townofgilcrest.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Glendale,30340,G,2410598,G,03043,G,Glendale,G,CO0103055,G,,x,Arapahoe,1,Metro,1,39.703597,-104.935205,,http://www.glendale.co.us/,G,
+Golden,30835,G,2410611,G,30035,G,Golden,G,CO0130040,G,,x,Jefferson,1,Metro,1,39.740617,-105.211681,,http://www.cityofgolden.net/,G,
+Greeley,32155,G,2410654,G,62022,G,Greeley,G,CO0162321,G,,x,Weld,1,South Platte,1,40.414917,-104.770666,,http://www.greeleygov.com/,G,
+Greenwood Village,33035,G,2410661,G,03051,G,GreenwoodVlg,G,CO0130323,G,,x,Arapahoe,1,Metro,1,39.615136,-104.913033,,http://www.greenwoodvillage.com/,G,
+Grover,33310,G,2412712,G,62023,G,Grover,G,CO0162322,G,,x,Weld,1,South Platte,1,40.869104,-104.225941,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Haxtun,34960,G,2412738,G,48004,G,Haxtun,G,CO0148001,G,,x,Phillips,1,South Platte,1,40.641876,-102.629715,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Hillrose,36610,G,2412751,G,44007,G,Hillrose,G,CO0144010,G,,x,Morgan,1,South Platte,1,40.324654,-103.522175,,http://www.hillrosecolorado.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Holyoke,37270,G,2410781,G,48005,G,Holyoke,G,CO0148005,G,,x,Phillips,1,South Platte,1,40.583414,-102.299812,,http://www.cityofholyoke-co.gov/,G,
+Hudson,37820,G,2412776,G,62029,G,Hudson,G,CO0162359,G,,x,Weld,1,South Platte,1,40.089828,-104.621449,,https://hudsoncolorado.org/,G,
+Idaho Springs,38370,G,2410092,G,10008,G,IdahoSpgs,G,CO0110020,G,,x,Clear Creek,1,South Platte,1,39.744445,-105.500109,,http://www.idahospringsco.com/,G,
+Iliff,38590,G,2412788,G,38007,G,Iliff,G,CO0138015,G,,x,Logan,1,South Platte,1,40.759083,-103.066182,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Jamestown,39195,G,2412800,G,07018,G,Jamestown,G,CO0107401,G,,x,Boulder,1,South Platte,1,40.118344,-105.39163,,http://www.jamestownco.org/,G,
+Johnstown,39855,G,2412807,G,64266,G,Johnstown,G,CO0162418,G,,x,"Larimer, Weld",2,South Platte,1,40.349893,-104.948157,,http://www.townofjohnstown.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Julesburg,39965,G,2412812,G,58004,G,Julesburg,G,CO0158001,G,,x,Sedgwick,1,South Platte,1,40.984514,-102.26276,,http://www.townofjulesburg.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Keenesburg,40185,G,2412820,G,62033,G,Keenesburg,G,CO0162438,G,,x,Weld,1,South Platte,1,40.11158,-104.503505,,https://www.townofkeenesburg.com/,G,
+Kersey,40515,G,2412828,G,62035,G,Kersey,G,CO0055558,G,,x,Weld,1,South Platte,1,40.387783,-104.564447,,http://www.townofkersey.com/,G,
+Kiowa,40790,G,2412838,G,20005,G,Kiowa,G,CO0120015,G,,x,Elbert,1,South Platte,1,39.343041,-104.455417,,http://www.townofkiowa.com/,G,
+La Salle,43605,G,2412856,G,62037,G,LaSalle,G,CO0162466,G,,x,Weld,1,South Platte,1,40.34848,-104.706165,,http://www.lasalletown.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Lafayette,41835,G,2411592,G,07020,G,Lafayette,G,CO0107473,G,,x,Boulder,1,South Platte,1,39.994674,-105.099662,,https://www.cityoflafayette.com/,G,
+Lakeside,42495,G,2412865,G,30053,G,Lakeside,G,,M,,x,Jefferson,1,Metro,1,39.780209,-105.057946,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Lakewood,43000,G,2411614,G,30055,G,Lakewood,G,CO0130467,G,,x,Jefferson,1,Metro,1,39.697801,-105.116772,,http://www.ci.lakewood.co.us/,G,
+Larkspur,43550,G,2412878,G,18021,G,Larkspur,G,CO0118030,G,,x,Douglas,1,Metro,1,39.231615,-104.892412,,http://www.townoflarkspur.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Littleton,45255,G,2410845,G,64085,G,Littleton,G,CO0103476,G,,x,"Arapahoe, Douglas, Jefferson",3,Metro,1,39.591525,-105.018772,,http://www.littletongov.org/,G,
+Lochbuie,45530,G,2412905,G,62038,G,Lochbuie,G,CO0162486,G,,x,"Adams, Weld",2,"Metro, South Platte",2,40.011701,-104.727105,,http://www.lochbuie.org/,G,
+Log Lane Village,45695,G,2412910,G,44009,G,LogLaneVlg,G,CO0144015,G,,x,Morgan,1,South Platte,1,40.270438,-103.829708,,,N,
+Lone Tree,45955,G,2410864,G,18104,G,LoneTree,G,,M,,x,Douglas,1,Metro,1,39.530806,-104.87098,,http://www.cityoflonetree.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Longmont,45970,G,2410869,G,64205,G,Longmont,G,CO0107485,G,,x,"Boulder, Weld",2,South Platte,1,40.169066,-105.099499,,https://www.longmontcolorado.gov/,G,
+Louisville,46355,G,2410884,G,07029,G,Louisville,G,CO0107487,G,,x,Boulder,1,South Platte,1,39.970949,-105.14402,,http://www.louisvilleco.gov/,G,
+Loveland,46465,G,2410886,G,35026,G,Loveland,G,CO0135485,G,,x,Larimer,1,South Platte,1,40.416724,-105.062065,,http://www.cityofloveland.org/,G,
+Lyons,47070,G,2412930,G,07032,G,Lyons,G,CO0107496,G,,x,Boulder,1,South Platte,1,40.222857,-105.268858,,http://www.townoflyons.com/,G,
+Mead,49600,G,2412970,G,62040,G,Mead,G,CO0162500,G,,x,Weld,1,South Platte,1,40.232164,-104.992771,,http://www.townofmead.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Merino,50040,G,2412985,G,38011,G,Merino,G,CO0138025,G,,x,Logan,1,South Platte,1,40.483696,-103.353644,,http://town.merino.co.us/,G,New BNDSS ID; did not have an ID in original BNDSS
+Milliken,50480,G,2413000,G,62043,G,Milliken,G,CO0162511,G,,x,Weld,1,South Platte,1,40.310302,-104.85572,,http://www.millikenco.gov/,G,
+Morrison,52075,G,2413014,G,30065,G,Morrison,G,CO0130085,G,,x,Jefferson,1,Metro,1,39.642922,-105.193672,,http://town.morrison.co.us/,G,
+Mountain View,52350,G,2413021,G,30067,G,MtnView,G,CO0130518,G,,x,Jefferson,1,Metro,1,39.774769,-105.056773,,http://www.townofmountainviewcolorado.org/,G,
+Nederland,53175,G,2413037,G,07033,G,Nederland,G,CO0107538,G,,x,Boulder,1,South Platte,1,39.96328,-105.507173,,http://nederlandco.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Northglenn,54330,G,2411280,G,64198,G,Northglenn,G,CO0101115,G,,x,"Adams, Weld",2,"Metro, South Platte",2,39.91065,-104.978275,,http://www.northglenn.org/,G,
+Nunn,55045,G,2413059,G,62045,G,Nunn,G,CO0162559,G,,x,Weld,1,South Platte,1,40.713256,-104.788313,,http://www.nunncolorado.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Otis,56365,G,2413094,G,61006,G,Otis,G,CO0161010,G,,x,Washington,1,South Platte,1,40.150129,-102.962139,,https://www.colorado.gov/pacific/townofotis,G,
+Ovid,56475,G,2413096,G,58007,G,Ovid,G,CO0158005,G,,x,Sedgwick,1,South Platte,1,40.960818,-102.388343,,http://www.ovidcolorado.com/,G,
+Paoli,57245,G,2413107,G,48006,G,Paoli,G,CO0148010,G,,x,Phillips,1,South Platte,1,40.612758,-102.471769,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Parker,57630,G,2413117,G,18028,G,Parker,G,,M,,x,Douglas,1,Metro,1,39.508029,-104.775085,,http://www.parkeronline.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Peetz,58235,G,2413123,G,38016,G,Peetz,G,CO0138030,G,,x,Logan,1,South Platte,1,40.961878,-103.113943,,https://www.sites.google.com/site/townofpeetz/,G,
+Pierce,59005,G,2413129,G,62046,G,Pierce,G,CO0162610,G,,x,Weld,1,South Platte,1,40.633499,-104.75518,,http://www.townofpierce.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Platteville,60160,G,2412489,G,62050,G,Platteville,G,CO0162615,G,,x,Weld,1,South Platte,1,40.221992,-104.833607,,http://www.plattevillegov.org/,G,
+Raymer,63045,G,2412533,G,62051,G,Raymer,G,CO0162666,G,,x,Weld,1,South Platte,1,40.607949,-103.843597,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Sedgwick,68930,G,2413269,G,58012,G,Sedgwick,G,CO0158010,G,,x,Sedgwick,1,South Platte,1,40.935755,-102.526071,,https://www.sedgwickcolorado.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Seibert,69040,G,2413270,G,32015,G,Seibert,G,CO0132015,G,,x,Kit Carson,1,South Platte,1,39.297967,-102.869524,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Severance,69150,G,2413272,G,62053,G,Severance,G,CO0162707,G,,x,Weld,1,South Platte,1,40.527285,-104.865735,,http://www.townofseverance.org/,G,
+Sheridan,69645,G,2411885,G,03065,G,Sheridan,G,CO0103709,G,,x,Arapahoe,1,Metro,1,39.646775,-105.018176,,http://www.ci.sheridan.co.us/,G,
+Silver Plume,70360,G,2413287,G,10009,G,SilverPlume,G,CO0110035,G,,x,Clear Creek,1,South Platte,1,39.695698,-105.726456,,http://www.townofsilverplume.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Sterling,73935,G,2411978,G,38019,G,Sterling,G,CO0138045,G,,x,Logan,1,South Platte,1,40.624426,-103.199017,,http://www.sterlingcolo.com/,G,
+Stratton,74485,G,2413341,G,32020,G,Stratton,G,CO0132020,G,,x,Kit Carson,1,South Platte,1,39.302883,-102.603473,,http://www.strattoncolorado.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Superior,75640,G,2413354,G,64183,G,Superior,G,,M,,x,"Boulder, Jefferson",2,South Platte,1,39.93359,-105.159291,,http://superiorcolorado.gov/,G,
+Thornton,77290,G,2412064,G,64264,G,Thornton,G,CO0101150,G,,x,"Adams, Weld",2,Metro,1,39.920507,-104.944528,,https://www.cityofthornton.net/Pages/default.aspx,G,
+Timnath,77510,G,2413391,G,35044,G,Timnath,G,CO0055699,G,,x,Larimer,1,South Platte,1,40.533374,-104.960485,,http://www.timnath.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Vona,81690,G,2413437,G,32023,G,Vona,G,CO0132025,G,,x,Kit Carson,1,South Platte,1,39.302119,-102.743352,,,N,New BNDSS ID; did not have an ID in original BNDSS
+Ward,82735,G,2413449,G,07042,G,Ward,G,CO0107834,G,,x,Boulder,1,South Platte,1,40.072166,-105.513883,,http://www.ward-co.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Wellington,83230,G,2413464,G,35047,G,Wellington,G,CO0135838,G,,x,Larimer,1,South Platte,1,40.698698,-105.005937,,http://www.townofwellington.com/,G,
+Westminster,83835,G,2412237,G,64153,G,Westminster,G,CO0101170,G,,x,"Adams, Jefferson",2,Metro,1,39.88367,-105.062408,,https://www.cityofwestminster.us/,G,
+Wheat Ridge,84440,G,2412248,G,30093,G,WheatRidge,G,,M,,x,Jefferson,1,Metro,1,39.77275,-105.102943,,http://www.ci.wheatridge.co.us/,G,New BNDSS ID; did not have an ID in original BNDSS
+Wiggins,84770,G,2413486,G,44016,G,Wiggins,G,CO0144035,G,,x,Morgan,1,South Platte,1,40.228749,-104.072135,,http://www.wigginsco.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Windsor,85485,G,2413496,G,64225,G,Windsor,G,CO0162843,G,,x,"Larimer, Weld",2,South Platte,1,40.467906,-104.921328,,http://www.windsorgov.com/,G,
+Woodland Park,86090,G,2412303,G,60015,G,WoodlandPark,G,CO0160900,G,,x,Teller,1,"Arkansas, Metro",2,38.998484,-105.059397,,http://www.city-woodlandpark.org/,G,New BNDSS ID; did not have an ID in original BNDSS
+Wray,86310,G,2412310,G,63010,G,Wray,G,CO0163010,G,,x,Yuma,1,South Platte,1,40.080198,-102.228401,,http://www.wrayco.net/,G,
+Yuma,86750,G,2412329,G,63017,G,Yuma,G,CO0163020,G,,x,Yuma ,1,South Platte,1,40.123474,-102.716136,,http://www.yumacolo.org/,G,

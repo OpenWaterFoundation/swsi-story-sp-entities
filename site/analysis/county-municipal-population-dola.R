@@ -205,7 +205,12 @@ muni_historical = full_join(muni_pop3, total_muni_pop)
 muni_historical = muni_historical %>%
   arrange(municipalityname) %>%	# Sort by name
   rename(MunicipalityName = municipalityname) %>%  # Change column name
-  select(MunicipalityName, FIPS_ID, Year, TotalPopulation)	#Remove unneeded columns
+  rename(Population = TotalPopulation) %>%  # Change column name
+  select(MunicipalityName, FIPS_ID, Year, Population)	#Remove unneeded columns
+
+# Export to csv
+write.csv(muni_historical, file="..\\data\\municipal-population-historical-yearsinsinglecolumn.csv", 
+row.names=FALSE)
 
 ################################################################################################
 # APPLIED USES OF THE COUNTY AND MUNICIPAL POPULATION DATA
@@ -259,11 +264,11 @@ percent_change_spmetro = percent_change_spmetro %>%
 # Filter historical municipal dataset to only include 2006 and 2016 data
 muni_pop_2016 = muni_historical %>%
   filter(Year %in% c(2016)) %>%
-  rename(Pop2016 = TotalPopulation) %>%
+  rename(Pop2016 = Population) %>%
   select(-Year)
 muni_pop_2006 = muni_historical %>%
   filter(Year %in% c(2006)) %>%
-  rename(Pop2006 = TotalPopulation) %>%
+  rename(Pop2006 = Population) %>%
   select(-Year)
 
 # Merge datasets together
@@ -286,8 +291,36 @@ muni_pop_2006_2016 = inner_join(spmetro_muni, muni_pop_2006_2016)
 # Export to csv for visualization; converted to geojson outside of R for now
 write.csv(muni_pop_2006_2016, file="municipal-population-2006-2016.csv", 
 row.names=FALSE)
+
 ###########################################################################
-# 3) Compare municipal 2016 population to 2016 state population
+# 3) Percent change in historical populations from 1980 to 2016
+# Used for South Platte Data Platform project -- Leaflet map of municipalities sized by percent change and 
+# colored by population; map has time slider to automatically cycle from 1980 to 2016
+
+# Filter historical municipal dataset to only include 1980 to calculate percent change since this year
+muni_pop_1980 = muni_historical %>%
+  filter(Year %in% c(1980)) %>%
+  rename(Pop1980 = Population) %>%
+  select(-Year, -FIPS_ID)
+
+# Merge datasets together
+muni_historical_change = left_join(muni_historical, muni_pop_1980, by = c("MunicipalityName" = "MunicipalityName"))
+
+# Calculate percent change
+muni_historical_change = muni_historical_change %>%
+  mutate(Percent_Change_1980 = (Population - Pop1980)/Pop1980 * 100)
+# Round to 1 decimal place
+muni_historical_change$Percent_Change_1980 = round(muni_historical_change$Percent_Change_1980, digits=1)
+
+# Filter to only include municpalities in the South Platte and Metro Basins
+muni_historical_change = inner_join(spmetro_muni, muni_historical_change)
+
+# Export to csv for visualization; converted to geojson outside of R for now
+write.csv(muni_historical_change, file="..\\data\\municipal-population-historical-change.csv", 
+row.names=FALSE)
+
+###########################################################################
+# 4) Compare municipal 2016 population to 2016 state population
 # First get the State historical data
 state_historical = historical_population %>%
   filter(placefips == 0) %>%

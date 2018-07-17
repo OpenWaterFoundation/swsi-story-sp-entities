@@ -4,7 +4,7 @@ var fp = new FileParser();
 /* Convert your csv data to json */
 fp.csvToJson("data/county-population-forecast-yearsinsinglecolumn.csv");
 
-var map = L.map('mapbox3').setView([39, -106], 7);
+var map = L.map('mapbox2').setView([40.072, -104.048], 9);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 	maxZoom: 18,
@@ -18,8 +18,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{
 // Adding Slider for Years
 
 /* Set min and max dates for slider */
-var minyear = 2018;
-var maxyear = 2050;
+var minyear = 1980;
+var maxyear = 2016;
 
 /* Set necessary globals */
 curryear = minyear;
@@ -57,9 +57,9 @@ info.onAdd = function (map) {
 // Method used to update the control based on feature properties passed
 info.update = function (props) {
 	var data = fp.getJsonData().data[curryear];
-	this._div.innerHTML = "<h4 id='infoheader'>County Population, " + curryear + '</h4>' +  (props ?
-		'<b>' + props.NAME + '</b><br />' + data[props.NAME]
-		: 'Hover over a county');
+	this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
+		'<b>' + props.MunicipalityName + '</b><br />' + data[props.MunicipalityName]
+		: 'Hover over a point');
 };
 info.addTo(map);
 
@@ -86,6 +86,17 @@ return {
 };
 }
 
+// Get size based on percent change in population since 1980
+	function getSize(point){
+		if (point > 49.9)     sizeToUse = 28;
+		else if (point > 29.9) sizeToUse = 20;
+		else if (point > 19.9) sizeToUse = 16;
+		else if (point > 4.9) sizeToUse = 14;
+		else if (point > 0)  sizeToUse = 12;
+		else sizeToUse = 8;
+		
+		return sizeToUse;
+	}
 
 // Highlight a county when it is hovered over on the map
 function highlightFeature(e) {
@@ -104,29 +115,34 @@ function highlightFeature(e) {
 	info.update(layer.feature.properties);
 }
 
-var geojson;
+var munihistpopmarkers;
 
 // Reset the color after hovering over
 function resetHighlight(e) {
-	geojson.resetStyle(e.target);
+	munihistpopmarkers.resetStyle(e.target);
 	info.update();
 } 		
-
-// Zoom into the county when clicked on
-function zoomToFeature(e) {
-	map.fitBounds(e.target.getBounds());
-}
 
 function onEachFeature(feature, layer) {
 	layer.on({
 		mouseover: highlightFeature,
 		mouseout: resetHighlight,
-		click: zoomToFeature
 	});
 }
 
-geojson = L.geoJson(CountyData, {
-	style: style,
+munihistpopmarkers = L.geoJson(munihistpop, {
+	
+			pointToLayer: function(feature, latlng) {	
+
+			return L.circleMarker(latlng, { 
+				 color: '#5b5e55',
+				 fillColor: getColor(feature.properties.Population),
+				 weight: 1, 
+				 radius: getSize(feature.properties.Percent_Change_1980),
+				 fillOpacity: 1
+				});
+			},
+
 	onEachFeature: onEachFeature
 }).addTo(map);
 
@@ -147,7 +163,7 @@ legend.onAdd = function (map) {
 		to = grades[i + 1];
 
 		labels.push(
-			'<i style="background:' + getColor(from + 1) + '"></i> ' +
+			'<i class="circle" style="background:' + getColor(from + 1) + '"></i> ' +
 			from + (to ? '&ndash;' + to : '+'));
 	}
 
@@ -176,7 +192,7 @@ function geoJsonSetStyle(year){
 function fillColorFromData(feature){
 	var data = fp.getJsonData().data[curryear];
 	return {
-		fillColor: getColor(data[feature.properties.NAME])
+		fillColor: getColor(data[feature.properties.MunicipalityName])
 	}
 }
 
