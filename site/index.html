@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<link href="css/bootstrap-min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jquery.fullpage-2.9.7.min.css" rel="stylesheet">
@@ -24,7 +25,22 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin=""/>
-
+	
+    <!-- Include PapaParse -->
+    <script src="js/papaparse.min.js"></script>
+    <!-- Include d3 to make a simple scale for slider -->
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+	<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+	<script src="https://d3js.org/d3-color.v1.min.js"></script>
+	<script src="https://d3js.org/d3-format.v1.min.js"></script>
+	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+	<script src="https://d3js.org/d3-time.v1.min.js"></script>
+	<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v2.min.js"></script>
+	
+    <!-- Include custom class fileparser -->
+    <script src="js/fileparser.js"></script>
+	
     <!-- MapBox Leaflet -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
@@ -46,9 +62,10 @@
 	<script src="data/Colorado-Municipal-Water-Providers-SouthPlatte-Metro.geojson"></script>
 	<script src="data/waterproviders-wedp-population-wateruse.geojson"></script>
 	<script src="data/county-population-forecast.geojson"></script>
+	<script src="data/Colorado_Counties.geojson"></script>
+	<script src="data/county-population-forecast-yearsinsinglecolumn.csv"></script>		
 	<!-- Boundary Files -->	
-	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>
-	<!-- Juxtapose Files -->		
+	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
 
 
   </head>
@@ -271,14 +288,14 @@
 			  of how population may affect water supplies (<a href="http://cwcbweblink.state.co.us/WebLink/ElectronicFile.aspx?docid=199504&searchid=80d50cb3-95bf-405c-bfa5-587c633c7136&dbid=0" 
 			  target="_blank">Colorado Water Plan</a>, p.6-7).</p>
 			  <ul>
-			    <li>Hot Growth - the economy is thriving, which fuels development.  A warming climate draws people to relatively cool Colorado and communities struggle to provide 
+			    <li><b>Hot Growth</b> - the economy is thriving, which fuels development.  A warming climate draws people to relatively cool Colorado and communities struggle to provide 
 				needed services.  Families seek low-density housing and rural mountain living, resulting in rapid development of open lands.</li>
-				<li>Adaptive Innovation - again, the economy is thriving, and the warm climate draws people to a relatively cool Colorado.  But in this scenario, high-density 
+				<li><b>Adaptive Innovation</b> - again, the economy is thriving, and the warm climate draws people to a relatively cool Colorado.  But in this scenario, high-density 
 				housing predominates and strong investments in research lead to greater efficiencies in water use.</li>
-				<li>Business As Usual - the economy grows slowly with anticipated spikes and falls and most Coloradans live in single-family homes.  Water conservation has 
+				<li><b>Business As Usual</b> - the economy grows slowly with anticipated spikes and falls and most Coloradans live in single-family homes.  Water conservation has 
 				slowly increased.</li>
-				<li>Cooperative Growth - population growth is concentrated in cities and resort communities and water and energy conservation measures are willingly adopted.</li>
-				<li>Weak Economy - the economy struggles in Colorado and the nation as a whole; population growth is less than expected.</li>
+				<li><b>Cooperative Growth</b> - population growth is concentrated in cities and resort communities and water and energy conservation measures are willingly adopted.</li>
+				<li><b>Weak Economy</b> - the economy struggles in Colorado and the nation as a whole; population growth is less than expected.</li>
 			  </ul>
 			  <p>The SWSI Update is incorporating these planning scenarios into its estimates of the water supply gap in 2050.  It is not currently understood how the Update will use 
 			  the population projections quantified by DOLA.</p>
@@ -289,12 +306,12 @@
             </div>	
         </div> 
       </div>
-  <!-- Municipal Water Supply Examples -->	  		
+  <!-- Municipal Water Supply -->	  		
       <div class="section" style="background-image:url('images/water-1761027_1920.jpg'); height:100vh!important;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
-              <h2 style="color:white; margin-top:15vh; float:top;">Municipal Water Supply -- Examples</h2>
+              <h2 style="color:white; margin-top:15vh; float:top;">Municipal Water Supply</h2>
 			  <p style="color:white; font-size:18px;">How a municipality collects, stores, treats and ultimately distributes water to its customers can be a complex process.  If this also includes the use of transbasin 
 			  water, or water diverted from watersheds west of the Continental Divide to east of the Divide, then this process becomes even more complicated.</p>
 			  <p style="color:white; font-size:18px;">For example, here is how Denver Water, the municipal water provider for the City and County of Denver, collects and stores its water.  The primary water sources are the South 
@@ -348,13 +365,27 @@
           <div class="row">
             <div class="col-lg-4 text-left-custom">
               <h2>Municipal Water Use</h2>
-			  <p><i>Background on how water use is classified -- metered, distributed, potable/non-potable, etc.</p>
-			  <p>Discussion of HB-1051 data and the data portal, with links to website.</p>
-			  <p>Map of HB-1051 data, shown at right.  Justin and Kristin have worked on this map; can select a year from the list at top right 
-			  to see change over time.  Need to describe how points are color-coded and sized.</p>
-			  <p>Perhaps also use population data provided by HB-1051 to calculate GPCD and display that in some fashion.  This could then show how some of the big cities 
-			  are actually pretty efficient in their water use.</p>
-			  <p>Image below is statewide--maybe use 1051 data to get this info for just South Platte Basin?</i></p>
+			  <p>HB10-1051 was adopted by the Colorado General Assembly in 2010, which requires retail water providers who sell 2,000 acre-feet or 
+			  more of water annually (termed covered entities) to report water use and conservation data on an annual basis.  The goal is to improve 
+			  the quantity and quality of data available that support statewide water supply planning efforts.  The data are publicly available 
+			  from the <a href="http://cowaterefficiency.com/unauthenticated_home" target="_blank">Water Efficiency Data Portal</a>.</p>
+			  <p>The Colorado Water Conservation Board (CWCB) was directed to develop reporting guidelines that include descriptions of customer 
+			  categories, uses and measurements.  The CWCB determined that the majority of water distribution systems could be classified as 
+              Potable Treated Water, Non-Potable Raw Water and Non-Potable Reuse (or Reclaimed) Water.</p>
+			  <p>Within these categories, water use is designated as distributed or metered.  Distributed water is the amount of water delivered to 
+			  served customers.  Metered water is the amount of distributed water that is metered by a provider and is calculated as distributed 
+			  water minus water loss due to leaky pipes (Distributed 
+			  - Loss = Metered).</p>
+			  <p>This map shows distributed potable treated water use for covered entities in the Basin for the years 2013-2017.  (Note that many of 
+			  the entities have not submitted 2017 data as of the last download of this data in March 2018).  Water providers are color-coded by the population 
+			  served and sized by the amount of water used.</p>
+			  <p>Potable Treated water is then broken down into customer classes and categories typically include:  Residential 
+			  (Single Family and Multi-Family); Utility/Municipal Facility; Commercial, Industrial and Institutional; and Irrigation Only.  
+			  Additionally, Wholesale water includes water sold by the reporting entity to another entity for resale to water users (customers).  Future 
+			  versions of this map may break down water use into customer classes.</p>
+			  <p>The image below, from the <a href="https://www.yourwatercolorado.org/component/virtuemart/view/productdetails/virtuemart_product_id/21/virtuemart_category_id/1" target="_blank">Citizen's 
+			  Guide to Colorado Water Conservation</a> (p.3) shows that statewide, the largest municipal water use is residential, and that usage is 
+			  roughly equal for indoor and outdoor purposes.</p>
 			  <p><img class="image-centered" src="images/municipal-use-pie-chart.png" frameborder="0"></img></p>
             </div>
 		    <div class="col-lg-8">
@@ -372,13 +403,11 @@
 			  of water necessary to achieve a result and focuses on reducing water waste.  Conservation is the act of increasing efficiency and refers to methods that 
 			  provide permanent water savings or a reduction in the amount of water consumed.</p>
 			  <p>Cities in the South Platte and Metro basins are national leaders in water conservation and reuse (BIP, p.1-17).  Municipal conservation programs have already 
-			  been heavily implemented in the larger cities.  This map shows water providers that have water efficiency plans.  By law, water providers that deliver at 
-			  least 2,000 acre-feet of water per year to their customers are required to file a water conservation plan with the Colorado Water Conservation 
-			  Board (CWCB).  The CWCB provides <a href="http://cwcb.state.co.us/LoansGrants/water-efficiency-grants/Pages/main.aspx" target="_blank">Water Efficiency 
+			  been heavily implemented in the larger cities.  This map shows water providers that have water efficiency plans and pop-ups provide links to those plans.  
+			  By law, water providers that deliver at least 2,000 acre-feet of water per year to their customers are required to file a water conservation plan with 
+			  the Colorado Water Conservation Board (CWCB).  The CWCB provides <a href="http://cwcb.state.co.us/LoansGrants/water-efficiency-grants/Pages/main.aspx" target="_blank">Water Efficiency 
 			  Grants</a> to eligible entities to develop water conservation and drought plans, implement water conservation goals and educate the public about water 
 			  conservation.</p>
-			  <p><i>Map shows the municipalities that have plans in a different color.  Maybe size the municipalities by current population to see that the largest cities 
-			  are the ones that have efficiency plans.  Can click on links to plan websites in the mouse-over.</i></p>
 			  <p>Water conservation is further categorized as passive or active conservation.  Passive conservation is conservation that occurs through natural trends, 
 			  such as the replacement of older household fixtures (toilets, showerheads, dishwashing machines, clothes washers) with new water-efficient models.  
 			  Active conservation consists of programs that proactively drive change and require a customer's participation.  These include rebates, audits and leak detection, 
@@ -676,7 +705,7 @@
           navigation:true,
           navigationPosition:'right',
           navigationTooltips:['South Platte and Metro Basin Water Entities', 'Water Resources', 'Water Rights', 'Water Use Concepts', 'Municipalities', 'Municipal Populations', 'Population Projections',
-		  'Water Supply Examples', 'Water Providers', 'Water Use', 'Water Efficiency', 'Agriculture', 'Agriculture', 'Land Use Change', 'Land Use Change', 'Environment', 'Flow Protection', 'Envr. Entities',
+		  'Water Supply', 'Water Providers', 'Water Use', 'Water Efficiency', 'Agriculture', 'Agriculture', 'Land Use Change', 'Land Use Change', 'Environment', 'Flow Protection', 'Envr. Entities',
 		  'Recreation', 'Industry','Resources', 'Sources'],
           recordHistory:false,
           menu:"#navbarResponsive",

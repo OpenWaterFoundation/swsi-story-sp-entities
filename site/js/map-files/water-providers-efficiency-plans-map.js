@@ -1,7 +1,7 @@
 // South Platte Data Platform - Map of Municipal Water Providers in the South Platte and Metro Basins
 // that have water efficiency plans
 
-//id='mapbox4'
+//id='mapbox5'
 
 (function(){
 
@@ -108,10 +108,8 @@
     legend.onAdd = function (map) {
 	
 	   var div = L.DomUtil.create('div', 'info legend'),
-	       categories = ['Municipality', 'Water and Sanitation District', 'Water Authority', 'Water District', 'Metropolitan District', 'Water Conservancy District', 
-		                 'Company', 'Sanitation District', 'Other/Cannot be Determined'],
-		   labels = ['Municipality', 'Water and Sanitation District', 'Water Authority', 'Water District', 'Metropolitan District', 'Water Conservancy District', 
-		                 'Company', 'Sanitation District', 'Other'];
+	       categories = ['https://www-static.bouldercolorado.gov/docs/WEP_October_Final-1-201610180831.pdf', 'None'],
+		   labels = ['Efficiency Plan', 'No Efficiency Plan'];
 		   
 		   for (var i = 0; i < categories.length; i++) {
 		        div.innerHTML +=
