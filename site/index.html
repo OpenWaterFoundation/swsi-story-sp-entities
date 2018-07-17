@@ -11,13 +11,15 @@
     <title>South Platte and Metro Basin Water Entities </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	<link href="css/bootstrap-min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap-4.0.0.css" rel="stylesheet">-->
+	  <!--<link href="css/bootstrap-min.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 
     <!-- Custom styles for this template -->
     <link href="css/jquery.fullpage-2.9.7.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="css/custom-leaflet-style.css" rel="stylesheet">
+	  <link href="css/custom-leaflet-style.css" rel="stylesheet">
 
     <!-- icon -->
     <link id="czr-favicon" rel="icon" href="images/co-triangle-favicon.ico" type="image/png">
@@ -25,17 +27,18 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin=""/>
+
+    <!-- style for population projection map -->
+    <link rel="stylesheet" href="css/county-population-forecast-map.css"/>
 	
-    <!-- Include PapaParse -->
-    <script src="js/papaparse.min.js"></script>
     <!-- Include d3 to make a simple scale for slider -->
     <script src="https://d3js.org/d3-array.v1.min.js"></script>
-	<script src="https://d3js.org/d3-collection.v1.min.js"></script>
-	<script src="https://d3js.org/d3-color.v1.min.js"></script>
-	<script src="https://d3js.org/d3-format.v1.min.js"></script>
-	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-	<script src="https://d3js.org/d3-time.v1.min.js"></script>
-	<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+  	<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+  	<script src="https://d3js.org/d3-color.v1.min.js"></script>
+  	<script src="https://d3js.org/d3-format.v1.min.js"></script>
+  	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+  	<script src="https://d3js.org/d3-time.v1.min.js"></script>
+  	<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
     <script src="https://d3js.org/d3-scale.v2.min.js"></script>
 	
     <!-- Include custom class fileparser -->
@@ -55,18 +58,19 @@
     <script type="text/javascript" src="js/scrolloverflow-0.0.8.min.js"></script>
     <!-- Bootstrap Javascript File -->
     <script type="text/javascript" src="js/bootstrap-4.0.0.js"></script>
+    <!-- Papaparse Javascript File -->
+    <script type="text/javascript" src="js/papaparse.min-4.4.0.js"></script>
     <!-- Leaflet GeoPackage Javascript File -->
     <script type="text/javascript" src="js/leaflet-geopackage-1.1.3.js"></script>
-	<!-- Population, Water Use Files -->
-	<script src="data/municipal-population-2006-2016.geojson"></script>
-	<script src="data/Colorado-Municipal-Water-Providers-SouthPlatte-Metro.geojson"></script>
-	<script src="data/waterproviders-wedp-population-wateruse.geojson"></script>
-	<script src="data/county-population-forecast.geojson"></script>
-	<script src="data/Colorado_Counties.geojson"></script>
-	<script src="data/county-population-forecast-yearsinsinglecolumn.csv"></script>		
-	<!-- Boundary Files -->	
-	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
-
+  	<!-- Population, Water Use Files -->
+  	<script src="data/municipal-population-2006-2016.geojson"></script>
+  	<script src="data/Colorado-Municipal-Water-Providers-SouthPlatte-Metro.geojson"></script>
+  	<script src="data/waterproviders-wedp-population-wateruse.geojson"></script>
+  	<script src="data/county-population-forecast.geojson"></script>
+  	<script src="data/Colorado_Counties.geojson"></script>
+  	<script src="data/county-population-forecast-yearsinsinglecolumn.csv"></script>		
+  	<!-- Boundary Files -->	
+  	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
 
   </head>
 
