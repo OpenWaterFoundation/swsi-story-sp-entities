@@ -1,8 +1,9 @@
 class FileParser {
-	constructor(variableArray = [null, null, null]){
+	constructor(variableArray = [null, null, null, null]){
 		this.datevar = variableArray[0] != null ? variableArray[0] : null;
 		this.var1 = variableArray[1] != null ? variableArray[1] : null;
 		this.var2 = variableArray[2] != null ? variableArray[2] : null;
+		this.var3 = variableArray[3] != null ? variableArray[3] : null;
 		this.csv;
 		this.json;
 	}
@@ -31,6 +32,14 @@ class FileParser {
 		return var2;
 	}
 
+	setThirdVariable(variable){
+		this.var2 = variable;
+	}
+
+	getThirdVariable(){
+		return var3;
+	}
+
 	csvToJson(filename) {
 		var that = this;
 		$.ajax({
@@ -55,9 +64,6 @@ class FileParser {
 		})
 		
 		function convertData(json, that){
-			console.log(that.datevar)
-			console.log(that.var1)
-			console.log(that.var2)
 			var firstValue = json.data[0]
 			var year = firstValue[that.datevar];
 			var ret = {"data":[]};
@@ -66,13 +72,11 @@ class FileParser {
 			json.data.forEach(function(row){
 				var currdate = row[that.datevar];
 				if(year == currdate){
-					console.log(row)
-					console.log(row[that.var1])
-					data[year][row[that.var1].trim()] = row[that.var2];
+					data[year][row[that.var1].trim()] = (that.var3 != null) ? [row[that.var2], row[that.var3]] : row[that.var2];
 				}else{
 					year = currdate;
 					data[year] = {};
-					data[year][row[that.var1].trim()] = row[that.var2];
+					data[year][row[that.var1].trim()] = (that.var3 != null) ? [row[that.var2], row[that.var3]] : row[that.var2];
 				}
 			})
 			return ret;
