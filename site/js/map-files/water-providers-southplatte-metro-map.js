@@ -3,7 +3,7 @@
 
 //id='mapbox4'
 
-(function(){
+var water_providers_southplatte_metro_map = (function(){
 
 	var map = L.map('mapbox4').setView([40.072, -104.048], 9);
 

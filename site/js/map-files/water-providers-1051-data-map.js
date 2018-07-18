@@ -1,7 +1,7 @@
 // South Platte Data Platform - Water Providers Map with Population and Water Use from the Water Efficiency Data Portal (WEDP)
 //id='mapbox5'
 
-(function(){
+var water_providers_1051_map = (function(){
 
 	var map = L.map('mapbox5').setView([40.072, -104.048], 9);
 
@@ -181,6 +181,7 @@
 
     legend.addTo(map);
 
+    return {}
 })();	
 	
 
