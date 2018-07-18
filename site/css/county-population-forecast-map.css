@@ -98,7 +98,7 @@ html, body, #map {
 /* This styling makes it possible for the color
 to change gradually when editing the choropleth map */
 .leaflet-container path{ 
-	transition: fill .75s;
+	transition: d, fill .75s !important;
 }
 
 /* Styling for buttons next to slider */
