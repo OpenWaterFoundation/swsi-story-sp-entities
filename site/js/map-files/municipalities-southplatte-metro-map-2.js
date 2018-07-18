@@ -3,7 +3,7 @@
 
 //id='mapbox1'
 
-(function(){
+var municipalities_southplatte_metro_map_2 = (function(){
 	
 	var municipalitygeneralmap = L.map('mapbox1').setView([40.072, -104.048], 9);
 		

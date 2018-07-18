@@ -3,7 +3,7 @@
 
 //id='mapbox6'
 
-(function(){
+var water_providers_effeciency_plans_map = (function(){
 
 	var map = L.map('mapbox6').setView([40.072, -104.048], 9);
 
