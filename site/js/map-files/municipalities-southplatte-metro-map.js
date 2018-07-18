@@ -113,7 +113,20 @@ var municipalites_southplatte_metro_map = (function(){
 			},
 
 			onEachFeature: onEachFeature
-			}).addTo(municipalitygeneralmap);
+	});
+
+	spmunicipalities.bindPopup(function(d){
+		var props = d.feature.properties;
+		var str = ""
+		for(var key in props){
+			if(props.hasOwnProperty(key)){
+				console.log(key + ": " + props[key])
+				str += "<span style='font-weight:bold'>" + key + "</span>: " + props[key] + "<br>";
+			}
+		}
+		return str
+	}).addTo(municipalitygeneralmap);
+
 
 // Add a legend to the map
 var legend = L.control({position: 'bottomright'});
