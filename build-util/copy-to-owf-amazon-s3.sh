@@ -7,7 +7,7 @@
 # Set --dryrun to test before actually doing
 dryrun=""
 #dryrun="--dryrun"
-s3Folder="s3://stories.openwaterfoundation.org/co/swsi-story-ipps-sp"
+s3Folder="s3://stories.openwaterfoundation.org/co/swsi-story-sp-entities"
 
 # Make sure that this is being run from the build-util folder
 pwd=`pwd`
@@ -52,11 +52,38 @@ fi
 # Sync first, then copy specific files
 aws s3 sync ../site ${s3Folder} ${dryrun} --delete --profile "$awsProfile"
 # Update content of index.html to use versioned files
-cssOrig='style.css'
+# - put the variable definitions first because all are used in index.html update
+countyCssOrig="county-population-forecast-map.css"
+countyCssWithVersion="county-population-forecast-map.${version}.css"
+cssOrig="style.css"
 cssWithVersion="style.${version}.css"
-customleafletcssOrig='custom-leaflet-style.css'
+customleafletcssOrig="custom-leaflet-style.css"
 customleafletcssWithVersion="custom-leaflet-style.${version}.css"
-cat ../site/index.html | sed -e "s/${cssOrig}/${cssWithVersion}/g" | sed -e "s/${customleafletcssOrig}/${customleafletcssWithVersion}/g" > ${tmpBuildFolder}/index.html
+# Don't include /map-files because slash messes up sed command
+countyPopJsOrig="county-population-forecast-map.js"
+countyPopJsWithVersion="county-population-forecast-map.${version}.js"
+muniJsOrig="municipalities-southplatte-metro-map.js"
+muniJsWithVersion="municipalities-southplatte-metro-map.${version}.js"
+muni2JsOrig="municipalities-southplatte-metro-map-2.js"
+muni2JsWithVersion="municipalities-southplatte-metro-map-2.${version}.js"
+muniPopHistJsOrig="municipal-population-historical-map.js"
+muniPopHistJsWithVersion="municipal-population-historical-map.${version}.js"
+wp1051JsOrig="water-providers-1051-data-map.js"
+wp1051JsWithVersion="water-providers-1051-data-map.${version}.js"
+wpEffJsOrig="water-providers-efficiency-plans-map.js"
+wpEffJsWithVersion="water-providers-efficiency-plans-map.${version}.js"
+wpJsOrig="water-providers-southplatte-metro-map.js"
+wpJsWithVersion="water-providers-southplatte-metro-map.${version}.js"
+#
+cat ../site/index.html | sed -e "s/${countyPopJsOrig}/${countyPopJsWithVersion}/g" | sed -e "s/${muniJsOrig}/${muniJsWithVersion}/g" | sed -e "s/${muni2JsOrig}/${muni2JsWithVersion}/g" | sed -e "s/${muniPopHistJsOrig}/${muniPopHistJsWithVersion}/g" | sed -e "s/${wp1051JsOrig}/${wp10151JsWithVersion}/g" | sed -e "s/${wpEffJsOrig}/${wpEffJsWithVersion}/g" | sed -e "s/${wpJsOrig}/${wpJsWithVersion}/g" | sed -e "s/${countyCssOrig}/${countyCssWithVersion}/g" | sed -e "s/${cssOrig}/${cssWithVersion}/g" | sed -e "s/${customleafletcssOrig}/${customleafletcssWithVersion}/g" > ${tmpBuildFolder}/index.html
 aws s3 cp ${tmpBuildFolder}/index.html ${s3Folder}/index.html ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/css/county-population-forecast-map.css ${s3Folder}/css/county-population-forecast-map.${version}.css ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/css/style.css ${s3Folder}/css/style.${version}.css ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/css/custom-leaflet-style.css ${s3Folder}/css/custom-leaflet-style.${version}.css ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/county-population-forecast-map.js ${s3Folder}/js/map-files/county-population-forecast-map.${version}.js ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/municipalities-southplatte-metro-map.js ${s3Folder}/js/map-files/municipalities-southplatte-metro-map.${version}.js ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/municipalities-southplatte-metro-map-2.js ${s3Folder}/js/map-files/municipalities-southplatte-metro-map-2.${version}.js ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/municipal-population-historical-map.js ${s3Folder}/js/map-files/municipal-population-historical-map.${version}.js ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/water-providers-1051-data-map.js ${s3Folder}/js/map-files/water-providers-1051-data-map.${version}.js ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/water-providers-efficiency-plans-map.js ${s3Folder}/js/map-files/water-providers-efficiency-plans-map.${version}.js ${dryrun} --profile "$awsProfile"
+aws s3 cp ../site/js/map-files/water-providers-southplatte-metro-map.js ${s3Folder}/js/map-files/water-providers-southplatte-metro-map.${version}.js ${dryrun} --profile "$awsProfile"
