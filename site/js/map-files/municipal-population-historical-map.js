@@ -64,8 +64,8 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population </h5> Hover over a point";
 		}else{
 			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
-				'<b>' + props.MunicipalityName + '</b><br />' + "Population: " + data[props.MunicipalityName][0] +
-				", Percent of State Population: " + data[props.MunicipalityName][1]
+				'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + '<b>Population: </b>' + data[props.MunicipalityName][0] +
+				'<br />' + '<b>Percent Change in Population Since 1980: </b>' + data[props.MunicipalityName][1]
 				: 'Hover over a point');
 		} 
 	};
