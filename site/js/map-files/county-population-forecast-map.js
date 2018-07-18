@@ -24,7 +24,7 @@ var county_population_forecast_map = (function(){
 	var maxyear = 2050;
 
 	/* Set necessary globals */
-	curryear = minyear;
+	var curryear = minyear;
 	var playClick = true;
 	var intV;
 	var speed = 100;
@@ -238,6 +238,7 @@ var county_population_forecast_map = (function(){
 	}
 
 	function setSpeed(value){
+		console.log(value)
 		var speedScale = d3.scaleLinear()
 			.domain([0, 100])
 			.range([300, 50]);

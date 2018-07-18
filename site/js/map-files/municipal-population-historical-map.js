@@ -1,8 +1,8 @@
 
 var municipal_population_map = (function(){/* Create a new file parser from the custom FileParser class */
-	var fp = new FileParser(["Year", "MunicipalityName", "Population"]);
+	var fp = new FileParser(["Year", "MunicipalityName", "Population", "Percent_Change_1980"]);
 	/* Convert your csv data to json */
-	fp.csvToJson("data/municipal-population-historical-yearsinsinglecolumn.csv");
+	fp.csvToJson("data/municipal-population-historical-change.csv");
 
 	var map = L.map('mapbox2').setView([40.072, -104.048], 9);
 
@@ -18,11 +18,11 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	// Adding Slider for Years
 
 	/* Set min and max dates for slider */
-	var minyear2 = 1980;
-	var maxyear2 = 2016;
+	var minyear = 1980;
+	var maxyear = 2016;
 
 	/* Set necessary globals */
-	curryear = minyear2;
+	var curryear = minyear;
 	var playClick = true;
 	var intV;
 	var speed = 100;
@@ -35,8 +35,8 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 			"<button type='button' id='municipal_pop_back' class='backButton btn btn-deafult btn-xs' onclick='municipal_population_map.backFunction()'><i class='fa fa-backward' style='padding:0px;'></i></button>" +
 			"<button type='button' id='municipal_pop_play' class='playButton btn btn-deafult btn-xs' onclick='municipal_population_map.playFunction()'><i class='fa fa-play' style='padding:0px;'></i></button>" +
 			"<button type='button' id='municipal_pop_forward' class='forwardButton btn btn-deafult btn-xs' onclick='municipal_population_map.forwardFunction()'><i class='fa fa-forward' style='padding:0px;'></i></button>" +
-			"<p id='municipal_pop_datelabel' class='datelabel'>" + minyear2 +"</p>" +
-		 	"<input type='range' min='" + minyear2 + "' max='" + maxyear2 + "' value='" + minyear2 + "' class='timeslider slider' id='municipal_pop_timeslider' oninput='municipal_population_map.timesliderHelper(this.value)'>" +
+			"<p id='municipal_pop_datelabel' class='datelabel'>" + minyear +"</p>" +
+		 	"<input type='range' min='" + minyear + "' max='" + maxyear + "' value='" + minyear + "' class='timeslider slider' id='municipal_pop_timeslider' oninput='municipal_population_map.timesliderHelper(this.value)'>" +
 		 	" <p style='float:left;display:inline-block; margin:0px; margin-top: 3px; padding-left:5px;'> Speed:</p>" +
 		 	"<input type='range' min='0' max='100' value='75' class='speedslider slider' id='municipal_pop_speedslider' oninput='municipal_population_map.setSpeedFunction(this.value)'>";
 		L.DomEvent.disableClickPropagation(this._div);
@@ -57,9 +57,17 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		var data = fp.getJsonData().data[curryear];
-		this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
-			'<b>' + props.NAME + '</b><br />' + data[props.NAME]
-			: 'Hover over a point');
+		if(typeof props == "undefined"){
+			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population </h5> Hover over a point";
+		}
+		else if(typeof data[props.MunicipalityName] == "undefined"){
+			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population </h5> Hover over a point";
+		}else{
+			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
+				'<b>' + props.MunicipalityName + '</b><br />' + "Population: " + data[props.MunicipalityName][0] +
+				", Percent of State Population: " + data[props.MunicipalityName][1]
+				: 'Hover over a point');
+		} 
 	};
 	info.addTo(map);
 
@@ -115,11 +123,11 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		info.update(layer.feature.properties);
 	}
 
-	var munihistpopmarkers;
+	var geojson;
 
 	// Reset the color after hovering over
 	function resetHighlight(e) {
-		munihistpopmarkers.resetStyle(e.target);
+		geojson.resetStyle(e.target);
 		info.update();
 	} 		
 
@@ -130,7 +138,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		});
 	}
 
-	munihistpopmarkers = L.geoJson(munihistpop, {
+	geojson = L.geoJson(munihistpop, {
 		
 				pointToLayer: function(feature, latlng) {	
 
@@ -191,8 +199,11 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	function fillColorFromData(feature){
 		var data = fp.getJsonData().data[curryear];
-		return {
-			fillColor: getColor(data[feature.properties.MunicipalityName])
+		if(typeof data[feature.properties.MunicipalityName] != "undefined"){
+			return {
+				fillColor: getColor(data[feature.properties.MunicipalityName][0]),
+				radius: getSize(data[feature.properties.MunicipalityName][1])
+			}
 		}
 	}
 
@@ -211,12 +222,12 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	function parseTime(){
 		curryear = parseInt(curryear) + 1;
-		if(curryear > maxyear2){
+		if(curryear > maxyear){
 			playClick = true;
 			$('#municipal_pop_play').html("<span class='fa fa-play'></span>")
 			pause();
 			clearInterval(intV);
-			curryear = minyear2;
+			curryear = minyear;
 		}else{
 			$('#municipal_pop_datelabel').html(curryear);
 			$('#municipal_pop_infoheader').html('County Population, ' + curryear)
@@ -231,23 +242,23 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	function back(){
 		curryear = parseInt(curryear) - 1;
-		if(curryear >= minyear2){
+		if(curryear >= minyear){
 			$('#municipal_pop_datelabel').html(curryear);
 			$('#municipal_pop_timeslider').val(curryear);
 			timesliderHelperFunction(curryear);
 		}else{
-			curryear = minyear2;
+			curryear = minyear;
 		}
 	}
 
 	function forward(){
 		curryear = parseInt(curryear) + 1;
-		if(curryear <= maxyear2){
+		if(curryear <= maxyear){
 			$('#municipal_pop_datelabel').html(curryear);
 			$('#municipal_pop_timeslider').val(curryear);
 			timesliderHelperFunction(curryear);
 		}else{
-			curryear = maxyear2;
+			curryear = maxyear;
 		}
 	}
 
