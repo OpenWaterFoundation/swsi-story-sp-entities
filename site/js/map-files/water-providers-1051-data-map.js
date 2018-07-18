@@ -98,7 +98,7 @@
 
 // Method used to update the control based on feature properties passed
 	info.update = function (props, year) {
-		this._div.innerHTML = '<h5>WATER PROVIDERS</h5>' +  (props ?
+		this._div.innerHTML = '<h5>Water Providers</h5>' +  (props ?
 			'' + '<b>Name: </b>' + props.WaterProviderName + '<br/>' + '<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' + '<b>County(s): </b>' + props.County_CSV + '<br />' +
 			'<b>Provider Type: </b>' + props.LocalGovtType + '<br />' + '<b>Website: </b>' + props.Website  + '<br />' + '<b>Population Served: </b>' + props['Population_Served_' + year]
  			  + '<br />' + '<b>Water Use (acre-feet): </b>' + props['WaterUse_' + year].toFixed(0)

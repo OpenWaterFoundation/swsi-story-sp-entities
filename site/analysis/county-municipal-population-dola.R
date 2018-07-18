@@ -203,7 +203,7 @@ muni_historical = full_join(muni_pop3, total_muni_pop)
 
 # Sort by municipality
 muni_historical = muni_historical %>%
-  arrange(municipalityname) %>%	# Sort by name
+  arrange(Year) %>%	# Sort by year
   rename(MunicipalityName = municipalityname) %>%  # Change column name
   rename(Population = TotalPopulation) %>%  # Change column name
   select(MunicipalityName, FIPS_ID, Year, Population)	#Remove unneeded columns
@@ -315,6 +315,10 @@ muni_historical_change$Percent_Change_1980 = round(muni_historical_change$Percen
 # Filter to only include municpalities in the South Platte and Metro Basins
 muni_historical_change = inner_join(spmetro_muni, muni_historical_change)
 
+# Sort by year
+muni_historical_change = muni_historical_change[order(muni_historical_change$Year),]
+
+
 # Export to csv for visualization; converted to geojson outside of R for now
 write.csv(muni_historical_change, file="..\\data\\municipal-population-historical-change.csv", 
 row.names=FALSE)
@@ -348,6 +352,7 @@ muni_state_2016$StatePop2016 = rep(5538180, 271)
 muni_state_2016 = muni_state_2016 %>%
   mutate(Percent_State = Pop2016 / StatePop2016 * 100) %>%
   arrange(desc(Pop2016))
+
 # Round to 1 decimal place
 muni_state_2016$Percent_State = round(muni_state_2016$Percent_State, digits=1)
 
