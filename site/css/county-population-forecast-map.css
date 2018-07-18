@@ -51,15 +51,14 @@ html, body, #map {
 }
 
 /* Styling for actual slider */
-#timeslider{
+.timeslider{
 	float:left;
 	margin-left: 10px;
 	display:inline-block;
-	width: 45%;
+	width: 45% !important;
 }
 .slider {
 	-webkit-appearance: none;
-	width: 100%;
 	height: 10px;   
 	background: white;
 	border: 1px solid #a5a5a5;
@@ -89,11 +88,11 @@ html, body, #map {
 }
 
 /* Styling for speed slider */
-#speedslider{
+.speedslider{
 	float:left;
 	margin-left: 10px;
 	display:inline-block;
-	width: 50px;
+	width: 50px !important;
 }
 
 /* This styling makes it possible for the color
@@ -120,7 +119,7 @@ button {
 }
 
 /* Styling for date label next to slider */
-#datelabel{
+.datelabel{
 	float:left;
 	display:inline-block;
 	margin:0;
@@ -128,6 +127,6 @@ button {
 	padding-left:10px;
 	padding-right:10px;
 }
-#datelabel:hover{
+.datelabel:hover{
 	background:#ccc;
 } 
