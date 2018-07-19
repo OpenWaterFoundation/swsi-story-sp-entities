@@ -193,7 +193,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	function geoJsonSetStyle(year){
 		curryear = year;
-		$('#datelabel').html(curryear);
+		$('#municipal_pop_datelabel').html(curryear);
 		geojson.setStyle(fillColorFromData);
 	}
 

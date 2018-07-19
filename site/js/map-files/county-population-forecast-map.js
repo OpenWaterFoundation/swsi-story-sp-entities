@@ -171,7 +171,8 @@ var county_population_forecast_map = (function(){
 
 	function geoJsonSetStyle(year){
 		curryear = year;
-		$('#datelabel').html(curryear);
+		$('#county_pop_datelabel').html(curryear);
+		$('#county_pop_infoheader').html('County Population, ' + curryear);
 		geojson.setStyle(fillColorFromData);
 	}
 
