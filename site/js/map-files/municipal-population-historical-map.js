@@ -1,11 +1,11 @@
 
 var municipal_population_map = (function(){/* Create a new file parser from the custom FileParser class */
+
 	var fp = new FileParser(["Year", "MunicipalityName", "Population", "Percent_Change_1980"]);
 	/* Convert your csv data to json */
 	fp.csvToJson("data/municipal-population-historical-change.csv");
 
-	var map = L.map('mapbox2').setView([40.072, -104.048], 9);
-
+	var map = L.map('mapbox2', {scrollWheelZoom: false}).setView([40.072, -104.048], 9);
 	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
 		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation </a>' + 
@@ -47,27 +47,20 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	// Control that shows county info on hover -- creates an info box
 	var info = L.control();
-
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info'); // Creates a div with a class named "info"
 		this.update();
 		return this._div;
 	};
-
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		var data = fp.getJsonData().data[curryear];
-		if(typeof props == "undefined"){
-			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population </h5> Hover over a point";
-		}
-		else if(typeof data[props.MunicipalityName] == "undefined"){
-			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population </h5> Hover over a point";
-		}else{
-			this._div.innerHTML = "<h5 id='infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
-				'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + '<b>Population: </b>' + data[props.MunicipalityName][0] +
-				'<br />' + '<b>Percent Change in Population Since 1980: </b>' + data[props.MunicipalityName][1]
-				: 'Hover over a point');
-		} 
+		this._div.innerHTML = "<h5 id='municipal_pop_infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
+			'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
+			"<b id='municipal_pop_population'>Population: </b>" + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
+			"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + data[props.MunicipalityName][1] + "%"
+			: 'Hover over a point');
+
 	};
 	info.addTo(map);
 
@@ -75,36 +68,36 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	// Get color depending on 2015 population value
 	function getColor(d) {
 		return d > 500000 ? '#B10026' :
-				d > 100000  ? '#E31A1C' :
-				d > 50000  ? '#FC4E2A' :
-				d > 20000  ? '#FD8D3C' :
-				d > 10000   ? '#FEB24C' :
-				d > 5000   ? '#FED976' :
-				d > 1000   ? '#FFEDA0' :
+			   d > 100000 ? '#E31A1C' :
+			   d > 50000  ? '#FC4E2A' :
+			   d > 20000  ? '#FD8D3C' :
+			   d > 10000  ? '#FEB24C' :
+			   d > 5000   ? '#FED976' :
+			   d > 1000   ? '#FFEDA0' :
 							'#FFFFCC';
 	}
 	// Counties will fill with colors based on 2015 population	
 	function style(feature) {
-	return {
-	    fillColor: getColor(feature.properties.County_Population_2015Population),
-	    weight: 2,
-	    opacity: 1,
-	    color: 'white',
-	    fillOpacity: 0.9
-	};
+		return {
+		    fillColor: getColor(feature.properties.County_Population_2015Population),
+		    weight: 2,
+		    opacity: 1,
+		    color: 'white',
+		    fillOpacity: 0.9
+		};
 	}
 
 	// Get size based on percent change in population since 1980
-		function getSize(point){
-			if (point > 49.9)     sizeToUse = 28;
-			else if (point > 29.9) sizeToUse = 20;
-			else if (point > 19.9) sizeToUse = 16;
-			else if (point > 4.9) sizeToUse = 14;
-			else if (point > 0)  sizeToUse = 12;
-			else sizeToUse = 8;
-			
-			return sizeToUse;
-		}
+	function getSize(point){
+		if      (point > 49.9) sizeToUse = 28;
+		else if (point > 29.9) sizeToUse = 20;
+		else if (point > 19.9) sizeToUse = 16;
+		else if (point > 4.9 ) sizeToUse = 14;
+		else if (point > 0   ) sizeToUse = 12;
+		else                   sizeToUse = 8;
+		
+		return sizeToUse;
+	}
 
 	// Highlight a county when it is hovered over on the map
 	function highlightFeature(e) {
@@ -123,6 +116,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		info.update(layer.feature.properties);
 	}
 
+	// Create variable for markers
 	var geojson;
 
 	// Reset the color after hovering over
@@ -138,34 +132,43 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		});
 	}
 
+	// Initialize markers and bind to data
 	geojson = L.geoJson(munihistpop, {
-		
-				pointToLayer: function(feature, latlng) {	
+		pointToLayer: function(feature, latlng) {	
 
-				return L.circleMarker(latlng, { 
-					 color: '#5b5e55',
-					 fillColor: getColor(feature.properties.Population),
-					 weight: 1, 
-					 radius: getSize(feature.properties.Percent_Change_1980),
-					 fillOpacity: 1
-					});
-				},
+		return L.circleMarker(latlng, { 
+			 color: '#5b5e55',
+			 fillColor: getColor(feature.properties.Population),
+			 weight: 1, 
+			 radius: getSize(feature.properties.Percent_Change_1980),
+			 fillOpacity: 1
+			});
+		},
 
 		onEachFeature: onEachFeature
-	}).addTo(map);
+	})
+	// Add pop-ups to markers
+	geojson.bindPopup(function(d){
+		var props = d.feature.properties;
+		var data = fp.getJsonData().data[curryear];
+		var str =
+		'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
+		'<b>Population: </b>' + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
+		'<b>Percent Change in Population Since 1980: </b>' + data[props.MunicipalityName][1] + "%";
+		return str
+	})
+	// Add markers to map
+	geojson.addTo(map);
 
 	map.attributionControl.addAttribution('Population data &copy; <a href="https://demography.dola.colorado.gov/population/">DOLA</a>');
 
 	// Add a legend to the map
 	var legend = L.control({position: 'bottomright'});
-
 	legend.onAdd = function (map) {
-
 		var div = L.DomUtil.create('div', 'info legend'),
 			grades = [0, 1000, 5000, 10000, 20000, 50000, 100000, 500000],
 			labels = [],
 			from, to;
-
 		for (var i = 0; i < grades.length; i++) {
 			from = grades[i];
 			to = grades[i + 1];
@@ -174,12 +177,39 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 				'<i class="circle" style="background:' + getColor(from + 1) + '"></i> ' +
 				from + (to ? '&ndash;' + to : '+'));
 		}
+		div.innerHTML = "<h5>Population: </h5>" + labels.join('<br>');
+		return div;
+	};
+	legend.addTo(map);
 
-		div.innerHTML = labels.join('<br>');
+	// Add a legend to the map
+	var scrollbutton = L.control({position: 'topleft'});
+
+	scrollbutton.onAdd = function (map) {
+
+		var div = L.DomUtil.create('div', 'scrollbutton');
+
+		div.innerHTML = "<image id='scrollbutton' src='images/mouse.svg' class='scrollbutton-tooltip'" +
+						" style='width:20px; cursor:pointer;' onclick='municipal_population_map.scrollButtonClickFunction()'></image>";
+
 		return div;
 	};
 
-	legend.addTo(map);
+	scrollbutton.addTo(map);		
+
+
+	function scrollButtonClick(){
+	 	if (map.scrollWheelZoom.enabled()) {
+	    	map.scrollWheelZoom.disable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	  	}
+	  	else {
+	    	map.scrollWheelZoom.enable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	    }
+	}
 
 	// HELPER FUNCTIONS FOR TIMESLIDER
 	function timesliderHelperFunction(year){
@@ -191,9 +221,10 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		geoJsonSetStyle(year)
 	}
 
-	function geoJsonSetStyle(year){
+	function geoJsonSetStyle(year){	
 		curryear = year;
-		$('#municipal_pop_datelabel').html(curryear);
+		var data = fp.getJsonData().data[curryear];
+		$('#municipal_pop_infoheader').html('historical Municipal Population, ' + curryear)
 		geojson.setStyle(fillColorFromData);
 	}
 
@@ -280,6 +311,8 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		forwardFunction: forward,
 		backFunction: back,
 		timesliderHelper: timesliderHelperFunction,
-		setSpeedFunction: setSpeed
+		setSpeedFunction: setSpeed,
+		scrollButtonClickFunction: scrollButtonClick,
+		maplayer:map
 	}
 })();

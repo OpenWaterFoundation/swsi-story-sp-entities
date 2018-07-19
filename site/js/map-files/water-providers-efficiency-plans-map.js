@@ -5,7 +5,7 @@
 
 var water_providers_effeciency_plans_map = (function(){
 
-	var map = L.map('mapbox6').setView([40.072, -104.048], 9);
+	var map = L.map('mapbox6', {scrollWheelZoom: false}).setView([40.072, -104.048], 9);
 
 	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
@@ -35,8 +35,9 @@ var water_providers_effeciency_plans_map = (function(){
 // Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipal Water Providers</h5>' +  (props ?
-			'' + '<b>Name: </b>' + props.WaterProviderName + '<br/>' + '<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-			'<b>Water Efficiency Plan: </b>' + props.WaterEfficiencyPlan_URL
+			'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
+			'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
+			'<b>Water Efficiency Plan: </b>' + props.WaterEfficiencyPlan_URL 
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(map)
@@ -88,20 +89,30 @@ var water_providers_effeciency_plans_map = (function(){
     	}
 	
 	spmetrowaterprovidersMarkers = L.geoJson(spmetrowaterproviders, {		
-		
-			pointToLayer: function(feature, latlng) {	
+		pointToLayer: function(feature, latlng) {	
 
-			return L.circleMarker(latlng, { 
-				 fillColor: stylewaterprovider(feature),
-				 color: stylewaterprovider(feature),
-				 weight: 1, 
-				 radius: 7,
-				 fillOpacity: 0.8
-				});
-			},
+		return L.circleMarker(latlng, { 
+			 fillColor: stylewaterprovider(feature),
+			 color: stylewaterprovider(feature),
+			 weight: 1, 
+			 radius: 7,
+			 fillOpacity: 0.8
+			});
+		},
 
-			onEachFeature: onEachFeature
-			}).addTo(map);
+		onEachFeature: onEachFeature
+	});
+	// Add popup to Markers
+	spmetrowaterprovidersMarkers.bindPopup(function(d){
+		var props = d.feature.properties;
+		var str =
+		'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
+		'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
+		"<b>Water Efficiency Plan: </b><a href='" + props.WaterEfficiencyPlan_URL + "' target='_blank'>" + props.WaterEfficiencyPlan_URL + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i>";
+		return str
+	})
+	// Add Markers to map
+	spmetrowaterprovidersMarkers.addTo(map);
 			
 // Add a legend to the map
     var legend = L.control ({position: 'bottomright'});
@@ -111,6 +122,7 @@ var water_providers_effeciency_plans_map = (function(){
 	       categories = ['https://www-static.bouldercolorado.gov/docs/WEP_October_Final-1-201610180831.pdf', 'None'],
 		   labels = ['Efficiency Plan', 'No Efficiency Plan'];
 		   
+		   div.innerHTML = "<h5>Plans: </h5>";
 		   for (var i = 0; i < categories.length; i++) {
 		        div.innerHTML +=
 				   '<i class="circle" style="background:' + getwaterprovidercolor(categories[i]) + '"></i>  ' +
@@ -119,5 +131,33 @@ var water_providers_effeciency_plans_map = (function(){
            return div;
 		}; 
    legend.addTo(map);
+
+   // Add a legend to the map
+	var scrollbutton = L.control({position: 'topleft'});
+	scrollbutton.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'scrollbutton');
+		div.innerHTML = "<image id='scrollbutton' src='images/mouse.svg' class='scrollbutton-tooltip'" +
+						" style='width:20px; cursor:pointer;' onclick='water_providers_effeciency_plans_map.scrollButtonClickFunction()'></image>";
+		return div;
+	};
+	scrollbutton.addTo(map);		
+	function scrollButtonClick(){
+	 	if (map.scrollWheelZoom.enabled()) {
+	    	map.scrollWheelZoom.disable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	  	}
+	  	else {
+	    	map.scrollWheelZoom.enable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	    }
+	}
+
+	// Return function that need to be accessed by the DOM 
+	return{
+		scrollButtonClickFunction: scrollButtonClick,
+		maplayer: map
+	}
 		
 })();

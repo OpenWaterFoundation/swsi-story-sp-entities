@@ -6,7 +6,6 @@
 var municipalites_southplatte_metro_map = (function(){
 	
 	var municipalitygeneralmap = L.map('mapbox1', {scrollWheelZoom: false}).setView([40.072, -104.048], 9);
-		
 	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
 		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
@@ -16,23 +15,21 @@ var municipalites_southplatte_metro_map = (function(){
 		id: 'mapbox.outdoors'
 	}).addTo(municipalitygeneralmap);
 		
-// Add in IBCC basins layer
+	// Add in IBCC basins layer
 	basin1 = L.geoJson(basins, {
 	  color: 'black',
 	  weight: 1,
 	  fillOpacity: 0
 	}).addTo(municipalitygeneralmap)		
 		
-// Control that shows municipality info on hover -- creates an info box
+	// Control that shows municipality info on hover -- creates an info box
 	var info = L.control();
-
 	info.onAdd = function (municipalitygeneralmap) {
 		this._div = L.DomUtil.create('div', 'info'); // Creates a div with a class named "info"
 		this.update();
 		return this._div;
 	};
-
-// Method used to update the control based on feature properties passed
+	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipalities</h5>' +  (props ?
 			'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
@@ -50,7 +47,7 @@ var municipalites_southplatte_metro_map = (function(){
 	};
 	info.addTo(municipalitygeneralmap);
 
-// Highlight a point when it is hovered over on the map
+	// Highlight a point when it is hovered over on the map
 	function highlightFeature(e) {
 		var layer = e.target;
 
@@ -67,14 +64,15 @@ var municipalites_southplatte_metro_map = (function(){
 		info.update(layer.feature.properties);
 	}
 	
+	//create markers variable
 	var spmunicipalities;
 	
-// Reset the color after hovering over
+	// Reset the color after hovering over
 	function resetHighlight(e) {
 		spmunicipalities.resetStyle(e.target);
 		info.update();
-	} 	
-	
+	} 
+
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
@@ -82,46 +80,46 @@ var municipalites_southplatte_metro_map = (function(){
 		});
 	}
 
-// Get color depending on 2016 population
+	// Get color depending on 2016 population
 	function getColor(d) {
 		return d > 500000 ? '#B10026' :
-				d > 100000  ? '#E31A1C' :
-				d > 50000  ? '#FC4E2A' :
-				d > 20000  ? '#FD8D3C' :
-				d > 10000   ? '#FEB24C' :
-				d > 5000   ? '#FED976' :
-				d > 1000   ? '#FFEDA0' :
+			   d > 100000 ? '#E31A1C' :
+			   d > 50000  ? '#FC4E2A' :
+			   d > 20000  ? '#FD8D3C' :
+			   d > 10000  ? '#FEB24C' :
+			   d > 5000   ? '#FED976' :
+			   d > 1000   ? '#FFEDA0' :
 							'#FFFFCC';
 	}
 
-// Get size based on percent change in population from 2006 to 2016
+	// Get size based on percent change in population from 2006 to 2016
 	function getSize(point){
-		if (point > 49.9)     sizeToUse = 28;
+		if      (point > 49.9) sizeToUse = 28;
 		else if (point > 29.9) sizeToUse = 20;
 		else if (point > 19.9) sizeToUse = 16;
-		else if (point > 4.9) sizeToUse = 14;
-		else if (point > 0)  sizeToUse = 12;
-		else sizeToUse = 8;
-		
+		else if (point > 4.9 ) sizeToUse = 14;
+		else if (point > 0   ) sizeToUse = 12;
+		else                   sizeToUse = 8;
+
 		return sizeToUse;
 	}
 	
-	spmunicipalities = L.geoJson(munipop20062016, {		
-		
-			pointToLayer: function(feature, latlng) {	
+	// Initialize markers
+	spmunicipalities = L.geoJson(munipop20062016, {
+		pointToLayer: function(feature, latlng) {	
 
-			return L.circleMarker(latlng, { 
-				 color: '#5b5e55',
-				 fillColor: getColor(feature.properties.Pop2016),
-				 weight: 1, 
-				 radius: getSize(feature.properties.Percent_Change),
-				 fillOpacity: 1
-				});
-			},
+		return L.circleMarker(latlng, { 
+			 color: '#5b5e55',
+			 fillColor: getColor(feature.properties.Pop2016),
+			 weight: 1, 
+			 radius: getSize(feature.properties.Percent_Change),
+			 fillOpacity: 1
+			});
+		},
 
-			onEachFeature: onEachFeature
+		onEachFeature: onEachFeature
 	});
-
+	// Add popup to Markers
 	spmunicipalities.bindPopup(function(d){
 		var props = d.feature.properties;
 		var str =
@@ -137,49 +135,46 @@ var municipalites_southplatte_metro_map = (function(){
 		'<b>2016 Population: </b>' + props.Pop2016.toLocaleString()  + '<br/>' + 
 		'<b>Percent Change in Population, 2006-2016: </b>' + props.Percent_Change;
 		return str
-	}).addTo(municipalitygeneralmap);
+	})
+	// Add Markers to map
+	spmunicipalities.addTo(municipalitygeneralmap);
 
 
-// Add a legend to the map
-var legend = L.control({position: 'bottomright'});
-
+	// Create legend variable
+	var legend = L.control({position: 'bottomright'});
 	legend.onAdd = function (municipalitygeneralmap) {
-
 		var div = L.DomUtil.create('div', 'info legend'),
 			grades = [0, 1000, 5000, 10000, 20000, 50000, 100000, 500000],
 			labels = [],
 			from, to;
-
 		for (var i = 0; i < grades.length; i++) {
 			from = grades[i];
 			to = grades[i + 1];
-
 			labels.push(
 				'<i class="circle" style="background:' + getColor(from + 1) + '"></i> ' +
 				from + (to ? '&ndash;' + to : '+'));
 		}
-
-		div.innerHTML = labels.join('<br>');
+		div.innerHTML = "<h5>Population: </h5>" + labels.join('<br>');
 		return div;
 	};
-
+	// Add legend to map
 	legend.addTo(municipalitygeneralmap);			
 
 
 	// Add a legend to the map
-var help = L.control({position: 'topleft'});
+	var scrollbutton = L.control({position: 'topleft'});
 
-	help.onAdd = function (municipalitygeneralmap) {
+	scrollbutton.onAdd = function (municipalitygeneralmap) {
 
-		var div = L.DomUtil.create('div', 'help');
+		var div = L.DomUtil.create('div', 'scrollbutton');
 
-		div.innerHTML = "<image id='scrollbutton' src='images/mouse.svg' class='help-tooltip'" +
-						" style='width:20px;' onclick='municipalites_southplatte_metro_map.scrollButtonClickFunction()'></image>";
+		div.innerHTML = "<image id='scrollbutton' src='images/mouse.svg' class='scrollbutton-tooltip'" +
+						" style='width:20px; cursor:pointer;' onclick='municipalites_southplatte_metro_map.scrollButtonClickFunction()'></image>";
 
 		return div;
 	};
 
-	help.addTo(municipalitygeneralmap);		
+	scrollbutton.addTo(municipalitygeneralmap);		
 
 
 	function scrollButtonClick(){
@@ -195,8 +190,10 @@ var help = L.control({position: 'topleft'});
 	    }
 	}
 
+	// Return function that need to be accessed by the DOM 
 	return{
-		scrollButtonClickFunction: scrollButtonClick
+		scrollButtonClickFunction: scrollButtonClick,
+		maplayer: municipalitygeneralmap
 	}
 
 })();

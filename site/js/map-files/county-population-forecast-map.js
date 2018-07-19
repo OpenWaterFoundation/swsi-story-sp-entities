@@ -6,7 +6,7 @@ var county_population_forecast_map = (function(){
 	/* Convert your csv data to json */
 	fp.csvToJson("data/county-population-forecast-yearsinsinglecolumn.csv");
 
-	var map = L.map('mapbox3').setView([39, -106], 7);
+	var map = L.map('mapbox3', {scrollWheelZoom: false}).setView([39, -106], 7);
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
@@ -60,7 +60,8 @@ var county_population_forecast_map = (function(){
 	info.update = function (props) {
 		var data = fp.getJsonData().data[curryear];
 		this._div.innerHTML = "<h4 id='county_pop_infoheader'>County Population, " + curryear + '</h4>' +  (props ?
-			'<b>' + props.NAME + '</b><br />' + data[props.NAME]
+			'<b>' + props.NAME + '</b><br />' + 
+			data[props.NAME]
 			: 'Hover over a county');
 	};
 	info.addTo(map);
@@ -69,23 +70,23 @@ var county_population_forecast_map = (function(){
 	// Get color depending on 2015 population value
 	function getColor(d) {
 		return d > 500000 ? '#B10026' :
-				d > 100000  ? '#E31A1C' :
-				d > 50000  ? '#FC4E2A' :
-				d > 20000  ? '#FD8D3C' :
-				d > 10000   ? '#FEB24C' :
-				d > 5000   ? '#FED976' :
-				d > 1000   ? '#FFEDA0' :
+			   d > 100000 ? '#E31A1C' :
+			   d > 50000  ? '#FC4E2A' :
+			   d > 20000  ? '#FD8D3C' :
+			   d > 10000  ? '#FEB24C' :
+			   d > 5000   ? '#FED976' :
+			   d > 1000   ? '#FFEDA0' :
 							'#FFFFCC';
 	}
 	// Counties will fill with colors based on 2015 population	
 	function style(feature) {
-	return {
-	    fillColor: getColor(feature.properties.County_Population_2015Population),
-	    weight: 2,
-	    opacity: 1,
-	    color: 'white',
-	    fillOpacity: 0.9
-	};
+		return {
+		    fillColor: getColor(feature.properties.County_Population_2015Population),
+		    weight: 2,
+		    opacity: 1,
+		    color: 'white',
+		    fillOpacity: 0.9
+		};
 	}
 
 
@@ -106,6 +107,7 @@ var county_population_forecast_map = (function(){
 		info.update(layer.feature.properties);
 	}
 
+	// Create variable for markers
 	var geojson;
 
 	// Reset the color after hovering over
@@ -127,16 +129,27 @@ var county_population_forecast_map = (function(){
 		});
 	}
 
+	// Initialize markers and bind data
 	geojson = L.geoJson(CountyData, {
 		style: style,
 		onEachFeature: onEachFeature
-	}).addTo(map);
+	})
+	// Add pop-ups to markers
+	geojson.bindPopup(function(d){
+		var props = d.feature.properties;
+		var data = fp.getJsonData().data[curryear];
+		var str =
+		'<b>' + props.NAME + '</b><br />' + 
+		data[props.NAME]
+		return str
+	})
+	// Add markers to map
+	geojson.addTo(map);
 
 	map.attributionControl.addAttribution('Population data &copy; <a href="https://demography.dola.colorado.gov/population/">DOLA</a>');
 
 	// Add a legend to the map
 	var legend = L.control({position: 'bottomright'});
-
 	legend.onAdd = function (map) {
 
 		var div = L.DomUtil.create('div', 'info legend'),
@@ -156,8 +169,34 @@ var county_population_forecast_map = (function(){
 		div.innerHTML = labels.join('<br>');
 		return div;
 	};
-
 	legend.addTo(map);
+
+	// Add a legend to the map
+	var scrollbutton = L.control({position: 'topleft'});
+	scrollbutton.onAdd = function (map) {
+
+		var div = L.DomUtil.create('div', 'scrollbutton');
+
+		div.innerHTML = "<image id='scrollbutton' src='images/mouse.svg' class='scrollbutton-tooltip'" +
+						" style='width:20px; cursor:pointer;' onclick='county_population_forecast_map.scrollButtonClickFunction()'></image>";
+
+		return div;
+	};
+	scrollbutton.addTo(map);		
+
+
+	function scrollButtonClick(){
+	 	if (map.scrollWheelZoom.enabled()) {
+	    	map.scrollWheelZoom.disable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	  	}
+	  	else {
+	    	map.scrollWheelZoom.enable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	    }
+	}
 
 	// HELPER FUNCTIONS FOR TIMESLIDER
 	function timesliderHelperFunction(year){
@@ -257,6 +296,8 @@ var county_population_forecast_map = (function(){
 		forwardFunction: forward,
 		backFunction: back,
 		timesliderHelper: timesliderHelperFunction,
-		setSpeedFunction: setSpeed
+		setSpeedFunction: setSpeed,
+		scrollButtonClickFunction: scrollButtonClick,
+		maplayer:map
 	}
 })();
