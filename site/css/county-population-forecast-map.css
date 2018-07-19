@@ -15,11 +15,22 @@ html, body, #map {
 	background: white;  
 	box-shadow: 0 0 15px rgba(0,0,0,0.2); 
 	border-radius: 5px; 
+	border: 2px solid rgba(0,0,0,0.2);
 } 
 .info h4 { 
 	margin: 5px 0; 
 	color: black; 
 }
+
+/* Styling for info div in top right corner of map */
+.help { 
+	padding: 5px 6px;
+	font: 14px/20px Arial, Helvetica, sans-serif; 
+	background: white;  
+	box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+	border-radius: 5px; 
+	border: 2px solid rgba(0,0,0,0.2);
+} 
 
 /* Styling for legend div in bottom right corner of map */
 .legend { 
