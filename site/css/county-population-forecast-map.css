@@ -23,7 +23,7 @@ html, body, #map {
 }
 
 /* Styling for info div in top right corner of map */
-.help { 
+.scrollbutton { 
 	padding: 5px 6px;
 	font: 14px/20px Arial, Helvetica, sans-serif; 
 	background: white;  
