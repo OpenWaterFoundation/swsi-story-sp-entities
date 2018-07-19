@@ -16,7 +16,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 
     <!-- Custom styles for this template -->
-    <link href="css/jquery.fullpage-2.9.7.min.css" rel="stylesheet">
+    <link href="css/jquery.fullpage-3.0.0.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	  <link href="css/custom-leaflet-style.css" rel="stylesheet">
 
@@ -52,7 +52,7 @@
     <!-- JQuery JavaScript -->
     <script src="js/jquery-3.3.1.js"></script>
     <!-- Fullpage minified Javscript file -->
-    <script type="text/javascript" src="js/jquery.fullpage-2.9.7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage-3.0.0.js"></script>
     <!-- Fullpage minified Javscript file -->
     <script type="text/javascript" src="js/scrolloverflow-0.0.8.min.js"></script>
     <!-- Bootstrap Javascript File -->
@@ -82,7 +82,7 @@
     var mousetooltip;
     $(document).ready(function(){
       mousetooltip = new jBox('Tooltip', {
-        attach: '.help-tooltip',
+        attach: '.scrollbutton-tooltip',
         position: {
           y:'bottom'
         },
@@ -132,7 +132,7 @@
     </nav>
     <div id="fullpage">
 <!-- Title Page -->
-    <div class="section" style="background-image:url('images/combined-entities.png'); height:100vh!important;">
+    <div class="section" style="background-image:url('images/combined-entities.png'); height:100vh!important; background-position: center center;">
 	  <div class="row">
           <div class="col-lg-12">
 		    <div class="container text-center text-image-overlay" style="margin-top:5vh; background-color:rgba(70,70,70,0.5);">
@@ -148,7 +148,7 @@
 	  </div>
 <!-- Water Rights/Resources/Use Section -->
   <!-- Water Resources Section -->
-      <div class="section" style="background-image:url('images/colorado-2064510_1920.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/colorado-2064510_1920.jpg'); height:100vh!important; background-position: center center;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
@@ -179,7 +179,7 @@
         </div>
       </div>
   <!-- Water Rights Section -->
-      <div class="section" style="background-image:url('images/H4-HorseTeam_DigginDitch.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/H4-HorseTeam_DigginDitch.jpg'); height:100vh!important; background-position: center center;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay">
@@ -352,7 +352,7 @@
 		  </div>	
         </div> 
   <!-- Municipal Water Supply -->	  		
-      <div class="section" style="background-image:url('images/water-1761027_1920.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/water-1761027_1920.jpg'); height:100vh!important; background-position: center center;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
@@ -477,7 +477,7 @@
         </div> 		  
 <!-- Agriculture Section -->
   <!-- Agriculture Intro -->		  
-      <div class="section" style="background-image:url('images/agriculture-cereal-clouds-175389.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/agriculture-cereal-clouds-175389.jpg'); height:100vh!important; background-position: center center;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
@@ -572,7 +572,7 @@
  		
 <!-- Environment Section -->
   <!-- Environmental Attributes -->		  
-      <div class="section" style="background-image:url('images/colorado-1680302_1920.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/colorado-1680302_1920.jpg'); height:100vh!important; background-position: center center;">
         <div class="row">
             <div class="col-lg-12">
 			  <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
@@ -651,7 +651,7 @@
         </div> 
       </div>  
 <!-- Recreation Section -->	
-      <div class="section" style="background-image:url('images/rafting-444743_1920.jpg'); height:100vh!important;">
+      <div class="section" style="background-image:url('images/rafting-444743_1920.jpg'); height:100vh!important; background-position: center center;">
         <div class="row">
           <div class="col-lg-12">
 			       <div class="container text-center text-image-overlay" style="margin-top:-45vh;">
@@ -739,6 +739,7 @@
 
       $(document).ready(function() {
         $('#fullpage').fullpage({
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
           anchors:['top', 'waterresources', 'waterrights', 'wateruseconcepts', 'munic','municpophist', 'countypop', 'muniwatersupply', 'waterproviders', 'wateruse', 'efficiency', 'ag', 'ag2', 'landusechange', 
 		  'agefficiency', 'environment', 'flowprotection', 'envrentities', 'recreation', 'industry', 'resources', 'sources'],
           sectionsColor:['#386981','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf',
