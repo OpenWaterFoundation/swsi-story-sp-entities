@@ -72,7 +72,24 @@
   	<!-- Boundary Files -->	
   	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
 
+    <!-- jBox for tooltips -->
+    <script src="//code.jboxcdn.com/0.4.9/jBox.min.js"></script>
+    <link href="//code.jboxcdn.com/0.4.9/jBox.css" rel="stylesheet">
+
   </head>
+
+  <script>
+    var mousetooltip;
+    $(document).ready(function(){
+      mousetooltip = new jBox('Tooltip', {
+        attach: '.help-tooltip',
+        position: {
+          y:'bottom'
+        },
+        content: "Click to enable/disable scroll zoom.<br> [ x ] Mouse scroll zooms page. <br> [ &nbsp; ] Mouse scroll zooms map."
+     });
+    });
+  </script>
 
   <body>
 
