@@ -5,7 +5,7 @@
 
 var municipalites_southplatte_metro_map = (function(){
 	
-	var municipalitygeneralmap = L.map('mapbox1').setView([40.072, -104.048], 9);
+	var municipalitygeneralmap = L.map('mapbox1', {scrollWheelZoom: false}).setView([40.072, -104.048], 9);
 		
 	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
@@ -35,10 +35,17 @@ var municipalites_southplatte_metro_map = (function(){
 // Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipalities</h5>' +  (props ?
-			'' + '<b>Name: </b>' + props.MunicipalityName + '<br/>' + '<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + '<b>County(s): </b>' + props.County_CSV + '<br />' +
-			'<b>Website: </b>' + props.Website + '<br/>' + '<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + '<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + '<b>GNIS ID: </b>' + props.GNIS_ID 
-			  + '<br/>' + '<b>PWS ID: </b>' + props.PWS_ID + '<br/>' + '<b>2006 Population: </b>' + props.Pop2006 + '<br/>' + '<b>2016 Population: </b>' + props.Pop2016  
-			  + '<br/>' + '<b>Percent Change in Population, 2006-2016: </b>' + props.Percent_Change
+			'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
+			'<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + 
+			'<b>County(s): </b>' + props.County_CSV + '<br />' +
+			'<b>Website: </b>' + props.Website + '<br/>' + 
+			'<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + 
+			'<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + 
+			'<b>GNIS ID: </b>' + props.GNIS_ID + '<br/>' + 
+			'<b>PWS ID: </b>' + props.PWS_ID + '<br/>' + 
+			'<b>2006 Population: </b>' + props.Pop2006.toLocaleString() + '<br/>' + 
+			'<b>2016 Population: </b>' + props.Pop2016.toLocaleString()  + '<br/>' + 
+			'<b>Percent Change in Population, 2006-2016: </b>' + props.Percent_Change
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(municipalitygeneralmap);
@@ -117,13 +124,18 @@ var municipalites_southplatte_metro_map = (function(){
 
 	spmunicipalities.bindPopup(function(d){
 		var props = d.feature.properties;
-		var str = ""
-		for(var key in props){
-			if(props.hasOwnProperty(key)){
-				console.log(key + ": " + props[key])
-				str += "<span style='font-weight:bold'>" + key + "</span>: " + props[key] + "<br>";
-			}
-		}
+		var str =
+		'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
+		'<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + 
+		'<b>County(s): </b>' + props.County_CSV + '<br />' +
+		"<b>Website: </b><a href='" + props.Website + "' target='_blank'>" + props.Website + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
+		'<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + 
+		'<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + 
+		'<b>GNIS ID: </b>' + props.GNIS_ID + '<br/>' + 
+		'<b>PWS ID: </b>' + props.PWS_ID + '<br/>' + 
+		'<b>2006 Population: </b>' + props.Pop2006.toLocaleString() + '<br/>' + 
+		'<b>2016 Population: </b>' + props.Pop2016.toLocaleString()  + '<br/>' + 
+		'<b>Percent Change in Population, 2006-2016: </b>' + props.Percent_Change;
 		return str
 	}).addTo(municipalitygeneralmap);
 
@@ -152,5 +164,39 @@ var legend = L.control({position: 'bottomright'});
 	};
 
 	legend.addTo(municipalitygeneralmap);			
-		
+
+
+	// Add a legend to the map
+var help = L.control({position: 'topleft'});
+
+	help.onAdd = function (municipalitygeneralmap) {
+
+		var div = L.DomUtil.create('div', 'help');
+
+		div.innerHTML = "<image id='scrollbutton' src='images/mouse.svg' class='help-tooltip'" +
+						" style='width:20px;' onclick='municipalites_southplatte_metro_map.scrollButtonClickFunction()'></image>";
+
+		return div;
+	};
+
+	help.addTo(municipalitygeneralmap);		
+
+
+	function scrollButtonClick(){
+	 	if (municipalitygeneralmap.scrollWheelZoom.enabled()) {
+	    	municipalitygeneralmap.scrollWheelZoom.disable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	  	}
+	  	else {
+	    	municipalitygeneralmap.scrollWheelZoom.enable();
+	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+			mousetooltip.setContent(title)
+	    }
+	}
+
+	return{
+		scrollButtonClickFunction: scrollButtonClick
+	}
+
 })();
