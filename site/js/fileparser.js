@@ -61,7 +61,8 @@ class FileParser {
 						that.json = convertData(data, that);
 					}
 				})
-			}
+			},
+			timeout: 5000
 		})
 		
 		function convertData(json, that){
