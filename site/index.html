@@ -9,58 +9,51 @@
     <meta name="author" content="">
 
     <title>South Platte and Metro Basin Water Entities </title>
+    <!-- Colorado triangle favicon -->
+    <link id="czr-favicon" rel="icon" href="images/co-triangle-favicon.ico">
 
+    <!-- Custom style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom leaflet style added -->
+    <link href="css/custom-leaflet-style.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-    <!-- Font Awesome Used in newest version of bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-
-    <!-- Custom styles for this template -->
+    <!-- Font Awesome Used in newest version of bootstrap for icons -->
+    <link href="css/fontawesome-all-5.1.1.min.css" rel="stylesheet"/> 
+    <!-- Stylesheet for fullpage version 3.0.0 -->
     <link href="css/jquery.fullpage-3.0.0.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	  <link href="css/custom-leaflet-style.css" rel="stylesheet">
-
-    <!-- icon -->
-    <link id="czr-favicon" rel="icon" href="images/co-triangle-favicon.ico">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-    crossorigin=""/>
-
+    <!-- Stylesheet for mapbox -->
+    <!--<link href='css/mapbox-gl-0.47.0.css' rel='stylesheet' />-->
+    <!-- Stylesheet for leaflet -->
+    <link href="css/leaflet-1.3.3.css" rel="stylesheet" />
     <!-- style for population projection map -->
-    <link rel="stylesheet" href="css/county-population-forecast-map.css"/>
-	
+    <link href="css/county-population-forecast-map.css" rel="stylesheet" />
+    <!-- Style for jBox library -->
+    <link href="css/jBox-0.4.9.css" rel="stylesheet">
+
+    <!-- JavaScript Files -->
     <!-- Include d3 to make a simple scale for slider -->
-    <script src="https://d3js.org/d3-array.v1.min.js"></script>
-  	<script src="https://d3js.org/d3-collection.v1.min.js"></script>
-  	<script src="https://d3js.org/d3-color.v1.min.js"></script>
-  	<script src="https://d3js.org/d3-format.v1.min.js"></script>
-  	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-  	<script src="https://d3js.org/d3-time.v1.min.js"></script>
-  	<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
-    <script src="https://d3js.org/d3-scale.v2.min.js"></script>
-	
+    <script src="js/d3-scale-2.1.0.min.js"></script>
     <!-- Include custom class fileparser -->
     <script src="js/fileparser.js"></script>
-	
     <!-- MapBox Leaflet -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-    crossorigin=""></script>
-
+    <!--<script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>-->
+    <script src="js/leaflet-1.3.3.js"></script>
     <!-- JQuery JavaScript -->
     <script src="js/jquery-3.3.1.js"></script>
     <!-- Fullpage minified Javscript file -->
-    <script type="text/javascript" src="js/jquery.fullpage-3.0.0.js"></script>
+    <script src="js/jquery.fullpage-3.0.0.js"></script>
     <!-- Fullpage minified Javscript file -->
-    <script type="text/javascript" src="js/scrolloverflow-0.0.8.min.js"></script>
+    <script src="js/scrolloverflow-0.0.8.min.js"></script>
     <!-- Bootstrap Javascript File -->
-    <script type="text/javascript" src="js/bootstrap-4.0.0.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
     <!-- Papaparse Javascript File -->
-    <script type="text/javascript" src="js/papaparse.min-4.4.0.js"></script>
+    <script src="js/papaparse.min-4.4.0.js"></script>
     <!-- Leaflet GeoPackage Javascript File -->
-    <script type="text/javascript" src="js/leaflet-geopackage-1.1.3.js"></script>
+    <script src="js/leaflet-geopackage-1.1.3.js"></script>
+    <!-- jBox for tooltips -->
+    <script src="js/jBox-0.4.9.min.js"></script>
+
   	<!-- Population, Water Use Files -->
   	<script src="data/municipal-population-2006-2016.geojson"></script>
   	<script src="data/Colorado-Municipal-Water-Providers-SouthPlatte-Metro.geojson"></script>
@@ -72,10 +65,6 @@
   	<!-- Boundary Files -->	
   	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
 
-    <!-- jBox for tooltips -->
-    <script src="//code.jboxcdn.com/0.4.9/jBox.min.js"></script>
-    <link href="//code.jboxcdn.com/0.4.9/jBox.css" rel="stylesheet">
-
   </head>
 
   <script>
@@ -86,7 +75,7 @@
         position: {
           y:'bottom'
         },
-        content: "Click to enable/disable scroll zoom.<br> [ x ] Mouse scroll zooms page. <br> [ &nbsp; ] Mouse scroll zooms map."
+        content: "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
      });
     });
   </script>
@@ -471,7 +460,7 @@
             </div>
 		    <div class="col-lg-8">
               <div id="mapbox6" class="map-right"></div>
-			  <script src="js/map-files/water-providers-efficiency-plans-map.js"></script>
+			        <script src="js/map-files/water-providers-efficiency-plans-map.js"></script>
             </div>				
           </div>
         </div> 		  
@@ -682,7 +671,7 @@
 			SSI.  May want to read through this to see if we can find some data for visualizations.</i></p>
           </div>
           <div class="col-lg-8">
-            <div id="mapbox6" class="map-right"></div>
+            <div id="mapbox7" class="map-right"></div>
           </div>		  
         </div>		
       </div>
