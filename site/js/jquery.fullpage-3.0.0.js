@@ -1182,7 +1182,7 @@
 
             var scrollSection = (type === 'down') ? moveSectionDown : moveSectionUp;
 
-            var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+            var title = "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 			if(typeof municipalites_southplatte_metro_map != "undefined"){ municipalites_southplatte_metro_map.maplayer.scrollWheelZoom.disable(); }
 			if(typeof municipal_population_map != "undefined"){ municipal_population_map.maplayer.scrollWheelZoom.disable(); }

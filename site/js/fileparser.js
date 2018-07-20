@@ -45,8 +45,9 @@ class FileParser {
 		$.ajax({
 			url: filename,
 			async:false,
-			dataType: 'text',
+			dataType: "text",
 			error: function(error){
+				console.log(filename)
 				throw new Error(error);
 			}, 
 			success: function(data){
