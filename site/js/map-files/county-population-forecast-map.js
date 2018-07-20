@@ -35,7 +35,7 @@ var county_population_forecast_map = (function(){
 		this._div = L.DomUtil.create('div', 'slidercontainer'); // Creates a div with a class named "info"
 		this._div.innerHTML = 
 			"<button type='button' id='county_pop_back' class='backbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.backFunction()'><i class='fa fa-backward' style='padding:0px;'></i></button>" +
-			"<button type='button' id='county_pop_play' class='playbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.playFunction()'><i class='fa fa-play' style='padding:0px;'></i></button>" +
+			"<button type='button' id='county_pop_play' class='playbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.playFunction()'><i class='fas fa-play' style='padding:0px;'></i></button>" +
 			"<button type='button' id='county_pop_forward' class='forwardbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.forwardFunction()'><i class='fa fa-forward' style='padding:0px;'></i></button>" +
 			"<p id='county_pop_datelabel' class='datelabel'>" + minyear +"</p>" +
 		 	"<input type='range' min='" + minyear + "' max='" + maxyear + "' value='" + minyear + "' class='timeslider slider' id='county_pop_timeslider' oninput='county_population_forecast_map.timesliderHelper(this.value)'>" +
@@ -61,7 +61,7 @@ var county_population_forecast_map = (function(){
 		var data = fp.getJsonData().data[curryear];
 		this._div.innerHTML = "<h4 id='county_pop_infoheader'>County Population, " + curryear + '</h4>' +  (props ?
 			'<b>' + props.NAME + '</b><br />' + 
-			data[props.NAME]
+			data[props.NAME].toLocaleString()
 			: 'Hover over a county');
 	};
 	info.addTo(map);
@@ -140,7 +140,7 @@ var county_population_forecast_map = (function(){
 		var data = fp.getJsonData().data[curryear];
 		var str =
 		'<b>' + props.NAME + '</b><br />' + 
-		data[props.NAME]
+		data[props.NAME].toLocaleString()
 		return str
 	})
 	// Add markers to map
@@ -163,7 +163,7 @@ var county_population_forecast_map = (function(){
 
 			labels.push(
 				'<i style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : '+'));
+				from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
 		}
 
 		div.innerHTML = labels.join('<br>');
@@ -188,12 +188,12 @@ var county_population_forecast_map = (function(){
 	function scrollButtonClick(){
 	 	if (map.scrollWheelZoom.enabled()) {
 	    	map.scrollWheelZoom.disable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	  	}
 	  	else {
 	    	map.scrollWheelZoom.enable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ &nbsp; ] Mouse scroll pages forward/back. <br> [ x ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	    }
 	}

@@ -187,7 +187,7 @@ var water_providers_1051_map = (function(){
 	
     var div = L.DomUtil.create('div', 'info legend'),
        categories = [1000, 5000, 10000, 20000, 50000, 100000, 500000, 1500000],
-	   labels = ['No data','1000-5000','5000-10,000','10,000-20,000', '20,000-50,000', '50,000-100,000', '100,000-500,000', '> 500,000'];
+	   labels = ['No data','1,000-5,000','5,000-10,000','10,000-20,000', '20,000-50,000', '50,000-100,000', '100,000-500,000', '> 500,000'];
 	   
 	   div.innerHTML = "<h5>Population Served:</h5>";
 	   for (var i = 0; i < categories.length; i++) {
@@ -212,12 +212,12 @@ var water_providers_1051_map = (function(){
 	function scrollButtonClick(){
 	 	if (map.scrollWheelZoom.enabled()) {
 	    	map.scrollWheelZoom.disable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	  	}
 	  	else {
 	    	map.scrollWheelZoom.enable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ &nbsp; ] Mouse scroll pages forward/back. <br> [ x ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	    }
 	}

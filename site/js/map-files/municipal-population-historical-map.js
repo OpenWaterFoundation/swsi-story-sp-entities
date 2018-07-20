@@ -175,7 +175,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 			labels.push(
 				'<i class="circle" style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : '+'));
+				from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
 		}
 		div.innerHTML = "<h5>Population: </h5>" + labels.join('<br>');
 		return div;
@@ -201,12 +201,12 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	function scrollButtonClick(){
 	 	if (map.scrollWheelZoom.enabled()) {
 	    	map.scrollWheelZoom.disable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	  	}
 	  	else {
 	    	map.scrollWheelZoom.enable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ &nbsp; ] Mouse scroll pages forward/back. <br> [ x ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	    }
 	}
@@ -261,7 +261,8 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 			curryear = minyear;
 		}else{
 			$('#municipal_pop_datelabel').html(curryear);
-			$('#municipal_pop_infoheader').html('County Population, ' + curryear)
+			//$('#municipal_pop_infoheader').html('County Population, ' + curryear)
+			info.update();
 			$('#municipal_pop_timeslider').val(curryear);
 			geoJsonSetStyle(curryear);
 		}

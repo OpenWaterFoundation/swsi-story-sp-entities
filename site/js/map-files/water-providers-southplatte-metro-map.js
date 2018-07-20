@@ -149,12 +149,12 @@ var water_providers_southplatte_metro_map = (function(){
 	function scrollButtonClick(){
 	 	if (map.scrollWheelZoom.enabled()) {
 	    	map.scrollWheelZoom.disable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ x ] Mouse scroll zooms page. <br>[ &nbsp; ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	  	}
 	  	else {
 	    	map.scrollWheelZoom.enable();
-	    	var title = "Click to enable/disable scroll zoom.<br>[ &nbsp; ] Mouse scroll zooms page. <br>[ x ] Mouse scroll zooms map."
+	    	var title = "Click to toggle mouse scroll wheel behavior.<br> [ &nbsp; ] Mouse scroll pages forward/back. <br> [ x ] Mouse scroll zooms map."
 			mousetooltip.setContent(title)
 	    }
 	}
