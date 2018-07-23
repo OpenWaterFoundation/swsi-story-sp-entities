@@ -218,6 +218,9 @@ var county_population_forecast_map = (function(){
 	}
 
 	function play(){
+		if(curryear == maxyear){
+			curryear = minyear;
+		}
 		$('#county_pop_play').html("<span class='fa fa-pause'></span>")
 		if(playClick){
 			playClick = false;
@@ -236,7 +239,7 @@ var county_population_forecast_map = (function(){
 			$('#county_pop_play').html("<span class='fa fa-play'></span>")
 			pause();
 			clearInterval(intV);
-			curryear = minyear;
+			curryear = maxyear;
 		}else{
 			$('#county_pop_datelabel').html(curryear);
 			$('#county_pop_infoheader').html('County Population, ' + curryear)

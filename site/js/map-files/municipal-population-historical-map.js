@@ -226,6 +226,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		curryear = year;
 		var data = fp1.getJsonData().data[curryear];
 		$('#municipal_pop_infoheader').html('historical Municipal Population, ' + curryear)
+		$('#municipal_pop_datelabel').html(curryear);
 		geojson.setStyle(fillColorFromData);
 	}
 
@@ -240,6 +241,9 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	}
 
 	function play(){
+		if(curryear == maxyear){
+			curryear = minyear;
+		}
 		$('#municipal_pop_play').html("<span class='fa fa-pause'></span>")
 		if(playClick){
 			playClick = false;
@@ -259,7 +263,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 			$('#municipal_pop_play').html("<span class='fa fa-play'></span>")
 			pause();
 			clearInterval(intV);
-			curryear = minyear;
+			curryear = maxyear;
 		}else{
 			$('#municipal_pop_datelabel').html(curryear);
 			//$('#municipal_pop_infoheader').html('County Population, ' + curryear)
