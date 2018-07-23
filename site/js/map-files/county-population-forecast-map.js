@@ -119,8 +119,7 @@ var county_population_forecast_map = (function(){
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
-			mouseout: resetHighlight,
-			click: zoomToFeature
+			mouseout: resetHighlight
 		});
 	}
 
