@@ -127,7 +127,7 @@ var water_providers_southplatte_metro_map = (function(){
 		   labels = ['Municipality', 'Water and Sanitation District', 'Water Authority', 'Water District', 'Metropolitan District', 'Water Conservancy District', 
 		                 'Company', 'Sanitation District', 'Other'];
 
-	   div.innerHTML = "<h5>Type of Provider:</h5>";
+	   div.innerHTML = "<h6>Water Provider Type</h6>";
 	   for (var i = 0; i < categories.length; i++) {
 	        div.innerHTML += 
 			   '<i class="circle" style="background:' + getwaterprovidercolor(categories[i]) + '"></i>  ' +

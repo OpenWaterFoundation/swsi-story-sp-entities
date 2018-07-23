@@ -154,7 +154,7 @@ var municipalites_southplatte_metro_map = (function(){
 				'<i class="circle" style="background:' + getColor(from + 1) + '"></i> ' +
 				from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
 		}
-		div.innerHTML = "<h5>Population: </h5>" + labels.join('<br>');
+		div.innerHTML = "<h6>Population</h6>" + labels.join('<br>');
 		return div;
 	};
 	// Add legend to map

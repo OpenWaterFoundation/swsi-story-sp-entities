@@ -161,7 +161,7 @@ var county_population_forecast_map = (function(){
 				from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
 		}
 
-		div.innerHTML = labels.join('<br>');
+		div.innerHTML = "<h6>Population</h6>" + labels.join('<br>');
 		return div;
 	};
 	legend.addTo(map);
