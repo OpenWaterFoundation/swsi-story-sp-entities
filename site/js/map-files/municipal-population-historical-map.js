@@ -51,9 +51,9 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	info.update = function (props) {
 		var data = fp1.getJsonData().data[curryear];
 		this._div.innerHTML = "<h5 id='municipal_pop_infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
-			'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
-			"<b id='municipal_pop_population'>Population: </b>" + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
-			"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + data[props.MunicipalityName][1] + "%"
+			'<b>Municipality: </b>' + ((props.MunicipalityName) ? props.MunicipalityName : "") + '<br />' + 
+			"<b id='municipal_pop_population'>Population: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][0].toLocaleString() : "") + '<br />' + 
+			"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][1] : "") + "%"
 			: 'Hover over a point');
 
 	};
@@ -153,9 +153,9 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 		var props = d.feature.properties;
 		var data = fp1.getJsonData().data[curryear];
 		var str =
-		'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
-		'<b>Population: </b>' + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
-		'<b>Percent Change in Population Since 1980: </b>' + data[props.MunicipalityName][1] + "%";
+		'<b>Municipality: </b>' + ((props.MunicipalityName) ? props.MunicipalityName : "") + '<br />' + 
+		"<b id='municipal_pop_population'>Population: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][0].toLocaleString() : "") + '<br />' + 
+		"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][1] : "") + "%";
 		return str
 	})
 	// Add markers to map

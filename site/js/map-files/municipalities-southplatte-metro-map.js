@@ -32,17 +32,17 @@ var municipalites_southplatte_metro_map = (function(){
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipalities</h5>' +  (props ?
-			'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
-			'<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + 
-			'<b>County(s): </b>' + props.County_CSV + '<br />' +
-			'<b>Website: </b>' + hasHttp(props.Website) + '<br/>' + 
-			'<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + 
-			'<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + 
-			'<b>GNIS ID: </b>' + props.GNIS_ID + '<br/>' + 
-			'<b>PWS ID: </b>' + props.PWS_ID + '<br/>' + 
-			'<b>2006 Population: </b>' + props.Pop2006.toLocaleString() + '<br/>' + 
-			'<b>2016 Population: </b>' + props.Pop2016.toLocaleString()  + '<br/>' + 
-			'<b>Percent Change in Population, 2006-2016: </b>' + props.Percent_Change
+			'<b>Name: </b>' + ((props.MunicipalityName) ? props.MunicipalityName : "") + '<br/>' + 
+			'<b>IBCC Basin: </b>' + ((props.IBCC_Basin_CSV) ? props.IBCC_Basin_CSV : "") + '<br />' + 
+			'<b>County(s): </b>' + ((props.County_CSV) ? props.County_CSV : "") + '<br />' +
+			'<b>Website: </b>' + ((props.Website) ? hasHttp(props.Website) : "") + '<br/>' + 
+			'<b>FIPS ID: </b>' + ((props.FIPS_ID) ? props.FIPS_ID : "") + '<br/>' + 
+			'<b>DOLA ID: </b>' + ((props.DOLA_LG_ID) ? props.DOLA_LG_ID : "")  + '<br/>' + 
+			'<b>GNIS ID: </b>' + ((props.GNIS_ID) ? props.GNIS_ID : "") + '<br/>' + 
+			'<b>PWS ID: </b>' + ((props.PWS_ID) ? props.PWS_ID : "") + '<br/>' + 
+			'<b>2006 Population: </b>' + ((props.Pop2006) ? props.Pop2006.toLocaleString() : "") + '<br/>' + 
+			'<b>2016 Population: </b>' + ((props.Pop2016) ? props.Pop2016.toLocaleString() : "")  + '<br/>' + 
+			'<b>Percent Change in Population, 2006-2016: </b>' + ((props.Percent_Change) ? props.Percent_Change : "")
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(municipalitygeneralmap);
@@ -134,17 +134,17 @@ var municipalites_southplatte_metro_map = (function(){
 	spmunicipalities.bindPopup(function(d){
 		var props = d.feature.properties;
 		var str =
-		'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
-		'<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + 
-		'<b>County(s): </b>' + props.County_CSV + '<br />' +
-		"<b>Website: </b><a href='" + hasHttp(props.Website) + "' target='_blank'>" + hasHttp(props.Website) + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
-		'<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + 
-		'<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + 
-		'<b>GNIS ID: </b>' + props.GNIS_ID + '<br/>' + 
-		'<b>PWS ID: </b>' + props.PWS_ID + '<br/>' + 
-		'<b>2006 Population: </b>' + props.Pop2006.toLocaleString() + '<br/>' + 
-		'<b>2016 Population: </b>' + props.Pop2016.toLocaleString()  + '<br/>' + 
-		'<b>Percent Change in Population, 2006-2016: </b>' + props.Percent_Change;
+		'<b>Name: </b>' + ((props.MunicipalityName) ? props.MunicipalityName : "") + '<br/>' + 
+		'<b>IBCC Basin: </b>' + ((props.IBCC_Basin_CSV) ? props.IBCC_Basin_CSV : "") + '<br />' + 
+		'<b>County(s): </b>' + ((props.County_CSV) ? props.County_CSV : "") + '<br />' +
+		"<b>Website: </b><a href='" + ((props.Website) ? hasHttp(props.Website) : "") + "' target='_blank'>" + ((props.Website) ? hasHttp(props.Website) : "") + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
+		'<b>FIPS ID: </b>' + ((props.FIPS_ID) ? props.FIPS_ID : "") + '<br/>' + 
+		'<b>DOLA ID: </b>' + ((props.DOLA_LG_ID) ? props.DOLA_LG_ID : "")  + '<br/>' + 
+		'<b>GNIS ID: </b>' + ((props.GNIS_ID) ? props.GNIS_ID : "") + '<br/>' + 
+		'<b>PWS ID: </b>' + ((props.PWS_ID) ? props.PWS_ID : "") + '<br/>' + 
+		'<b>2006 Population: </b>' + ((props.Pop2006) ? props.Pop2006.toLocaleString() : "") + '<br/>' + 
+		'<b>2016 Population: </b>' + ((props.Pop2016) ? props.Pop2016.toLocaleString() : "")  + '<br/>' + 
+		'<b>Percent Change in Population, 2006-2016: </b>' + ((props.Percent_Change) ? props.Percent_Change : "");
 		return str
 	})
 	// Add Markers to map

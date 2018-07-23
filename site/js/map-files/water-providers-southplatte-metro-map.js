@@ -32,10 +32,10 @@ var water_providers_southplatte_metro_map = (function(){
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipal Water Providers</h5>' +  (props ?
-			'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
-			'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-			"<b>Website: </b>" + hasHttp(props.Website) + '<br/>' + 
-			'<b>Type of Provider: </b>' + props.LocalGovtType
+			'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
+			'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' +
+			"<b>Website: </b>" + ((props.Website) ? hasHttp(props.Website) : "") + '<br/>' + 
+			'<b>Type of Provider: </b>' + ((props.LocalGvtType) ? props.LocalGovtType : "")
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(map);
@@ -121,10 +121,10 @@ var water_providers_southplatte_metro_map = (function(){
 	spmetrowaterprovidersMarkers.bindPopup(function(d){
 		var props = d.feature.properties;
 		var str =
-		'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
-		'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-		"<b>Website: </b><a href='" + hasHttp(props.Website) + "' target='_blank'>" + hasHttp(props.Website) + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
-		'<b>Type of Provider: </b>' + props.LocalGovtType;
+		'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
+		'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' +
+		"<b>Website: </b><a href='" + ((props.Website) ? hasHttp(props.Website) : "") + "' target='_blank'>" + ((props.Website) ? hasHttp(props.Website) : "") + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
+		'<b>Type of Provider: </b>' + ((props.LocalGvtType) ? props.LocalGovtType : "");
 		return str
 	})
 	// Add Markers to map

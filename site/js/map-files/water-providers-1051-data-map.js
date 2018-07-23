@@ -87,13 +87,13 @@ var water_providers_1051_map = (function(){
 			var props = d.feature.properties;
 			if(typeof props != "undefined"){			
 			var str =
-				'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
-				'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' + 
-				'<b>County(s): </b>' + props.County_CSV + '<br />' +
-				'<b>Provider Type: </b>' + props.LocalGovtType + '<br />' + 
-				"<b>Website: </b><a href='" + hasHttp(props.Website )+ "' target='_blank'>" + hasHttp(props.Website)  + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br />" + 
-				'<b>Population Served: </b>' + props['Population_Served_' + year].toLocaleString() + 
-				'<br />' + '<b>Water Use (acre-feet): </b>' + props['WaterUse_' + year].toFixed(0)
+				'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
+				'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' + 
+				'<b>County(s): </b>' + ((props.County_CSV) ? props.County_CSV : "") + '<br />' +
+				'<b>Provider Type: </b>' + ((props.LocalGovtType) ? props.LocalGovtType : "") + '<br />' + 
+				"<b>Website: </b><a href='" + ((props.Website) ? hasHttp(props.Website) : "#") + "' target='_blank'>" + ((props.Website) ? hasHttp(props.Website) : "")  + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br />" + 
+				'<b>Population Served: </b>' + ((props["Population_Served_" + year]) ? props['Population_Served_' + year].toLocaleString() : "") + 
+				'<br />' + '<b>Water Use (acre-feet): </b>' + ((props["WaterUse_" + year]) ? props['WaterUse_' + year].toFixed(0) : "")
 				return str
 			}else{
 				return null;
@@ -124,7 +124,6 @@ var water_providers_1051_map = (function(){
 
 // Method used to update the control based on feature properties passed
 	info.update = function (props, year) {
-		if(props) console.log(props)
 		this._div.innerHTML = '<h5>Water Providers</h5>' +  (props ?
 			'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
 			'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' + 

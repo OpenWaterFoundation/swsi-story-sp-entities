@@ -55,8 +55,8 @@ var county_population_forecast_map = (function(){
 	info.update = function (props) {
 		var data = fp2.getJsonData().data[curryear];
 		this._div.innerHTML = "<h4 id='county_pop_infoheader'>County Population, " + curryear + '</h4>' +  (props ?
-			'<b>' + props.NAME + '</b><br />' + 
-			data[props.NAME].toLocaleString()
+			'<b>' + ((props.NAME) ? props.NAME : "") + '</b><br />' + 
+			((data[props.NAME]) ? data[props.NAME].toLocaleString() : "")
 			: 'Hover over a county');
 	};
 	info.addTo(map);
@@ -134,8 +134,8 @@ var county_population_forecast_map = (function(){
 		var props = d.feature.properties;
 		var data = fp2.getJsonData().data[curryear];
 		var str =
-		'<b>' + props.NAME + '</b><br />' + 
-		data[props.NAME].toLocaleString()
+		'<b>' + ((props.NAME) ? props.NAME : "") + '</b><br />' + 
+		((data[props.NAME]) ? data[props.NAME].toLocaleString() : "")
 		return str
 	})
 	// Add markers to map
