@@ -1,11 +1,6 @@
 
 var county_population_forecast_map = (function(){
 
-	/* Create a new file parser from the custom FileParser class */
-	var fp = new FileParser(["Year", "County", "Population"]);
-	/* Convert your csv data to json */
-	fp.csvToJson("data/county-population-forecast-yearsinsinglecolumn.csv");
-
 	var map = L.map('mapbox3', {scrollWheelZoom: false}).setView([39, -106], 7);
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {

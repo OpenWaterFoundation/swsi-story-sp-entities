@@ -297,7 +297,18 @@
             </div>
 		    <div class="col-lg-8">
                <div id="mapbox2" class="map-right"></div>
-			         <script src="js/map-files/municipal-population-historical-map.js"></script>
+               <script>
+                var fp = new FileParser(["Year", "MunicipalityName", "Population", "Percent_Change_1980"]);
+
+                /* Convert your csv data to json */
+                fp.csvToJson("data/municipal-population-historical-change.csv").done(function(){
+                  $.ajax({
+                    url: 'js/map-files/municipal-population-historical-map.js',
+                    dataType:'script'
+                  })
+                });
+               </script>
+			         <!--script src="js/map-files/municipal-population-historical-map.js"></script>-->
             </div>				
           </div>
 	  </div>	
@@ -334,7 +345,17 @@
             </div>
 		    <div class="col-lg-8">
               <div id="mapbox3" class="map-right"></div>
-			        <script src="js/map-files/county-population-forecast-map.js"></script>
+			        <script>
+                var fp = new FileParser(["Year", "County", "Population"]);
+
+                /* Convert your csv data to json */
+                fp.csvToJson("data/county-population-forecast-yearsinsinglecolumn.csv").done(function(){
+                  $.ajax({
+                    url: 'js/map-files/county-population-forecast-map.js',
+                    dataType:'script'
+                  })
+                });
+               </script>
             </div>	
 		  </div>	
         </div> 
