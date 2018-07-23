@@ -89,12 +89,18 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	// Get size based on percent change in population since 1980
 	function getSize(point){
-		if      (point > 49.9) sizeToUse = 28;
-		else if (point > 29.9) sizeToUse = 20;
-		else if (point > 19.9) sizeToUse = 16;
-		else if (point > 4.9 ) sizeToUse = 14;
-		else if (point > 0   ) sizeToUse = 12;
-		else                   sizeToUse = 8;
+		if      (point > 299.9) sizeToUse = 28;
+		else if (point > 199.9) sizeToUse = 26;
+		else if (point > 149.9) sizeToUse = 24;
+		else if (point > 99.9) sizeToUse = 22;
+		else if (point > 79.9) sizeToUse = 20;		
+		else if (point > 59.9) sizeToUse = 18;
+		else if (point > 39.9) sizeToUse = 16;		
+		else if (point > 29.9) sizeToUse = 14;
+		else if (point > 19.9) sizeToUse = 12;
+		else if (point > 9.9 ) sizeToUse = 10;
+		else if (point > 0   ) sizeToUse = 8;
+		else                   sizeToUse = 6;
 		
 		return sizeToUse;
 	}
@@ -177,7 +183,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 				'<i class="circle" style="background:' + getColor(from + 1) + '"></i> ' +
 				from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
 		}
-		div.innerHTML = "<h5>Population: </h5>" + labels.join('<br>');
+		div.innerHTML = "<h6>Population</h6>" + labels.join('<br>');
 		return div;
 	};
 	legend.addTo(map);

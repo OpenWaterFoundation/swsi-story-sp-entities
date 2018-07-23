@@ -122,7 +122,7 @@ var water_providers_effeciency_plans_map = (function(){
 	       categories = ['https://www-static.bouldercolorado.gov/docs/WEP_October_Final-1-201610180831.pdf', 'None'],
 		   labels = ['Efficiency Plan', 'No Efficiency Plan'];
 		   
-		   div.innerHTML = "<h5>Plans: </h5>";
+		   div.innerHTML = "<h6>Plans</h6>";
 		   for (var i = 0; i < categories.length; i++) {
 		        div.innerHTML +=
 				   '<i class="circle" style="background:' + getwaterprovidercolor(categories[i]) + '"></i>  ' +

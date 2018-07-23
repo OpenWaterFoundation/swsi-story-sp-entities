@@ -189,7 +189,7 @@ var water_providers_1051_map = (function(){
        categories = [1000, 5000, 10000, 20000, 50000, 100000, 500000, 1500000],
 	   labels = ['No data','1,000-5,000','5,000-10,000','10,000-20,000', '20,000-50,000', '50,000-100,000', '100,000-500,000', '> 500,000'];
 	   
-	   div.innerHTML = "<h5>Population Served:</h5>";
+	   div.innerHTML = "<h6>Population Served</h6>";
 	   for (var i = 0; i < categories.length; i++) {
 	        div.innerHTML +=
 			   '<i class="circle" style="background:' + getColor(categories[i]) + '"></i>  ' +
