@@ -37,10 +37,22 @@ var water_providers_effeciency_plans_map = (function(){
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipal Water Providers</h5>' +  (props ?
 			'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
 			'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-			'<b>Water Efficiency Plan: </b>' + props.WaterEfficiencyPlan_URL 
+			'<b>Water Efficiency Plan: </b>' + hasHttp(props.WaterEfficiencyPlan_URL) 
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(map)
+
+
+	function hasHttp(url){
+		if(url == "") return "";
+		var pattern = /^((http|https|ftp):\/\/)/;
+
+		if(!pattern.test(url)) {
+		    url = "http://" + url;
+		}
+
+		return url;
+	}
 
 // Highlight a point when it is hovered over on the map
 	function highlightFeature(e) {

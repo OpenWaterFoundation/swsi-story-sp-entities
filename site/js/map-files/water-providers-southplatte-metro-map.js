@@ -34,12 +34,24 @@ var water_providers_southplatte_metro_map = (function(){
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipal Water Providers</h5>' +  (props ?
 			'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
 			'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-			"<b>Website: </b>" + props.Website + '<br/>' + 
+			"<b>Website: </b>" + hasHttp(props.Website) + '<br/>' + 
 			'<b>Type of Provider: </b>' + props.LocalGovtType
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(map);
 
+	function hasHttp(url){
+		if(url == "") return "";
+		var pattern = /^((http|https|ftp):\/\/)/;
+
+		if(!pattern.test(url)) {
+		    url = "http://" + url;
+		}
+
+		console.log(url)
+		return url;
+	}
+	
 	// Highlight a point when it is hovered over on the map
 	function highlightFeature(e) {
 		var layer = e.target;
@@ -111,7 +123,7 @@ var water_providers_southplatte_metro_map = (function(){
 		var str =
 		'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
 		'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-		"<b>Website: </b><a href='" + props.Website + "' target='_blank'>" + props.Website + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
+		"<b>Website: </b><a href='" + hasHttp(props.Website) + "' target='_blank'>" + hasHttp(props.Website) + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
 		'<b>Type of Provider: </b>' + props.LocalGovtType;
 		return str
 	})

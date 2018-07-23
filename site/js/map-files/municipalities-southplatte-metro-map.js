@@ -35,7 +35,7 @@ var municipalites_southplatte_metro_map = (function(){
 			'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
 			'<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + 
 			'<b>County(s): </b>' + props.County_CSV + '<br />' +
-			'<b>Website: </b>' + props.Website + '<br/>' + 
+			'<b>Website: </b>' + hasHttp(props.Website) + '<br/>' + 
 			'<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + 
 			'<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + 
 			'<b>GNIS ID: </b>' + props.GNIS_ID + '<br/>' + 
@@ -46,6 +46,17 @@ var municipalites_southplatte_metro_map = (function(){
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(municipalitygeneralmap);
+
+	function hasHttp(url){
+		if(url == "") return "";
+		var pattern = /^((http|https|ftp):\/\/)/;
+
+		if(!pattern.test(url)) {
+		    url = "http://" + url;
+		}
+
+		return url;
+	}
 
 	// Highlight a point when it is hovered over on the map
 	function highlightFeature(e) {
@@ -126,7 +137,7 @@ var municipalites_southplatte_metro_map = (function(){
 		'<b>Name: </b>' + props.MunicipalityName + '<br/>' + 
 		'<b>IBCC Basin: </b>' + props.IBCC_Basin_CSV + '<br />' + 
 		'<b>County(s): </b>' + props.County_CSV + '<br />' +
-		"<b>Website: </b><a href='" + props.Website + "' target='_blank'>" + props.Website + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
+		"<b>Website: </b><a href='" + hasHttp(props.Website) + "' target='_blank'>" + hasHttp(props.Website) + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br/>" + 
 		'<b>FIPS ID: </b>' + props.FIPS_ID + '<br/>' + 
 		'<b>DOLA ID: </b>' + props.DOLA_LG_ID  + '<br/>' + 
 		'<b>GNIS ID: </b>' + props.GNIS_ID + '<br/>' + 
