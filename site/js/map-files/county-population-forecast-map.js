@@ -219,7 +219,6 @@ var county_population_forecast_map = (function(){
 
 	function play(){
 		$('#county_pop_play').html("<span class='fa fa-pause'></span>")
-		console.log(playClick)
 		if(playClick){
 			playClick = false;
 			intV  = setInterval(parseTime, speed);

@@ -50,7 +50,6 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		var data = fp1.getJsonData().data[curryear];
-		console.log(data)
 		this._div.innerHTML = "<h5 id='municipal_pop_infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
 			'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
 			"<b id='municipal_pop_population'>Population: </b>" + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
