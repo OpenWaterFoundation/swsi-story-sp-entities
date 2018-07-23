@@ -79,7 +79,7 @@
     /* Use jBox for popups on maps */
     /* This jBox popup is used in mapfiles */
     var mousetooltip;
-    $(document).ready(function(){
+    $(window).bind("load", function(){
       mousetooltip = new jBox('Tooltip', {
         attach: '.scrollbutton-tooltip',
         position: {
@@ -87,7 +87,7 @@
         },
         content: "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
      });
-    });
+    })
   </script>
 
   <body>
