@@ -35,12 +35,24 @@ var water_providers_effeciency_plans_map = (function(){
 // Method used to update the control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h5>South Platte and Metro Basin Municipal Water Providers</h5>' +  (props ?
-			'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
-			'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-			'<b>Water Efficiency Plan: </b>' + props.WaterEfficiencyPlan_URL 
+			'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
+			'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' +
+			'<b>Water Efficiency Plan: </b>' + ((props.WaterEfficiencyPlan_URL) ? hasHttp(props.WaterEfficiencyPlan_URL) : "") 
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(map)
+
+
+	function hasHttp(url){
+		if(url == "") return "";
+		var pattern = /^((http|https|ftp):\/\/)/;
+
+		if(!pattern.test(url)) {
+		    url = "http://" + url;
+		}
+
+		return url;
+	}
 
 // Highlight a point when it is hovered over on the map
 	function highlightFeature(e) {
@@ -106,9 +118,9 @@ var water_providers_effeciency_plans_map = (function(){
 	spmetrowaterprovidersMarkers.bindPopup(function(d){
 		var props = d.feature.properties;
 		var str =
-		'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
-		'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' +
-		"<b>Water Efficiency Plan: </b><a href='" + props.WaterEfficiencyPlan_URL + "' target='_blank'>" + props.WaterEfficiencyPlan_URL + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i>";
+		'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
+		'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' +
+		"<b>Water Efficiency Plan: </b><a href='" + ((props.WaterEfficiencyPlan_URL) ? hasHttp(props.WaterEfficiencyPlan_URL) : "") + "' target='_blank'>" + ((props.WaterEfficiencyPlan_URL) ? hasHttp(props.WaterEfficiencyPlan_URL) : "") + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i>";
 		return str
 	})
 	// Add Markers to map

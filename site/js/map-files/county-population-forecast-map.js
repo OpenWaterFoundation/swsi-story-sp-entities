@@ -1,11 +1,6 @@
 
 var county_population_forecast_map = (function(){
 
-	/* Create a new file parser from the custom FileParser class */
-	var fp = new FileParser(["Year", "County", "Population"]);
-	/* Convert your csv data to json */
-	fp.csvToJson("data/county-population-forecast-yearsinsinglecolumn.csv");
-
 	var map = L.map('mapbox3', {scrollWheelZoom: false}).setView([39, -106], 7);
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
@@ -58,10 +53,10 @@ var county_population_forecast_map = (function(){
 
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
-		var data = fp.getJsonData().data[curryear];
+		var data = fp2.getJsonData().data[curryear];
 		this._div.innerHTML = "<h4 id='county_pop_infoheader'>County Population, " + curryear + '</h4>' +  (props ?
-			'<b>' + props.NAME + '</b><br />' + 
-			data[props.NAME].toLocaleString()
+			'<b>' + ((props.NAME) ? props.NAME : "") + '</b><br />' + 
+			((data[props.NAME]) ? data[props.NAME].toLocaleString() : "")
 			: 'Hover over a county');
 	};
 	info.addTo(map);
@@ -124,8 +119,7 @@ var county_population_forecast_map = (function(){
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
-			mouseout: resetHighlight,
-			click: zoomToFeature
+			mouseout: resetHighlight
 		});
 	}
 
@@ -137,10 +131,10 @@ var county_population_forecast_map = (function(){
 	// Add pop-ups to markers
 	geojson.bindPopup(function(d){
 		var props = d.feature.properties;
-		var data = fp.getJsonData().data[curryear];
+		var data = fp2.getJsonData().data[curryear];
 		var str =
-		'<b>' + props.NAME + '</b><br />' + 
-		data[props.NAME].toLocaleString()
+		'<b>' + ((props.NAME) ? props.NAME : "") + '</b><br />' + 
+		((data[props.NAME]) ? data[props.NAME].toLocaleString() : "")
 		return str
 	})
 	// Add markers to map
@@ -216,15 +210,17 @@ var county_population_forecast_map = (function(){
 	}
 
 	function fillColorFromData(feature){
-		var data = fp.getJsonData().data[curryear];
+		var data = fp2.getJsonData().data[curryear];
 		return {
 			fillColor: getColor(data[feature.properties.NAME])
 		}
 	}
 
 	function play(){
+		if(curryear == maxyear){
+			curryear = minyear;
+		}
 		$('#county_pop_play').html("<span class='fa fa-pause'></span>")
-		console.log(playClick)
 		if(playClick){
 			playClick = false;
 			intV  = setInterval(parseTime, speed);
@@ -242,7 +238,7 @@ var county_population_forecast_map = (function(){
 			$('#county_pop_play').html("<span class='fa fa-play'></span>")
 			pause();
 			clearInterval(intV);
-			curryear = minyear;
+			curryear = maxyear;
 		}else{
 			$('#county_pop_datelabel').html(curryear);
 			$('#county_pop_infoheader').html('County Population, ' + curryear)

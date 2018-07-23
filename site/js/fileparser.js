@@ -40,12 +40,11 @@ class FileParser {
 		return var3;
 	}
 
-	csvToJson(filename) {
+	csvToJson(filename){
 		var that = this;
-		$.ajax({
+		return $.ajax({
 			url: filename,
-			async:false,
-			dataType: "text",
+			accepts: "text/csv; charset=utf-8",
 			error: function(error){
 				console.log(filename)
 				throw new Error(error);
@@ -58,15 +57,16 @@ class FileParser {
 					dynamicTyping:true,
 					skipEmptyLines:true,
 					complete: function(data){
-						that.json = convertData(data, that);
+						that.json = that.convertData(data, that);
 					}
 				})
 			},
 			timeout: 5000
 		})
-		
-		function convertData(json, that){
-			var firstValue = json.data[0]
+	}
+
+	convertData(json, that){
+		var firstValue = json.data[0]
 			var year = firstValue[that.datevar];
 			var ret = {"data":[]};
 			var data = ret["data"];
@@ -82,7 +82,6 @@ class FileParser {
 				}
 			})
 			return ret;
-		}
 	}
 
 	getJsonData(){

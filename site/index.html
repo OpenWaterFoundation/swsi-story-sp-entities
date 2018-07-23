@@ -33,7 +33,17 @@
 
     <!-- JavaScript Files -->
     <!-- Include d3 to make a simple scale for slider -->
-    <script src="js/d3-scale-2.1.0.min.js"></script>
+    <!-- Because this requires so many files for a small amount of code used in
+      two of the map files. I am using the cdns instead of tracking down all the
+      individual files -->
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v2.min.js"></script>
     <!-- Include custom class fileparser -->
     <script src="js/fileparser.js"></script>
     <!-- MapBox Leaflet -->
@@ -68,8 +78,10 @@
   </head>
 
   <script>
+    /* Use jBox for popups on maps */
+    /* This jBox popup is used in mapfiles */
     var mousetooltip;
-    $(document).ready(function(){
+    $(window).bind("load", function(){
       mousetooltip = new jBox('Tooltip', {
         attach: '.scrollbutton-tooltip',
         position: {
@@ -77,7 +89,7 @@
         },
         content: "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
      });
-    });
+    })
   </script>
 
   <body>
@@ -299,7 +311,18 @@
             </div>
 		    <div class="col-lg-8">
                <div id="mapbox2" class="map-right"></div>
-			         <script src="js/map-files/municipal-population-historical-map.js"></script>
+               <script>
+                var fp1 = new FileParser(["Year", "MunicipalityName", "Population", "Percent_Change_1980"]);
+
+                /* Convert your csv data to json */
+                fp1.csvToJson("data/municipal-population-historical-change.csv").done(function(){
+                  $.ajax({
+                    url: 'js/map-files/municipal-population-historical-map.js',
+                    dataType:'script'
+                  })
+                });
+               </script>
+			         <!--script src="js/map-files/municipal-population-historical-map.js"></script>-->
             </div>				
           </div>
 	  </div>	
@@ -336,7 +359,17 @@
             </div>
 		    <div class="col-lg-8">
               <div id="mapbox3" class="map-right"></div>
-			        <script src="js/map-files/county-population-forecast-map.js"></script>
+			        <script>
+                var fp2 = new FileParser(["Year", "County", "Population"]);
+
+                /* Convert your csv data to json */
+                fp2.csvToJson("data/county-population-forecast-yearsinsinglecolumn.csv").done(function(){
+                  $.ajax({
+                    url: 'js/map-files/county-population-forecast-map.js',
+                    dataType:'script'
+                  })
+                });
+               </script>
             </div>	
 		  </div>	
         </div> 

@@ -1,9 +1,4 @@
-
 var municipal_population_map = (function(){/* Create a new file parser from the custom FileParser class */
-
-	var fp = new FileParser(["Year", "MunicipalityName", "Population", "Percent_Change_1980"]);
-	/* Convert your csv data to json */
-	fp.csvToJson("data/municipal-population-historical-change.csv");
 
 	var map = L.map('mapbox2', {scrollWheelZoom: false}).setView([40.072, -104.048], 9);
 	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
@@ -54,11 +49,11 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	};
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		this._div.innerHTML = "<h5 id='municipal_pop_infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
-			'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
-			"<b id='municipal_pop_population'>Population: </b>" + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
-			"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + data[props.MunicipalityName][1] + "%"
+			'<b>Municipality: </b>' + ((props.MunicipalityName) ? props.MunicipalityName : "") + '<br />' + 
+			"<b id='municipal_pop_population'>Population: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][0].toLocaleString() : "") + '<br />' + 
+			"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][1] : "") + "%"
 			: 'Hover over a point');
 
 	};
@@ -156,11 +151,11 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	// Add pop-ups to markers
 	geojson.bindPopup(function(d){
 		var props = d.feature.properties;
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		var str =
-		'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
-		'<b>Population: </b>' + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
-		'<b>Percent Change in Population Since 1980: </b>' + data[props.MunicipalityName][1] + "%";
+		'<b>Municipality: </b>' + ((props.MunicipalityName) ? props.MunicipalityName : "") + '<br />' + 
+		"<b id='municipal_pop_population'>Population: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][0].toLocaleString() : "") + '<br />' + 
+		"<b id='municipal_pop_percent'>Percent Change in Population Since 1980: </b>" + ((data[props.MunicipalityName]) ? data[props.MunicipalityName][1] : "") + "%";
 		return str
 	})
 	// Add markers to map
@@ -229,13 +224,14 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	function geoJsonSetStyle(year){	
 		curryear = year;
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		$('#municipal_pop_infoheader').html('historical Municipal Population, ' + curryear)
+		$('#municipal_pop_datelabel').html(curryear);
 		geojson.setStyle(fillColorFromData);
 	}
 
 	function fillColorFromData(feature){
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		if(typeof data[feature.properties.MunicipalityName] != "undefined"){
 			return {
 				fillColor: getColor(data[feature.properties.MunicipalityName][0]),
@@ -245,6 +241,9 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	}
 
 	function play(){
+		if(curryear == maxyear){
+			curryear = minyear;
+		}
 		$('#municipal_pop_play').html("<span class='fa fa-pause'></span>")
 		if(playClick){
 			playClick = false;
@@ -264,7 +263,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 			$('#municipal_pop_play').html("<span class='fa fa-play'></span>")
 			pause();
 			clearInterval(intV);
-			curryear = minyear;
+			curryear = maxyear;
 		}else{
 			$('#municipal_pop_datelabel').html(curryear);
 			//$('#municipal_pop_infoheader').html('County Population, ' + curryear)

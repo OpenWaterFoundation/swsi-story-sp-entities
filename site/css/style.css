@@ -66,8 +66,8 @@ iframe {
 
 .text-right-custom{
 	/*padding:100px; */
-	padding-left:25px;
-	padding-right:50px;
+	padding-left:25px!important;
+	padding-right:50px!important;
 	max-height:80vh;
 	overflow:auto;
 }
@@ -94,8 +94,8 @@ iframe {
 
 .text-left-custom{
 	/*padding:100px; */
-	padding-right:25px;
-	padding-left:50px;
+	padding-right:25px!important;
+	padding-left:50px!important;
 	max-height:80vh;
 	overflow:auto;
 }
