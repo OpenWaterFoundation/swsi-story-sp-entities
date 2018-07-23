@@ -49,7 +49,8 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	};
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
+		console.log(data)
 		this._div.innerHTML = "<h5 id='municipal_pop_infoheader'>Historical Municipal Population, " + curryear + '</h5>' +  (props ?
 			'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
 			"<b id='municipal_pop_population'>Population: </b>" + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
@@ -151,7 +152,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	// Add pop-ups to markers
 	geojson.bindPopup(function(d){
 		var props = d.feature.properties;
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		var str =
 		'<b>Municipality: </b>' + props.MunicipalityName + '<br />' + 
 		'<b>Population: </b>' + data[props.MunicipalityName][0].toLocaleString() + '<br />' + 
@@ -224,13 +225,13 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 
 	function geoJsonSetStyle(year){	
 		curryear = year;
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		$('#municipal_pop_infoheader').html('historical Municipal Population, ' + curryear)
 		geojson.setStyle(fillColorFromData);
 	}
 
 	function fillColorFromData(feature){
-		var data = fp.getJsonData().data[curryear];
+		var data = fp1.getJsonData().data[curryear];
 		if(typeof data[feature.properties.MunicipalityName] != "undefined"){
 			return {
 				fillColor: getColor(data[feature.properties.MunicipalityName][0]),

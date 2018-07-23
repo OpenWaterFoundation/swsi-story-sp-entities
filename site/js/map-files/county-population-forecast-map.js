@@ -53,7 +53,7 @@ var county_population_forecast_map = (function(){
 
 	// Method used to update the control based on feature properties passed
 	info.update = function (props) {
-		var data = fp.getJsonData().data[curryear];
+		var data = fp2.getJsonData().data[curryear];
 		this._div.innerHTML = "<h4 id='county_pop_infoheader'>County Population, " + curryear + '</h4>' +  (props ?
 			'<b>' + props.NAME + '</b><br />' + 
 			data[props.NAME].toLocaleString()
@@ -132,7 +132,7 @@ var county_population_forecast_map = (function(){
 	// Add pop-ups to markers
 	geojson.bindPopup(function(d){
 		var props = d.feature.properties;
-		var data = fp.getJsonData().data[curryear];
+		var data = fp2.getJsonData().data[curryear];
 		var str =
 		'<b>' + props.NAME + '</b><br />' + 
 		data[props.NAME].toLocaleString()
@@ -211,7 +211,7 @@ var county_population_forecast_map = (function(){
 	}
 
 	function fillColorFromData(feature){
-		var data = fp.getJsonData().data[curryear];
+		var data = fp2.getJsonData().data[curryear];
 		return {
 			fillColor: getColor(data[feature.properties.NAME])
 		}
