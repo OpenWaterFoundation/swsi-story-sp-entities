@@ -52,14 +52,16 @@
     <!-- jBox for tooltips -->
     <script src="js/jBox-0.4.9.min.js"></script>
 
-  	<!-- Population, Water Use Files -->
+  	<!-- Population, Water Use, Ag Data, Instream Flow Files -->
   	<script src="data/municipal-population-2006-2016.geojson"></script>
   	<script src="data/Colorado-Municipal-Water-Providers-SouthPlatte-Metro.geojson"></script>
   	<script src="data/waterproviders-wedp-population-wateruse.geojson"></script>
   	<script src="data/county-population-forecast.geojson"></script>
   	<script src="data/Colorado_Counties.geojson"></script>
   	<script src="data/county-population-forecast-yearsinsinglecolumn.csv"></script>	
-  	<script src="data/municipal-population-historical-change.geojson"></script>		
+  	<script src="data/municipal-population-historical-change.geojson"></script>
+  	<script src="data/CO-DWR-DitchServiceAreas-Division01-2005-20180228.geojson"></script>	
+	<script src="data/SouthPlatteMetro-instreamflow-reaches-decreed-with-amounts.geojson"></script>	
   	<!-- Boundary Files -->	
   	<script src="data/Colorado-IBCC-Basins-WGS84.geojson"></script>	
 
@@ -486,18 +488,13 @@
           </div>			  
         </div>			
       </div>
-  <!-- Agricultural Maps -->	  
+  <!-- Ditch Service Areas Map -->	  
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 text-left-custom custom-scroll">
+            <div class="col-lg-4 text-left-custom custom-scroll">
               <h2>Agricultural Entities</h2>
-               <p><i>Map of ditch companies in the basin, or perhaps a map of the ditches in the basin (from CDSS).  Map should also contain major 
-			   rivers/creeks in the basin from the SWRF to show where the water is coming from.</p>
-			   <p>Map of irrigated lands and the crops that are grown on those lands.  Get some data from National Agricultural Statistics Service?</p>
-			   <p>Map of ditch service areas?  Perhaps the headgates that are associated with them.</p>
-			   <p>See Citizen's Guide to Water Conservation for some discussion about ag efficiency.
-			   <p>Can we show change in irrigation practices over time, such as change from flood to sprinklers?  Are these data available?</i></p>
+			   <p>This map shows the 500 ditch service areas in the Basin.  The largest, FRICO (Farmers Reservoir and Irrigation Company)/ Barr Lake Ditch, 
+			   provides water to over 100,000 acres.</p>			  
                <p>To get water from a river into a ditch or canal for agricultural use (or urban use), diversion structures called headgates are installed 
                in the river.  Headgates are typically metal gates which are raised and lowered to allow water to flow into a ditch or canal.  
 			   Ditches and canals often require a dam or inlet on the river to help push water into the ditch or canal.  Canals and ditches move 
@@ -508,16 +505,19 @@
                <p>Most ditches in Colorado are owned by the water users themselves.  Small ditches are often owned in partnership by a handful of users. 
                Medium and large ditches are often owned by shareholders of mutual ditch companies, which are private, non-profit organizations formed 
                to distribute water to their member-owners.  Owners generally pay a fee to the ditch company based on their share of water they own.  
-               Shareholders also pay annual assessments to cover the costs of operations and maintenance (Citizen's Guide to Where Your Water Comes From, p.27).</p>			   
+               Shareholders also pay annual assessments to cover the costs of operations and maintenance (Citizen's Guide to Where Your Water Comes From, p.27).</p>
+			   <p>The Ditch and Reservoir Company Alliance (<a href="https://www.darca.org/" target="_blank">DARCA</a>) provides resources for ditch and 
+			   reservoir companies, irrigation districts, laterals and private ditches.</p>
+			   <p><i>An enhanced version of this story may eventually link ditch service areas to the crops grown in those areas and the water diverted by 
+			   associated headgates.</i></p>
             </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/water-use.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+              <div id="mapbox7" class="map-right"></div>
+				<script src="js/map-files/ditch-service-areas-2005-map.js"></script>
             </div>				
           </div>
-        </div> 
-      </div>		  	  
-  <!-- "Juxtapose" images of changes in agricultural lands -->	
-    <!-- Greeley -->  
+        </div> 		  	  
+  <!-- "Juxtapose" image of changes in agricultural lands -->	
         <div class="section">
           <div class="row" style="margin-left: 15px">
 		    <div class="col-lg-4 text-left-custom custom-scroll">
@@ -529,8 +529,15 @@
 				<li>Conversion of irrigated agricultural to non-agricultural or dryland farming because water 
 				rights have been transferred off the land</li>
 			  </ul>
+			  <p>When agricultural lands are converted to urban use, the term "buy and dry" is often used.  This refers to a municipal water 
+			  provider purchasing agricultural water rights and transferring the consumptive use portion of the right to municipal use.  
+			  Quite often this process involves storing the water in a reservoir, and perhaps transitioning over time by using rental programs 
+			  and other options to allow farming to continue.  Return flows must be maintained at historical averages as if the land were still 
+			  in agricultural production.  Municipal entities typically don't need the water every year but are purchasing water to plan for 
+			  growth and as an insurance policy against drought and climate change.</p>
 			  <p>The image on the right shows how agricultural land use has changed over time at the boundary of irrigated agriculture and urban area, 
-			  in this case near Greeley.  Note the adoption of sprinkler irrigation over time and urban growth onto agricultural areas.  Whether the 
+			  in this case near Greeley.  Click on the arrows in the middle of the image to move from an image from 2005 to one from 2017.  
+			  Note the adoption of sprinkler irrigation over time and urban growth onto agricultural areas.  Whether the 
 			  water that was used for agriculture can fully supply urban growth depends on the land use practices of the urban growth.</p>	
 			</div>  
             <div class="col-lg-8">
@@ -556,7 +563,47 @@
           </div>
         </div>
   <!-- Agricultural Water Use Efficiency -->  
- 		
+      <div class="section">
+          <div class="row">
+            <div class="col-lg-4 text-left-custom custom-scroll">
+              <h2>Agricultural Water Use and Efficiency</h2>
+			  <p>Because agriculture is the dominant water user in the Basin, it is a common perception that if agricultural entities did a better job of conserving water 
+			  then the anticipated gap in future water supplies could be met.  One of the ways in which water can be conserved is through the use of more efficient 
+			  irrigation systems, such as center pivot sprinklers or drip irrigation.</p>
+			  <p>There are several reasons to switch to more efficient irrigation methods (<a href="https://docs.wixstatic.com/ugd/302b62_a42489ba652d4385b706692a46117769.pdf" 
+			  target="_blank">Colorado Ag Water Alliance (CAWA) Brochure</a>):</p>
+			  <ul>
+			    <li>These methods do a better job of delivering water to the crop, which results in the crop being more evenly irrigated, which increases yield</li>
+				<li>These methods typically require less labor</li>
+				<li>These methods leach less water through the soil, so less money is spent on fertilizer and herbicides</li>
+			  </ul>	
+			  <p>This visualization shows the changes in irrigated acreage in the Basin.</p>
+			  <table>
+				<tr> <th></th> <th colspan="2">2005 Acreage</th> <th colspan="2">2015 Acreage</th> </tr>			  
+				<tr> <th>Crop Type</th> <th>Flood</th> <th>Sprinkler</th> <th>Flood</th> <th>Sprinkler</th> </tr>
+				<tr> <td>Alfalfa</td> <td>120,079</td> <td>116,995</td> <td>72,057</td> <td>127,983</td> </tr>	
+				<tr> <td>Barley</td> <td>No data</td> <td>No data</td> <td>3,812</td> <td>1,275</td> </tr>	
+				<tr> <td>Corn</td> <td>148,858</td> <td>134,900</td> <td>94,653</td> <td>199,203</td> </tr>		
+				<tr> <td>Dry Beans</td> <td>18,641</td> <td>10,016</td> <td>2,804</td> <td>3,055</td> </tr>		
+				<tr> <td>Grass Pasture</td> <td>144,481</td> <td>16,054</td> <td>168,945</td> <td>20,215</td> </tr>		
+				<tr> <td>Orchard without Cover</td> <td>1,298</td> <td>72</td> <td>No data</td> <td>No data</td> </tr>	
+				<tr> <td>Potatoes</td> <td>No data</td> <td>No data</td> <td>147</td> <td>568</td> </tr>					
+				<tr> <td>Small Grains</td> <td>35,510</td> <td>23,144</td> <td>4,374</td> <td>5,080</td> </tr>		
+				<tr> <td>Sod Farm</td> <td>2,148</td> <td>6,044</td> <td>No data</td> <td>No data</td> </tr>
+				<tr> <td>Sorghum Grain</td> <td>No data</td> <td>No data</td> <td>3,107</td> <td>2,845</td> </tr>							
+				<tr> <td>Sugar Beets</td> <td>12,415</td> <td>12,751</td> <td>7,640</td> <td>13,062</td> </tr>
+				<tr> <td>Sunflower</td> <td>No data</td> <td>No data</td> <td>1,643</td> <td>2,220</td> </tr>					
+				<tr> <td>Vegetables</td> <td>15,947</td> <td>10,124</td> <td>331</td> <td>328</td> </tr>		
+				<tr> <td>Spring Wheat</td> <td>No data</td> <td>No data</td> <td>35,086</td> <td>38,808</td> </tr>				
+			  </table>
+			  <p>Source:  Division of Water Resources, <a href="http://cdss.state.co.us/GIS/Pages/Division1SouthPlatte.aspx" target="_blank">GIS Data Library</a> 
+			  Division 1 Irrigated Lands 2005 and Division 1 Irrigated Lands 2015.</p>		  
+            </div>
+		    <div class="col-lg-8 side-content">
+				<iframe data-src="http://viz.openwaterfoundation.org/co/owf-viz-co-spdss-ag-gapminder/" scrolling="no" frameborder="0"></iframe>
+            </div>				
+          </div>
+        </div>  		
 <!-- Environment Section -->
   <!-- Environmental Attributes -->		  
       <div class="section" style="background-image:url('images/colorado-1680302_1920.jpg'); height:100vh!important; background-position: center center;">
@@ -591,9 +638,8 @@
 	  </div>
   <!-- CWCB Instream Flow Rights Map -->	
       <div class="section">
-        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 text-left-custom custom-scroll">
+            <div class="col-lg-4 text-left-custom custom-scroll">
             <h2>Environmental Flow Protection</h2>			
 			<p>The primary means of protecting environmental and recreational attributes is through the protection of flows.  A range of flows are 
 			generally needed to protect aquatic species and their associated habitats.  For example, minimum flows are the minimum amounts of water needed to preserve the aquatic 
@@ -603,14 +649,14 @@
 			to preserve and improve the natural environment to a reasonable degree".  This map shows CWCB decreed instream flow reaches in the South Platte and Metro basins.  Clicking 
 			on the radio buttons on the right side of the map allows you to see the decreed flow amounts for each month of the year.  Hover over a stream reach to obtain more information, 
 			such as the number of miles of stream that are protected.</p>
-			<p><i>Map is just a screen shot; will be interactive and contain radio buttons to select for each month.</i></p>	
+			<p><i>This map currently shows decreed flow amounts for August.  It will eventually contain radio buttons to select for each month.</i></p>	
              </div>
-		    <div class="col-lg-7 side-content">
-              <img class="image-centered" src="images/instream-flows.png" frameborder="0"></img>
+		    <div class="col-lg-8">
+              <div id="mapbox9" class="map-right"></div>
+			    <script src="js/map-files/instream-flow-map.js"></script>
             </div>				
           </div>
         </div> 
-      </div>
   <!-- Environmental Entities -->
       <div class="section">
         <div class="container-fluid">
@@ -648,7 +694,7 @@
 					 Colorado Parks and Wildlife.</i></p>					 
 			         <p style="color:white; font-size:18px;"><i>Gold Medal streams, Colorado Outstanding Waters, Wild and Scenic Rivers (70-mile stretch of the 
 			         Poudre is the only Wild and Scenic River in Colorado).</i></p>
-			         <p style="color:white; font-size:18px;"><i>Any recreational map layers from SWSI?  Data from Parks and Wildlife?</i>></p>
+			         <p style="color:white; font-size:18px;"><i>Any recreational map layers from SWSI?  Data from Parks and Wildlife?</i></p>
               </div>
             </div>		  
         </div>		
@@ -669,7 +715,7 @@
 			SSI.  May want to read through this to see if we can find some data for visualizations.</i></p>
           </div>
           <div class="col-lg-8">
-            <div id="mapbox7" class="map-right"></div>
+            <div id="mapbox10" class="map-right"></div>
           </div>		  
         </div>		
       </div>
@@ -734,7 +780,7 @@
           navigation:true,
           navigationPosition:'right',
           navigationTooltips:['South Platte and Metro Basin Water Entities', 'Water Resources', 'Water Rights', 'Water Use Concepts', 'Municipalities', 'Municipal Populations', 'Population Projections',
-		  'Water Supply', 'Water Providers', 'Water Use', 'Water Efficiency', 'Agriculture', 'Agriculture', 'Land Use Change', 'Ag Water Use Efficiency', 'Environment', 'Flow Protection', 'Envr. Entities',
+		  'Water Supply', 'Water Providers', 'Water Use', 'Water Efficiency', 'Agriculture', 'Agricultural Entities', 'Land Use Change', 'Ag Water Use Efficiency', 'Environment', 'Flow Protection', 'Envr. Entities',
 		  'Recreation', 'Industry','Resources', 'Sources'],
           recordHistory:false,
           menu:"#navbarResponsive",

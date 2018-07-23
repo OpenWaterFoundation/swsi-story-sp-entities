@@ -16,10 +16,17 @@ require(stringr)
 rm(list=ls())
 
 # 1) Read in data
-# Irrigated Lands for Division 1 (South Platte) (polygons)
-# **NEED 2005 DATA FOR COMPARISONS TO DITCH SERVICE AREAS **
+# Irrigated Lands for Division 1 (South Platte) (polygons) 2005 and 2015
+irrigated_lands_2005 = read.csv("..\\data\\CO-DWR-IrrigatedLands-Division01-2005-20180228.csv", 
+header = TRUE)
+irrigated_lands_2005 = irrigated_lands_2005 %>%
+  rename(Irrig_Type_2005 = IRRIG_TYPE)
+head(irrigated_lands_2005)
+
 irrigated_lands_2015 = read.csv("..\\data\\CO-DWR-IrrigatedLands-Division01-2015-20180228.csv", 
 header = TRUE)
+irrigated_lands_2015 = irrigated_lands_2015 %>%
+  rename(Irrig_Type_2015 = IRRIG_TYPE)
 head(irrigated_lands_2015)
 
 # Ditch Service Areas for Division 1 (polygons)
@@ -45,6 +52,8 @@ head(canals)
   summarise(Acres = sum(ACRES)))
 # ** COULD DO THIS FOR ALL YEARS OF IRRIGATED LANDS DATA (1956, 1976, 1987, 1997, 2001, 2005)
 # TO SEE CHANGE OVER TIME **
+
+
 
 #############################################################################################
 # 3) Statistics for Structures
