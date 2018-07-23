@@ -25,6 +25,17 @@ var water_providers_1051_map = (function(){
 	var dates = ['2013', '2014', '2015', '2016', '2017']
 	var baselayers = {};
 
+	function hasHttp(url){
+		if(url == "") return "";
+		var pattern = /^((http|https|ftp):\/\/)/;
+
+		if(!pattern.test(url)) {
+		    url = "http://" + url;
+		}
+
+		return url;
+	}
+
 	dates.forEach(function(year){
 		// ADD A LAYER OF YEAR POPULATION AND WATER USE DATA 	
 		// variable name will be wedp + year ex. wedp2013
@@ -74,12 +85,13 @@ var water_providers_1051_map = (function(){
 
 		window['wedp' + year].bindPopup(function(d){
 			var props = d.feature.properties;
-			if(typeof props != "undefined"){				var str =
+			if(typeof props != "undefined"){			
+			var str =
 				'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
 				'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' + 
 				'<b>County(s): </b>' + props.County_CSV + '<br />' +
 				'<b>Provider Type: </b>' + props.LocalGovtType + '<br />' + 
-				"<b>Website: </b><a href='" + props.Website + "' target='_blank'>" + props.Website  + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br />" + 
+				"<b>Website: </b><a href='" + hasHttp(props.Website )+ "' target='_blank'>" + hasHttp(props.Website)  + "</a> <i style='font-size:9px;' class='fa fa-external-link'></i><br />" + 
 				'<b>Population Served: </b>' + props['Population_Served_' + year].toLocaleString() + 
 				'<br />' + '<b>Water Use (acre-feet): </b>' + props['WaterUse_' + year].toFixed(0)
 				return str
@@ -112,14 +124,15 @@ var water_providers_1051_map = (function(){
 
 // Method used to update the control based on feature properties passed
 	info.update = function (props, year) {
+		if(props) console.log(props)
 		this._div.innerHTML = '<h5>Water Providers</h5>' +  (props ?
-			'<b>Name: </b>' + props.WaterProviderName + '<br/>' + 
-			'<b>IBCC Basin: </b>' + props.IBCC_Basin + '<br />' + 
-			'<b>County(s): </b>' + props.County_CSV + '<br />' +
-			'<b>Provider Type: </b>' + props.LocalGovtType + '<br />' + 
-			'<b>Website: </b>' + props.Website  + '<br />' + 
-			'<b>Population Served: </b>' + props['Population_Served_' + year].toLocaleString() + 
-			'<br />' + '<b>Water Use (acre-feet): </b>' + props['WaterUse_' + year].toFixed(0)
+			'<b>Name: </b>' + ((props.WaterProviderName) ? props.WaterProviderName : "") + '<br/>' + 
+			'<b>IBCC Basin: </b>' + ((props.IBCC_Basin) ? props.IBCC_Basin : "") + '<br />' + 
+			'<b>County(s): </b>' + ((props.County_CSV) ? props.County_CSV : "") + '<br />' +
+			'<b>Provider Type: </b>' + ((props.LocalGovtType) ? props.LocalGovtType : "") + '<br />' + 
+			'<b>Website: </b>' + ((props.Website) ? hasHttp(props.Website) : "")  + '<br />' + 
+			'<b>Population Served: </b>' + ((props["Population_Served_" + year]) ? props['Population_Served_' + year].toLocaleString() : "") + 
+			'<br />' + '<b>Water Use (acre-feet): </b>' + ((props["WaterUse_" + year]) ? props['WaterUse_' + year].toFixed(0) : "")
 			: 'Hover on a circle for more information');
 	};
 	info.addTo(map);
