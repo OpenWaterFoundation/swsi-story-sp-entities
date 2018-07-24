@@ -59,7 +59,13 @@ cssOrig="style.css"
 cssWithVersion="style.${version}.css"
 customleafletcssOrig="custom-leaflet-style.css"
 customleafletcssWithVersion="custom-leaflet-style.${version}.css"
-# Don't include /map-files because slash messes up sed command
+# JavaScript files that need versioned
+# -don't include /map-files because slash messes up sed command
+fileParserJsOrig="fileparser.js"
+fileParserJsWithVersion="fileparser.${version}.js"
+# JavaScript map page files that need versioned
+# -don't include /map-files because slash messes up sed command
+# Muni...
 countyPopJsOrig="county-population-forecast-map.js"
 countyPopJsWithVersion="county-population-forecast-map.${version}.js"
 muniJsOrig="municipalities-southplatte-metro-map.js"
@@ -74,12 +80,21 @@ wpEffJsOrig="water-providers-efficiency-plans-map.js"
 wpEffJsWithVersion="water-providers-efficiency-plans-map.${version}.js"
 wpJsOrig="water-providers-southplatte-metro-map.js"
 wpJsWithVersion="water-providers-southplatte-metro-map.${version}.js"
+# Agriculture...
+ditchServiceAreaJsOrig="ditch-service-areas-2005-map.js"
+ditchServiceAreaJsWithVersion="ditch-service-areas-2005-map.${version}.js"
+# Environment...
+instreamFlowJsOrig="instream-flow-map.js"
+instreamFlowJsWithVersion="instream-flow-map.${version}.js"
 #
-cat ../site/index.html | sed -e "s/${countyPopJsOrig}/${countyPopJsWithVersion}/g" | sed -e "s/${muniJsOrig}/${muniJsWithVersion}/g" | sed -e "s/${muni2JsOrig}/${muni2JsWithVersion}/g" | sed -e "s/${muniPopHistJsOrig}/${muniPopHistJsWithVersion}/g" | sed -e "s/${wp1051JsOrig}/${wp10151JsWithVersion}/g" | sed -e "s/${wpEffJsOrig}/${wpEffJsWithVersion}/g" | sed -e "s/${wpJsOrig}/${wpJsWithVersion}/g" | sed -e "s/${countyCssOrig}/${countyCssWithVersion}/g" | sed -e "s/${cssOrig}/${cssWithVersion}/g" | sed -e "s/${customleafletcssOrig}/${customleafletcssWithVersion}/g" > ${tmpBuildFolder}/index.html
+cat ../site/index.html | sed -e "s/${countyPopJsOrig}/${countyPopJsWithVersion}/g" | sed -e "s/${muniJsOrig}/${muniJsWithVersion}/g" | sed -e "s/${muni2JsOrig}/${muni2JsWithVersion}/g" | sed -e "s/${muniPopHistJsOrig}/${muniPopHistJsWithVersion}/g" | sed -e "s/${wp1051JsOrig}/${wp1051JsWithVersion}/g" | sed -e "s/${wpEffJsOrig}/${wpEffJsWithVersion}/g" | sed -e "s/${wpJsOrig}/${wpJsWithVersion}/g" | sed -e "s/${countyCssOrig}/${countyCssWithVersion}/g" | sed -e "s/${cssOrig}/${cssWithVersion}/g" | sed -e "s/${customleafletcssOrig}/${customleafletcssWithVersion}/g" | sed -e "s/${fileParserJsOrig}/${fileParserJsWithVersion}/g" | sed -e "s/${ditchServiceAreaJsOrig}/${ditchServiceAreaJsWithVersion}/g" | sed -e "s/${instreamFlowJsOrig}/${instreamFlowJsWithVersion}/g" > ${tmpBuildFolder}/index.html
 aws s3 cp ${tmpBuildFolder}/index.html ${s3Folder}/index.html ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/css/county-population-forecast-map.css ${s3Folder}/css/county-population-forecast-map.${version}.css ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/css/style.css ${s3Folder}/css/style.${version}.css ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/css/custom-leaflet-style.css ${s3Folder}/css/custom-leaflet-style.${version}.css ${dryrun} --profile "$awsProfile"
+# General
+aws s3 cp ../site/js/fileparser.js ${s3Folder}/js/fileparser.${version}.js ${dryrun} --profile "$awsProfile"
+# Muni
 aws s3 cp ../site/js/map-files/county-population-forecast-map.js ${s3Folder}/js/map-files/county-population-forecast-map.${version}.js ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/js/map-files/municipalities-southplatte-metro-map.js ${s3Folder}/js/map-files/municipalities-southplatte-metro-map.${version}.js ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/js/map-files/municipalities-southplatte-metro-map-2.js ${s3Folder}/js/map-files/municipalities-southplatte-metro-map-2.${version}.js ${dryrun} --profile "$awsProfile"
@@ -87,3 +102,7 @@ aws s3 cp ../site/js/map-files/municipal-population-historical-map.js ${s3Folder
 aws s3 cp ../site/js/map-files/water-providers-1051-data-map.js ${s3Folder}/js/map-files/water-providers-1051-data-map.${version}.js ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/js/map-files/water-providers-efficiency-plans-map.js ${s3Folder}/js/map-files/water-providers-efficiency-plans-map.${version}.js ${dryrun} --profile "$awsProfile"
 aws s3 cp ../site/js/map-files/water-providers-southplatte-metro-map.js ${s3Folder}/js/map-files/water-providers-southplatte-metro-map.${version}.js ${dryrun} --profile "$awsProfile"
+# Agriculture
+aws s3 cp ../site/js/map-files/ditch-service-areas-2005-map.js ${s3Folder}/js/map-files/ditch-service-areas-2005-map.${version}.js ${dryrun} --profile "$awsProfile"
+# Environment
+aws s3 cp ../site/js/map-files/instream-flow-map.js ${s3Folder}/js/map-files/instream-flow-map.${version}.js ${dryrun} --profile "$awsProfile"
