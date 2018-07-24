@@ -17,7 +17,7 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	var maxyear = 2016;
 
 	/* Set necessary globals */
-	var curryear = minyear;
+	var curryear = maxyear;
 	var playClick = true;
 	var intV;
 	var speed = 100;
@@ -30,8 +30,8 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 			"<button type='button' id='municipal_pop_back' class='backButton btn btn-deafult btn-xs' onclick='municipal_population_map.backFunction()'><i class='fa fa-backward' style='padding:0px;'></i></button>" +
 			"<button type='button' id='municipal_pop_play' class='playButton btn btn-deafult btn-xs' onclick='municipal_population_map.playFunction()'><i class='fa fa-play' style='padding:0px;'></i></button>" +
 			"<button type='button' id='municipal_pop_forward' class='forwardButton btn btn-deafult btn-xs' onclick='municipal_population_map.forwardFunction()'><i class='fa fa-forward' style='padding:0px;'></i></button>" +
-			"<p id='municipal_pop_datelabel' class='datelabel'>" + minyear +"</p>" +
-		 	"<input type='range' min='" + minyear + "' max='" + maxyear + "' value='" + minyear + "' class='timeslider slider' id='municipal_pop_timeslider' oninput='municipal_population_map.timesliderHelper(this.value)'>" +
+			"<p id='municipal_pop_datelabel' class='datelabel'>" + curryear +"</p>" +
+		 	"<input type='range' min='" + minyear + "' max='" + maxyear + "' value='" + curryear + "' class='timeslider slider' id='municipal_pop_timeslider' oninput='municipal_population_map.timesliderHelper(this.value)'>" +
 		 	" <p style='float:left;display:inline-block; margin:0px; margin-top: 3px; padding-left:5px;'> Speed:</p>" +
 		 	"<input type='range' min='0' max='100' value='75' class='speedslider slider' id='municipal_pop_speedslider' oninput='municipal_population_map.setSpeedFunction(this.value)'>";
 		L.DomEvent.disableClickPropagation(this._div);
@@ -73,8 +73,9 @@ var municipal_population_map = (function(){/* Create a new file parser from the 
 	}
 	// Counties will fill with colors based on 2015 population	
 	function style(feature) {
+		var data = fp1.getJsonData().data[curryear]
 		return {
-		    fillColor: getColor(feature.properties.County_Population_2015Population),
+		    fillColor: getColor(data[feature.properties.MunicipalityName][0]),
 		    weight: 2,
 		    opacity: 1,
 		    color: 'white',
