@@ -186,6 +186,7 @@ iframe {
     padding:5px;
     max-width:none!important;
     right:25px!important;
+    top: -7px!important;
 }
 
 /* Esri map */
