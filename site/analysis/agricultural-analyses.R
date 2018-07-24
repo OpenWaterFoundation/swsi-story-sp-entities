@@ -19,14 +19,10 @@ rm(list=ls())
 # Irrigated Lands for Division 1 (South Platte) (polygons) 2005 and 2015
 irrigated_lands_2005 = read.csv("..\\data\\CO-DWR-IrrigatedLands-Division01-2005-20180228.csv", 
 header = TRUE)
-irrigated_lands_2005 = irrigated_lands_2005 %>%
-  rename(Irrig_Type_2005 = IRRIG_TYPE)
 head(irrigated_lands_2005)
 
 irrigated_lands_2015 = read.csv("..\\data\\CO-DWR-IrrigatedLands-Division01-2015-20180228.csv", 
 header = TRUE)
-irrigated_lands_2015 = irrigated_lands_2015 %>%
-  rename(Irrig_Type_2015 = IRRIG_TYPE)
 head(irrigated_lands_2015)
 
 # Ditch Service Areas for Division 1 (polygons)
@@ -47,12 +43,43 @@ head(canals)
 ############################################################################################
 # 2) Statistics for Irrigated Lands
 # a) Total acres flood irrigated vs. sprinkler irrigated for each crop type
-(crop_summary = irrigated_lands_2015 %>%
+# 2015
+(crop_summary_2015 = irrigated_lands_2015 %>%
   group_by(CROP_TYPE, IRRIG_TYPE) %>%
   summarise(Acres = sum(ACRES)))
+# Now summarize flood and sprinkler totals
+(irrigation_summary_2015 = crop_summary_2015 %>%
+  group_by(IRRIG_TYPE) %>%
+  summarise(Acres = sum(Acres)))
+
+# 2005
+(crop_summary_2005 = irrigated_lands_2005 %>%
+  group_by(CROP_TYPE, IRRIG_TYPE) %>%
+  summarise(Acres = sum(ACRES)))
+# Now summarize flood and sprinkler totals
+(irrigation_summary_2005 = crop_summary_2005 %>%
+  group_by(IRRIG_TYPE) %>%
+  summarise(Acres = sum(Acres)))
+
 # ** COULD DO THIS FOR ALL YEARS OF IRRIGATED LANDS DATA (1956, 1976, 1987, 1997, 2001, 2005)
 # TO SEE CHANGE OVER TIME **
 
+# b) Change from flood to sprinkler irrigation from 2005 to 2015
+# Simplify datasets
+irrigated_lands_2005 = irrigated_lands_2005 %>%
+  rename(Irrig_Type_2005 = IRRIG_TYPE) %>%
+  select(PARCEL_ID, CROP_TYPE, Irrig_Type_2005, ACRES) %>%
+  arrange(PARCEL_ID)
+
+irrigated_lands_2015 = irrigated_lands_2015 %>%
+  rename(Irrig_Type_2015 = IRRIG_TYPE) %>%
+  select(PARCEL_ID, CROP_TYPE, Irrig_Type_2015, ACRES) %>%
+  arrange(PARCEL_ID)
+  
+# Merge datasets by Parcel ID
+irrigated_lands_2005_2015 = inner_join(irrigated_lands_2015, irrigated_lands_2005, by = c("PARCEL_ID" = 
+"PARCEL_ID"))
+head(irrigated_lands_2005_2015, n=100)
 
 
 #############################################################################################

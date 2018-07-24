@@ -4,50 +4,26 @@
 
 var instream_flow_map = (function(){
 
+	var instreamflowmap = L.map('mapbox9', {scrollWheelZoom: false}).setView([39.972, -104.348], 9);
 
-// Set up outdoor base layer
-	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
+// Set up satellite base layer
+	var satellite = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
 		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
 		'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.outdoors'
-	});
+		id: 'mapbox.satellite'
+	}).addTo(instreamflowmap);	
 
-// Set up grayscale base layer	
-	var grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
-		maxZoom: 18,
-		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
-		'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	});	
-
-	var instreamflowmap = L.map('mapbox9', {
-		center: [39.972, -104.348], 
-		zoom: 9,
-		layers: [grayscale]
-	});	
-
-// Create an object that contains the outdoors and grayscale base layers
-    var baseMaps = {
-	    "Grayscale": grayscale,
-		"Outdoors": outdoors
-		};
-
-// Create layer control that allows for switching between grayscale and outdoors base maps
-    L.control.layers(baseMaps).addTo(instreamflowmap);
-		
 // Add in IBCC basins layer
 	basin1 = L.geoJson(basins, {
 	  color: 'black',
 	  weight: 1,
 	  fillOpacity: 0
 	}).addTo(instreamflowmap)		
-		
-// Control that shows municipality info on hover -- creates an info box
+
+// Control that shows decreed amounts info on hover -- creates an info box
 	var info = L.control();
 
 	info.onAdd = function (instreamflowmap) {
@@ -56,36 +32,47 @@ var instream_flow_map = (function(){
 		return this._div;
 	};
 
-// Method used to update the control based on feature properties passed
-	info.update = function (props) {
-		this._div.innerHTML = '<h5>Instream Flow Reaches in the South Platte and Metro Basins</h5>' +  (props ?
-			'' + '<b>Stream Name: </b>' + props.Name + '<br/>' + '<b>Miles of Stream: </b>' + props.MILES.toFixed(1) + '<br />' +
-			'<b>August Decreed Flow (cfs): </b>' + props.August + '<br/>' + '<b>Watershed: </b>' + props.Watershed + '<br/>' + '<b>Case No.: </b>' + props.Case_Numbe
-			: 'Hover on a line for more information');
-	};
-	info.addTo(instreamflowmap);
+// Create array list of months to display as layers to toggle on or off		
+	var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+	var baselayers = {};		
 
-// Create function of color based on amount of water right
-    	function getflowcolor(x){
-    	   return x > 40   ? '#002966' :  
-		          x > 20.1 ? '#003d99' :
-				  x > 10.1 ? '#0052cc' :
-		          x > 5.1  ? '#0066ff' :
-    	   	      x > 1.1  ? '#66a3ff' :
-				  x > 0    ? '#cce0ff' :
-    	                     '#595959';
-    	};
-
-// Lines will be colored based on August flow right
-	function flowstyle(feature) {
-    return {
-        color: getflowcolor(feature.properties.August),
-        weight: 2,
-        opacity: 1
-    };
-}		
 	
-// Highlight a point when it is hovered over on the map
+	months.forEach(function(month){
+		// Add a layer of monthly decreed amounts	
+		// Variable name will be flow + month; ex. =  flowJanuary
+		window['flow' + month];	
+
+// Reset the color after hovering over
+	function resetHighlight(e) {
+		window['flow' + month].resetStyle(e.target);
+		info.update();
+	} 	
+	
+	function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight
+		});
+	}		
+		
+// Create a function that calls for colors
+		function style(feature) {
+		   var point = feature.properties[month];
+		   
+		   return getColor(point);
+		}
+	
+// Add in instream flow layer			
+	window['flow' + month] = L.geoJson(instreamflow, {		
+            color: style(feature),
+			weight: 1,
+			opacity: 1			
+			;
+	onEachFeature: onEachFeature
+	});	
+			
+	
+// Highlight a line when it is hovered over on the map
 	function highlightFeature(e) {
 		var layer = e.target;
 
@@ -99,32 +86,69 @@ var instream_flow_map = (function(){
 		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 			layer.bringToFront();
 		}
-		info.update(layer.feature.properties);
+		info.update(layer.feature.properties, month);
 	}
 	
-	var instreamflowlines;
-	
-// Reset the color after hovering over
-	function resetHighlight(e) {
-		instreamflowlines.resetStyle(e.target);
-		info.update();
-	} 	
-	
-	function onEachFeature(feature, layer) {
-		layer.on({
-			mouseover: highlightFeature,
-			mouseout: resetHighlight
-		});
-	}
+		baselayers[month] = window['flow' + month];
 
+	})	
+
+
+// Method used to update the control based on feature properties passed
+	info.update = function (props, month) {
+		this._div.innerHTML = '<h5>Instream Flow Reaches in the South Platte and Metro Basins</h5>' +  (props ?
+			     '<b>Stream Name: </b>' + ((props.Name) ? props.Name : "") + '<br/>' 
+			   + '<b>Miles of Stream: </b>' + ((props.MILES.toFixed(1)) ? props.MILES.toFixed(1) : "") + '<br />' 
+			   + '<b>Decreed Flow (cfs): </b>' + ((props[month]) ? props[month] : "") + '<br/>' 
+			   + '<b>Watershed: </b>' + ((props.Watershed) ? props.Watershed : "") + '<br/>' 
+			   + '<b>Case No.: </b>' + ((props.Case_Numbe) ? props.Case_Numbe : "")
+			: 'Hover on a line for more information');
+	};
+	info.addTo(instreamflowmap);	
+
+// Create function of colors based on amount of water right
+    	function getColor(point){
+    	   return point > 40   ? '#002966' :  
+		          point > 20.1 ? '#003d99' :
+				  point > 10.1 ? '#0052cc' :
+		          point > 5.1  ? '#0066ff' :
+    	   	      point > 1.1  ? '#66a3ff' :
+				  point > 0    ? '#cce0ff' :
+    	                     '#595959';
+    	}
+
+// Add January amounts as default
+	flowJanuary.addTo(instreamflowmap);	
+
+// Add method to layer control class
+	L.Control.Layers.include({
+	    getActiveOverlays: function () {
+
+	        // Create array for holding active layers
+	        var active = [];
+
+	        // Iterate all layers in control
+	        this._layers.forEach(function (obj) {
+
+	        	console.log(obj)
+
+	            // Check if it's an overlay and added to the map
+	            if (obj.overlay && this._map.hasLayer(obj.layer)) {
+	                // Push layer to active array
+	                active.push(obj.layer);
+	            }
+	        });
+
+	        // Return array
+	        return active;
+	    }
+	});
 	
-// Add in instream flow layer			
-	instreamflowlines = L.geoJson(instreamflow, {		
-            style: flowstyle, 
-			onEachFeature: onEachFeature
-			}).addTo(instreamflowmap);
-			
-	instreamflowmap.attributionControl.addAttribution("Data &copy; Colorado's Decision Support Systems");			
+	instreamflowmap.attributionControl.addAttribution("Data &copy; Colorado's Decision Support Systems");
+
+// Add baselayers to layerControl
+	var layerControl = L.control.layers(baselayers, null, {collapsed: false}).addTo(instreamflowmap);
+	
 			
 // Add a legend to the map
     var legend = L.control ({position: 'bottomright'});
@@ -137,7 +161,7 @@ var instream_flow_map = (function(){
 		   div.innerHTML = "<h6>Decreed Flows (cfs)</h6>";		   
 		   for (var i = 0; i < categories.length; i++) {
 		        div.innerHTML +=
-				   '<i style="background:' + getflowcolor(categories[i]) + '"></i>  ' +
+				   '<i style="background:' + getColor(categories[i]) + '"></i>  ' +
 				   (labels[i] ? labels[i] + '<br>' : '+');
 		   }
 		   

@@ -3,17 +3,42 @@
 
 var ditch_service_areas_map = (function(){
 
-
-	var map = L.map('mapbox7', {scrollWheelZoom: false}).setView([40.072, -104.048], 9);
-
-	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
+// Set up outdoor base layer
+	var outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
 		maxZoom: 18,
-		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation </a>' + 
+		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
 		'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.outdoors'
-	}).addTo(map);
+	});
+	
+// Set up satellite base layer
+	var satellite = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
+		maxZoom: 18,
+		attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
+		'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.satellite'
+	});			
+	
+	var map = L.map('mapbox7', {
+		scrollWheelZoom: false,
+		center:[40.072, -104.048], 
+		zoom: 9,
+		layers: [satellite]
+	});	
+	
+// Create an object that contains the satellite and outdoors base layers
+    var baseMaps = {
+		"Satellite": satellite,
+		"Outdoors": outdoors
+		};
+
+// Create layer control that allows for switching between grayscale, outdoors and satellite base maps
+    L.control.layers(baseMaps).addTo(map);
+
 		
 	// Add in IBCC basins layer
 	basin1 = L.geoJson(basins, {
@@ -36,7 +61,7 @@ var ditch_service_areas_map = (function(){
 		this._div.innerHTML = '<h5>Ditch Service Areas</h5>' +  (props ?
 			'<b>Ditch Name: </b>' + props.DITCH_NAME + '<br />' + 
 			'<b>WDID: </b>' + props.WDID + '<br />' + 
-			'<b>Acreage: </b>' + props.ACREAGE.toLocaleString()	
+			'<b>Acreage: </b>' + props.ACREAGE.toLocaleString('en', {maximumFractionDigits : 1})	
 			: 'Hover over an area');
 	};
 	info.addTo(map);
@@ -128,7 +153,7 @@ var ditch_service_areas_map = (function(){
 				from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
 		}
 
-		div.innerHTML = "<h6>Acreage</h6>" + labels.join('<br>');
+		div.innerHTML = "<h6>Service Area Acreage</h6>" + labels.join('<br>');
 		return div;
 	};
 	legend.addTo(map);
