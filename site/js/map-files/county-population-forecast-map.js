@@ -19,7 +19,7 @@ var county_population_forecast_map = (function(){
 	var maxyear = 2050;
 
 	/* Set necessary globals */
-	var curryear = minyear;
+	var curryear = maxyear;
 	var playClick = true;
 	var intV;
 	var speed = 100;
@@ -32,8 +32,8 @@ var county_population_forecast_map = (function(){
 			"<button type='button' id='county_pop_back' class='backbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.backFunction()'><i class='fa fa-backward' style='padding:0px;'></i></button>" +
 			"<button type='button' id='county_pop_play' class='playbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.playFunction()'><i class='fas fa-play' style='padding:0px;'></i></button>" +
 			"<button type='button' id='county_pop_forward' class='forwardbutton btn btn-deafult btn-xs' onclick='county_population_forecast_map.forwardFunction()'><i class='fa fa-forward' style='padding:0px;'></i></button>" +
-			"<p id='county_pop_datelabel' class='datelabel'>" + minyear +"</p>" +
-		 	"<input type='range' min='" + minyear + "' max='" + maxyear + "' value='" + minyear + "' class='timeslider slider' id='county_pop_timeslider' oninput='county_population_forecast_map.timesliderHelper(this.value)'>" +
+			"<p id='county_pop_datelabel' class='datelabel'>" + curryear +"</p>" +
+		 	"<input type='range' min='" + minyear + "' max='" + maxyear + "' value='" + curryear + "' class='timeslider slider' id='county_pop_timeslider' oninput='county_population_forecast_map.timesliderHelper(this.value)'>" +
 		 	" <p style='float:left;display:inline-block; margin:0px; margin-top: 3px; padding-left:5px;'> Speed:</p>" +
 		 	"<input type='range' min='0' max='100' value='75' class='speedslider slider' id='county_pop_speedslider' oninput='county_population_forecast_map.setSpeedFunction(this.value)'>";
 		L.DomEvent.disableClickPropagation(this._div);
@@ -75,8 +75,9 @@ var county_population_forecast_map = (function(){
 	}
 	// Counties will fill with colors based on 2015 population	
 	function style(feature) {
+		var data = fp2.getJsonData().data[curryear];
 		return {
-		    fillColor: getColor(feature.properties.County_Population_2015Population),
+		    fillColor: getColor(data[feature.properties.NAME]),
 		    weight: 2,
 		    opacity: 1,
 		    color: 'white',
