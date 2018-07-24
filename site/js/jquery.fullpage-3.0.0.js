@@ -1190,6 +1190,7 @@
 			if(typeof water_providers_southplatte_metro_map != "undefined"){ water_providers_southplatte_metro_map.maplayer.scrollWheelZoom.disable(); }
 			if(typeof water_providers_1051_map != "undefined"){ water_providers_1051_map.maplayer.scrollWheelZoom.disable(); }
 			if(typeof water_providers_effeciency_plans_map != "undefined"){ water_providers_effeciency_plans_map.maplayer.scrollWheelZoom.disable(); }
+            if(typeof instream_flow_map != "undefined"){ instream_flow_map.maplayer.scrollWheelZoom.disable(); }
 
             if(options.scrollOverflow){
                 var scrollable = options.scrollOverflowHandler.scrollable($(SECTION_ACTIVE_SEL)[0]);

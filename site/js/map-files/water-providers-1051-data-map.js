@@ -71,12 +71,12 @@ var water_providers_1051_map = (function(){
 			
 			pointToLayer: function(feature, latlng) {	
 
-			return L.circleMarker(latlng, { 
-				 fillColor: style(feature),
-				 color: style(feature),
-				 weight: 1, 
-				 radius: sizeByWaterUse(feature),
-				 fillOpacity: 0.8 
+				return L.circleMarker(latlng, { 
+					 fillColor: style(feature),
+					 color: style(feature),
+					 weight: 1, 
+					 radius: sizeByWaterUse(feature),
+					 fillOpacity: 0.8 
 				});
 			},
 
