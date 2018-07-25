@@ -1,5 +1,5 @@
 #Set working directory
-setwd ("C:\\Users\\kms\\southplattedataplatform\\git-repos\\swsi-story-sp-entities\\site\\analysis\\")
+setwd ("C:\\Users\\kms\\southplattedataplatform\\git-repos\\swsi-story-sp-entities\\analysis\\")
 
 #Load required package
 require(data.table)
@@ -209,7 +209,7 @@ muni_historical = muni_historical %>%
   select(MunicipalityName, FIPS_ID, Year, Population)	#Remove unneeded columns
 
 # Export to csv
-write.csv(muni_historical, file="..\\data\\municipal-population-historical-yearsinsinglecolumn.csv", 
+write.csv(muni_historical, file="..\\site\\data\\municipal-population-historical-yearsinsinglecolumn.csv", 
 row.names=FALSE)
 
 ################################################################################################
@@ -320,7 +320,7 @@ muni_historical_change = muni_historical_change[order(muni_historical_change$Yea
 
 
 # Export to csv for visualization; converted to geojson outside of R for now
-write.csv(muni_historical_change, file="..\\data\\municipal-population-historical-change.csv", 
+write.csv(muni_historical_change, file="..\\site\\data\\municipal-population-historical-change.csv", 
 row.names=FALSE)
 
 ###########################################################################

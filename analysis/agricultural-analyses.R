@@ -4,7 +4,7 @@
 # Focus on South Platte Basin
 
 #Set working directory
-setwd ("C:\\Users\\kms\\southplattedataplatform\\git-repos\\swsi-story-sp-entities\\site\\analysis\\")
+setwd ("C:\\Users\\kms\\southplattedataplatform\\git-repos\\swsi-story-sp-entities\\analysis\\")
 
 #Load required package
 require(data.table)
@@ -17,26 +17,26 @@ rm(list=ls())
 
 # 1) Read in data
 # Irrigated Lands for Division 1 (South Platte) (polygons) 2005 and 2015
-irrigated_lands_2005 = read.csv("..\\data\\CO-DWR-IrrigatedLands-Division01-2005-20180228.csv", 
+irrigated_lands_2005 = read.csv("..\\site\\data\\CO-DWR-IrrigatedLands-Division01-2005-20180228.csv", 
 header = TRUE)
 head(irrigated_lands_2005)
 
-irrigated_lands_2015 = read.csv("..\\data\\CO-DWR-IrrigatedLands-Division01-2015-20180228.csv", 
+irrigated_lands_2015 = read.csv("..\\site\\data\\CO-DWR-IrrigatedLands-Division01-2015-20180228.csv", 
 header = TRUE)
 head(irrigated_lands_2015)
 
 # Ditch Service Areas for Division 1 (polygons)
-ditch_areas_2005 = read.csv("..\\data\\CO-DWR-DitchServiceAreas-Division01-2005-20180228.csv", 
+ditch_areas_2005 = read.csv("..\\site\\data\\CO-DWR-DitchServiceAreas-Division01-2005-20180228.csv", 
 header = TRUE)
 head(ditch_areas_2005)
 
 # Read in structures for Division 1 (points)
-structures = read.csv("..\\data\\structures-southplatte.csv", 
+structures = read.csv("..\\site\\data\\structures-southplatte.csv", 
 header = TRUE)
 head(structures)
 
 #Read in canals for Division 1 (lines)
-canals = read.csv("..\\data\\Div1_Canals.csv", 
+canals = read.csv("..\\site\\data\\Div1_Canals.csv", 
 header = TRUE)
 head(canals)
 
