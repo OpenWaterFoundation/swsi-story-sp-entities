@@ -54,27 +54,32 @@ var instream_flow_map = (function(){
 			mouseout: resetHighlight
 		});
 	}		
-		
+
+// Create function of colors based on amount of water right
+    	function getColor(point){
+    	   return point > 40   ? '#002966' :  
+		          point > 20.1 ? '#003d99' :
+				  point > 10.1 ? '#0052cc' :
+		          point > 5.1  ? '#0066ff' :
+    	   	      point > 1.1  ? '#66a3ff' :
+				  point > 0    ? '#cce0ff' :
+    	                     '#595959';
+    	};
+	
 // Create a function that calls for colors
 		function style(feature) {
-		   var point = feature.properties[month];
-		   
-		   return getColor(point);
+			return {
+		     color:  getColor(feature.properties[month]),
+			 weight: 2,
+			 opacity:1
+			};
 		}
 	
 // Add in instream flow layer			
-	window['flow' + month] = L.geoJson(instreamflow, {	
-		pointToLayer: function(feature, latlng) {	
-
-			return L.circleMarker(latlng, { 
-				    color: style(feature),
-					weight: 1,
-					opacity: 1		
-				});
-		},
-
-		onEachFeature: onEachFeature	
-	});	
+	window['flow' + month] = L.geoJson(instreamflow, {		
+				    style: style,
+					onEachFeature: onEachFeature	
+					});	
 			
 	
 // Highlight a line when it is hovered over on the map
@@ -111,16 +116,6 @@ var instream_flow_map = (function(){
 	};
 	info.addTo(instreamflowmap);	
 
-// Create function of colors based on amount of water right
-    	function getColor(point){
-    	   return point > 40   ? '#002966' :  
-		          point > 20.1 ? '#003d99' :
-				  point > 10.1 ? '#0052cc' :
-		          point > 5.1  ? '#0066ff' :
-    	   	      point > 1.1  ? '#66a3ff' :
-				  point > 0    ? '#cce0ff' :
-    	                     '#595959';
-    	}
 
 // Add January amounts as default
 	flowJanuary.addTo(instreamflowmap);	
@@ -174,7 +169,7 @@ var instream_flow_map = (function(){
 		}; 
    legend.addTo(instreamflowmap);
 
-    // Add a legend to the map
+    // Add a scroll button to the map
 	var scrollbutton = L.control({position: 'topleft'});
 	scrollbutton.onAdd = function (instreamflowmap) {
 		var div = L.DomUtil.create('div', 'scrollbutton');
