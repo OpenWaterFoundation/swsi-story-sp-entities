@@ -101,10 +101,21 @@ iframe {
 }
 
 .text-image-overlay{
-	background-color:rgba(70,70,70,.6);
+	background-color:rgba(70,70,70,.8);
 	border-radius:10px;
 	max-height: 80vh;
 	overflow: auto;
+	color:white;
+	font-size:18px;
+}
+
+.text-image-overlay a{
+	color:white;
+	text-decoration: underline;
+}
+
+.text-image-overlay a:hover{
+	color:white;
 }
 
 .text-image-overlay::-webkit-scrollbar{
