@@ -55,17 +55,6 @@ var instream_flow_map = (function(){
 		});
 	}		
 
-// Create function of colors based on amount of water right
-    	function getColor(point){
-    	   return point > 40   ? '#002966' :  
-		          point > 20.1 ? '#003d99' :
-				  point > 10.1 ? '#0052cc' :
-		          point > 5.1  ? '#0066ff' :
-    	   	      point > 1.1  ? '#66a3ff' :
-				  point > 0    ? '#cce0ff' :
-    	                     '#595959';
-    	};
-	
 // Create a function that calls for colors
 		function style(feature) {
 			return {
@@ -103,6 +92,16 @@ var instream_flow_map = (function(){
 
 	})	
 
+// Create function of colors based on amount of water right (do this outside of "month" function so that the legend will show the colors)
+    	function getColor(point){
+    	   return point > 40   ? '#002966' :  
+		          point > 20.1 ? '#003d99' :
+				  point > 10.1 ? '#0052cc' :
+		          point > 5.1  ? '#0066ff' :
+    	   	      point > 1.1  ? '#66a3ff' :
+				  point > 0    ? '#cce0ff' :
+    	                     '#595959';
+    	};	
 
 // Method used to update the control based on feature properties passed
 	info.update = function (props, month) {
