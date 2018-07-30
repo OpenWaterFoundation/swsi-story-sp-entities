@@ -80,12 +80,12 @@ This file is used in pages 9 and 11 of the Water Entities story (Municipal Water
 
 ## county-population-forecast.geojson ##
 This file is a merging of the [Colorado_Counties.geojson](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/site/data/Colorado_Counties.geojson) and 
-[county-population-forecast-yearsinmultiplecolumns.csv](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/site/data/county-population-forecast-yearsinmultiplecolumns.csv)files. 
+[county-population-forecast-yearsinmultiplecolumns.csv](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/site/data/county-population-forecast-yearsinmultiplecolumns.csv) files. 
 
 This file is used in page 7 of the Water Entities story (Population Projections to 2050), in which counties are color-coded by population.
 
 ## county-population-forecast-yearsinmultiplecolumns.csv ##
-This file contains county population forecasts for the years 2000 to 2050.  Each year of data is within its own column, which is necessary for some visualizations.  
+This file contains county population forecasts for the years 2000 to 2050.  Each year of data is within its own column, which is necessary for some visualizations. 
 The data were processed with the [county-municipal-population-dola.R](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/analysis/county-municipal-population-dola.R) script. 
 See the `analysis` folder for processing steps and data inputs.  
 

@@ -36,7 +36,7 @@ in [DOLA-county-population-forecast.csv](https://github.com/OpenWaterFoundation/
 which were downloaded from DOLA's website.
 * Data are cleaned to remove any leading or trailing spaces and blank rows are removed.
 * Dataset is output to CSV format and each year is its own column of data ([county-population-forecast-yearsinmultiplecolumns.csv](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/analysis/county-population-forecast-yearsinmultiplecolumns.csv)).
-* Dataset is reshaped so that all years of data are combined into a single "Year" column and then output to CSV format([county-population-forecast-yearsinsinglecolumn.csv](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/analysis/county-population-forecast-yearsinsinglecolumn.csv)).
+* Dataset is reshaped so that all years of data are combined into a single "Year" column and then output to CSV format([county-population-forecast-yearsinsinglecolumn.csv](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/site/data/county-population-forecast-yearsinsinglecolumn.csv)).
 * Historical population (1980-2016) data are processed for both counties and municipalities.  Data were directly accessible from 
 DOLA's website at https://demography.dola.colorado.gov/data/.  The direct download accesses the "County and Municipal Population 
 Time Series 1980-2016" category and the county-muni-timeseries.csv file.
@@ -45,7 +45,7 @@ to CSV format.
 * Municipal data are processed next.  Various steps clean up the data and correct misspellings of municipalities.  Some 
 municipalities have data split into more than one record because the municipality is in more than one county and these needed to be 
 summed together.
-* Dataset is output to CSV format; years are in a single column of data ([municipal-population-historical-yearsinsinglecolumn.csv](https://github.com/OpenWaterFoundation/swsi-story-sp-entities/blob/master/analysis/municipal-population-historical-yearsinsinglecolumn.csv)).
+* Dataset is output to CSV format; years are in a single column of data.  *Currently not used* 
 * Cleaned up historical and forecast datasets are then reconfigured for specific purposes.
 * County population forecast dataset is enhanced to include the percent change in population since 2017.  This step is used for the 
 creation of a dataset that can potentially be used to create a heatmap of the change in population for counties in the Basin.
