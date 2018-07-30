@@ -1,7 +1,7 @@
 #Set working directory
 setwd ("C:\\Users\\kms\\southplattedataplatform\\git-repos\\swsi-story-sp-entities\\analysis\\")
 
-#Load required package
+#Load required packages
 require(data.table)
 require(dplyr)
 require(tidyr)
@@ -62,7 +62,7 @@ county_forecast_yearsincolumns_2 = county_forecast_yearsincolumns_2 %>%
   rename(County = Pop_County)
 
 # 3) Output dataset to CSV for use in some visualizations
-write.csv(county_forecast_yearsincolumns_2, file="county-population-forecast-yearsinmultiplecolumns.csv", row.names=FALSE)
+write.csv(county_forecast_yearsincolumns_2, file="..\\site\\data\\county-population-forecast-yearsinmultiplecolumns.csv", row.names=FALSE)
 
 # 4) Reshape dataset to have years within a single "Year" column
 # Data are in a wide format, so will "gather" into long format
@@ -77,7 +77,7 @@ county_forecast_yearsinsinglecolumn$Population = as.numeric(county_forecast_year
 glimpse(county_forecast_yearsinsinglecolumn)
 
 # 5) Output dataset to CSV for use in some visualizations
-write.csv(county_forecast_yearsinsinglecolumn, file="county-population-forecast-yearsinsinglecolumn.csv", 
+write.csv(county_forecast_yearsinsinglecolumn, file="..\\site\\data\\county-population-forecast-yearsinsinglecolumn.csv", 
 row.names=FALSE)
 
 
@@ -218,7 +218,7 @@ row.names=FALSE)
 
 # 1) Create new dataset from county forecast data that will allow for calculating percent change 
 # in population since 2017
-# Used for heatmap for the South Platte Data Platform project
+# Used for potential heatmap for the South Platte Data Platform project
 
 pop2017 = countypopulation_yearsinsinglecolumn %>%
   select(County, Year, Population) %>%

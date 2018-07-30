@@ -33,8 +33,7 @@ README.md             This file; an explanation of repository contents, data fil
 ```
 
 ## Data Sources for Water Entities Story ##
-The table below lists each page of the Water Entities story and the data, if applicable, used to create the visualization within that page.  
-Any data processing steps are summarized in the README file in the `data` folder.
+The table below lists each page of the Water Entities story and the data, if applicable, used to create the visualization within that page.  Any data processing steps are summarized in the README file in the `data` folder.
 
 Page Number | Page Name | Data Files | Data Source
 --- | --- | --- | ---

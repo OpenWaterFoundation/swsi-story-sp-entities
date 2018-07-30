@@ -1,3265 +1,3265 @@
 "County","Year","Population"
-"     Adams ",2000,351734
-"     Alamosa ",2000,15097
-"     Arapahoe ",2000,490722
-"     Archuleta ",2000,10042
-"     Baca ",2000,4500
-"     Bent ",2000,5966
-"     Boulder ",2000,276254
-"     Broomfield",2000,38545
-"     Chaffee ",2000,16312
-"     Cheyenne ",2000,2214
-"     Clear Creek ",2000,9360
-"     Conejos ",2000,8407
-"     Costilla ",2000,3673
-"     Crowley ",2000,5128
-"     Custer ",2000,3518
-"     Delta ",2000,27910
-"     Denver ",2000,556740
-"     Dolores ",2000,1847
-"     Douglas ",2000,180511
-"     Eagle ",2000,43288
-"     El Paso",2000,519803
-"     Elbert ",2000,20102
-"     Fremont ",2000,46369
-"     Garfield ",2000,44239
-"     Gilpin ",2000,4807
-"     Grand ",2000,12852
-"     Gunnison ",2000,13988
-"     Hinsdale ",2000,792
-"     Huerfano ",2000,7826
-"     Jackson ",2000,1574
-"     Jefferson ",2000,526716
-"     Kiowa ",2000,1612
-"     Kit Carson ",2000,7975
-"     La Plata ",2000,44578
-"     Lake ",2000,7939
-"     Larimer ",2000,253087
-"     Las Animas ",2000,15286
-"     Lincoln ",2000,6164
-"     Logan ",2000,20656
-"     Mesa ",2000,117649
-"     Mineral ",2000,836
-"     Moffat ",2000,13182
-"     Montezuma ",2000,23852
-"     Montrose ",2000,33579
-"     Morgan ",2000,27250
-"     Otero ",2000,20244
-"     Ouray ",2000,3776
-"     Park ",2000,14728
-"     Phillips ",2000,4451
-"     Pitkin ",2000,15763
-"     Prowers ",2000,14452
-"     Pueblo ",2000,141854
-"     Rio Blanco ",2000,5967
-"     Rio Grande ",2000,12429
-"     Routt ",2000,20122
-"     Saguache ",2000,5982
-"     San Juan ",2000,574
-"     San Miguel ",2000,6614
-"     Sedgwick ",2000,2742
-"     Summit ",2000,25708
-"     Teller ",2000,21067
-"     Washington ",2000,4942
-"     Weld ",2000,183074
-"     Yuma ",2000,9815
-"     Adams ",2001,359437
-"     Alamosa ",2001,15231
-"     Arapahoe ",2001,501671
-"     Archuleta ",2001,10465
-"     Baca ",2001,4447
-"     Bent ",2001,5882
-"     Boulder ",2001,283510
-"     Broomfield",2001,41387
-"     Chaffee ",2001,16410
-"     Cheyenne ",2001,2173
-"     Clear Creek ",2001,9464
-"     Conejos ",2001,8365
-"     Costilla ",2001,3741
-"     Crowley ",2001,5253
-"     Custer ",2001,3730
-"     Delta ",2001,28387
-"     Denver ",2001,563300
-"     Dolores ",2001,1865
-"     Douglas ",2001,199038
-"     Eagle ",2001,44440
-"     El Paso",2001,536336
-"     Elbert ",2001,21294
-"     Fremont ",2001,46733
-"     Garfield ",2001,45907
-"     Gilpin ",2001,4829
-"     Grand ",2001,13283
-"     Gunnison ",2001,14345
-"     Hinsdale ",2001,804
-"     Huerfano ",2001,7905
-"     Jackson ",2001,1590
-"     Jefferson ",2001,528067
-"     Kiowa ",2001,1606
-"     Kit Carson ",2001,8073
-"     La Plata ",2001,45645
-"     Lake ",2001,7821
-"     Larimer ",2001,260911
-"     Las Animas ",2001,15310
-"     Lincoln ",2001,6076
-"     Logan ",2001,22354
-"     Mesa ",2001,119864
-"     Mineral ",2001,820
-"     Moffat ",2001,13089
-"     Montezuma ",2001,23873
-"     Montrose ",2001,34442
-"     Morgan ",2001,27475
-"     Otero ",2001,19900
-"     Ouray ",2001,3809
-"     Park ",2001,15172
-"     Phillips ",2001,4487
-"     Pitkin ",2001,16184
-"     Prowers ",2001,14109
-"     Pueblo ",2001,143996
-"     Rio Blanco ",2001,5880
-"     Rio Grande ",2001,12406
-"     Routt ",2001,20436
-"     Saguache ",2001,6083
-"     San Juan ",2001,566
-"     San Miguel ",2001,6900
-"     Sedgwick ",2001,2694
-"     Summit ",2001,26293
-"     Teller ",2001,21738
-"     Washington ",2001,4899
-"     Weld ",2001,192482
-"     Yuma ",2001,9831
-"     Adams ",2002,371181
-"     Alamosa ",2002,15266
-"     Arapahoe ",2002,510503
-"     Archuleta ",2002,10700
-"     Baca ",2002,4315
-"     Bent ",2002,6203
-"     Boulder ",2002,284433
-"     Broomfield",2002,42432
-"     Chaffee ",2002,16646
-"     Cheyenne ",2002,2162
-"     Clear Creek ",2002,9466
-"     Conejos ",2002,8389
-"     Costilla ",2002,3734
-"     Crowley ",2002,5344
-"     Custer ",2002,3783
-"     Delta ",2002,28778
-"     Denver ",2002,559090
-"     Dolores ",2002,1880
-"     Douglas ",2002,209705
-"     Eagle ",2002,45100
-"     El Paso",2002,545240
-"     Elbert ",2002,21604
-"     Fremont ",2002,46969
-"     Garfield ",2002,46728
-"     Gilpin ",2002,4830
-"     Grand ",2002,13461
-"     Gunnison ",2002,14316
-"     Hinsdale ",2002,806
-"     Huerfano ",2002,7916
-"     Jackson ",2002,1591
-"     Jefferson ",2002,527539
-"     Kiowa ",2002,1566
-"     Kit Carson ",2002,8289
-"     La Plata ",2002,46089
-"     Lake ",2002,7726
-"     Larimer ",2002,266171
-"     Las Animas ",2002,15659
-"     Lincoln ",2002,6047
-"     Logan ",2002,22095
-"     Mesa ",2002,121787
-"     Mineral ",2002,805
-"     Moffat ",2002,13134
-"     Montezuma ",2002,24109
-"     Montrose ",2002,34926
-"     Morgan ",2002,27662
-"     Otero ",2002,19624
-"     Ouray ",2002,3903
-"     Park ",2002,15417
-"     Phillips ",2002,4496
-"     Pitkin ",2002,16101
-"     Prowers ",2002,14011
-"     Pueblo ",2002,146481
-"     Rio Blanco ",2002,5936
-"     Rio Grande ",2002,12409
-"     Routt ",2002,20892
-"     Saguache ",2002,6245
-"     San Juan ",2002,599
-"     San Miguel ",2002,7042
-"     Sedgwick ",2002,2694
-"     Summit ",2002,26514
-"     Teller ",2002,21989
-"     Washington ",2002,5259
-"     Weld ",2002,198975
-"     Yuma ",2002,9947
-"     Adams ",2003,377665
-"     Alamosa ",2003,15360
-"     Arapahoe ",2003,516354
-"     Archuleta ",2003,10964
-"     Baca ",2003,4258
-"     Bent ",2003,6653
-"     Boulder ",2003,282763
-"     Broomfield",2003,44960
-"     Chaffee ",2003,16794
-"     Cheyenne ",2003,2119
-"     Clear Creek ",2003,9517
-"     Conejos ",2003,8387
-"     Costilla ",2003,3800
-"     Crowley ",2003,5156
-"     Custer ",2003,3934
-"     Delta ",2003,29061
-"     Denver ",2003,560348
-"     Dolores ",2003,1879
-"     Douglas ",2003,221146
-"     Eagle ",2003,45758
-"     El Paso",2003,551668
-"     Elbert ",2003,21933
-"     Fremont ",2003,46828
-"     Garfield ",2003,47484
-"     Gilpin ",2003,4851
-"     Grand ",2003,13688
-"     Gunnison ",2003,14206
-"     Hinsdale ",2003,784
-"     Huerfano ",2003,8042
-"     Jackson ",2003,1586
-"     Jefferson ",2003,525429
-"     Kiowa ",2003,1548
-"     Kit Carson ",2003,8185
-"     La Plata ",2003,46447
-"     Lake ",2003,7520
-"     Larimer ",2003,268146
-"     Las Animas ",2003,16089
-"     Lincoln ",2003,6052
-"     Logan ",2003,22371
-"     Mesa ",2003,124152
-"     Mineral ",2003,830
-"     Moffat ",2003,13054
-"     Montezuma ",2003,24378
-"     Montrose ",2003,35640
-"     Morgan ",2003,27855
-"     Otero ",2003,19667
-"     Ouray ",2003,3905
-"     Park ",2003,15789
-"     Phillips ",2003,4477
-"     Pitkin ",2003,16275
-"     Prowers ",2003,13822
-"     Pueblo ",2003,147972
-"     Rio Blanco ",2003,5855
-"     Rio Grande ",2003,12619
-"     Routt ",2003,21128
-"     Saguache ",2003,6279
-"     San Juan ",2003,615
-"     San Miguel ",2003,7010
-"     Sedgwick ",2003,2715
-"     Summit ",2003,26706
-"     Teller ",2003,22218
-"     Washington ",2003,5140
-"     Weld ",2003,207157
-"     Yuma ",2003,10093
-"     Adams ",2004,385945
-"     Alamosa ",2004,15406
-"     Arapahoe ",2004,523715
-"     Archuleta ",2004,11171
-"     Baca ",2004,4166
-"     Bent ",2004,6357
-"     Boulder ",2004,283288
-"     Broomfield",2004,46406
-"     Chaffee ",2004,16946
-"     Cheyenne ",2004,2070
-"     Clear Creek ",2004,9461
-"     Conejos ",2004,8501
-"     Costilla ",2004,3802
-"     Crowley ",2004,5432
-"     Custer ",2004,3984
-"     Delta ",2004,29453
-"     Denver ",2004,560230
-"     Dolores ",2004,1873
-"     Douglas ",2004,233646
-"     Eagle ",2004,46485
-"     El Paso",2004,558455
-"     Elbert ",2004,22041
-"     Fremont ",2004,46540
-"     Garfield ",2004,48156
-"     Gilpin ",2004,4825
-"     Grand ",2004,13912
-"     Gunnison ",2004,14230
-"     Hinsdale ",2004,831
-"     Huerfano ",2004,7729
-"     Jackson ",2004,1521
-"     Jefferson ",2004,524876
-"     Kiowa ",2004,1523
-"     Kit Carson ",2004,8257
-"     La Plata ",2004,46926
-"     Lake ",2004,7416
-"     Larimer ",2004,273269
-"     Las Animas ",2004,15700
-"     Lincoln ",2004,5907
-"     Logan ",2004,22181
-"     Mesa ",2004,126626
-"     Mineral ",2004,842
-"     Moffat ",2004,13063
-"     Montezuma ",2004,24607
-"     Montrose ",2004,36131
-"     Morgan ",2004,27912
-"     Otero ",2004,19561
-"     Ouray ",2004,4023
-"     Park ",2004,15913
-"     Phillips ",2004,4580
-"     Pitkin ",2004,16077
-"     Prowers ",2004,13656
-"     Pueblo ",2004,148720
-"     Rio Blanco ",2004,5904
-"     Rio Grande ",2004,12824
-"     Routt ",2004,21293
-"     Saguache ",2004,6240
-"     San Juan ",2004,635
-"     San Miguel ",2004,7027
-"     Sedgwick ",2004,2606
-"     Summit ",2004,26707
-"     Teller ",2004,22218
-"     Washington ",2004,5060
-"     Weld ",2004,214069
-"     Yuma ",2004,9885
-"     Adams ",2005,395384
-"     Alamosa ",2005,15395
-"     Arapahoe ",2005,528214
-"     Archuleta ",2005,11402
-"     Baca ",2005,4098
-"     Bent ",2005,6261
-"     Boulder ",2005,282910
-"     Broomfield",2005,48251
-"     Chaffee ",2005,17022
-"     Cheyenne ",2005,2041
-"     Clear Creek ",2005,9392
-"     Conejos ",2005,8500
-"     Costilla ",2005,3695
-"     Crowley ",2005,5437
-"     Custer ",2005,4045
-"     Delta ",2005,29412
-"     Denver ",2005,559459
-"     Dolores ",2005,1888
-"     Douglas ",2005,244442
-"     Eagle ",2005,47278
-"     El Paso",2005,569322
-"     Elbert ",2005,22259
-"     Fremont ",2005,46447
-"     Garfield ",2005,49256
-"     Gilpin ",2005,4892
-"     Grand ",2005,13897
-"     Gunnison ",2005,14473
-"     Hinsdale ",2005,813
-"     Huerfano ",2005,7823
-"     Jackson ",2005,1492
-"     Jefferson ",2005,523517
-"     Kiowa ",2005,1543
-"     Kit Carson ",2005,7998
-"     La Plata ",2005,47713
-"     Lake ",2005,7284
-"     Larimer ",2005,275873
-"     Las Animas ",2005,15570
-"     Lincoln ",2005,5787
-"     Logan ",2005,22088
-"     Mesa ",2005,128999
-"     Mineral ",2005,806
-"     Moffat ",2005,12965
-"     Montezuma ",2005,24603
-"     Montrose ",2005,36997
-"     Morgan ",2005,27947
-"     Otero ",2005,19370
-"     Ouray ",2005,4084
-"     Park ",2005,16061
-"     Phillips ",2005,4548
-"     Pitkin ",2005,16136
-"     Prowers ",2005,13510
-"     Pueblo ",2005,149969
-"     Rio Blanco ",2005,5818
-"     Rio Grande ",2005,12696
-"     Routt ",2005,21453
-"     Saguache ",2005,6284
-"     San Juan ",2005,645
-"     San Miguel ",2005,7045
-"     Sedgwick ",2005,2578
-"     Summit ",2005,26623
-"     Teller ",2005,22505
-"     Washington ",2005,4995
-"     Weld ",2005,223432
-"     Yuma ",2005,9892
-"     Adams ",2006,407587
-"     Alamosa ",2006,15350
-"     Arapahoe ",2006,536051
-"     Archuleta ",2006,11798
-"     Baca ",2006,4088
-"     Bent ",2006,6076
-"     Boulder ",2006,286133
-"     Broomfield",2006,51152
-"     Chaffee ",2006,16984
-"     Cheyenne ",2006,1977
-"     Clear Creek ",2006,9279
-"     Conejos ",2006,8470
-"     Costilla ",2006,3698
-"     Crowley ",2006,5713
-"     Custer ",2006,4017
-"     Delta ",2006,29702
-"     Denver ",2006,562862
-"     Dolores ",2006,1990
-"     Douglas ",2006,257833
-"     Eagle ",2006,48214
-"     El Paso",2006,582502
-"     Elbert ",2006,22527
-"     Fremont ",2006,46703
-"     Garfield ",2006,51106
-"     Gilpin ",2006,4953
-"     Grand ",2006,14135
-"     Gunnison ",2006,14650
-"     Hinsdale ",2006,830
-"     Huerfano ",2006,7750
-"     Jackson ",2006,1443
-"     Jefferson ",2006,524579
-"     Kiowa ",2006,1514
-"     Kit Carson ",2006,7946
-"     La Plata ",2006,48408
-"     Lake ",2006,7217
-"     Larimer ",2006,281027
-"     Las Animas ",2006,15552
-"     Lincoln ",2006,5665
-"     Logan ",2006,22267
-"     Mesa ",2006,133128
-"     Mineral ",2006,789
-"     Moffat ",2006,13102
-"     Montezuma ",2006,25017
-"     Montrose ",2006,37968
-"     Morgan ",2006,27983
-"     Otero ",2006,19193
-"     Ouray ",2006,4137
-"     Park ",2006,16128
-"     Phillips ",2006,4504
-"     Pitkin ",2006,16087
-"     Prowers ",2006,13208
-"     Pueblo ",2006,152064
-"     Rio Blanco ",2006,5981
-"     Rio Grande ",2006,12439
-"     Routt ",2006,21886
-"     Saguache ",2006,6241
-"     San Juan ",2006,672
-"     San Miguel ",2006,7059
-"     Sedgwick ",2006,2515
-"     Summit ",2006,26839
-"     Teller ",2006,22791
-"     Washington ",2006,4981
-"     Weld ",2006,231283
-"     Yuma ",2006,9917
-"     Adams ",2007,415915
-"     Alamosa ",2007,15293
-"     Arapahoe ",2007,545882
-"     Archuleta ",2007,12108
-"     Baca ",2007,3993
-"     Bent ",2007,5773
-"     Boulder ",2007,288757
-"     Broomfield",2007,53328
-"     Chaffee ",2007,17238
-"     Cheyenne ",2007,1910
-"     Clear Creek ",2007,9333
-"     Conejos ",2007,8433
-"     Costilla ",2007,3676
-"     Crowley ",2007,5907
-"     Custer ",2007,4130
-"     Delta ",2007,29877
-"     Denver ",2007,570437
-"     Dolores ",2007,2001
-"     Douglas ",2007,268599
-"     Eagle ",2007,49284
-"     El Paso",2007,588772
-"     Elbert ",2007,22478
-"     Fremont ",2007,46654
-"     Garfield ",2007,52676
-"     Gilpin ",2007,4964
-"     Grand ",2007,14339
-"     Gunnison ",2007,14957
-"     Hinsdale ",2007,845
-"     Huerfano ",2007,7658
-"     Jackson ",2007,1422
-"     Jefferson ",2007,527120
-"     Kiowa ",2007,1471
-"     Kit Carson ",2007,7835
-"     La Plata ",2007,49146
-"     Lake ",2007,7271
-"     Larimer ",2007,286754
-"     Las Animas ",2007,15525
-"     Lincoln ",2007,5571
-"     Logan ",2007,22403
-"     Mesa ",2007,137390
-"     Mineral ",2007,803
-"     Moffat ",2007,13270
-"     Montezuma ",2007,25177
-"     Montrose ",2007,39131
-"     Morgan ",2007,27848
-"     Otero ",2007,18937
-"     Ouray ",2007,4274
-"     Park ",2007,16336
-"     Phillips ",2007,4484
-"     Pitkin ",2007,16236
-"     Prowers ",2007,12772
-"     Pueblo ",2007,154759
-"     Rio Blanco ",2007,6093
-"     Rio Grande ",2007,12167
-"     Routt ",2007,22415
-"     Saguache ",2007,6159
-"     San Juan ",2007,686
-"     San Miguel ",2007,7276
-"     Sedgwick ",2007,2422
-"     Summit ",2007,27163
-"     Teller ",2007,23164
-"     Washington ",2007,4927
-"     Weld ",2007,238279
-"     Yuma ",2007,9881
-"     Adams ",2008,425138
-"     Alamosa ",2008,15346
-"     Arapahoe ",2008,556246
-"     Archuleta ",2008,12074
-"     Baca ",2008,3906
-"     Bent ",2008,6008
-"     Boulder ",2008,291827
-"     Broomfield",2008,54400
-"     Chaffee ",2008,17403
-"     Cheyenne ",2008,1898
-"     Clear Creek ",2008,9294
-"     Conejos ",2008,8384
-"     Costilla ",2008,3611
-"     Crowley ",2008,5893
-"     Custer ",2008,4119
-"     Delta ",2008,30342
-"     Denver ",2008,581903
-"     Dolores ",2008,2074
-"     Douglas ",2008,276740
-"     Eagle ",2008,50301
-"     El Paso",2008,599060
-"     Elbert ",2008,22663
-"     Fremont ",2008,46774
-"     Garfield ",2008,54226
-"     Gilpin ",2008,5084
-"     Grand ",2008,14535
-"     Gunnison ",2008,15137
-"     Hinsdale ",2008,824
-"     Huerfano ",2008,7680
-"     Jackson ",2008,1381
-"     Jefferson ",2008,530565
-"     Kiowa ",2008,1432
-"     Kit Carson ",2008,8042
-"     La Plata ",2008,50073
-"     Lake ",2008,7269
-"     Larimer ",2008,292394
-"     Las Animas ",2008,15486
-"     Lincoln ",2008,5522
-"     Logan ",2008,22324
-"     Mesa ",2008,140680
-"     Mineral ",2008,767
-"     Moffat ",2008,13446
-"     Montezuma ",2008,25200
-"     Montrose ",2008,39952
-"     Morgan ",2008,27746
-"     Otero ",2008,18853
-"     Ouray ",2008,4407
-"     Park ",2008,16278
-"     Phillips ",2008,4451
-"     Pitkin ",2008,16673
-"     Prowers ",2008,12682
-"     Pueblo ",2008,156252
-"     Rio Blanco ",2008,6160
-"     Rio Grande ",2008,12105
-"     Routt ",2008,22931
-"     Saguache ",2008,6176
-"     San Juan ",2008,698
-"     San Miguel ",2008,7304
-"     Sedgwick ",2008,2420
-"     Summit ",2008,27464
-"     Teller ",2008,23102
-"     Washington ",2008,4802
-"     Weld ",2008,244116
-"     Yuma ",2008,9895
-"     Adams ",2009,436323
-"     Alamosa ",2009,15301
-"     Arapahoe ",2009,566480
-"     Archuleta ",2009,11899
-"     Baca ",2009,3814
-"     Bent ",2009,6481
-"     Boulder ",2009,293641
-"     Broomfield",2009,55378
-"     Chaffee ",2009,17604
-"     Cheyenne ",2009,1833
-"     Clear Creek ",2009,9060
-"     Conejos ",2009,8210
-"     Costilla ",2009,3505
-"     Crowley ",2009,5803
-"     Custer ",2009,4166
-"     Delta ",2009,30625
-"     Denver ",2009,595573
-"     Dolores ",2009,2052
-"     Douglas ",2009,282163
-"     Eagle ",2009,51520
-"     El Paso",2009,608518
-"     Elbert ",2009,22890
-"     Fremont ",2009,46635
-"     Garfield ",2009,55400
-"     Gilpin ",2009,5396
-"     Grand ",2009,14664
-"     Gunnison ",2009,15266
-"     Hinsdale ",2009,827
-"     Huerfano ",2009,6710
-"     Jackson ",2009,1386
-"     Jefferson ",2009,532606
-"     Kiowa ",2009,1392
-"     Kit Carson ",2009,8269
-"     La Plata ",2009,50759
-"     Lake ",2009,7174
-"     Larimer ",2009,297502
-"     Las Animas ",2009,15477
-"     Lincoln ",2009,5463
-"     Logan ",2009,22517
-"     Mesa ",2009,144795
-"     Mineral ",2009,714
-"     Moffat ",2009,13544
-"     Montezuma ",2009,25365
-"     Montrose ",2009,40680
-"     Morgan ",2009,28026
-"     Otero ",2009,18844
-"     Ouray ",2009,4372
-"     Park ",2009,15971
-"     Phillips ",2009,4454
-"     Pitkin ",2009,17053
-"     Prowers ",2009,12576
-"     Pueblo ",2009,157324
-"     Rio Blanco ",2009,6317
-"     Rio Grande ",2009,11995
-"     Routt ",2009,23325
-"     Saguache ",2009,6126
-"     San Juan ",2009,687
-"     San Miguel ",2009,7267
-"     Sedgwick ",2009,2376
-"     Summit ",2009,27783
-"     Teller ",2009,23205
-"     Washington ",2009,4777
-"     Weld ",2009,248959
-"     Yuma ",2009,10036
-"     Adams ",2010,443709
-"     Alamosa ",2010,15454
-"     Arapahoe ",2010,574808
-"     Archuleta ",2010,12082
-"     Baca ",2010,3765
-"     Bent ",2010,6523
-"     Boulder ",2010,295610
-"     Broomfield",2010,56098
-"     Chaffee ",2010,17835
-"     Cheyenne ",2010,1811
-"     Clear Creek ",2010,9083
-"     Conejos ",2010,8293
-"     Costilla ",2010,3549
-"     Crowley ",2010,5850
-"     Custer ",2010,4248
-"     Delta ",2010,30897
-"     Denver ",2010,604875
-"     Dolores ",2010,2084
-"     Douglas ",2010,287119
-"     Eagle ",2010,52064
-"     El Paso",2010,627238
-"     Elbert ",2010,23140
-"     Fremont ",2010,46856
-"     Garfield ",2010,56153
-"     Gilpin ",2010,5461
-"     Grand ",2010,14790
-"     Gunnison ",2010,15314
-"     Hinsdale ",2010,825
-"     Huerfano ",2010,6639
-"     Jackson ",2010,1417
-"     Jefferson ",2010,535648
-"     Kiowa ",2010,1410
-"     Kit Carson ",2010,8259
-"     La Plata ",2010,51443
-"     Lake ",2010,7288
-"     Larimer ",2010,300545
-"     Las Animas ",2010,15383
-"     Lincoln ",2010,5502
-"     Logan ",2010,22291
-"     Mesa ",2010,146587
-"     Mineral ",2010,728
-"     Moffat ",2010,13812
-"     Montezuma ",2010,25515
-"     Montrose ",2010,41179
-"     Morgan ",2010,28213
-"     Otero ",2010,18875
-"     Ouray ",2010,4471
-"     Park ",2010,16277
-"     Phillips ",2010,4467
-"     Pitkin ",2010,17147
-"     Prowers ",2010,12527
-"     Pueblo ",2010,159464
-"     Rio Blanco ",2010,6634
-"     Rio Grande ",2010,12018
-"     Routt ",2010,23451
-"     Saguache ",2010,6101
-"     San Juan ",2010,713
-"     San Miguel ",2010,7393
-"     Sedgwick ",2010,2403
-"     Summit ",2010,28078
-"     Teller ",2010,23402
-"     Washington ",2010,4851
-"     Weld ",2010,254240
-"     Yuma ",2010,10030
-"     Adams ",2011,451749
-"     Alamosa ",2011,15679
-"     Arapahoe ",2011,585507
-"     Archuleta ",2011,12003
-"     Baca ",2011,3799
-"     Bent ",2011,6304
-"     Boulder ",2011,300171
-"     Broomfield",2011,57211
-"     Chaffee ",2011,18012
-"     Cheyenne ",2011,1864
-"     Clear Creek ",2011,9070
-"     Conejos ",2011,8282
-"     Costilla ",2011,3647
-"     Crowley ",2011,5817
-"     Custer ",2011,4227
-"     Delta ",2011,30370
-"     Denver ",2011,620684
-"     Dolores ",2011,2025
-"     Douglas ",2011,292478
-"     Eagle ",2011,51649
-"     El Paso",2011,638289
-"     Elbert ",2011,23213
-"     Fremont ",2011,47406
-"     Garfield ",2011,56005
-"     Gilpin ",2011,5448
-"     Grand ",2011,14548
-"     Gunnison ",2011,15269
-"     Hinsdale ",2011,824
-"     Huerfano ",2011,6504
-"     Jackson ",2011,1372
-"     Jefferson ",2011,539721
-"     Kiowa ",2011,1445
-"     Kit Carson ",2011,8181
-"     La Plata ",2011,51866
-"     Lake ",2011,7382
-"     Larimer ",2011,305078
-"     Las Animas ",2011,15045
-"     Lincoln ",2011,5397
-"     Logan ",2011,22254
-"     Mesa ",2011,148108
-"     Mineral ",2011,706
-"     Moffat ",2011,13402
-"     Montezuma ",2011,25463
-"     Montrose ",2011,40894
-"     Morgan ",2011,28434
-"     Otero ",2011,18831
-"     Ouray ",2011,4422
-"     Park ",2011,16096
-"     Phillips ",2011,4373
-"     Pitkin ",2011,17125
-"     Prowers ",2011,12467
-"     Pueblo ",2011,160157
-"     Rio Blanco ",2011,6696
-"     Rio Grande ",2011,11905
-"     Routt ",2011,23237
-"     Saguache ",2011,6184
-"     San Juan ",2011,693
-"     San Miguel ",2011,7477
-"     Sedgwick ",2011,2367
-"     Summit ",2011,27954
-"     Teller ",2011,23294
-"     Washington ",2011,4789
-"     Weld ",2011,258551
-"     Yuma ",2011,10118
-"     Adams ",2012,460064
-"     Alamosa ",2012,15687
-"     Arapahoe ",2012,595776
-"     Archuleta ",2012,12109
-"     Baca ",2012,3746
-"     Bent ",2012,5778
-"     Boulder ",2012,305016
-"     Broomfield",2012,58715
-"     Chaffee ",2012,18123
-"     Cheyenne ",2012,1875
-"     Clear Creek ",2012,9103
-"     Conejos ",2012,8246
-"     Costilla ",2012,3601
-"     Crowley ",2012,5376
-"     Custer ",2012,4241
-"     Delta ",2012,30461
-"     Denver ",2012,634471
-"     Dolores ",2012,1990
-"     Douglas ",2012,298638
-"     Eagle ",2012,51849
-"     El Paso",2012,647446
-"     Elbert ",2012,23371
-"     Fremont ",2012,47075
-"     Garfield ",2012,56770
-"     Gilpin ",2012,5457
-"     Grand ",2012,14157
-"     Gunnison ",2012,15384
-"     Hinsdale ",2012,795
-"     Huerfano ",2012,6563
-"     Jackson ",2012,1338
-"     Jefferson ",2012,545880
-"     Kiowa ",2012,1425
-"     Kit Carson ",2012,8088
-"     La Plata ",2012,52457
-"     Lake ",2012,7291
-"     Larimer ",2012,310717
-"     Las Animas ",2012,14966
-"     Lincoln ",2012,5438
-"     Logan ",2012,22003
-"     Mesa ",2012,148291
-"     Mineral ",2012,706
-"     Moffat ",2012,13135
-"     Montezuma ",2012,25441
-"     Montrose ",2012,40691
-"     Morgan ",2012,28241
-"     Otero ",2012,18660
-"     Ouray ",2012,4510
-"     Park ",2012,16052
-"     Phillips ",2012,4384
-"     Pitkin ",2012,17222
-"     Prowers ",2012,12380
-"     Pueblo ",2012,160759
-"     Rio Blanco ",2012,6774
-"     Rio Grande ",2012,11865
-"     Routt ",2012,23257
-"     Saguache ",2012,6316
-"     San Juan ",2012,692
-"     San Miguel ",2012,7570
-"     Sedgwick ",2012,2370
-"     Summit ",2012,28213
-"     Teller ",2012,23349
-"     Washington ",2012,4716
-"     Weld ",2012,263924
-"     Yuma ",2012,10082
-"     Adams ",2013,469477
-"     Alamosa ",2013,15804
-"     Arapahoe ",2013,607145
-"     Archuleta ",2013,12211
-"     Baca ",2013,3679
-"     Bent ",2013,5708
-"     Boulder ",2013,309971
-"     Broomfield",2013,59975
-"     Chaffee ",2013,18281
-"     Cheyenne ",2013,1889
-"     Clear Creek ",2013,9095
-"     Conejos ",2013,8229
-"     Costilla ",2013,3537
-"     Crowley ",2013,5278
-"     Custer ",2013,4287
-"     Delta ",2013,30322
-"     Denver ",2013,648162
-"     Dolores ",2013,2021
-"     Douglas ",2013,306627
-"     Eagle ",2013,52334
-"     El Paso",2013,656981
-"     Elbert ",2013,23632
-"     Fremont ",2013,46441
-"     Garfield ",2013,56947
-"     Gilpin ",2013,5571
-"     Grand ",2013,14271
-"     Gunnison ",2013,15591
-"     Hinsdale ",2013,804
-"     Huerfano ",2013,6470
-"     Jackson ",2013,1353
-"     Jefferson ",2013,551411
-"     Kiowa ",2013,1404
-"     Kit Carson ",2013,8269
-"     La Plata ",2013,53405
-"     Lake ",2013,7317
-"     Larimer ",2013,316284
-"     Las Animas ",2013,14378
-"     Lincoln ",2013,5414
-"     Logan ",2013,21809
-"     Mesa ",2013,148232
-"     Mineral ",2013,727
-"     Moffat ",2013,13080
-"     Montezuma ",2013,25660
-"     Montrose ",2013,40674
-"     Morgan ",2013,28219
-"     Otero ",2013,18505
-"     Ouray ",2013,4544
-"     Park ",2013,16188
-"     Phillips ",2013,4359
-"     Pitkin ",2013,17390
-"     Prowers ",2013,12271
-"     Pueblo ",2013,161085
-"     Rio Blanco ",2013,6722
-"     Rio Grande ",2013,11696
-"     Routt ",2013,23550
-"     Saguache ",2013,6221
-"     San Juan ",2013,700
-"     San Miguel ",2013,7629
-"     Sedgwick ",2013,2343
-"     Summit ",2013,28660
-"     Teller ",2013,23271
-"     Washington ",2013,4765
-"     Weld ",2013,269981
-"     Yuma ",2013,10157
-"     Adams ",2014,479777
-"     Alamosa ",2014,15845
-"     Arapahoe ",2014,617936
-"     Archuleta ",2014,12258
-"     Baca ",2014,3624
-"     Bent ",2014,5747
-"     Boulder ",2014,313190
-"     Broomfield",2014,61554
-"     Chaffee ",2014,18459
-"     Cheyenne ",2014,1847
-"     Clear Creek ",2014,9210
-"     Conejos ",2014,8246
-"     Costilla ",2014,3560
-"     Crowley ",2014,5550
-"     Custer ",2014,4368
-"     Delta ",2014,29988
-"     Denver ",2014,662855
-"     Dolores ",2014,1965
-"     Douglas ",2014,314804
-"     Eagle ",2014,52761
-"     El Paso",2014,665052
-"     Elbert ",2014,24093
-"     Fremont ",2014,46389
-"     Garfield ",2014,57260
-"     Gilpin ",2014,5769
-"     Grand ",2014,14451
-"     Gunnison ",2014,15767
-"     Hinsdale ",2014,774
-"     Huerfano ",2014,6395
-"     Jackson ",2014,1389
-"     Jefferson ",2014,558610
-"     Kiowa ",2014,1394
-"     Kit Carson ",2014,8039
-"     La Plata ",2014,53978
-"     Lake ",2014,7370
-"     Larimer ",2014,324105
-"     Las Animas ",2014,14078
-"     Lincoln ",2014,5509
-"     Logan ",2014,22099
-"     Mesa ",2014,148250
-"     Mineral ",2014,696
-"     Moffat ",2014,12866
-"     Montezuma ",2014,25806
-"     Montrose ",2014,40769
-"     Morgan ",2014,28127
-"     Otero ",2014,18398
-"     Ouray ",2014,4582
-"     Park ",2014,16356
-"     Phillips ",2014,4379
-"     Pitkin ",2014,17623
-"     Prowers ",2014,12023
-"     Pueblo ",2014,161618
-"     Rio Blanco ",2014,6626
-"     Rio Grande ",2014,11542
-"     Routt ",2014,24010
-"     Saguache ",2014,6171
-"     San Juan ",2014,719
-"     San Miguel ",2014,7751
-"     Sedgwick ",2014,2331
-"     Summit ",2014,29213
-"     Teller ",2014,23402
-"     Washington ",2014,4772
-"     Weld ",2014,275845
-"     Yuma ",2014,10178
-"     Adams ",2015,489923
-"     Alamosa ",2015,15968
-"     Arapahoe ",2015,629066
-"     Archuleta ",2015,12417
-"     Baca ",2015,3594
-"     Bent ",2015,5847
-"     Boulder ",2015,318570
-"     Broomfield",2015,64656
-"     Chaffee ",2015,18603
-"     Cheyenne ",2015,1830
-"     Clear Creek ",2015,9392
-"     Conejos ",2015,8074
-"     Costilla ",2015,3572
-"     Crowley ",2015,5569
-"     Custer ",2015,4457
-"     Delta ",2015,29973
-"     Denver ",2015,680658
-"     Dolores ",2015,1972
-"     Douglas ",2015,322198
-"     Eagle ",2015,53320
-"     El Paso",2015,676178
-"     Elbert ",2015,24640
-"     Fremont ",2015,46659
-"     Garfield ",2015,57779
-"     Gilpin ",2015,5824
-"     Grand ",2015,14602
-"     Gunnison ",2015,16097
-"     Hinsdale ",2015,767
-"     Huerfano ",2015,6456
-"     Jackson ",2015,1353
-"     Jefferson ",2015,564619
-"     Kiowa ",2015,1396
-"     Kit Carson ",2015,8219
-"     La Plata ",2015,54857
-"     Lake ",2015,7502
-"     Larimer ",2015,332830
-"     Las Animas ",2015,14061
-"     Lincoln ",2015,5549
-"     Logan ",2015,22122
-"     Mesa ",2015,149023
-"     Mineral ",2015,729
-"     Moffat ",2015,12884
-"     Montezuma ",2015,26129
-"     Montrose ",2015,40795
-"     Morgan ",2015,28230
-"     Otero ",2015,18265
-"     Ouray ",2015,4647
-"     Park ",2015,16716
-"     Phillips ",2015,4307
-"     Pitkin ",2015,17845
-"     Prowers ",2015,11905
-"     Pueblo ",2015,163196
-"     Rio Blanco ",2015,6529
-"     Rio Grande ",2015,11413
-"     Routt ",2015,24310
-"     Saguache ",2015,6219
-"     San Juan ",2015,696
-"     San Miguel ",2015,7843
-"     Sedgwick ",2015,2389
-"     Summit ",2015,29928
-"     Teller ",2015,23431
-"     Washington ",2015,4834
-"     Weld ",2015,284571
-"     Yuma ",2015,10052
-"     Adams ",2016,497673
-"     Alamosa ",2016,16131
-"     Arapahoe ",2016,637254
-"     Archuleta ",2016,12907
-"     Baca ",2016,3557
-"     Bent ",2016,5626
-"     Boulder ",2016,321989
-"     Broomfield",2016,66252
-"     Chaffee ",2016,19097
-"     Cheyenne ",2016,1853
-"     Clear Creek ",2016,9443
-"     Conejos ",2016,8039
-"     Costilla ",2016,3707
-"     Crowley ",2016,5214
-"     Custer ",2016,4617
-"     Delta ",2016,30471
-"     Denver ",2016,693292
-"     Dolores ",2016,2035
-"     Douglas ",2016,328330
-"     Eagle ",2016,53928
-"     El Paso",2016,690207
-"     Elbert ",2016,25169
-"     Fremont ",2016,47487
-"     Garfield ",2016,58984
-"     Gilpin ",2016,5926
-"     Grand ",2016,15039
-"     Gunnison ",2016,16394
-"     Hinsdale ",2016,775
-"     Huerfano ",2016,6642
-"     Jackson ",2016,1351
-"     Jefferson ",2016,571711
-"     Kiowa ",2016,1347
-"     Kit Carson ",2016,7639
-"     La Plata ",2016,55697
-"     Lake ",2016,7595
-"     Larimer ",2016,338663
-"     Las Animas ",2016,14082
-"     Lincoln ",2016,5554
-"     Logan ",2016,22047
-"     Mesa ",2016,150731
-"     Mineral ",2016,737
-"     Moffat ",2016,13088
-"     Montezuma ",2016,26906
-"     Montrose ",2016,41421
-"     Morgan ",2016,28148
-"     Otero ",2016,18290
-"     Ouray ",2016,4844
-"     Park ",2016,17285
-"     Phillips ",2016,4285
-"     Pitkin ",2016,17773
-"     Prowers ",2016,11841
-"     Pueblo ",2016,165109
-"     Rio Blanco ",2016,6497
-"     Rio Grande ",2016,11424
-"     Routt ",2016,24679
-"     Saguache ",2016,6404
-"     San Juan ",2016,698
-"     San Miguel ",2016,8000
-"     Sedgwick ",2016,2421
-"     Summit ",2016,30367
-"     Teller ",2016,24154
-"     Washington ",2016,4875
-"     Weld ",2016,294397
-"     Yuma ",2016,10082
-"     Adams ",2017,509473
-"     Alamosa ",2017,16308
-"     Arapahoe ",2017,646725
-"     Archuleta ",2017,13152
-"     Baca ",2017,3545
-"     Bent ",2017,5661
-"     Boulder ",2017,325607
-"     Broomfield",2017,68552
-"     Chaffee ",2017,19391
-"     Cheyenne ",2017,1854
-"     Clear Creek ",2017,9456
-"     Conejos ",2017,8056
-"     Costilla ",2017,3738
-"     Crowley ",2017,5257
-"     Custer ",2017,4665
-"     Delta ",2017,30562
-"     Denver ",2017,703462
-"     Dolores ",2017,2050
-"     Douglas ",2017,334525
-"     Eagle ",2017,54842
-"     El Paso",2017,701404
-"     Elbert ",2017,26451
-"     Fremont ",2017,47570
-"     Garfield ",2017,60272
-"     Gilpin ",2017,5962
-"     Grand ",2017,15371
-"     Gunnison ",2017,16609
-"     Hinsdale ",2017,795
-"     Huerfano ",2017,6634
-"     Jackson ",2017,1346
-"     Jefferson ",2017,578627
-"     Kiowa ",2017,1348
-"     Kit Carson ",2017,7678
-"     La Plata ",2017,57004
-"     Lake ",2017,7625
-"     Larimer ",2017,345035
-"     Las Animas ",2017,14083
-"     Lincoln ",2017,5616
-"     Logan ",2017,22310
-"     Mesa ",2017,152003
-"     Mineral ",2017,744
-"     Moffat ",2017,13122
-"     Montezuma ",2017,27445
-"     Montrose ",2017,42189
-"     Morgan ",2017,28435
-"     Otero ",2017,18335
-"     Ouray ",2017,4913
-"     Park ",2017,17608
-"     Phillips ",2017,4278
-"     Pitkin ",2017,18006
-"     Prowers ",2017,11881
-"     Pueblo ",2017,167022
-"     Rio Blanco ",2017,6512
-"     Rio Grande ",2017,11436
-"     Routt ",2017,25136
-"     Saguache ",2017,6458
-"     San Juan ",2017,704
-"     San Miguel ",2017,8266
-"     Sedgwick ",2017,2412
-"     Summit ",2017,30959
-"     Teller ",2017,24650
-"     Washington ",2017,4905
-"     Weld ",2017,304803
-"     Yuma ",2017,10142
-"     Adams ",2018,520398
-"     Alamosa ",2018,16505
-"     Arapahoe ",2018,656214
-"     Archuleta ",2018,13422
-"     Baca ",2018,3531
-"     Bent ",2018,5713
-"     Boulder ",2018,329211
-"     Broomfield",2018,70886
-"     Chaffee ",2018,19684
-"     Cheyenne ",2018,1852
-"     Clear Creek ",2018,9518
-"     Conejos ",2018,8063
-"     Costilla ",2018,3752
-"     Crowley ",2018,5306
-"     Custer ",2018,4711
-"     Delta ",2018,30696
-"     Denver ",2018,713529
-"     Dolores ",2018,2059
-"     Douglas ",2018,340396
-"     Eagle ",2018,55754
-"     El Paso",2018,712641
-"     Elbert ",2018,27740
-"     Fremont ",2018,47649
-"     Garfield ",2018,61560
-"     Gilpin ",2018,5995
-"     Grand ",2018,15697
-"     Gunnison ",2018,16816
-"     Hinsdale ",2018,811
-"     Huerfano ",2018,6626
-"     Jackson ",2018,1342
-"     Jefferson ",2018,585558
-"     Kiowa ",2018,1350
-"     Kit Carson ",2018,7679
-"     La Plata ",2018,58364
-"     Lake ",2018,7653
-"     Larimer ",2018,351126
-"     Las Animas ",2018,14076
-"     Lincoln ",2018,5677
-"     Logan ",2018,22571
-"     Mesa ",2018,153649
-"     Mineral ",2018,751
-"     Moffat ",2018,13150
-"     Montezuma ",2018,27985
-"     Montrose ",2018,42846
-"     Morgan ",2018,28718
-"     Otero ",2018,18358
-"     Ouray ",2018,4982
-"     Park ",2018,17927
-"     Phillips ",2018,4280
-"     Pitkin ",2018,18232
-"     Prowers ",2018,11915
-"     Pueblo ",2018,168889
-"     Rio Blanco ",2018,6525
-"     Rio Grande ",2018,11443
-"     Routt ",2018,25587
-"     Saguache ",2018,6509
-"     San Juan ",2018,709
-"     San Miguel ",2018,8530
-"     Sedgwick ",2018,2402
-"     Summit ",2018,31556
-"     Teller ",2018,25142
-"     Washington ",2018,4920
-"     Weld ",2018,315281
-"     Yuma ",2018,10201
-"     Adams ",2019,531445
-"     Alamosa ",2019,16706
-"     Arapahoe ",2019,666264
-"     Archuleta ",2019,13689
-"     Baca ",2019,3515
-"     Bent ",2019,5766
-"     Boulder ",2019,332818
-"     Broomfield",2019,73246
-"     Chaffee ",2019,19976
-"     Cheyenne ",2019,1851
-"     Clear Creek ",2019,9577
-"     Conejos ",2019,8070
-"     Costilla ",2019,3775
-"     Crowley ",2019,5362
-"     Custer ",2019,4733
-"     Delta ",2019,30872
-"     Denver ",2019,723654
-"     Dolores ",2019,2057
-"     Douglas ",2019,346102
-"     Eagle ",2019,56662
-"     El Paso",2019,723994
-"     Elbert ",2019,29040
-"     Fremont ",2019,47727
-"     Garfield ",2019,62842
-"     Gilpin ",2019,6023
-"     Grand ",2019,16016
-"     Gunnison ",2019,17013
-"     Hinsdale ",2019,825
-"     Huerfano ",2019,6620
-"     Jackson ",2019,1338
-"     Jefferson ",2019,592500
-"     Kiowa ",2019,1352
-"     Kit Carson ",2019,7690
-"     La Plata ",2019,59645
-"     Lake ",2019,7714
-"     Larimer ",2019,357169
-"     Las Animas ",2019,14065
-"     Lincoln ",2019,5747
-"     Logan ",2019,22827
-"     Mesa ",2019,155288
-"     Mineral ",2019,757
-"     Moffat ",2019,13172
-"     Montezuma ",2019,28533
-"     Montrose ",2019,43498
-"     Morgan ",2019,29002
-"     Otero ",2019,18371
-"     Ouray ",2019,5043
-"     Park ",2019,18242
-"     Phillips ",2019,4283
-"     Pitkin ",2019,18400
-"     Prowers ",2019,11939
-"     Pueblo ",2019,170723
-"     Rio Blanco ",2019,6539
-"     Rio Grande ",2019,11446
-"     Routt ",2019,26028
-"     Saguache ",2019,6557
-"     San Juan ",2019,714
-"     San Miguel ",2019,8791
-"     Sedgwick ",2019,2392
-"     Summit ",2019,32157
-"     Teller ",2019,25632
-"     Washington ",2019,4935
-"     Weld ",2019,325826
-"     Yuma ",2019,10257
-"     Adams ",2020,542609
-"     Alamosa ",2020,16910
-"     Arapahoe ",2020,676371
-"     Archuleta ",2020,13953
-"     Baca ",2020,3497
-"     Bent ",2020,5818
-"     Boulder ",2020,336446
-"     Broomfield",2020,75627
-"     Chaffee ",2020,20267
-"     Cheyenne ",2020,1850
-"     Clear Creek ",2020,9634
-"     Conejos ",2020,8089
-"     Costilla ",2020,3778
-"     Crowley ",2020,5420
-"     Custer ",2020,4755
-"     Delta ",2020,31038
-"     Denver ",2020,733765
-"     Dolores ",2020,2065
-"     Douglas ",2020,351801
-"     Eagle ",2020,57571
-"     El Paso",2020,735478
-"     Elbert ",2020,30248
-"     Fremont ",2020,47801
-"     Garfield ",2020,64119
-"     Gilpin ",2020,6049
-"     Grand ",2020,16330
-"     Gunnison ",2020,17202
-"     Hinsdale ",2020,848
-"     Huerfano ",2020,6614
-"     Jackson ",2020,1333
-"     Jefferson ",2020,599448
-"     Kiowa ",2020,1353
-"     Kit Carson ",2020,7705
-"     La Plata ",2020,60917
-"     Lake ",2020,7777
-"     Larimer ",2020,363216
-"     Las Animas ",2020,14049
-"     Lincoln ",2020,5831
-"     Logan ",2020,23080
-"     Mesa ",2020,156922
-"     Mineral ",2020,763
-"     Moffat ",2020,13191
-"     Montezuma ",2020,29088
-"     Montrose ",2020,44144
-"     Morgan ",2020,29286
-"     Otero ",2020,18374
-"     Ouray ",2020,5094
-"     Park ",2020,18551
-"     Phillips ",2020,4287
-"     Pitkin ",2020,18562
-"     Prowers ",2020,11955
-"     Pueblo ",2020,172529
-"     Rio Blanco ",2020,6551
-"     Rio Grande ",2020,11444
-"     Routt ",2020,26461
-"     Saguache ",2020,6603
-"     San Juan ",2020,720
-"     San Miguel ",2020,9050
-"     Sedgwick ",2020,2381
-"     Summit ",2020,32760
-"     Teller ",2020,26121
-"     Washington ",2020,4949
-"     Weld ",2020,336437
-"     Yuma ",2020,10311
-"     Adams ",2021,553884
-"     Alamosa ",2021,17121
-"     Arapahoe ",2021,686523
-"     Archuleta ",2021,14213
-"     Baca ",2021,3476
-"     Bent ",2021,5859
-"     Boulder ",2021,340098
-"     Broomfield",2021,78029
-"     Chaffee ",2021,20557
-"     Cheyenne ",2021,1849
-"     Clear Creek ",2021,9690
-"     Conejos ",2021,8109
-"     Costilla ",2021,3781
-"     Crowley ",2021,5481
-"     Custer ",2021,4779
-"     Delta ",2021,31246
-"     Denver ",2021,743929
-"     Dolores ",2021,2075
-"     Douglas ",2021,357770
-"     Eagle ",2021,58473
-"     El Paso",2021,747062
-"     Elbert ",2021,31363
-"     Fremont ",2021,47870
-"     Garfield ",2021,65391
-"     Gilpin ",2021,6072
-"     Grand ",2021,16637
-"     Gunnison ",2021,17385
-"     Hinsdale ",2021,862
-"     Huerfano ",2021,6609
-"     Jackson ",2021,1329
-"     Jefferson ",2021,605353
-"     Kiowa ",2021,1354
-"     Kit Carson ",2021,7735
-"     La Plata ",2021,62180
-"     Lake ",2021,7844
-"     Larimer ",2021,369275
-"     Las Animas ",2021,14053
-"     Lincoln ",2021,5911
-"     Logan ",2021,23329
-"     Mesa ",2021,158553
-"     Mineral ",2021,773
-"     Moffat ",2021,13210
-"     Montezuma ",2021,29651
-"     Montrose ",2021,44788
-"     Morgan ",2021,29571
-"     Otero ",2021,18368
-"     Ouray ",2021,5136
-"     Park ",2021,18855
-"     Phillips ",2021,4293
-"     Pitkin ",2021,18719
-"     Prowers ",2021,11964
-"     Pueblo ",2021,174313
-"     Rio Blanco ",2021,6564
-"     Rio Grande ",2021,11439
-"     Routt ",2021,26898
-"     Saguache ",2021,6646
-"     San Juan ",2021,725
-"     San Miguel ",2021,9312
-"     Sedgwick ",2021,2372
-"     Summit ",2021,33363
-"     Teller ",2021,26507
-"     Washington ",2021,4968
-"     Weld ",2021,347619
-"     Yuma ",2021,10361
-"     Adams ",2022,565265
-"     Alamosa ",2022,17323
-"     Arapahoe ",2022,696711
-"     Archuleta ",2022,14468
-"     Baca ",2022,3453
-"     Bent ",2022,5911
-"     Boulder ",2022,343779
-"     Broomfield",2022,80451
-"     Chaffee ",2022,20844
-"     Cheyenne ",2022,1848
-"     Clear Creek ",2022,9743
-"     Conejos ",2022,8131
-"     Costilla ",2022,3782
-"     Crowley ",2022,5544
-"     Custer ",2022,4803
-"     Delta ",2022,31446
-"     Denver ",2022,755183
-"     Dolores ",2022,2085
-"     Douglas ",2022,364005
-"     Eagle ",2022,59363
-"     El Paso",2022,758707
-"     Elbert ",2022,32588
-"     Fremont ",2022,47936
-"     Garfield ",2022,66657
-"     Gilpin ",2022,6092
-"     Grand ",2022,16938
-"     Gunnison ",2022,17602
-"     Hinsdale ",2022,882
-"     Huerfano ",2022,6605
-"     Jackson ",2022,1326
-"     Jefferson ",2022,611211
-"     Kiowa ",2022,1349
-"     Kit Carson ",2022,7769
-"     La Plata ",2022,63496
-"     Lake ",2022,7912
-"     Larimer ",2022,375767
-"     Las Animas ",2022,14053
-"     Lincoln ",2022,6003
-"     Logan ",2022,23574
-"     Mesa ",2022,160184
-"     Mineral ",2022,784
-"     Moffat ",2022,13227
-"     Montezuma ",2022,30224
-"     Montrose ",2022,45428
-"     Morgan ",2022,29858
-"     Otero ",2022,18340
-"     Ouray ",2022,5142
-"     Park ",2022,19154
-"     Phillips ",2022,4301
-"     Pitkin ",2022,18871
-"     Prowers ",2022,11966
-"     Pueblo ",2022,176082
-"     Rio Blanco ",2022,6577
-"     Rio Grande ",2022,11430
-"     Routt ",2022,27365
-"     Saguache ",2022,6655
-"     San Juan ",2022,730
-"     San Miguel ",2022,9577
-"     Sedgwick ",2022,2366
-"     Summit ",2022,33964
-"     Teller ",2022,26891
-"     Washington ",2022,4985
-"     Weld ",2022,359390
-"     Yuma ",2022,10408
-"     Adams ",2023,576745
-"     Alamosa ",2023,17515
-"     Arapahoe ",2023,706936
-"     Archuleta ",2023,14719
-"     Baca ",2023,3429
-"     Bent ",2023,5958
-"     Boulder ",2023,347998
-"     Broomfield",2023,82889
-"     Chaffee ",2023,21129
-"     Cheyenne ",2023,1848
-"     Clear Creek ",2023,9793
-"     Conejos ",2023,8155
-"     Costilla ",2023,3784
-"     Crowley ",2023,5610
-"     Custer ",2023,4828
-"     Delta ",2023,31638
-"     Denver ",2023,767572
-"     Dolores ",2023,2097
-"     Douglas ",2023,370321
-"     Eagle ",2023,60348
-"     El Paso",2023,770421
-"     Elbert ",2023,33820
-"     Fremont ",2023,47998
-"     Garfield ",2023,67918
-"     Gilpin ",2023,6111
-"     Grand ",2023,17234
-"     Gunnison ",2023,17825
-"     Hinsdale ",2023,903
-"     Huerfano ",2023,6601
-"     Jackson ",2023,1323
-"     Jefferson ",2023,617025
-"     Kiowa ",2023,1343
-"     Kit Carson ",2023,7807
-"     La Plata ",2023,64816
-"     Lake ",2023,7983
-"     Larimer ",2023,382289
-"     Las Animas ",2023,14049
-"     Lincoln ",2023,6081
-"     Logan ",2023,23815
-"     Mesa ",2023,162069
-"     Mineral ",2023,794
-"     Moffat ",2023,13243
-"     Montezuma ",2023,30806
-"     Montrose ",2023,46068
-"     Morgan ",2023,30146
-"     Otero ",2023,18291
-"     Ouray ",2023,5154
-"     Park ",2023,19448
-"     Phillips ",2023,4308
-"     Pitkin ",2023,19019
-"     Prowers ",2023,11962
-"     Pueblo ",2023,177838
-"     Rio Blanco ",2023,6589
-"     Rio Grande ",2023,11419
-"     Routt ",2023,27876
-"     Saguache ",2023,6661
-"     San Juan ",2023,731
-"     San Miguel ",2023,9845
-"     Sedgwick ",2023,2368
-"     Summit ",2023,34558
-"     Teller ",2023,27272
-"     Washington ",2023,5001
-"     Weld ",2023,371246
-"     Yuma ",2023,10450
-"     Adams ",2024,588314
-"     Alamosa ",2024,17707
-"     Arapahoe ",2024,717203
-"     Archuleta ",2024,14966
-"     Baca ",2024,3404
-"     Bent ",2024,6010
-"     Boulder ",2024,352239
-"     Broomfield",2024,85339
-"     Chaffee ",2024,21411
-"     Cheyenne ",2024,1848
-"     Clear Creek ",2024,9841
-"     Conejos ",2024,8181
-"     Costilla ",2024,3785
-"     Crowley ",2024,5677
-"     Custer ",2024,4853
-"     Delta ",2024,31822
-"     Denver ",2024,781113
-"     Dolores ",2024,2111
-"     Douglas ",2024,376618
-"     Eagle ",2024,61434
-"     El Paso",2024,782287
-"     Elbert ",2024,35161
-"     Fremont ",2024,48053
-"     Garfield ",2024,69173
-"     Gilpin ",2024,6129
-"     Grand ",2024,17524
-"     Gunnison ",2024,18041
-"     Hinsdale ",2024,924
-"     Huerfano ",2024,6597
-"     Jackson ",2024,1320
-"     Jefferson ",2024,621758
-"     Kiowa ",2024,1337
-"     Kit Carson ",2024,7849
-"     La Plata ",2024,66052
-"     Lake ",2024,8057
-"     Larimer ",2024,388798
-"     Las Animas ",2024,14041
-"     Lincoln ",2024,6154
-"     Logan ",2024,24052
-"     Mesa ",2024,164113
-"     Mineral ",2024,804
-"     Moffat ",2024,13259
-"     Montezuma ",2024,31397
-"     Montrose ",2024,46706
-"     Morgan ",2024,30436
-"     Otero ",2024,18221
-"     Ouray ",2024,5164
-"     Park ",2024,19736
-"     Phillips ",2024,4315
-"     Pitkin ",2024,19160
-"     Prowers ",2024,11953
-"     Pueblo ",2024,179583
-"     Rio Blanco ",2024,6601
-"     Rio Grande ",2024,11405
-"     Routt ",2024,28485
-"     Saguache ",2024,6665
-"     San Juan ",2024,731
-"     San Miguel ",2024,10117
-"     Sedgwick ",2024,2365
-"     Summit ",2024,35249
-"     Teller ",2024,27649
-"     Washington ",2024,5017
-"     Weld ",2024,383551
-"     Yuma ",2024,10494
-"     Adams ",2025,599961
-"     Alamosa ",2025,17899
-"     Arapahoe ",2025,727520
-"     Archuleta ",2025,15207
-"     Baca ",2025,3380
-"     Bent ",2025,6062
-"     Boulder ",2025,356510
-"     Broomfield",2025,87799
-"     Chaffee ",2025,21691
-"     Cheyenne ",2025,1848
-"     Clear Creek ",2025,9886
-"     Conejos ",2025,8210
-"     Costilla ",2025,3787
-"     Crowley ",2025,5748
-"     Custer ",2025,4880
-"     Delta ",2025,32001
-"     Denver ",2025,795853
-"     Dolores ",2025,2126
-"     Douglas ",2025,382923
-"     Eagle ",2025,62628
-"     El Paso",2025,794306
-"     Elbert ",2025,36506
-"     Fremont ",2025,48105
-"     Garfield ",2025,70421
-"     Gilpin ",2025,6145
-"     Grand ",2025,17809
-"     Gunnison ",2025,18255
-"     Hinsdale ",2025,946
-"     Huerfano ",2025,6593
-"     Jackson ",2025,1318
-"     Jefferson ",2025,626407
-"     Kiowa ",2025,1331
-"     Kit Carson ",2025,7894
-"     La Plata ",2025,67282
-"     Lake ",2025,8133
-"     Larimer ",2025,395294
-"     Las Animas ",2025,14030
-"     Lincoln ",2025,6232
-"     Logan ",2025,24286
-"     Mesa ",2025,166473
-"     Mineral ",2025,814
-"     Moffat ",2025,13276
-"     Montezuma ",2025,31995
-"     Montrose ",2025,47649
-"     Morgan ",2025,30733
-"     Otero ",2025,18131
-"     Ouray ",2025,5169
-"     Park ",2025,20021
-"     Phillips ",2025,4323
-"     Pitkin ",2025,19297
-"     Prowers ",2025,11941
-"     Pueblo ",2025,181329
-"     Rio Blanco ",2025,6628
-"     Rio Grande ",2025,11411
-"     Routt ",2025,29190
-"     Saguache ",2025,6668
-"     San Juan ",2025,738
-"     San Miguel ",2025,10391
-"     Sedgwick ",2025,2363
-"     Summit ",2025,35983
-"     Teller ",2025,27970
-"     Washington ",2025,5031
-"     Weld ",2025,395972
-"     Yuma ",2025,10535
-"     Adams ",2026,611672
-"     Alamosa ",2026,18096
-"     Arapahoe ",2026,737882
-"     Archuleta ",2026,15469
-"     Baca ",2026,3355
-"     Bent ",2026,6102
-"     Boulder ",2026,360809
-"     Broomfield",2026,90265
-"     Chaffee ",2026,21968
-"     Cheyenne ",2026,1849
-"     Clear Creek ",2026,9956
-"     Conejos ",2026,8242
-"     Costilla ",2026,3788
-"     Crowley ",2026,5823
-"     Custer ",2026,4912
-"     Delta ",2026,32173
-"     Denver ",2026,810700
-"     Dolores ",2026,2140
-"     Douglas ",2026,389236
-"     Eagle ",2026,63935
-"     El Paso",2026,806437
-"     Elbert ",2026,38159
-"     Fremont ",2026,48232
-"     Garfield ",2026,71714
-"     Gilpin ",2026,6152
-"     Grand ",2026,18089
-"     Gunnison ",2026,18463
-"     Hinsdale ",2026,969
-"     Huerfano ",2026,6589
-"     Jackson ",2026,1316
-"     Jefferson ",2026,630961
-"     Kiowa ",2026,1324
-"     Kit Carson ",2026,7944
-"     La Plata ",2026,68505
-"     Lake ",2026,8213
-"     Larimer ",2026,401777
-"     Las Animas ",2026,14016
-"     Lincoln ",2026,6320
-"     Logan ",2026,24520
-"     Mesa ",2026,169052
-"     Mineral ",2026,823
-"     Moffat ",2026,13296
-"     Montezuma ",2026,32602
-"     Montrose ",2026,48797
-"     Morgan ",2026,31062
-"     Otero ",2026,18035
-"     Ouray ",2026,5180
-"     Park ",2026,20352
-"     Phillips ",2026,4330
-"     Pitkin ",2026,19482
-"     Prowers ",2026,11926
-"     Pueblo ",2026,183180
-"     Rio Blanco ",2026,6656
-"     Rio Grande ",2026,11417
-"     Routt ",2026,29932
-"     Saguache ",2026,6670
-"     San Juan ",2026,740
-"     San Miguel ",2026,10664
-"     Sedgwick ",2026,2361
-"     Summit ",2026,36759
-"     Teller ",2026,28235
-"     Washington ",2026,5045
-"     Weld ",2026,408513
-"     Yuma ",2026,10574
-"     Adams ",2027,623434
-"     Alamosa ",2027,18295
-"     Arapahoe ",2027,748246
-"     Archuleta ",2027,15772
-"     Baca ",2027,3331
-"     Bent ",2027,6138
-"     Boulder ",2027,365121
-"     Broomfield",2027,92746
-"     Chaffee ",2027,22294
-"     Cheyenne ",2027,1850
-"     Clear Creek ",2027,10037
-"     Conejos ",2027,8275
-"     Costilla ",2027,3789
-"     Crowley ",2027,5898
-"     Custer ",2027,4948
-"     Delta ",2027,32340
-"     Denver ",2027,825405
-"     Dolores ",2027,2152
-"     Douglas ",2027,395444
-"     Eagle ",2027,65346
-"     El Paso",2027,818605
-"     Elbert ",2027,39606
-"     Fremont ",2027,48436
-"     Garfield ",2027,73064
-"     Gilpin ",2027,6158
-"     Grand ",2027,18365
-"     Gunnison ",2027,18670
-"     Hinsdale ",2027,993
-"     Huerfano ",2027,6584
-"     Jackson ",2027,1315
-"     Jefferson ",2027,635400
-"     Kiowa ",2027,1317
-"     Kit Carson ",2027,7999
-"     La Plata ",2027,69727
-"     Lake ",2027,8293
-"     Larimer ",2027,408162
-"     Las Animas ",2027,14000
-"     Lincoln ",2027,6412
-"     Logan ",2027,24752
-"     Mesa ",2027,171836
-"     Mineral ",2027,833
-"     Moffat ",2027,13317
-"     Montezuma ",2027,33211
-"     Montrose ",2027,49941
-"     Morgan ",2027,31419
-"     Otero ",2027,17932
-"     Ouray ",2027,5187
-"     Park ",2027,20731
-"     Phillips ",2027,4333
-"     Pitkin ",2027,19666
-"     Prowers ",2027,11912
-"     Pueblo ",2027,185179
-"     Rio Blanco ",2027,6683
-"     Rio Grande ",2027,11422
-"     Routt ",2027,30675
-"     Saguache ",2027,6671
-"     San Juan ",2027,741
-"     San Miguel ",2027,10934
-"     Sedgwick ",2027,2352
-"     Summit ",2027,37527
-"     Teller ",2027,28494
-"     Washington ",2027,5060
-"     Weld ",2027,421170
-"     Yuma ",2027,10606
-"     Adams ",2028,635231
-"     Alamosa ",2028,18494
-"     Arapahoe ",2028,758610
-"     Archuleta ",2028,16119
-"     Baca ",2028,3308
-"     Bent ",2028,6162
-"     Boulder ",2028,368925
-"     Broomfield",2028,95240
-"     Chaffee ",2028,22546
-"     Cheyenne ",2028,1851
-"     Clear Creek ",2028,10129
-"     Conejos ",2028,8308
-"     Costilla ",2028,3791
-"     Crowley ",2028,5974
-"     Custer ",2028,4988
-"     Delta ",2028,32603
-"     Denver ",2028,838835
-"     Dolores ",2028,2162
-"     Douglas ",2028,401420
-"     Eagle ",2028,66854
-"     El Paso",2028,830828
-"     Elbert ",2028,41047
-"     Fremont ",2028,48689
-"     Garfield ",2028,74470
-"     Gilpin ",2028,6164
-"     Grand ",2028,18688
-"     Gunnison ",2028,18876
-"     Hinsdale ",2028,1017
-"     Huerfano ",2028,6577
-"     Jackson ",2028,1315
-"     Jefferson ",2028,639716
-"     Kiowa ",2028,1311
-"     Kit Carson ",2028,8054
-"     La Plata ",2028,70912
-"     Lake ",2028,8373
-"     Larimer ",2028,414232
-"     Las Animas ",2028,13981
-"     Lincoln ",2028,6493
-"     Logan ",2028,24982
-"     Mesa ",2028,174824
-"     Mineral ",2028,837
-"     Moffat ",2028,13340
-"     Montezuma ",2028,33821
-"     Montrose ",2028,51082
-"     Morgan ",2028,31803
-"     Otero ",2028,17809
-"     Ouray ",2028,5190
-"     Park ",2028,21102
-"     Phillips ",2028,4342
-"     Pitkin ",2028,19850
-"     Prowers ",2028,11897
-"     Pueblo ",2028,187176
-"     Rio Blanco ",2028,6710
-"     Rio Grande ",2028,11428
-"     Routt ",2028,31424
-"     Saguache ",2028,6672
-"     San Juan ",2028,745
-"     San Miguel ",2028,11204
-"     Sedgwick ",2028,2347
-"     Summit ",2028,38238
-"     Teller ",2028,28745
-"     Washington ",2028,5075
-"     Weld ",2028,433937
-"     Yuma ",2028,10646
-"     Adams ",2029,647046
-"     Alamosa ",2029,18693
-"     Arapahoe ",2029,768962
-"     Archuleta ",2029,16509
-"     Baca ",2029,3284
-"     Bent ",2029,6184
-"     Boulder ",2029,373024
-"     Broomfield",2029,95691
-"     Chaffee ",2029,22795
-"     Cheyenne ",2029,1852
-"     Clear Creek ",2029,10223
-"     Conejos ",2029,8340
-"     Costilla ",2029,3793
-"     Crowley ",2029,6051
-"     Custer ",2029,5032
-"     Delta ",2029,32962
-"     Denver ",2029,850948
-"     Dolores ",2029,2176
-"     Douglas ",2029,407340
-"     Eagle ",2029,68357
-"     El Paso",2029,843015
-"     Elbert ",2029,42377
-"     Fremont ",2029,48994
-"     Garfield ",2029,75933
-"     Gilpin ",2029,6170
-"     Grand ",2029,19063
-"     Gunnison ",2029,19080
-"     Hinsdale ",2029,1041
-"     Huerfano ",2029,6569
-"     Jackson ",2029,1315
-"     Jefferson ",2029,643907
-"     Kiowa ",2029,1304
-"     Kit Carson ",2029,8111
-"     La Plata ",2029,72093
-"     Lake ",2029,8453
-"     Larimer ",2029,420280
-"     Las Animas ",2029,13960
-"     Lincoln ",2029,6587
-"     Logan ",2029,25210
-"     Mesa ",2029,178014
-"     Mineral ",2029,842
-"     Moffat ",2029,13363
-"     Montezuma ",2029,34432
-"     Montrose ",2029,52219
-"     Morgan ",2029,32216
-"     Otero ",2029,17687
-"     Ouray ",2029,5203
-"     Park ",2029,21470
-"     Phillips ",2029,4333
-"     Pitkin ",2029,20034
-"     Prowers ",2029,11881
-"     Pueblo ",2029,189173
-"     Rio Blanco ",2029,6736
-"     Rio Grande ",2029,11435
-"     Routt ",2029,32168
-"     Saguache ",2029,6672
-"     San Juan ",2029,745
-"     San Miguel ",2029,11473
-"     Sedgwick ",2029,2346
-"     Summit ",2029,38892
-"     Teller ",2029,28989
-"     Washington ",2029,5090
-"     Weld ",2029,446806
-"     Yuma ",2029,10681
-"     Adams ",2030,658865
-"     Alamosa ",2030,18894
-"     Arapahoe ",2030,779283
-"     Archuleta ",2030,16942
-"     Baca ",2030,3262
-"     Bent ",2030,6206
-"     Boulder ",2030,377107
-"     Broomfield",2030,96097
-"     Chaffee ",2030,23040
-"     Cheyenne ",2030,1848
-"     Clear Creek ",2030,10319
-"     Conejos ",2030,8374
-"     Costilla ",2030,3795
-"     Crowley ",2030,6128
-"     Custer ",2030,5079
-"     Delta ",2030,33417
-"     Denver ",2030,861706
-"     Dolores ",2030,2191
-"     Douglas ",2030,413162
-"     Eagle ",2030,69748
-"     El Paso",2030,855170
-"     Elbert ",2030,43695
-"     Fremont ",2030,49354
-"     Garfield ",2030,77404
-"     Gilpin ",2030,6178
-"     Grand ",2030,19487
-"     Gunnison ",2030,19282
-"     Hinsdale ",2030,1067
-"     Huerfano ",2030,6560
-"     Jackson ",2030,1316
-"     Jefferson ",2030,647959
-"     Kiowa ",2030,1298
-"     Kit Carson ",2030,8169
-"     La Plata ",2030,73266
-"     Lake ",2030,8536
-"     Larimer ",2030,426293
-"     Las Animas ",2030,13937
-"     Lincoln ",2030,6673
-"     Logan ",2030,25438
-"     Mesa ",2030,181209
-"     Mineral ",2030,846
-"     Moffat ",2030,13389
-"     Montezuma ",2030,35043
-"     Montrose ",2030,53355
-"     Morgan ",2030,32631
-"     Otero ",2030,17566
-"     Ouray ",2030,5210
-"     Park ",2030,21834
-"     Phillips ",2030,4336
-"     Pitkin ",2030,20218
-"     Prowers ",2030,11865
-"     Pueblo ",2030,191163
-"     Rio Blanco ",2030,6763
-"     Rio Grande ",2030,11440
-"     Routt ",2030,32916
-"     Saguache ",2030,6672
-"     San Juan ",2030,746
-"     San Miguel ",2030,11742
-"     Sedgwick ",2030,2340
-"     Summit ",2030,39540
-"     Teller ",2030,29228
-"     Washington ",2030,5104
-"     Weld ",2030,459772
-"     Yuma ",2030,10721
-"     Adams ",2031,670672
-"     Alamosa ",2031,19097
-"     Arapahoe ",2031,789551
-"     Archuleta ",2031,17418
-"     Baca ",2031,3241
-"     Bent ",2031,6228
-"     Boulder ",2031,381170
-"     Broomfield",2031,96454
-"     Chaffee ",2031,23378
-"     Cheyenne ",2031,1839
-"     Clear Creek ",2031,10416
-"     Conejos ",2031,8408
-"     Costilla ",2031,3798
-"     Crowley ",2031,6206
-"     Custer ",2031,5126
-"     Delta ",2031,33904
-"     Denver ",2031,871108
-"     Dolores ",2031,2208
-"     Douglas ",2031,418842
-"     Eagle ",2031,71131
-"     El Paso",2031,867280
-"     Elbert ",2031,44998
-"     Fremont ",2031,49713
-"     Garfield ",2031,78878
-"     Gilpin ",2031,6207
-"     Grand ",2031,19910
-"     Gunnison ",2031,19483
-"     Hinsdale ",2031,1093
-"     Huerfano ",2031,6549
-"     Jackson ",2031,1318
-"     Jefferson ",2031,651854
-"     Kiowa ",2031,1291
-"     Kit Carson ",2031,8229
-"     La Plata ",2031,74435
-"     Lake ",2031,8621
-"     Larimer ",2031,432268
-"     Las Animas ",2031,13912
-"     Lincoln ",2031,6762
-"     Logan ",2031,25664
-"     Mesa ",2031,184402
-"     Mineral ",2031,850
-"     Moffat ",2031,13415
-"     Montezuma ",2031,35654
-"     Montrose ",2031,54486
-"     Morgan ",2031,33049
-"     Otero ",2031,17444
-"     Ouray ",2031,5216
-"     Park ",2031,22175
-"     Phillips ",2031,4340
-"     Pitkin ",2031,20402
-"     Prowers ",2031,11847
-"     Pueblo ",2031,193138
-"     Rio Blanco ",2031,6792
-"     Rio Grande ",2031,11446
-"     Routt ",2031,33670
-"     Saguache ",2031,6671
-"     San Juan ",2031,747
-"     San Miguel ",2031,12016
-"     Sedgwick ",2031,2332
-"     Summit ",2031,40181
-"     Teller ",2031,29465
-"     Washington ",2031,5118
-"     Weld ",2031,472825
-"     Yuma ",2031,10754
-"     Adams ",2032,682452
-"     Alamosa ",2032,19300
-"     Arapahoe ",2032,799748
-"     Archuleta ",2032,17917
-"     Baca ",2032,3220
-"     Bent ",2032,6250
-"     Boulder ",2032,385203
-"     Broomfield",2032,96757
-"     Chaffee ",2032,23586
-"     Cheyenne ",2032,1830
-"     Clear Creek ",2032,10515
-"     Conejos ",2032,8442
-"     Costilla ",2032,3800
-"     Crowley ",2032,6287
-"     Custer ",2032,5172
-"     Delta ",2032,34378
-"     Denver ",2032,879700
-"     Dolores ",2032,2225
-"     Douglas ",2032,424353
-"     Eagle ",2032,72511
-"     El Paso",2032,879318
-"     Elbert ",2032,46285
-"     Fremont ",2032,50070
-"     Garfield ",2032,80352
-"     Gilpin ",2032,6247
-"     Grand ",2032,20333
-"     Gunnison ",2032,19683
-"     Hinsdale ",2032,1120
-"     Huerfano ",2032,6537
-"     Jackson ",2032,1320
-"     Jefferson ",2032,655576
-"     Kiowa ",2032,1284
-"     Kit Carson ",2032,8290
-"     La Plata ",2032,75577
-"     Lake ",2032,8707
-"     Larimer ",2032,438222
-"     Las Animas ",2032,13884
-"     Lincoln ",2032,6853
-"     Logan ",2032,25887
-"     Mesa ",2032,187593
-"     Mineral ",2032,854
-"     Moffat ",2032,13441
-"     Montezuma ",2032,36264
-"     Montrose ",2032,55610
-"     Morgan ",2032,33470
-"     Otero ",2032,17322
-"     Ouray ",2032,5223
-"     Park ",2032,22494
-"     Phillips ",2032,4335
-"     Pitkin ",2032,20586
-"     Prowers ",2032,11828
-"     Pueblo ",2032,195085
-"     Rio Blanco ",2032,6822
-"     Rio Grande ",2032,11452
-"     Routt ",2032,34415
-"     Saguache ",2032,6669
-"     San Juan ",2032,748
-"     San Miguel ",2032,12295
-"     Sedgwick ",2032,2333
-"     Summit ",2032,40818
-"     Teller ",2032,29697
-"     Washington ",2032,5122
-"     Weld ",2032,486216
-"     Yuma ",2032,10792
-"     Adams ",2033,694192
-"     Alamosa ",2033,19504
-"     Arapahoe ",2033,809850
-"     Archuleta ",2033,18412
-"     Baca ",2033,3200
-"     Bent ",2033,6271
-"     Boulder ",2033,389197
-"     Broomfield",2033,97007
-"     Chaffee ",2033,23814
-"     Cheyenne ",2033,1820
-"     Clear Creek ",2033,10615
-"     Conejos ",2033,8477
-"     Costilla ",2033,3803
-"     Crowley ",2033,6374
-"     Custer ",2033,5216
-"     Delta ",2033,34854
-"     Denver ",2033,887496
-"     Dolores ",2033,2244
-"     Douglas ",2033,429660
-"     Eagle ",2033,73886
-"     El Paso",2033,891269
-"     Elbert ",2033,47554
-"     Fremont ",2033,50424
-"     Garfield ",2033,81824
-"     Gilpin ",2033,6288
-"     Grand ",2033,20754
-"     Gunnison ",2033,19883
-"     Hinsdale ",2033,1147
-"     Huerfano ",2033,6518
-"     Jackson ",2033,1317
-"     Jefferson ",2033,659132
-"     Kiowa ",2033,1276
-"     Kit Carson ",2033,8354
-"     La Plata ",2033,76717
-"     Lake ",2033,8793
-"     Larimer ",2033,444129
-"     Las Animas ",2033,13854
-"     Lincoln ",2033,6942
-"     Logan ",2033,26107
-"     Mesa ",2033,190777
-"     Mineral ",2033,858
-"     Moffat ",2033,13466
-"     Montezuma ",2033,36871
-"     Montrose ",2033,56729
-"     Morgan ",2033,33921
-"     Otero ",2033,17200
-"     Ouray ",2033,5232
-"     Park ",2033,22789
-"     Phillips ",2033,4336
-"     Pitkin ",2033,20768
-"     Prowers ",2033,11806
-"     Pueblo ",2033,197003
-"     Rio Blanco ",2033,6854
-"     Rio Grande ",2033,11457
-"     Routt ",2033,35149
-"     Saguache ",2033,6667
-"     San Juan ",2033,750
-"     San Miguel ",2033,12579
-"     Sedgwick ",2033,2327
-"     Summit ",2033,41451
-"     Teller ",2033,29924
-"     Washington ",2033,5114
-"     Weld ",2033,499939
-"     Yuma ",2033,10830
-"     Adams ",2034,705879
-"     Alamosa ",2034,19711
-"     Arapahoe ",2034,819851
-"     Archuleta ",2034,18910
-"     Baca ",2034,3180
-"     Bent ",2034,6291
-"     Boulder ",2034,393142
-"     Broomfield",2034,97202
-"     Chaffee ",2034,24038
-"     Cheyenne ",2034,1810
-"     Clear Creek ",2034,10718
-"     Conejos ",2034,8512
-"     Costilla ",2034,3806
-"     Crowley ",2034,6462
-"     Custer ",2034,5259
-"     Delta ",2034,35307
-"     Denver ",2034,894515
-"     Dolores ",2034,2263
-"     Douglas ",2034,434843
-"     Eagle ",2034,75247
-"     El Paso",2034,903133
-"     Elbert ",2034,48802
-"     Fremont ",2034,50776
-"     Garfield ",2034,83289
-"     Gilpin ",2034,6331
-"     Grand ",2034,21172
-"     Gunnison ",2034,20081
-"     Hinsdale ",2034,1175
-"     Huerfano ",2034,6495
-"     Jackson ",2034,1315
-"     Jefferson ",2034,662534
-"     Kiowa ",2034,1269
-"     Kit Carson ",2034,8420
-"     La Plata ",2034,77854
-"     Lake ",2034,8882
-"     Larimer ",2034,449997
-"     Las Animas ",2034,13822
-"     Lincoln ",2034,7025
-"     Logan ",2034,26325
-"     Mesa ",2034,193949
-"     Mineral ",2034,862
-"     Moffat ",2034,13491
-"     Montezuma ",2034,37477
-"     Montrose ",2034,57842
-"     Morgan ",2034,34375
-"     Otero ",2034,17078
-"     Ouray ",2034,5242
-"     Park ",2034,23060
-"     Phillips ",2034,4334
-"     Pitkin ",2034,20949
-"     Prowers ",2034,11784
-"     Pueblo ",2034,198887
-"     Rio Blanco ",2034,6887
-"     Rio Grande ",2034,11462
-"     Routt ",2034,35873
-"     Saguache ",2034,6665
-"     San Juan ",2034,751
-"     San Miguel ",2034,12867
-"     Sedgwick ",2034,2318
-"     Summit ",2034,42084
-"     Teller ",2034,30148
-"     Washington ",2034,5095
-"     Weld ",2034,513736
-"     Yuma ",2034,10871
-"     Adams ",2035,717502
-"     Alamosa ",2035,19919
-"     Arapahoe ",2035,829740
-"     Archuleta ",2035,19406
-"     Baca ",2035,3161
-"     Bent ",2035,6312
-"     Boulder ",2035,397034
-"     Broomfield",2035,97342
-"     Chaffee ",2035,24264
-"     Cheyenne ",2035,1800
-"     Clear Creek ",2035,10821
-"     Conejos ",2035,8547
-"     Costilla ",2035,3809
-"     Crowley ",2035,6548
-"     Custer ",2035,5302
-"     Delta ",2035,35763
-"     Denver ",2035,900766
-"     Dolores ",2035,2284
-"     Douglas ",2035,439878
-"     Eagle ",2035,76589
-"     El Paso",2035,914816
-"     Elbert ",2035,50028
-"     Fremont ",2035,51127
-"     Garfield ",2035,84740
-"     Gilpin ",2035,6375
-"     Grand ",2035,21587
-"     Gunnison ",2035,20277
-"     Hinsdale ",2035,1203
-"     Huerfano ",2035,6465
-"     Jackson ",2035,1312
-"     Jefferson ",2035,665757
-"     Kiowa ",2035,1262
-"     Kit Carson ",2035,8488
-"     La Plata ",2035,78984
-"     Lake ",2035,8971
-"     Larimer ",2035,455823
-"     Las Animas ",2035,13787
-"     Lincoln ",2035,7129
-"     Logan ",2035,26540
-"     Mesa ",2035,197111
-"     Mineral ",2035,868
-"     Moffat ",2035,13514
-"     Montezuma ",2035,38082
-"     Montrose ",2035,58946
-"     Morgan ",2035,34857
-"     Otero ",2035,16957
-"     Ouray ",2035,5254
-"     Park ",2035,23306
-"     Phillips ",2035,4334
-"     Pitkin ",2035,21127
-"     Prowers ",2035,11760
-"     Pueblo ",2035,200739
-"     Rio Blanco ",2035,6920
-"     Rio Grande ",2035,11467
-"     Routt ",2035,36582
-"     Saguache ",2035,6663
-"     San Juan ",2035,753
-"     San Miguel ",2035,13159
-"     Sedgwick ",2035,2315
-"     Summit ",2035,42717
-"     Teller ",2035,30364
-"     Washington ",2035,5075
-"     Weld ",2035,527601
-"     Yuma ",2035,10913
-"     Adams ",2036,729054
-"     Alamosa ",2036,20130
-"     Arapahoe ",2036,840016
-"     Archuleta ",2036,19894
-"     Baca ",2036,3143
-"     Bent ",2036,6331
-"     Boulder ",2036,400863
-"     Broomfield",2036,97427
-"     Chaffee ",2036,24470
-"     Cheyenne ",2036,1790
-"     Clear Creek ",2036,10925
-"     Conejos ",2036,8582
-"     Costilla ",2036,3813
-"     Crowley ",2036,6630
-"     Custer ",2036,5344
-"     Delta ",2036,36211
-"     Denver ",2036,906269
-"     Dolores ",2036,2304
-"     Douglas ",2036,444749
-"     Eagle ",2036,77911
-"     El Paso",2036,926383
-"     Elbert ",2036,51232
-"     Fremont ",2036,51473
-"     Garfield ",2036,86176
-"     Gilpin ",2036,6399
-"     Grand ",2036,21999
-"     Gunnison ",2036,20472
-"     Hinsdale ",2036,1232
-"     Huerfano ",2036,6429
-"     Jackson ",2036,1310
-"     Jefferson ",2036,668797
-"     Kiowa ",2036,1255
-"     Kit Carson ",2036,8557
-"     La Plata ",2036,80085
-"     Lake ",2036,9060
-"     Larimer ",2036,461601
-"     Las Animas ",2036,13750
-"     Lincoln ",2036,7225
-"     Logan ",2036,26752
-"     Mesa ",2036,200256
-"     Mineral ",2036,873
-"     Moffat ",2036,13536
-"     Montezuma ",2036,38686
-"     Montrose ",2036,60042
-"     Morgan ",2036,35341
-"     Otero ",2036,16837
-"     Ouray ",2036,5256
-"     Park ",2036,23527
-"     Phillips ",2036,4329
-"     Pitkin ",2036,21279
-"     Prowers ",2036,11737
-"     Pueblo ",2036,202553
-"     Rio Blanco ",2036,6953
-"     Rio Grande ",2036,11472
-"     Routt ",2036,37277
-"     Saguache ",2036,6661
-"     San Juan ",2036,754
-"     San Miguel ",2036,13449
-"     Sedgwick ",2036,2309
-"     Summit ",2036,43344
-"     Teller ",2036,30573
-"     Washington ",2036,5054
-"     Weld ",2036,541527
-"     Yuma ",2036,10951
-"     Adams ",2037,740535
-"     Alamosa ",2037,20341
-"     Arapahoe ",2037,850199
-"     Archuleta ",2037,20389
-"     Baca ",2037,3126
-"     Bent ",2037,6351
-"     Boulder ",2037,404630
-"     Broomfield",2037,97461
-"     Chaffee ",2037,24672
-"     Cheyenne ",2037,1780
-"     Clear Creek ",2037,11029
-"     Conejos ",2037,8617
-"     Costilla ",2037,3817
-"     Crowley ",2037,6711
-"     Custer ",2037,5385
-"     Delta ",2037,36657
-"     Denver ",2037,911422
-"     Dolores ",2037,2325
-"     Douglas ",2037,449436
-"     Eagle ",2037,79213
-"     El Paso",2037,937826
-"     Elbert ",2037,52414
-"     Fremont ",2037,51817
-"     Garfield ",2037,87602
-"     Gilpin ",2037,6424
-"     Grand ",2037,22406
-"     Gunnison ",2037,20666
-"     Hinsdale ",2037,1261
-"     Huerfano ",2037,6393
-"     Jackson ",2037,1307
-"     Jefferson ",2037,671686
-"     Kiowa ",2037,1248
-"     Kit Carson ",2037,8626
-"     La Plata ",2037,81174
-"     Lake ",2037,9148
-"     Larimer ",2037,467347
-"     Las Animas ",2037,13711
-"     Lincoln ",2037,7317
-"     Logan ",2037,26962
-"     Mesa ",2037,203380
-"     Mineral ",2037,877
-"     Moffat ",2037,13557
-"     Montezuma ",2037,39290
-"     Montrose ",2037,61129
-"     Morgan ",2037,35853
-"     Otero ",2037,16719
-"     Ouray ",2037,5266
-"     Park ",2037,23705
-"     Phillips ",2037,4333
-"     Pitkin ",2037,21420
-"     Prowers ",2037,11713
-"     Pueblo ",2037,204330
-"     Rio Blanco ",2037,6986
-"     Rio Grande ",2037,11478
-"     Routt ",2037,37956
-"     Saguache ",2037,6659
-"     San Juan ",2037,756
-"     San Miguel ",2037,13738
-"     Sedgwick ",2037,2307
-"     Summit ",2037,43974
-"     Teller ",2037,30775
-"     Washington ",2037,5034
-"     Weld ",2037,555058
-"     Yuma ",2037,10999
-"     Adams ",2038,751943
-"     Alamosa ",2038,20550
-"     Arapahoe ",2038,860292
-"     Archuleta ",2038,20879
-"     Baca ",2038,3109
-"     Bent ",2038,6371
-"     Boulder ",2038,408333
-"     Broomfield",2038,97451
-"     Chaffee ",2038,24871
-"     Cheyenne ",2038,1769
-"     Clear Creek ",2038,11134
-"     Conejos ",2038,8651
-"     Costilla ",2038,3822
-"     Crowley ",2038,6793
-"     Custer ",2038,5426
-"     Delta ",2038,37102
-"     Denver ",2038,916259
-"     Dolores ",2038,2346
-"     Douglas ",2038,453725
-"     Eagle ",2038,80494
-"     El Paso",2038,949151
-"     Elbert ",2038,53576
-"     Fremont ",2038,52162
-"     Garfield ",2038,89019
-"     Gilpin ",2038,6450
-"     Grand ",2038,22810
-"     Gunnison ",2038,20858
-"     Hinsdale ",2038,1290
-"     Huerfano ",2038,6357
-"     Jackson ",2038,1305
-"     Jefferson ",2038,674428
-"     Kiowa ",2038,1242
-"     Kit Carson ",2038,8696
-"     La Plata ",2038,82240
-"     Lake ",2038,9228
-"     Larimer ",2038,473056
-"     Las Animas ",2038,13672
-"     Lincoln ",2038,7409
-"     Logan ",2038,27168
-"     Mesa ",2038,206479
-"     Mineral ",2038,886
-"     Moffat ",2038,13577
-"     Montezuma ",2038,39892
-"     Montrose ",2038,62207
-"     Morgan ",2038,36367
-"     Otero ",2038,16603
-"     Ouray ",2038,5274
-"     Park ",2038,23841
-"     Phillips ",2038,4333
-"     Pitkin ",2038,21562
-"     Prowers ",2038,11690
-"     Pueblo ",2038,206072
-"     Rio Blanco ",2038,7019
-"     Rio Grande ",2038,11485
-"     Routt ",2038,38620
-"     Saguache ",2038,6657
-"     San Juan ",2038,758
-"     San Miguel ",2038,14024
-"     Sedgwick ",2038,2305
-"     Summit ",2038,44603
-"     Teller ",2038,30970
-"     Washington ",2038,5012
-"     Weld ",2038,568642
-"     Yuma ",2038,11032
-"     Adams ",2039,763278
-"     Alamosa ",2039,20757
-"     Arapahoe ",2039,868745
-"     Archuleta ",2039,21372
-"     Baca ",2039,3094
-"     Bent ",2039,6390
-"     Boulder ",2039,411969
-"     Broomfield",2039,97402
-"     Chaffee ",2039,25067
-"     Cheyenne ",2039,1759
-"     Clear Creek ",2039,11240
-"     Conejos ",2039,8684
-"     Costilla ",2039,3828
-"     Crowley ",2039,6875
-"     Custer ",2039,5467
-"     Delta ",2039,37537
-"     Denver ",2039,920808
-"     Dolores ",2039,2367
-"     Douglas ",2039,457708
-"     Eagle ",2039,81756
-"     El Paso",2039,960355
-"     Elbert ",2039,54718
-"     Fremont ",2039,52505
-"     Garfield ",2039,90430
-"     Gilpin ",2039,6466
-"     Grand ",2039,23210
-"     Gunnison ",2039,21049
-"     Hinsdale ",2039,1319
-"     Huerfano ",2039,6321
-"     Jackson ",2039,1302
-"     Jefferson ",2039,677034
-"     Kiowa ",2039,1236
-"     Kit Carson ",2039,8766
-"     La Plata ",2039,83305
-"     Lake ",2039,9297
-"     Larimer ",2039,478737
-"     Las Animas ",2039,13632
-"     Lincoln ",2039,7509
-"     Logan ",2039,27373
-"     Mesa ",2039,209552
-"     Mineral ",2039,892
-"     Moffat ",2039,13596
-"     Montezuma ",2039,40494
-"     Montrose ",2039,63274
-"     Morgan ",2039,36882
-"     Otero ",2039,16489
-"     Ouray ",2039,5282
-"     Park ",2039,23935
-"     Phillips ",2039,4324
-"     Pitkin ",2039,21711
-"     Prowers ",2039,11667
-"     Pueblo ",2039,207779
-"     Rio Blanco ",2039,7051
-"     Rio Grande ",2039,11492
-"     Routt ",2039,39268
-"     Saguache ",2039,6655
-"     San Juan ",2039,760
-"     San Miguel ",2039,14308
-"     Sedgwick ",2039,2296
-"     Summit ",2039,45232
-"     Teller ",2039,31161
-"     Washington ",2039,4991
-"     Weld ",2039,582176
-"     Yuma ",2039,11077
-"     Adams ",2040,774542
-"     Alamosa ",2040,20963
-"     Arapahoe ",2040,877068
-"     Archuleta ",2040,21859
-"     Baca ",2040,3078
-"     Bent ",2040,6408
-"     Boulder ",2040,415540
-"     Broomfield",2040,97318
-"     Chaffee ",2040,25261
-"     Cheyenne ",2040,1749
-"     Clear Creek ",2040,11346
-"     Conejos ",2040,8717
-"     Costilla ",2040,3835
-"     Crowley ",2040,6957
-"     Custer ",2040,5507
-"     Delta ",2040,37974
-"     Denver ",2040,925098
-"     Dolores ",2040,2389
-"     Douglas ",2040,461381
-"     Eagle ",2040,83001
-"     El Paso",2040,971444
-"     Elbert ",2040,55840
-"     Fremont ",2040,52848
-"     Garfield ",2040,91836
-"     Gilpin ",2040,6482
-"     Grand ",2040,23606
-"     Gunnison ",2040,21238
-"     Hinsdale ",2040,1348
-"     Huerfano ",2040,6285
-"     Jackson ",2040,1300
-"     Jefferson ",2040,679518
-"     Kiowa ",2040,1230
-"     Kit Carson ",2040,8835
-"     La Plata ",2040,84342
-"     Lake ",2040,9361
-"     Larimer ",2040,484597
-"     Las Animas ",2040,13592
-"     Lincoln ",2040,7598
-"     Logan ",2040,27576
-"     Mesa ",2040,212598
-"     Mineral ",2040,897
-"     Moffat ",2040,13617
-"     Montezuma ",2040,41095
-"     Montrose ",2040,64331
-"     Morgan ",2040,37399
-"     Otero ",2040,16376
-"     Ouray ",2040,5303
-"     Park ",2040,23987
-"     Phillips ",2040,4324
-"     Pitkin ",2040,21854
-"     Prowers ",2040,11645
-"     Pueblo ",2040,209454
-"     Rio Blanco ",2040,7083
-"     Rio Grande ",2040,11500
-"     Routt ",2040,39900
-"     Saguache ",2040,6653
-"     San Juan ",2040,762
-"     San Miguel ",2040,14590
-"     Sedgwick ",2040,2298
-"     Summit ",2040,45859
-"     Teller ",2040,31349
-"     Washington ",2040,4970
-"     Weld ",2040,595661
-"     Yuma ",2040,11109
-"     Adams ",2041,785740
-"     Alamosa ",2041,21168
-"     Arapahoe ",2041,883712
-"     Archuleta ",2041,22343
-"     Baca ",2041,3064
-"     Bent ",2041,6427
-"     Boulder ",2041,419043
-"     Broomfield",2041,97206
-"     Chaffee ",2041,25452
-"     Cheyenne ",2041,1738
-"     Clear Creek ",2041,11452
-"     Conejos ",2041,8748
-"     Costilla ",2041,3842
-"     Crowley ",2041,7034
-"     Custer ",2041,5547
-"     Delta ",2041,38406
-"     Denver ",2041,929108
-"     Dolores ",2041,2410
-"     Douglas ",2041,464746
-"     Eagle ",2041,84226
-"     El Paso",2041,982319
-"     Elbert ",2041,56944
-"     Fremont ",2041,53192
-"     Garfield ",2041,93236
-"     Gilpin ",2041,6498
-"     Grand ",2041,23999
-"     Gunnison ",2041,21425
-"     Hinsdale ",2041,1378
-"     Huerfano ",2041,6250
-"     Jackson ",2041,1297
-"     Jefferson ",2041,681891
-"     Kiowa ",2041,1225
-"     Kit Carson ",2041,8906
-"     La Plata ",2041,85368
-"     Lake ",2041,9422
-"     Larimer ",2041,490646
-"     Las Animas ",2041,13553
-"     Lincoln ",2041,7688
-"     Logan ",2041,27777
-"     Mesa ",2041,215616
-"     Mineral ",2041,902
-"     Moffat ",2041,13637
-"     Montezuma ",2041,41697
-"     Montrose ",2041,65379
-"     Morgan ",2041,37918
-"     Otero ",2041,16266
-"     Ouray ",2041,5324
-"     Park ",2041,23997
-"     Phillips ",2041,4325
-"     Pitkin ",2041,21994
-"     Prowers ",2041,11624
-"     Pueblo ",2041,211048
-"     Rio Blanco ",2041,7114
-"     Rio Grande ",2041,11509
-"     Routt ",2041,40527
-"     Saguache ",2041,6652
-"     San Juan ",2041,762
-"     San Miguel ",2041,14870
-"     Sedgwick ",2041,2300
-"     Summit ",2041,46477
-"     Teller ",2041,31535
-"     Washington ",2041,4950
-"     Weld ",2041,609198
-"     Yuma ",2041,11141
-"     Adams ",2042,797398
-"     Alamosa ",2042,21370
-"     Arapahoe ",2042,886549
-"     Archuleta ",2042,22823
-"     Baca ",2042,3049
-"     Bent ",2042,6446
-"     Boulder ",2042,422471
-"     Broomfield",2042,97069
-"     Chaffee ",2042,25640
-"     Cheyenne ",2042,1728
-"     Clear Creek ",2042,11560
-"     Conejos ",2042,8779
-"     Costilla ",2042,3850
-"     Crowley ",2042,7112
-"     Custer ",2042,5587
-"     Delta ",2042,38834
-"     Denver ",2042,932825
-"     Dolores ",2042,2431
-"     Douglas ",2042,467802
-"     Eagle ",2042,85430
-"     El Paso",2042,993071
-"     Elbert ",2042,58030
-"     Fremont ",2042,53536
-"     Garfield ",2042,94628
-"     Gilpin ",2042,6513
-"     Grand ",2042,24388
-"     Gunnison ",2042,21578
-"     Hinsdale ",2042,1402
-"     Huerfano ",2042,6215
-"     Jackson ",2042,1295
-"     Jefferson ",2042,683948
-"     Kiowa ",2042,1220
-"     Kit Carson ",2042,8976
-"     La Plata ",2042,86379
-"     Lake ",2042,9480
-"     Larimer ",2042,496657
-"     Las Animas ",2042,13513
-"     Lincoln ",2042,7778
-"     Logan ",2042,27976
-"     Mesa ",2042,218602
-"     Mineral ",2042,908
-"     Moffat ",2042,13659
-"     Montezuma ",2042,42298
-"     Montrose ",2042,66416
-"     Morgan ",2042,38439
-"     Otero ",2042,16156
-"     Ouray ",2042,5346
-"     Park ",2042,24002
-"     Phillips ",2042,4326
-"     Pitkin ",2042,22132
-"     Prowers ",2042,11603
-"     Pueblo ",2042,212606
-"     Rio Blanco ",2042,7145
-"     Rio Grande ",2042,11518
-"     Routt ",2042,41151
-"     Saguache ",2042,6651
-"     San Juan ",2042,762
-"     San Miguel ",2042,15147
-"     Sedgwick ",2042,2302
-"     Summit ",2042,47087
-"     Teller ",2042,31721
-"     Washington ",2042,4930
-"     Weld ",2042,622921
-"     Yuma ",2042,11172
-"     Adams ",2043,809023
-"     Alamosa ",2043,21571
-"     Arapahoe ",2043,889091
-"     Archuleta ",2043,23300
-"     Baca ",2043,3036
-"     Bent ",2043,6465
-"     Boulder ",2043,425825
-"     Broomfield",2043,96912
-"     Chaffee ",2043,25827
-"     Cheyenne ",2043,1717
-"     Clear Creek ",2043,11668
-"     Conejos ",2043,8808
-"     Costilla ",2043,3858
-"     Crowley ",2043,7190
-"     Custer ",2043,5626
-"     Delta ",2043,39258
-"     Denver ",2043,936244
-"     Dolores ",2043,2452
-"     Douglas ",2043,470557
-"     Eagle ",2043,86615
-"     El Paso",2043,1003709
-"     Elbert ",2043,59100
-"     Fremont ",2043,53882
-"     Garfield ",2043,96017
-"     Gilpin ",2043,6529
-"     Grand ",2043,24775
-"     Gunnison ",2043,21729
-"     Hinsdale ",2043,1427
-"     Huerfano ",2043,6180
-"     Jackson ",2043,1292
-"     Jefferson ",2043,685702
-"     Kiowa ",2043,1216
-"     Kit Carson ",2043,9048
-"     La Plata ",2043,87377
-"     Lake ",2043,9535
-"     Larimer ",2043,502629
-"     Las Animas ",2043,13475
-"     Lincoln ",2043,7868
-"     Logan ",2043,28173
-"     Mesa ",2043,221559
-"     Mineral ",2043,913
-"     Moffat ",2043,13681
-"     Montezuma ",2043,42897
-"     Montrose ",2043,67443
-"     Morgan ",2043,38963
-"     Otero ",2043,16048
-"     Ouray ",2043,5370
-"     Park ",2043,24003
-"     Phillips ",2043,4329
-"     Pitkin ",2043,22269
-"     Prowers ",2043,11583
-"     Pueblo ",2043,214132
-"     Rio Blanco ",2043,7175
-"     Rio Grande ",2043,11528
-"     Routt ",2043,41770
-"     Saguache ",2043,6651
-"     San Juan ",2043,762
-"     San Miguel ",2043,15422
-"     Sedgwick ",2043,2305
-"     Summit ",2043,47690
-"     Teller ",2043,31910
-"     Washington ",2043,4912
-"     Weld ",2043,636683
-"     Yuma ",2043,11202
-"     Adams ",2044,820624
-"     Alamosa ",2044,21769
-"     Arapahoe ",2044,891342
-"     Archuleta ",2044,23774
-"     Baca ",2044,3022
-"     Bent ",2044,6484
-"     Boulder ",2044,429109
-"     Broomfield",2044,96740
-"     Chaffee ",2044,26014
-"     Cheyenne ",2044,1706
-"     Clear Creek ",2044,11777
-"     Conejos ",2044,8836
-"     Costilla ",2044,3867
-"     Crowley ",2044,7268
-"     Custer ",2044,5667
-"     Delta ",2044,39677
-"     Denver ",2044,939365
-"     Dolores ",2044,2472
-"     Douglas ",2044,473026
-"     Eagle ",2044,87780
-"     El Paso",2044,1014250
-"     Elbert ",2044,60155
-"     Fremont ",2044,54230
-"     Garfield ",2044,97404
-"     Gilpin ",2044,6544
-"     Grand ",2044,25158
-"     Gunnison ",2044,21878
-"     Hinsdale ",2044,1452
-"     Huerfano ",2044,6147
-"     Jackson ",2044,1289
-"     Jefferson ",2044,687163
-"     Kiowa ",2044,1212
-"     Kit Carson ",2044,9120
-"     La Plata ",2044,88361
-"     Lake ",2044,9587
-"     Larimer ",2044,508560
-"     Las Animas ",2044,13438
-"     Lincoln ",2044,7957
-"     Logan ",2044,28369
-"     Mesa ",2044,224488
-"     Mineral ",2044,919
-"     Moffat ",2044,13704
-"     Montezuma ",2044,43497
-"     Montrose ",2044,68460
-"     Morgan ",2044,39490
-"     Otero ",2044,15941
-"     Ouray ",2044,5395
-"     Park ",2044,23999
-"     Phillips ",2044,4333
-"     Pitkin ",2044,22404
-"     Prowers ",2044,11564
-"     Pueblo ",2044,215629
-"     Rio Blanco ",2044,7205
-"     Rio Grande ",2044,11538
-"     Routt ",2044,42386
-"     Saguache ",2044,6651
-"     San Juan ",2044,763
-"     San Miguel ",2044,15696
-"     Sedgwick ",2044,2308
-"     Summit ",2044,48287
-"     Teller ",2044,32099
-"     Washington ",2044,4894
-"     Weld ",2044,650485
-"     Yuma ",2044,11232
-"     Adams ",2045,832210
-"     Alamosa ",2045,21965
-"     Arapahoe ",2045,893317
-"     Archuleta ",2045,24245
-"     Baca ",2045,3010
-"     Bent ",2045,6504
-"     Boulder ",2045,432331
-"     Broomfield",2045,96557
-"     Chaffee ",2045,26200
-"     Cheyenne ",2045,1695
-"     Clear Creek ",2045,11887
-"     Conejos ",2045,8863
-"     Costilla ",2045,3877
-"     Crowley ",2045,7347
-"     Custer ",2045,5708
-"     Delta ",2045,40093
-"     Denver ",2045,942194
-"     Dolores ",2045,2493
-"     Douglas ",2045,475226
-"     Eagle ",2045,88927
-"     El Paso",2045,1024723
-"     Elbert ",2045,61196
-"     Fremont ",2045,54582
-"     Garfield ",2045,98791
-"     Gilpin ",2045,6559
-"     Grand ",2045,25538
-"     Gunnison ",2045,22024
-"     Hinsdale ",2045,1472
-"     Huerfano ",2045,6115
-"     Jackson ",2045,1287
-"     Jefferson ",2045,688552
-"     Kiowa ",2045,1208
-"     Kit Carson ",2045,9193
-"     La Plata ",2045,89331
-"     Lake ",2045,9637
-"     Larimer ",2045,514458
-"     Las Animas ",2045,13403
-"     Lincoln ",2045,8046
-"     Logan ",2045,28563
-"     Mesa ",2045,227391
-"     Mineral ",2045,925
-"     Moffat ",2045,13729
-"     Montezuma ",2045,44097
-"     Montrose ",2045,69467
-"     Morgan ",2045,40020
-"     Otero ",2045,15835
-"     Ouray ",2045,5421
-"     Park ",2045,23993
-"     Phillips ",2045,4338
-"     Pitkin ",2045,22539
-"     Prowers ",2045,11544
-"     Pueblo ",2045,217099
-"     Rio Blanco ",2045,7234
-"     Rio Grande ",2045,11549
-"     Routt ",2045,42999
-"     Saguache ",2045,6653
-"     San Juan ",2045,763
-"     San Miguel ",2045,15967
-"     Sedgwick ",2045,2311
-"     Summit ",2045,48881
-"     Teller ",2045,32292
-"     Washington ",2045,4877
-"     Weld ",2045,664332
-"     Yuma ",2045,11262
-"     Adams ",2046,843790
-"     Alamosa ",2046,22160
-"     Arapahoe ",2046,895036
-"     Archuleta ",2046,24715
-"     Baca ",2046,2997
-"     Bent ",2046,6524
-"     Boulder ",2046,435500
-"     Broomfield",2046,96366
-"     Chaffee ",2046,26386
-"     Cheyenne ",2046,1684
-"     Clear Creek ",2046,11998
-"     Conejos ",2046,8890
-"     Costilla ",2046,3887
-"     Crowley ",2046,7426
-"     Custer ",2046,5750
-"     Delta ",2046,40506
-"     Denver ",2046,944764
-"     Dolores ",2046,2514
-"     Douglas ",2046,477177
-"     Eagle ",2046,90061
-"     El Paso",2046,1035142
-"     Elbert ",2046,62226
-"     Fremont ",2046,54937
-"     Garfield ",2046,100176
-"     Gilpin ",2046,6573
-"     Grand ",2046,25916
-"     Gunnison ",2046,22169
-"     Hinsdale ",2046,1492
-"     Huerfano ",2046,6085
-"     Jackson ",2046,1285
-"     Jefferson ",2046,689888
-"     Kiowa ",2046,1205
-"     Kit Carson ",2046,9269
-"     La Plata ",2046,90288
-"     Lake ",2046,9685
-"     Larimer ",2046,520324
-"     Las Animas ",2046,13369
-"     Lincoln ",2046,8134
-"     Logan ",2046,28756
-"     Mesa ",2046,229262
-"     Mineral ",2046,932
-"     Moffat ",2046,13754
-"     Montezuma ",2046,44701
-"     Montrose ",2046,70467
-"     Morgan ",2046,40554
-"     Otero ",2046,15728
-"     Ouray ",2046,5448
-"     Park ",2046,23984
-"     Phillips ",2046,4344
-"     Pitkin ",2046,22673
-"     Prowers ",2046,11525
-"     Pueblo ",2046,218546
-"     Rio Blanco ",2046,7263
-"     Rio Grande ",2046,11561
-"     Routt ",2046,43607
-"     Saguache ",2046,6655
-"     San Juan ",2046,764
-"     San Miguel ",2046,16236
-"     Sedgwick ",2046,2315
-"     Summit ",2046,49474
-"     Teller ",2046,32487
-"     Washington ",2046,4860
-"     Weld ",2046,678227
-"     Yuma ",2046,11291
-"     Adams ",2047,855369
-"     Alamosa ",2047,22354
-"     Arapahoe ",2047,896515
-"     Archuleta ",2047,25182
-"     Baca ",2047,2984
-"     Bent ",2047,6544
-"     Boulder ",2047,438628
-"     Broomfield",2047,96170
-"     Chaffee ",2047,26574
-"     Cheyenne ",2047,1673
-"     Clear Creek ",2047,12110
-"     Conejos ",2047,8916
-"     Costilla ",2047,3898
-"     Crowley ",2047,7507
-"     Custer ",2047,5793
-"     Delta ",2047,40915
-"     Denver ",2047,947133
-"     Dolores ",2047,2534
-"     Douglas ",2047,478895
-"     Eagle ",2047,91179
-"     El Paso",2047,1045521
-"     Elbert ",2047,63245
-"     Fremont ",2047,55297
-"     Garfield ",2047,101561
-"     Gilpin ",2047,6586
-"     Grand ",2047,26292
-"     Gunnison ",2047,22312
-"     Hinsdale ",2047,1512
-"     Huerfano ",2047,6057
-"     Jackson ",2047,1283
-"     Jefferson ",2047,691183
-"     Kiowa ",2047,1202
-"     Kit Carson ",2047,9346
-"     La Plata ",2047,91232
-"     Lake ",2047,9732
-"     Larimer ",2047,526167
-"     Las Animas ",2047,13336
-"     Lincoln ",2047,8222
-"     Logan ",2047,28948
-"     Mesa ",2047,231111
-"     Mineral ",2047,938
-"     Moffat ",2047,13780
-"     Montezuma ",2047,45307
-"     Montrose ",2047,71458
-"     Morgan ",2047,41092
-"     Otero ",2047,15622
-"     Ouray ",2047,5476
-"     Park ",2047,23938
-"     Phillips ",2047,4350
-"     Pitkin ",2047,22807
-"     Prowers ",2047,11505
-"     Pueblo ",2047,219975
-"     Rio Blanco ",2047,7292
-"     Rio Grande ",2047,11573
-"     Routt ",2047,44211
-"     Saguache ",2047,6657
-"     San Juan ",2047,765
-"     San Miguel ",2047,16504
-"     Sedgwick ",2047,2319
-"     Summit ",2047,50065
-"     Teller ",2047,32683
-"     Washington ",2047,4845
-"     Weld ",2047,692173
-"     Yuma ",2047,11319
-"     Adams ",2048,866951
-"     Alamosa ",2048,22547
-"     Arapahoe ",2048,897771
-"     Archuleta ",2048,25646
-"     Baca ",2048,2972
-"     Bent ",2048,6565
-"     Boulder ",2048,441718
-"     Broomfield",2048,95971
-"     Chaffee ",2048,26762
-"     Cheyenne ",2048,1662
-"     Clear Creek ",2048,12221
-"     Conejos ",2048,8943
-"     Costilla ",2048,3910
-"     Crowley ",2048,7588
-"     Custer ",2048,5838
-"     Delta ",2048,41321
-"     Denver ",2048,949296
-"     Dolores ",2048,2555
-"     Douglas ",2048,480396
-"     Eagle ",2048,92285
-"     El Paso",2048,1055862
-"     Elbert ",2048,64255
-"     Fremont ",2048,55661
-"     Garfield ",2048,102944
-"     Gilpin ",2048,6599
-"     Grand ",2048,26665
-"     Gunnison ",2048,22452
-"     Hinsdale ",2048,1532
-"     Huerfano ",2048,6030
-"     Jackson ",2048,1281
-"     Jefferson ",2048,692443
-"     Kiowa ",2048,1199
-"     Kit Carson ",2048,9426
-"     La Plata ",2048,92164
-"     Lake ",2048,9778
-"     Larimer ",2048,531987
-"     Las Animas ",2048,13305
-"     Lincoln ",2048,8310
-"     Logan ",2048,29138
-"     Mesa ",2048,232938
-"     Mineral ",2048,945
-"     Moffat ",2048,13808
-"     Montezuma ",2048,45918
-"     Montrose ",2048,72442
-"     Morgan ",2048,41634
-"     Otero ",2048,15516
-"     Ouray ",2048,5506
-"     Park ",2048,23890
-"     Phillips ",2048,4357
-"     Pitkin ",2048,22941
-"     Prowers ",2048,11484
-"     Pueblo ",2048,221386
-"     Rio Blanco ",2048,7320
-"     Rio Grande ",2048,11586
-"     Routt ",2048,44811
-"     Saguache ",2048,6660
-"     San Juan ",2048,765
-"     San Miguel ",2048,16769
-"     Sedgwick ",2048,2323
-"     Summit ",2048,50654
-"     Teller ",2048,32881
-"     Washington ",2048,4829
-"     Weld ",2048,706170
-"     Yuma ",2048,11346
-"     Adams ",2049,878541
-"     Alamosa ",2049,22740
-"     Arapahoe ",2049,898835
-"     Archuleta ",2049,26110
-"     Baca ",2049,2960
-"     Bent ",2049,6586
-"     Boulder ",2049,444787
-"     Broomfield",2049,95769
-"     Chaffee ",2049,26952
-"     Cheyenne ",2049,1651
-"     Clear Creek ",2049,12334
-"     Conejos ",2049,8970
-"     Costilla ",2049,3922
-"     Crowley ",2049,7670
-"     Custer ",2049,5885
-"     Delta ",2049,41725
-"     Denver ",2049,951239
-"     Dolores ",2049,2576
-"     Douglas ",2049,481700
-"     Eagle ",2049,93378
-"     El Paso",2049,1066178
-"     Elbert ",2049,65257
-"     Fremont ",2049,56030
-"     Garfield ",2049,104327
-"     Gilpin ",2049,6613
-"     Grand ",2049,27036
-"     Gunnison ",2049,22591
-"     Hinsdale ",2049,1553
-"     Huerfano ",2049,6006
-"     Jackson ",2049,1280
-"     Jefferson ",2049,693692
-"     Kiowa ",2049,1196
-"     Kit Carson ",2049,9509
-"     La Plata ",2049,93087
-"     Lake ",2049,9823
-"     Larimer ",2049,537792
-"     Las Animas ",2049,13276
-"     Lincoln ",2049,8397
-"     Logan ",2049,29327
-"     Mesa ",2049,234750
-"     Mineral ",2049,952
-"     Moffat ",2049,13837
-"     Montezuma ",2049,46535
-"     Montrose ",2049,73419
-"     Morgan ",2049,42182
-"     Otero ",2049,15409
-"     Ouray ",2049,5537
-"     Park ",2049,23843
-"     Phillips ",2049,4365
-"     Pitkin ",2049,23075
-"     Prowers ",2049,11463
-"     Pueblo ",2049,222788
-"     Rio Blanco ",2049,7348
-"     Rio Grande ",2049,11599
-"     Routt ",2049,45407
-"     Saguache ",2049,6664
-"     San Juan ",2049,766
-"     San Miguel ",2049,17032
-"     Sedgwick ",2049,2327
-"     Summit ",2049,51241
-"     Teller ",2049,33082
-"     Washington ",2049,4814
-"     Weld ",2049,720226
-"     Yuma ",2049,11372
-"     Adams ",2050,890148
-"     Alamosa ",2050,22934
-"     Arapahoe ",2050,899738
-"     Archuleta ",2050,26571
-"     Baca ",2050,2949
-"     Bent ",2050,6607
-"     Boulder ",2050,447843
-"     Broomfield",2050,95566
-"     Chaffee ",2050,27145
-"     Cheyenne ",2050,1641
-"     Clear Creek ",2050,12448
-"     Conejos ",2050,8997
-"     Costilla ",2050,3934
-"     Crowley ",2050,7754
-"     Custer ",2050,5934
-"     Delta ",2050,42126
-"     Denver ",2050,952955
-"     Dolores ",2050,2597
-"     Douglas ",2050,482824
-"     Eagle ",2050,94459
-"     El Paso",2050,1076486
-"     Elbert ",2050,66251
-"     Fremont ",2050,56406
-"     Garfield ",2050,105711
-"     Gilpin ",2050,6626
-"     Grand ",2050,27406
-"     Gunnison ",2050,22728
-"     Hinsdale ",2050,1573
-"     Huerfano ",2050,5983
-"     Jackson ",2050,1279
-"     Jefferson ",2050,694943
-"     Kiowa ",2050,1193
-"     Kit Carson ",2050,9595
-"     La Plata ",2050,94002
-"     Lake ",2050,9868
-"     Larimer ",2050,543588
-"     Las Animas ",2050,13249
-"     Lincoln ",2050,8484
-"     Logan ",2050,29516
-"     Mesa ",2050,236554
-"     Mineral ",2050,959
-"     Moffat ",2050,13868
-"     Montezuma ",2050,47158
-"     Montrose ",2050,74391
-"     Morgan ",2050,42734
-"     Otero ",2050,15302
-"     Ouray ",2050,5568
-"     Park ",2050,23797
-"     Phillips ",2050,4372
-"     Pitkin ",2050,23209
-"     Prowers ",2050,11441
-"     Pueblo ",2050,224184
-"     Rio Blanco ",2050,7376
-"     Rio Grande ",2050,11612
-"     Routt ",2050,45998
-"     Saguache ",2050,6668
-"     San Juan ",2050,767
-"     San Miguel ",2050,17293
-"     Sedgwick ",2050,2332
-"     Summit ",2050,51828
-"     Teller ",2050,33287
-"     Washington ",2050,4800
-"     Weld ",2050,734343
-"     Yuma ",2050,11398
+"Adams",2000,351734
+"Alamosa",2000,15097
+"Arapahoe",2000,490722
+"Archuleta",2000,10042
+"Baca",2000,4500
+"Bent",2000,5966
+"Boulder",2000,276254
+"Broomfield",2000,38545
+"Chaffee",2000,16312
+"Cheyenne",2000,2214
+"Clear Creek",2000,9360
+"Conejos",2000,8407
+"Costilla",2000,3673
+"Crowley",2000,5128
+"Custer",2000,3518
+"Delta",2000,27910
+"Denver",2000,556740
+"Dolores",2000,1847
+"Douglas",2000,180511
+"Eagle",2000,43288
+"El Paso",2000,519803
+"Elbert",2000,20102
+"Fremont",2000,46369
+"Garfield",2000,44239
+"Gilpin",2000,4807
+"Grand",2000,12852
+"Gunnison",2000,13988
+"Hinsdale",2000,792
+"Huerfano",2000,7826
+"Jackson",2000,1574
+"Jefferson",2000,526716
+"Kiowa",2000,1612
+"Kit Carson",2000,7975
+"La Plata",2000,44578
+"Lake",2000,7939
+"Larimer",2000,253087
+"Las Animas",2000,15286
+"Lincoln",2000,6164
+"Logan",2000,20656
+"Mesa",2000,117649
+"Mineral",2000,836
+"Moffat",2000,13182
+"Montezuma",2000,23852
+"Montrose",2000,33579
+"Morgan",2000,27250
+"Otero",2000,20244
+"Ouray",2000,3776
+"Park",2000,14728
+"Phillips",2000,4451
+"Pitkin",2000,15763
+"Prowers",2000,14452
+"Pueblo",2000,141854
+"Rio Blanco",2000,5967
+"Rio Grande",2000,12429
+"Routt",2000,20122
+"Saguache",2000,5982
+"San Juan",2000,574
+"San Miguel",2000,6614
+"Sedgwick",2000,2742
+"Summit",2000,25708
+"Teller",2000,21067
+"Washington",2000,4942
+"Weld",2000,183074
+"Yuma",2000,9815
+"Adams",2001,359437
+"Alamosa",2001,15231
+"Arapahoe",2001,501671
+"Archuleta",2001,10465
+"Baca",2001,4447
+"Bent",2001,5882
+"Boulder",2001,283510
+"Broomfield",2001,41387
+"Chaffee",2001,16410
+"Cheyenne",2001,2173
+"Clear Creek",2001,9464
+"Conejos",2001,8365
+"Costilla",2001,3741
+"Crowley",2001,5253
+"Custer",2001,3730
+"Delta",2001,28387
+"Denver",2001,563300
+"Dolores",2001,1865
+"Douglas",2001,199038
+"Eagle",2001,44440
+"El Paso",2001,536336
+"Elbert",2001,21294
+"Fremont",2001,46733
+"Garfield",2001,45907
+"Gilpin",2001,4829
+"Grand",2001,13283
+"Gunnison",2001,14345
+"Hinsdale",2001,804
+"Huerfano",2001,7905
+"Jackson",2001,1590
+"Jefferson",2001,528067
+"Kiowa",2001,1606
+"Kit Carson",2001,8073
+"La Plata",2001,45645
+"Lake",2001,7821
+"Larimer",2001,260911
+"Las Animas",2001,15310
+"Lincoln",2001,6076
+"Logan",2001,22354
+"Mesa",2001,119864
+"Mineral",2001,820
+"Moffat",2001,13089
+"Montezuma",2001,23873
+"Montrose",2001,34442
+"Morgan",2001,27475
+"Otero",2001,19900
+"Ouray",2001,3809
+"Park",2001,15172
+"Phillips",2001,4487
+"Pitkin",2001,16184
+"Prowers",2001,14109
+"Pueblo",2001,143996
+"Rio Blanco",2001,5880
+"Rio Grande",2001,12406
+"Routt",2001,20436
+"Saguache",2001,6083
+"San Juan",2001,566
+"San Miguel",2001,6900
+"Sedgwick",2001,2694
+"Summit",2001,26293
+"Teller",2001,21738
+"Washington",2001,4899
+"Weld",2001,192482
+"Yuma",2001,9831
+"Adams",2002,371181
+"Alamosa",2002,15266
+"Arapahoe",2002,510503
+"Archuleta",2002,10700
+"Baca",2002,4315
+"Bent",2002,6203
+"Boulder",2002,284433
+"Broomfield",2002,42432
+"Chaffee",2002,16646
+"Cheyenne",2002,2162
+"Clear Creek",2002,9466
+"Conejos",2002,8389
+"Costilla",2002,3734
+"Crowley",2002,5344
+"Custer",2002,3783
+"Delta",2002,28778
+"Denver",2002,559090
+"Dolores",2002,1880
+"Douglas",2002,209705
+"Eagle",2002,45100
+"El Paso",2002,545240
+"Elbert",2002,21604
+"Fremont",2002,46969
+"Garfield",2002,46728
+"Gilpin",2002,4830
+"Grand",2002,13461
+"Gunnison",2002,14316
+"Hinsdale",2002,806
+"Huerfano",2002,7916
+"Jackson",2002,1591
+"Jefferson",2002,527539
+"Kiowa",2002,1566
+"Kit Carson",2002,8289
+"La Plata",2002,46089
+"Lake",2002,7726
+"Larimer",2002,266171
+"Las Animas",2002,15659
+"Lincoln",2002,6047
+"Logan",2002,22095
+"Mesa",2002,121787
+"Mineral",2002,805
+"Moffat",2002,13134
+"Montezuma",2002,24109
+"Montrose",2002,34926
+"Morgan",2002,27662
+"Otero",2002,19624
+"Ouray",2002,3903
+"Park",2002,15417
+"Phillips",2002,4496
+"Pitkin",2002,16101
+"Prowers",2002,14011
+"Pueblo",2002,146481
+"Rio Blanco",2002,5936
+"Rio Grande",2002,12409
+"Routt",2002,20892
+"Saguache",2002,6245
+"San Juan",2002,599
+"San Miguel",2002,7042
+"Sedgwick",2002,2694
+"Summit",2002,26514
+"Teller",2002,21989
+"Washington",2002,5259
+"Weld",2002,198975
+"Yuma",2002,9947
+"Adams",2003,377665
+"Alamosa",2003,15360
+"Arapahoe",2003,516354
+"Archuleta",2003,10964
+"Baca",2003,4258
+"Bent",2003,6653
+"Boulder",2003,282763
+"Broomfield",2003,44960
+"Chaffee",2003,16794
+"Cheyenne",2003,2119
+"Clear Creek",2003,9517
+"Conejos",2003,8387
+"Costilla",2003,3800
+"Crowley",2003,5156
+"Custer",2003,3934
+"Delta",2003,29061
+"Denver",2003,560348
+"Dolores",2003,1879
+"Douglas",2003,221146
+"Eagle",2003,45758
+"El Paso",2003,551668
+"Elbert",2003,21933
+"Fremont",2003,46828
+"Garfield",2003,47484
+"Gilpin",2003,4851
+"Grand",2003,13688
+"Gunnison",2003,14206
+"Hinsdale",2003,784
+"Huerfano",2003,8042
+"Jackson",2003,1586
+"Jefferson",2003,525429
+"Kiowa",2003,1548
+"Kit Carson",2003,8185
+"La Plata",2003,46447
+"Lake",2003,7520
+"Larimer",2003,268146
+"Las Animas",2003,16089
+"Lincoln",2003,6052
+"Logan",2003,22371
+"Mesa",2003,124152
+"Mineral",2003,830
+"Moffat",2003,13054
+"Montezuma",2003,24378
+"Montrose",2003,35640
+"Morgan",2003,27855
+"Otero",2003,19667
+"Ouray",2003,3905
+"Park",2003,15789
+"Phillips",2003,4477
+"Pitkin",2003,16275
+"Prowers",2003,13822
+"Pueblo",2003,147972
+"Rio Blanco",2003,5855
+"Rio Grande",2003,12619
+"Routt",2003,21128
+"Saguache",2003,6279
+"San Juan",2003,615
+"San Miguel",2003,7010
+"Sedgwick",2003,2715
+"Summit",2003,26706
+"Teller",2003,22218
+"Washington",2003,5140
+"Weld",2003,207157
+"Yuma",2003,10093
+"Adams",2004,385945
+"Alamosa",2004,15406
+"Arapahoe",2004,523715
+"Archuleta",2004,11171
+"Baca",2004,4166
+"Bent",2004,6357
+"Boulder",2004,283288
+"Broomfield",2004,46406
+"Chaffee",2004,16946
+"Cheyenne",2004,2070
+"Clear Creek",2004,9461
+"Conejos",2004,8501
+"Costilla",2004,3802
+"Crowley",2004,5432
+"Custer",2004,3984
+"Delta",2004,29453
+"Denver",2004,560230
+"Dolores",2004,1873
+"Douglas",2004,233646
+"Eagle",2004,46485
+"El Paso",2004,558455
+"Elbert",2004,22041
+"Fremont",2004,46540
+"Garfield",2004,48156
+"Gilpin",2004,4825
+"Grand",2004,13912
+"Gunnison",2004,14230
+"Hinsdale",2004,831
+"Huerfano",2004,7729
+"Jackson",2004,1521
+"Jefferson",2004,524876
+"Kiowa",2004,1523
+"Kit Carson",2004,8257
+"La Plata",2004,46926
+"Lake",2004,7416
+"Larimer",2004,273269
+"Las Animas",2004,15700
+"Lincoln",2004,5907
+"Logan",2004,22181
+"Mesa",2004,126626
+"Mineral",2004,842
+"Moffat",2004,13063
+"Montezuma",2004,24607
+"Montrose",2004,36131
+"Morgan",2004,27912
+"Otero",2004,19561
+"Ouray",2004,4023
+"Park",2004,15913
+"Phillips",2004,4580
+"Pitkin",2004,16077
+"Prowers",2004,13656
+"Pueblo",2004,148720
+"Rio Blanco",2004,5904
+"Rio Grande",2004,12824
+"Routt",2004,21293
+"Saguache",2004,6240
+"San Juan",2004,635
+"San Miguel",2004,7027
+"Sedgwick",2004,2606
+"Summit",2004,26707
+"Teller",2004,22218
+"Washington",2004,5060
+"Weld",2004,214069
+"Yuma",2004,9885
+"Adams",2005,395384
+"Alamosa",2005,15395
+"Arapahoe",2005,528214
+"Archuleta",2005,11402
+"Baca",2005,4098
+"Bent",2005,6261
+"Boulder",2005,282910
+"Broomfield",2005,48251
+"Chaffee",2005,17022
+"Cheyenne",2005,2041
+"Clear Creek",2005,9392
+"Conejos",2005,8500
+"Costilla",2005,3695
+"Crowley",2005,5437
+"Custer",2005,4045
+"Delta",2005,29412
+"Denver",2005,559459
+"Dolores",2005,1888
+"Douglas",2005,244442
+"Eagle",2005,47278
+"El Paso",2005,569322
+"Elbert",2005,22259
+"Fremont",2005,46447
+"Garfield",2005,49256
+"Gilpin",2005,4892
+"Grand",2005,13897
+"Gunnison",2005,14473
+"Hinsdale",2005,813
+"Huerfano",2005,7823
+"Jackson",2005,1492
+"Jefferson",2005,523517
+"Kiowa",2005,1543
+"Kit Carson",2005,7998
+"La Plata",2005,47713
+"Lake",2005,7284
+"Larimer",2005,275873
+"Las Animas",2005,15570
+"Lincoln",2005,5787
+"Logan",2005,22088
+"Mesa",2005,128999
+"Mineral",2005,806
+"Moffat",2005,12965
+"Montezuma",2005,24603
+"Montrose",2005,36997
+"Morgan",2005,27947
+"Otero",2005,19370
+"Ouray",2005,4084
+"Park",2005,16061
+"Phillips",2005,4548
+"Pitkin",2005,16136
+"Prowers",2005,13510
+"Pueblo",2005,149969
+"Rio Blanco",2005,5818
+"Rio Grande",2005,12696
+"Routt",2005,21453
+"Saguache",2005,6284
+"San Juan",2005,645
+"San Miguel",2005,7045
+"Sedgwick",2005,2578
+"Summit",2005,26623
+"Teller",2005,22505
+"Washington",2005,4995
+"Weld",2005,223432
+"Yuma",2005,9892
+"Adams",2006,407587
+"Alamosa",2006,15350
+"Arapahoe",2006,536051
+"Archuleta",2006,11798
+"Baca",2006,4088
+"Bent",2006,6076
+"Boulder",2006,286133
+"Broomfield",2006,51152
+"Chaffee",2006,16984
+"Cheyenne",2006,1977
+"Clear Creek",2006,9279
+"Conejos",2006,8470
+"Costilla",2006,3698
+"Crowley",2006,5713
+"Custer",2006,4017
+"Delta",2006,29702
+"Denver",2006,562862
+"Dolores",2006,1990
+"Douglas",2006,257833
+"Eagle",2006,48214
+"El Paso",2006,582502
+"Elbert",2006,22527
+"Fremont",2006,46703
+"Garfield",2006,51106
+"Gilpin",2006,4953
+"Grand",2006,14135
+"Gunnison",2006,14650
+"Hinsdale",2006,830
+"Huerfano",2006,7750
+"Jackson",2006,1443
+"Jefferson",2006,524579
+"Kiowa",2006,1514
+"Kit Carson",2006,7946
+"La Plata",2006,48408
+"Lake",2006,7217
+"Larimer",2006,281027
+"Las Animas",2006,15552
+"Lincoln",2006,5665
+"Logan",2006,22267
+"Mesa",2006,133128
+"Mineral",2006,789
+"Moffat",2006,13102
+"Montezuma",2006,25017
+"Montrose",2006,37968
+"Morgan",2006,27983
+"Otero",2006,19193
+"Ouray",2006,4137
+"Park",2006,16128
+"Phillips",2006,4504
+"Pitkin",2006,16087
+"Prowers",2006,13208
+"Pueblo",2006,152064
+"Rio Blanco",2006,5981
+"Rio Grande",2006,12439
+"Routt",2006,21886
+"Saguache",2006,6241
+"San Juan",2006,672
+"San Miguel",2006,7059
+"Sedgwick",2006,2515
+"Summit",2006,26839
+"Teller",2006,22791
+"Washington",2006,4981
+"Weld",2006,231283
+"Yuma",2006,9917
+"Adams",2007,415915
+"Alamosa",2007,15293
+"Arapahoe",2007,545882
+"Archuleta",2007,12108
+"Baca",2007,3993
+"Bent",2007,5773
+"Boulder",2007,288757
+"Broomfield",2007,53328
+"Chaffee",2007,17238
+"Cheyenne",2007,1910
+"Clear Creek",2007,9333
+"Conejos",2007,8433
+"Costilla",2007,3676
+"Crowley",2007,5907
+"Custer",2007,4130
+"Delta",2007,29877
+"Denver",2007,570437
+"Dolores",2007,2001
+"Douglas",2007,268599
+"Eagle",2007,49284
+"El Paso",2007,588772
+"Elbert",2007,22478
+"Fremont",2007,46654
+"Garfield",2007,52676
+"Gilpin",2007,4964
+"Grand",2007,14339
+"Gunnison",2007,14957
+"Hinsdale",2007,845
+"Huerfano",2007,7658
+"Jackson",2007,1422
+"Jefferson",2007,527120
+"Kiowa",2007,1471
+"Kit Carson",2007,7835
+"La Plata",2007,49146
+"Lake",2007,7271
+"Larimer",2007,286754
+"Las Animas",2007,15525
+"Lincoln",2007,5571
+"Logan",2007,22403
+"Mesa",2007,137390
+"Mineral",2007,803
+"Moffat",2007,13270
+"Montezuma",2007,25177
+"Montrose",2007,39131
+"Morgan",2007,27848
+"Otero",2007,18937
+"Ouray",2007,4274
+"Park",2007,16336
+"Phillips",2007,4484
+"Pitkin",2007,16236
+"Prowers",2007,12772
+"Pueblo",2007,154759
+"Rio Blanco",2007,6093
+"Rio Grande",2007,12167
+"Routt",2007,22415
+"Saguache",2007,6159
+"San Juan",2007,686
+"San Miguel",2007,7276
+"Sedgwick",2007,2422
+"Summit",2007,27163
+"Teller",2007,23164
+"Washington",2007,4927
+"Weld",2007,238279
+"Yuma",2007,9881
+"Adams",2008,425138
+"Alamosa",2008,15346
+"Arapahoe",2008,556246
+"Archuleta",2008,12074
+"Baca",2008,3906
+"Bent",2008,6008
+"Boulder",2008,291827
+"Broomfield",2008,54400
+"Chaffee",2008,17403
+"Cheyenne",2008,1898
+"Clear Creek",2008,9294
+"Conejos",2008,8384
+"Costilla",2008,3611
+"Crowley",2008,5893
+"Custer",2008,4119
+"Delta",2008,30342
+"Denver",2008,581903
+"Dolores",2008,2074
+"Douglas",2008,276740
+"Eagle",2008,50301
+"El Paso",2008,599060
+"Elbert",2008,22663
+"Fremont",2008,46774
+"Garfield",2008,54226
+"Gilpin",2008,5084
+"Grand",2008,14535
+"Gunnison",2008,15137
+"Hinsdale",2008,824
+"Huerfano",2008,7680
+"Jackson",2008,1381
+"Jefferson",2008,530565
+"Kiowa",2008,1432
+"Kit Carson",2008,8042
+"La Plata",2008,50073
+"Lake",2008,7269
+"Larimer",2008,292394
+"Las Animas",2008,15486
+"Lincoln",2008,5522
+"Logan",2008,22324
+"Mesa",2008,140680
+"Mineral",2008,767
+"Moffat",2008,13446
+"Montezuma",2008,25200
+"Montrose",2008,39952
+"Morgan",2008,27746
+"Otero",2008,18853
+"Ouray",2008,4407
+"Park",2008,16278
+"Phillips",2008,4451
+"Pitkin",2008,16673
+"Prowers",2008,12682
+"Pueblo",2008,156252
+"Rio Blanco",2008,6160
+"Rio Grande",2008,12105
+"Routt",2008,22931
+"Saguache",2008,6176
+"San Juan",2008,698
+"San Miguel",2008,7304
+"Sedgwick",2008,2420
+"Summit",2008,27464
+"Teller",2008,23102
+"Washington",2008,4802
+"Weld",2008,244116
+"Yuma",2008,9895
+"Adams",2009,436323
+"Alamosa",2009,15301
+"Arapahoe",2009,566480
+"Archuleta",2009,11899
+"Baca",2009,3814
+"Bent",2009,6481
+"Boulder",2009,293641
+"Broomfield",2009,55378
+"Chaffee",2009,17604
+"Cheyenne",2009,1833
+"Clear Creek",2009,9060
+"Conejos",2009,8210
+"Costilla",2009,3505
+"Crowley",2009,5803
+"Custer",2009,4166
+"Delta",2009,30625
+"Denver",2009,595573
+"Dolores",2009,2052
+"Douglas",2009,282163
+"Eagle",2009,51520
+"El Paso",2009,608518
+"Elbert",2009,22890
+"Fremont",2009,46635
+"Garfield",2009,55400
+"Gilpin",2009,5396
+"Grand",2009,14664
+"Gunnison",2009,15266
+"Hinsdale",2009,827
+"Huerfano",2009,6710
+"Jackson",2009,1386
+"Jefferson",2009,532606
+"Kiowa",2009,1392
+"Kit Carson",2009,8269
+"La Plata",2009,50759
+"Lake",2009,7174
+"Larimer",2009,297502
+"Las Animas",2009,15477
+"Lincoln",2009,5463
+"Logan",2009,22517
+"Mesa",2009,144795
+"Mineral",2009,714
+"Moffat",2009,13544
+"Montezuma",2009,25365
+"Montrose",2009,40680
+"Morgan",2009,28026
+"Otero",2009,18844
+"Ouray",2009,4372
+"Park",2009,15971
+"Phillips",2009,4454
+"Pitkin",2009,17053
+"Prowers",2009,12576
+"Pueblo",2009,157324
+"Rio Blanco",2009,6317
+"Rio Grande",2009,11995
+"Routt",2009,23325
+"Saguache",2009,6126
+"San Juan",2009,687
+"San Miguel",2009,7267
+"Sedgwick",2009,2376
+"Summit",2009,27783
+"Teller",2009,23205
+"Washington",2009,4777
+"Weld",2009,248959
+"Yuma",2009,10036
+"Adams",2010,443709
+"Alamosa",2010,15454
+"Arapahoe",2010,574808
+"Archuleta",2010,12082
+"Baca",2010,3765
+"Bent",2010,6523
+"Boulder",2010,295610
+"Broomfield",2010,56098
+"Chaffee",2010,17835
+"Cheyenne",2010,1811
+"Clear Creek",2010,9083
+"Conejos",2010,8293
+"Costilla",2010,3549
+"Crowley",2010,5850
+"Custer",2010,4248
+"Delta",2010,30897
+"Denver",2010,604875
+"Dolores",2010,2084
+"Douglas",2010,287119
+"Eagle",2010,52064
+"El Paso",2010,627238
+"Elbert",2010,23140
+"Fremont",2010,46856
+"Garfield",2010,56153
+"Gilpin",2010,5461
+"Grand",2010,14790
+"Gunnison",2010,15314
+"Hinsdale",2010,825
+"Huerfano",2010,6639
+"Jackson",2010,1417
+"Jefferson",2010,535648
+"Kiowa",2010,1410
+"Kit Carson",2010,8259
+"La Plata",2010,51443
+"Lake",2010,7288
+"Larimer",2010,300545
+"Las Animas",2010,15383
+"Lincoln",2010,5502
+"Logan",2010,22291
+"Mesa",2010,146587
+"Mineral",2010,728
+"Moffat",2010,13812
+"Montezuma",2010,25515
+"Montrose",2010,41179
+"Morgan",2010,28213
+"Otero",2010,18875
+"Ouray",2010,4471
+"Park",2010,16277
+"Phillips",2010,4467
+"Pitkin",2010,17147
+"Prowers",2010,12527
+"Pueblo",2010,159464
+"Rio Blanco",2010,6634
+"Rio Grande",2010,12018
+"Routt",2010,23451
+"Saguache",2010,6101
+"San Juan",2010,713
+"San Miguel",2010,7393
+"Sedgwick",2010,2403
+"Summit",2010,28078
+"Teller",2010,23402
+"Washington",2010,4851
+"Weld",2010,254240
+"Yuma",2010,10030
+"Adams",2011,451749
+"Alamosa",2011,15679
+"Arapahoe",2011,585507
+"Archuleta",2011,12003
+"Baca",2011,3799
+"Bent",2011,6304
+"Boulder",2011,300171
+"Broomfield",2011,57211
+"Chaffee",2011,18012
+"Cheyenne",2011,1864
+"Clear Creek",2011,9070
+"Conejos",2011,8282
+"Costilla",2011,3647
+"Crowley",2011,5817
+"Custer",2011,4227
+"Delta",2011,30370
+"Denver",2011,620684
+"Dolores",2011,2025
+"Douglas",2011,292478
+"Eagle",2011,51649
+"El Paso",2011,638289
+"Elbert",2011,23213
+"Fremont",2011,47406
+"Garfield",2011,56005
+"Gilpin",2011,5448
+"Grand",2011,14548
+"Gunnison",2011,15269
+"Hinsdale",2011,824
+"Huerfano",2011,6504
+"Jackson",2011,1372
+"Jefferson",2011,539721
+"Kiowa",2011,1445
+"Kit Carson",2011,8181
+"La Plata",2011,51866
+"Lake",2011,7382
+"Larimer",2011,305078
+"Las Animas",2011,15045
+"Lincoln",2011,5397
+"Logan",2011,22254
+"Mesa",2011,148108
+"Mineral",2011,706
+"Moffat",2011,13402
+"Montezuma",2011,25463
+"Montrose",2011,40894
+"Morgan",2011,28434
+"Otero",2011,18831
+"Ouray",2011,4422
+"Park",2011,16096
+"Phillips",2011,4373
+"Pitkin",2011,17125
+"Prowers",2011,12467
+"Pueblo",2011,160157
+"Rio Blanco",2011,6696
+"Rio Grande",2011,11905
+"Routt",2011,23237
+"Saguache",2011,6184
+"San Juan",2011,693
+"San Miguel",2011,7477
+"Sedgwick",2011,2367
+"Summit",2011,27954
+"Teller",2011,23294
+"Washington",2011,4789
+"Weld",2011,258551
+"Yuma",2011,10118
+"Adams",2012,460064
+"Alamosa",2012,15687
+"Arapahoe",2012,595776
+"Archuleta",2012,12109
+"Baca",2012,3746
+"Bent",2012,5778
+"Boulder",2012,305016
+"Broomfield",2012,58715
+"Chaffee",2012,18123
+"Cheyenne",2012,1875
+"Clear Creek",2012,9103
+"Conejos",2012,8246
+"Costilla",2012,3601
+"Crowley",2012,5376
+"Custer",2012,4241
+"Delta",2012,30461
+"Denver",2012,634471
+"Dolores",2012,1990
+"Douglas",2012,298638
+"Eagle",2012,51849
+"El Paso",2012,647446
+"Elbert",2012,23371
+"Fremont",2012,47075
+"Garfield",2012,56770
+"Gilpin",2012,5457
+"Grand",2012,14157
+"Gunnison",2012,15384
+"Hinsdale",2012,795
+"Huerfano",2012,6563
+"Jackson",2012,1338
+"Jefferson",2012,545880
+"Kiowa",2012,1425
+"Kit Carson",2012,8088
+"La Plata",2012,52457
+"Lake",2012,7291
+"Larimer",2012,310717
+"Las Animas",2012,14966
+"Lincoln",2012,5438
+"Logan",2012,22003
+"Mesa",2012,148291
+"Mineral",2012,706
+"Moffat",2012,13135
+"Montezuma",2012,25441
+"Montrose",2012,40691
+"Morgan",2012,28241
+"Otero",2012,18660
+"Ouray",2012,4510
+"Park",2012,16052
+"Phillips",2012,4384
+"Pitkin",2012,17222
+"Prowers",2012,12380
+"Pueblo",2012,160759
+"Rio Blanco",2012,6774
+"Rio Grande",2012,11865
+"Routt",2012,23257
+"Saguache",2012,6316
+"San Juan",2012,692
+"San Miguel",2012,7570
+"Sedgwick",2012,2370
+"Summit",2012,28213
+"Teller",2012,23349
+"Washington",2012,4716
+"Weld",2012,263924
+"Yuma",2012,10082
+"Adams",2013,469477
+"Alamosa",2013,15804
+"Arapahoe",2013,607145
+"Archuleta",2013,12211
+"Baca",2013,3679
+"Bent",2013,5708
+"Boulder",2013,309971
+"Broomfield",2013,59975
+"Chaffee",2013,18281
+"Cheyenne",2013,1889
+"Clear Creek",2013,9095
+"Conejos",2013,8229
+"Costilla",2013,3537
+"Crowley",2013,5278
+"Custer",2013,4287
+"Delta",2013,30322
+"Denver",2013,648162
+"Dolores",2013,2021
+"Douglas",2013,306627
+"Eagle",2013,52334
+"El Paso",2013,656981
+"Elbert",2013,23632
+"Fremont",2013,46441
+"Garfield",2013,56947
+"Gilpin",2013,5571
+"Grand",2013,14271
+"Gunnison",2013,15591
+"Hinsdale",2013,804
+"Huerfano",2013,6470
+"Jackson",2013,1353
+"Jefferson",2013,551411
+"Kiowa",2013,1404
+"Kit Carson",2013,8269
+"La Plata",2013,53405
+"Lake",2013,7317
+"Larimer",2013,316284
+"Las Animas",2013,14378
+"Lincoln",2013,5414
+"Logan",2013,21809
+"Mesa",2013,148232
+"Mineral",2013,727
+"Moffat",2013,13080
+"Montezuma",2013,25660
+"Montrose",2013,40674
+"Morgan",2013,28219
+"Otero",2013,18505
+"Ouray",2013,4544
+"Park",2013,16188
+"Phillips",2013,4359
+"Pitkin",2013,17390
+"Prowers",2013,12271
+"Pueblo",2013,161085
+"Rio Blanco",2013,6722
+"Rio Grande",2013,11696
+"Routt",2013,23550
+"Saguache",2013,6221
+"San Juan",2013,700
+"San Miguel",2013,7629
+"Sedgwick",2013,2343
+"Summit",2013,28660
+"Teller",2013,23271
+"Washington",2013,4765
+"Weld",2013,269981
+"Yuma",2013,10157
+"Adams",2014,479777
+"Alamosa",2014,15845
+"Arapahoe",2014,617936
+"Archuleta",2014,12258
+"Baca",2014,3624
+"Bent",2014,5747
+"Boulder",2014,313190
+"Broomfield",2014,61554
+"Chaffee",2014,18459
+"Cheyenne",2014,1847
+"Clear Creek",2014,9210
+"Conejos",2014,8246
+"Costilla",2014,3560
+"Crowley",2014,5550
+"Custer",2014,4368
+"Delta",2014,29988
+"Denver",2014,662855
+"Dolores",2014,1965
+"Douglas",2014,314804
+"Eagle",2014,52761
+"El Paso",2014,665052
+"Elbert",2014,24093
+"Fremont",2014,46389
+"Garfield",2014,57260
+"Gilpin",2014,5769
+"Grand",2014,14451
+"Gunnison",2014,15767
+"Hinsdale",2014,774
+"Huerfano",2014,6395
+"Jackson",2014,1389
+"Jefferson",2014,558610
+"Kiowa",2014,1394
+"Kit Carson",2014,8039
+"La Plata",2014,53978
+"Lake",2014,7370
+"Larimer",2014,324105
+"Las Animas",2014,14078
+"Lincoln",2014,5509
+"Logan",2014,22099
+"Mesa",2014,148250
+"Mineral",2014,696
+"Moffat",2014,12866
+"Montezuma",2014,25806
+"Montrose",2014,40769
+"Morgan",2014,28127
+"Otero",2014,18398
+"Ouray",2014,4582
+"Park",2014,16356
+"Phillips",2014,4379
+"Pitkin",2014,17623
+"Prowers",2014,12023
+"Pueblo",2014,161618
+"Rio Blanco",2014,6626
+"Rio Grande",2014,11542
+"Routt",2014,24010
+"Saguache",2014,6171
+"San Juan",2014,719
+"San Miguel",2014,7751
+"Sedgwick",2014,2331
+"Summit",2014,29213
+"Teller",2014,23402
+"Washington",2014,4772
+"Weld",2014,275845
+"Yuma",2014,10178
+"Adams",2015,489923
+"Alamosa",2015,15968
+"Arapahoe",2015,629066
+"Archuleta",2015,12417
+"Baca",2015,3594
+"Bent",2015,5847
+"Boulder",2015,318570
+"Broomfield",2015,64656
+"Chaffee",2015,18603
+"Cheyenne",2015,1830
+"Clear Creek",2015,9392
+"Conejos",2015,8074
+"Costilla",2015,3572
+"Crowley",2015,5569
+"Custer",2015,4457
+"Delta",2015,29973
+"Denver",2015,680658
+"Dolores",2015,1972
+"Douglas",2015,322198
+"Eagle",2015,53320
+"El Paso",2015,676178
+"Elbert",2015,24640
+"Fremont",2015,46659
+"Garfield",2015,57779
+"Gilpin",2015,5824
+"Grand",2015,14602
+"Gunnison",2015,16097
+"Hinsdale",2015,767
+"Huerfano",2015,6456
+"Jackson",2015,1353
+"Jefferson",2015,564619
+"Kiowa",2015,1396
+"Kit Carson",2015,8219
+"La Plata",2015,54857
+"Lake",2015,7502
+"Larimer",2015,332830
+"Las Animas",2015,14061
+"Lincoln",2015,5549
+"Logan",2015,22122
+"Mesa",2015,149023
+"Mineral",2015,729
+"Moffat",2015,12884
+"Montezuma",2015,26129
+"Montrose",2015,40795
+"Morgan",2015,28230
+"Otero",2015,18265
+"Ouray",2015,4647
+"Park",2015,16716
+"Phillips",2015,4307
+"Pitkin",2015,17845
+"Prowers",2015,11905
+"Pueblo",2015,163196
+"Rio Blanco",2015,6529
+"Rio Grande",2015,11413
+"Routt",2015,24310
+"Saguache",2015,6219
+"San Juan",2015,696
+"San Miguel",2015,7843
+"Sedgwick",2015,2389
+"Summit",2015,29928
+"Teller",2015,23431
+"Washington",2015,4834
+"Weld",2015,284571
+"Yuma",2015,10052
+"Adams",2016,497673
+"Alamosa",2016,16131
+"Arapahoe",2016,637254
+"Archuleta",2016,12907
+"Baca",2016,3557
+"Bent",2016,5626
+"Boulder",2016,321989
+"Broomfield",2016,66252
+"Chaffee",2016,19097
+"Cheyenne",2016,1853
+"Clear Creek",2016,9443
+"Conejos",2016,8039
+"Costilla",2016,3707
+"Crowley",2016,5214
+"Custer",2016,4617
+"Delta",2016,30471
+"Denver",2016,693292
+"Dolores",2016,2035
+"Douglas",2016,328330
+"Eagle",2016,53928
+"El Paso",2016,690207
+"Elbert",2016,25169
+"Fremont",2016,47487
+"Garfield",2016,58984
+"Gilpin",2016,5926
+"Grand",2016,15039
+"Gunnison",2016,16394
+"Hinsdale",2016,775
+"Huerfano",2016,6642
+"Jackson",2016,1351
+"Jefferson",2016,571711
+"Kiowa",2016,1347
+"Kit Carson",2016,7639
+"La Plata",2016,55697
+"Lake",2016,7595
+"Larimer",2016,338663
+"Las Animas",2016,14082
+"Lincoln",2016,5554
+"Logan",2016,22047
+"Mesa",2016,150731
+"Mineral",2016,737
+"Moffat",2016,13088
+"Montezuma",2016,26906
+"Montrose",2016,41421
+"Morgan",2016,28148
+"Otero",2016,18290
+"Ouray",2016,4844
+"Park",2016,17285
+"Phillips",2016,4285
+"Pitkin",2016,17773
+"Prowers",2016,11841
+"Pueblo",2016,165109
+"Rio Blanco",2016,6497
+"Rio Grande",2016,11424
+"Routt",2016,24679
+"Saguache",2016,6404
+"San Juan",2016,698
+"San Miguel",2016,8000
+"Sedgwick",2016,2421
+"Summit",2016,30367
+"Teller",2016,24154
+"Washington",2016,4875
+"Weld",2016,294397
+"Yuma",2016,10082
+"Adams",2017,509473
+"Alamosa",2017,16308
+"Arapahoe",2017,646725
+"Archuleta",2017,13152
+"Baca",2017,3545
+"Bent",2017,5661
+"Boulder",2017,325607
+"Broomfield",2017,68552
+"Chaffee",2017,19391
+"Cheyenne",2017,1854
+"Clear Creek",2017,9456
+"Conejos",2017,8056
+"Costilla",2017,3738
+"Crowley",2017,5257
+"Custer",2017,4665
+"Delta",2017,30562
+"Denver",2017,703462
+"Dolores",2017,2050
+"Douglas",2017,334525
+"Eagle",2017,54842
+"El Paso",2017,701404
+"Elbert",2017,26451
+"Fremont",2017,47570
+"Garfield",2017,60272
+"Gilpin",2017,5962
+"Grand",2017,15371
+"Gunnison",2017,16609
+"Hinsdale",2017,795
+"Huerfano",2017,6634
+"Jackson",2017,1346
+"Jefferson",2017,578627
+"Kiowa",2017,1348
+"Kit Carson",2017,7678
+"La Plata",2017,57004
+"Lake",2017,7625
+"Larimer",2017,345035
+"Las Animas",2017,14083
+"Lincoln",2017,5616
+"Logan",2017,22310
+"Mesa",2017,152003
+"Mineral",2017,744
+"Moffat",2017,13122
+"Montezuma",2017,27445
+"Montrose",2017,42189
+"Morgan",2017,28435
+"Otero",2017,18335
+"Ouray",2017,4913
+"Park",2017,17608
+"Phillips",2017,4278
+"Pitkin",2017,18006
+"Prowers",2017,11881
+"Pueblo",2017,167022
+"Rio Blanco",2017,6512
+"Rio Grande",2017,11436
+"Routt",2017,25136
+"Saguache",2017,6458
+"San Juan",2017,704
+"San Miguel",2017,8266
+"Sedgwick",2017,2412
+"Summit",2017,30959
+"Teller",2017,24650
+"Washington",2017,4905
+"Weld",2017,304803
+"Yuma",2017,10142
+"Adams",2018,520398
+"Alamosa",2018,16505
+"Arapahoe",2018,656214
+"Archuleta",2018,13422
+"Baca",2018,3531
+"Bent",2018,5713
+"Boulder",2018,329211
+"Broomfield",2018,70886
+"Chaffee",2018,19684
+"Cheyenne",2018,1852
+"Clear Creek",2018,9518
+"Conejos",2018,8063
+"Costilla",2018,3752
+"Crowley",2018,5306
+"Custer",2018,4711
+"Delta",2018,30696
+"Denver",2018,713529
+"Dolores",2018,2059
+"Douglas",2018,340396
+"Eagle",2018,55754
+"El Paso",2018,712641
+"Elbert",2018,27740
+"Fremont",2018,47649
+"Garfield",2018,61560
+"Gilpin",2018,5995
+"Grand",2018,15697
+"Gunnison",2018,16816
+"Hinsdale",2018,811
+"Huerfano",2018,6626
+"Jackson",2018,1342
+"Jefferson",2018,585558
+"Kiowa",2018,1350
+"Kit Carson",2018,7679
+"La Plata",2018,58364
+"Lake",2018,7653
+"Larimer",2018,351126
+"Las Animas",2018,14076
+"Lincoln",2018,5677
+"Logan",2018,22571
+"Mesa",2018,153649
+"Mineral",2018,751
+"Moffat",2018,13150
+"Montezuma",2018,27985
+"Montrose",2018,42846
+"Morgan",2018,28718
+"Otero",2018,18358
+"Ouray",2018,4982
+"Park",2018,17927
+"Phillips",2018,4280
+"Pitkin",2018,18232
+"Prowers",2018,11915
+"Pueblo",2018,168889
+"Rio Blanco",2018,6525
+"Rio Grande",2018,11443
+"Routt",2018,25587
+"Saguache",2018,6509
+"San Juan",2018,709
+"San Miguel",2018,8530
+"Sedgwick",2018,2402
+"Summit",2018,31556
+"Teller",2018,25142
+"Washington",2018,4920
+"Weld",2018,315281
+"Yuma",2018,10201
+"Adams",2019,531445
+"Alamosa",2019,16706
+"Arapahoe",2019,666264
+"Archuleta",2019,13689
+"Baca",2019,3515
+"Bent",2019,5766
+"Boulder",2019,332818
+"Broomfield",2019,73246
+"Chaffee",2019,19976
+"Cheyenne",2019,1851
+"Clear Creek",2019,9577
+"Conejos",2019,8070
+"Costilla",2019,3775
+"Crowley",2019,5362
+"Custer",2019,4733
+"Delta",2019,30872
+"Denver",2019,723654
+"Dolores",2019,2057
+"Douglas",2019,346102
+"Eagle",2019,56662
+"El Paso",2019,723994
+"Elbert",2019,29040
+"Fremont",2019,47727
+"Garfield",2019,62842
+"Gilpin",2019,6023
+"Grand",2019,16016
+"Gunnison",2019,17013
+"Hinsdale",2019,825
+"Huerfano",2019,6620
+"Jackson",2019,1338
+"Jefferson",2019,592500
+"Kiowa",2019,1352
+"Kit Carson",2019,7690
+"La Plata",2019,59645
+"Lake",2019,7714
+"Larimer",2019,357169
+"Las Animas",2019,14065
+"Lincoln",2019,5747
+"Logan",2019,22827
+"Mesa",2019,155288
+"Mineral",2019,757
+"Moffat",2019,13172
+"Montezuma",2019,28533
+"Montrose",2019,43498
+"Morgan",2019,29002
+"Otero",2019,18371
+"Ouray",2019,5043
+"Park",2019,18242
+"Phillips",2019,4283
+"Pitkin",2019,18400
+"Prowers",2019,11939
+"Pueblo",2019,170723
+"Rio Blanco",2019,6539
+"Rio Grande",2019,11446
+"Routt",2019,26028
+"Saguache",2019,6557
+"San Juan",2019,714
+"San Miguel",2019,8791
+"Sedgwick",2019,2392
+"Summit",2019,32157
+"Teller",2019,25632
+"Washington",2019,4935
+"Weld",2019,325826
+"Yuma",2019,10257
+"Adams",2020,542609
+"Alamosa",2020,16910
+"Arapahoe",2020,676371
+"Archuleta",2020,13953
+"Baca",2020,3497
+"Bent",2020,5818
+"Boulder",2020,336446
+"Broomfield",2020,75627
+"Chaffee",2020,20267
+"Cheyenne",2020,1850
+"Clear Creek",2020,9634
+"Conejos",2020,8089
+"Costilla",2020,3778
+"Crowley",2020,5420
+"Custer",2020,4755
+"Delta",2020,31038
+"Denver",2020,733765
+"Dolores",2020,2065
+"Douglas",2020,351801
+"Eagle",2020,57571
+"El Paso",2020,735478
+"Elbert",2020,30248
+"Fremont",2020,47801
+"Garfield",2020,64119
+"Gilpin",2020,6049
+"Grand",2020,16330
+"Gunnison",2020,17202
+"Hinsdale",2020,848
+"Huerfano",2020,6614
+"Jackson",2020,1333
+"Jefferson",2020,599448
+"Kiowa",2020,1353
+"Kit Carson",2020,7705
+"La Plata",2020,60917
+"Lake",2020,7777
+"Larimer",2020,363216
+"Las Animas",2020,14049
+"Lincoln",2020,5831
+"Logan",2020,23080
+"Mesa",2020,156922
+"Mineral",2020,763
+"Moffat",2020,13191
+"Montezuma",2020,29088
+"Montrose",2020,44144
+"Morgan",2020,29286
+"Otero",2020,18374
+"Ouray",2020,5094
+"Park",2020,18551
+"Phillips",2020,4287
+"Pitkin",2020,18562
+"Prowers",2020,11955
+"Pueblo",2020,172529
+"Rio Blanco",2020,6551
+"Rio Grande",2020,11444
+"Routt",2020,26461
+"Saguache",2020,6603
+"San Juan",2020,720
+"San Miguel",2020,9050
+"Sedgwick",2020,2381
+"Summit",2020,32760
+"Teller",2020,26121
+"Washington",2020,4949
+"Weld",2020,336437
+"Yuma",2020,10311
+"Adams",2021,553884
+"Alamosa",2021,17121
+"Arapahoe",2021,686523
+"Archuleta",2021,14213
+"Baca",2021,3476
+"Bent",2021,5859
+"Boulder",2021,340098
+"Broomfield",2021,78029
+"Chaffee",2021,20557
+"Cheyenne",2021,1849
+"Clear Creek",2021,9690
+"Conejos",2021,8109
+"Costilla",2021,3781
+"Crowley",2021,5481
+"Custer",2021,4779
+"Delta",2021,31246
+"Denver",2021,743929
+"Dolores",2021,2075
+"Douglas",2021,357770
+"Eagle",2021,58473
+"El Paso",2021,747062
+"Elbert",2021,31363
+"Fremont",2021,47870
+"Garfield",2021,65391
+"Gilpin",2021,6072
+"Grand",2021,16637
+"Gunnison",2021,17385
+"Hinsdale",2021,862
+"Huerfano",2021,6609
+"Jackson",2021,1329
+"Jefferson",2021,605353
+"Kiowa",2021,1354
+"Kit Carson",2021,7735
+"La Plata",2021,62180
+"Lake",2021,7844
+"Larimer",2021,369275
+"Las Animas",2021,14053
+"Lincoln",2021,5911
+"Logan",2021,23329
+"Mesa",2021,158553
+"Mineral",2021,773
+"Moffat",2021,13210
+"Montezuma",2021,29651
+"Montrose",2021,44788
+"Morgan",2021,29571
+"Otero",2021,18368
+"Ouray",2021,5136
+"Park",2021,18855
+"Phillips",2021,4293
+"Pitkin",2021,18719
+"Prowers",2021,11964
+"Pueblo",2021,174313
+"Rio Blanco",2021,6564
+"Rio Grande",2021,11439
+"Routt",2021,26898
+"Saguache",2021,6646
+"San Juan",2021,725
+"San Miguel",2021,9312
+"Sedgwick",2021,2372
+"Summit",2021,33363
+"Teller",2021,26507
+"Washington",2021,4968
+"Weld",2021,347619
+"Yuma",2021,10361
+"Adams",2022,565265
+"Alamosa",2022,17323
+"Arapahoe",2022,696711
+"Archuleta",2022,14468
+"Baca",2022,3453
+"Bent",2022,5911
+"Boulder",2022,343779
+"Broomfield",2022,80451
+"Chaffee",2022,20844
+"Cheyenne",2022,1848
+"Clear Creek",2022,9743
+"Conejos",2022,8131
+"Costilla",2022,3782
+"Crowley",2022,5544
+"Custer",2022,4803
+"Delta",2022,31446
+"Denver",2022,755183
+"Dolores",2022,2085
+"Douglas",2022,364005
+"Eagle",2022,59363
+"El Paso",2022,758707
+"Elbert",2022,32588
+"Fremont",2022,47936
+"Garfield",2022,66657
+"Gilpin",2022,6092
+"Grand",2022,16938
+"Gunnison",2022,17602
+"Hinsdale",2022,882
+"Huerfano",2022,6605
+"Jackson",2022,1326
+"Jefferson",2022,611211
+"Kiowa",2022,1349
+"Kit Carson",2022,7769
+"La Plata",2022,63496
+"Lake",2022,7912
+"Larimer",2022,375767
+"Las Animas",2022,14053
+"Lincoln",2022,6003
+"Logan",2022,23574
+"Mesa",2022,160184
+"Mineral",2022,784
+"Moffat",2022,13227
+"Montezuma",2022,30224
+"Montrose",2022,45428
+"Morgan",2022,29858
+"Otero",2022,18340
+"Ouray",2022,5142
+"Park",2022,19154
+"Phillips",2022,4301
+"Pitkin",2022,18871
+"Prowers",2022,11966
+"Pueblo",2022,176082
+"Rio Blanco",2022,6577
+"Rio Grande",2022,11430
+"Routt",2022,27365
+"Saguache",2022,6655
+"San Juan",2022,730
+"San Miguel",2022,9577
+"Sedgwick",2022,2366
+"Summit",2022,33964
+"Teller",2022,26891
+"Washington",2022,4985
+"Weld",2022,359390
+"Yuma",2022,10408
+"Adams",2023,576745
+"Alamosa",2023,17515
+"Arapahoe",2023,706936
+"Archuleta",2023,14719
+"Baca",2023,3429
+"Bent",2023,5958
+"Boulder",2023,347998
+"Broomfield",2023,82889
+"Chaffee",2023,21129
+"Cheyenne",2023,1848
+"Clear Creek",2023,9793
+"Conejos",2023,8155
+"Costilla",2023,3784
+"Crowley",2023,5610
+"Custer",2023,4828
+"Delta",2023,31638
+"Denver",2023,767572
+"Dolores",2023,2097
+"Douglas",2023,370321
+"Eagle",2023,60348
+"El Paso",2023,770421
+"Elbert",2023,33820
+"Fremont",2023,47998
+"Garfield",2023,67918
+"Gilpin",2023,6111
+"Grand",2023,17234
+"Gunnison",2023,17825
+"Hinsdale",2023,903
+"Huerfano",2023,6601
+"Jackson",2023,1323
+"Jefferson",2023,617025
+"Kiowa",2023,1343
+"Kit Carson",2023,7807
+"La Plata",2023,64816
+"Lake",2023,7983
+"Larimer",2023,382289
+"Las Animas",2023,14049
+"Lincoln",2023,6081
+"Logan",2023,23815
+"Mesa",2023,162069
+"Mineral",2023,794
+"Moffat",2023,13243
+"Montezuma",2023,30806
+"Montrose",2023,46068
+"Morgan",2023,30146
+"Otero",2023,18291
+"Ouray",2023,5154
+"Park",2023,19448
+"Phillips",2023,4308
+"Pitkin",2023,19019
+"Prowers",2023,11962
+"Pueblo",2023,177838
+"Rio Blanco",2023,6589
+"Rio Grande",2023,11419
+"Routt",2023,27876
+"Saguache",2023,6661
+"San Juan",2023,731
+"San Miguel",2023,9845
+"Sedgwick",2023,2368
+"Summit",2023,34558
+"Teller",2023,27272
+"Washington",2023,5001
+"Weld",2023,371246
+"Yuma",2023,10450
+"Adams",2024,588314
+"Alamosa",2024,17707
+"Arapahoe",2024,717203
+"Archuleta",2024,14966
+"Baca",2024,3404
+"Bent",2024,6010
+"Boulder",2024,352239
+"Broomfield",2024,85339
+"Chaffee",2024,21411
+"Cheyenne",2024,1848
+"Clear Creek",2024,9841
+"Conejos",2024,8181
+"Costilla",2024,3785
+"Crowley",2024,5677
+"Custer",2024,4853
+"Delta",2024,31822
+"Denver",2024,781113
+"Dolores",2024,2111
+"Douglas",2024,376618
+"Eagle",2024,61434
+"El Paso",2024,782287
+"Elbert",2024,35161
+"Fremont",2024,48053
+"Garfield",2024,69173
+"Gilpin",2024,6129
+"Grand",2024,17524
+"Gunnison",2024,18041
+"Hinsdale",2024,924
+"Huerfano",2024,6597
+"Jackson",2024,1320
+"Jefferson",2024,621758
+"Kiowa",2024,1337
+"Kit Carson",2024,7849
+"La Plata",2024,66052
+"Lake",2024,8057
+"Larimer",2024,388798
+"Las Animas",2024,14041
+"Lincoln",2024,6154
+"Logan",2024,24052
+"Mesa",2024,164113
+"Mineral",2024,804
+"Moffat",2024,13259
+"Montezuma",2024,31397
+"Montrose",2024,46706
+"Morgan",2024,30436
+"Otero",2024,18221
+"Ouray",2024,5164
+"Park",2024,19736
+"Phillips",2024,4315
+"Pitkin",2024,19160
+"Prowers",2024,11953
+"Pueblo",2024,179583
+"Rio Blanco",2024,6601
+"Rio Grande",2024,11405
+"Routt",2024,28485
+"Saguache",2024,6665
+"San Juan",2024,731
+"San Miguel",2024,10117
+"Sedgwick",2024,2365
+"Summit",2024,35249
+"Teller",2024,27649
+"Washington",2024,5017
+"Weld",2024,383551
+"Yuma",2024,10494
+"Adams",2025,599961
+"Alamosa",2025,17899
+"Arapahoe",2025,727520
+"Archuleta",2025,15207
+"Baca",2025,3380
+"Bent",2025,6062
+"Boulder",2025,356510
+"Broomfield",2025,87799
+"Chaffee",2025,21691
+"Cheyenne",2025,1848
+"Clear Creek",2025,9886
+"Conejos",2025,8210
+"Costilla",2025,3787
+"Crowley",2025,5748
+"Custer",2025,4880
+"Delta",2025,32001
+"Denver",2025,795853
+"Dolores",2025,2126
+"Douglas",2025,382923
+"Eagle",2025,62628
+"El Paso",2025,794306
+"Elbert",2025,36506
+"Fremont",2025,48105
+"Garfield",2025,70421
+"Gilpin",2025,6145
+"Grand",2025,17809
+"Gunnison",2025,18255
+"Hinsdale",2025,946
+"Huerfano",2025,6593
+"Jackson",2025,1318
+"Jefferson",2025,626407
+"Kiowa",2025,1331
+"Kit Carson",2025,7894
+"La Plata",2025,67282
+"Lake",2025,8133
+"Larimer",2025,395294
+"Las Animas",2025,14030
+"Lincoln",2025,6232
+"Logan",2025,24286
+"Mesa",2025,166473
+"Mineral",2025,814
+"Moffat",2025,13276
+"Montezuma",2025,31995
+"Montrose",2025,47649
+"Morgan",2025,30733
+"Otero",2025,18131
+"Ouray",2025,5169
+"Park",2025,20021
+"Phillips",2025,4323
+"Pitkin",2025,19297
+"Prowers",2025,11941
+"Pueblo",2025,181329
+"Rio Blanco",2025,6628
+"Rio Grande",2025,11411
+"Routt",2025,29190
+"Saguache",2025,6668
+"San Juan",2025,738
+"San Miguel",2025,10391
+"Sedgwick",2025,2363
+"Summit",2025,35983
+"Teller",2025,27970
+"Washington",2025,5031
+"Weld",2025,395972
+"Yuma",2025,10535
+"Adams",2026,611672
+"Alamosa",2026,18096
+"Arapahoe",2026,737882
+"Archuleta",2026,15469
+"Baca",2026,3355
+"Bent",2026,6102
+"Boulder",2026,360809
+"Broomfield",2026,90265
+"Chaffee",2026,21968
+"Cheyenne",2026,1849
+"Clear Creek",2026,9956
+"Conejos",2026,8242
+"Costilla",2026,3788
+"Crowley",2026,5823
+"Custer",2026,4912
+"Delta",2026,32173
+"Denver",2026,810700
+"Dolores",2026,2140
+"Douglas",2026,389236
+"Eagle",2026,63935
+"El Paso",2026,806437
+"Elbert",2026,38159
+"Fremont",2026,48232
+"Garfield",2026,71714
+"Gilpin",2026,6152
+"Grand",2026,18089
+"Gunnison",2026,18463
+"Hinsdale",2026,969
+"Huerfano",2026,6589
+"Jackson",2026,1316
+"Jefferson",2026,630961
+"Kiowa",2026,1324
+"Kit Carson",2026,7944
+"La Plata",2026,68505
+"Lake",2026,8213
+"Larimer",2026,401777
+"Las Animas",2026,14016
+"Lincoln",2026,6320
+"Logan",2026,24520
+"Mesa",2026,169052
+"Mineral",2026,823
+"Moffat",2026,13296
+"Montezuma",2026,32602
+"Montrose",2026,48797
+"Morgan",2026,31062
+"Otero",2026,18035
+"Ouray",2026,5180
+"Park",2026,20352
+"Phillips",2026,4330
+"Pitkin",2026,19482
+"Prowers",2026,11926
+"Pueblo",2026,183180
+"Rio Blanco",2026,6656
+"Rio Grande",2026,11417
+"Routt",2026,29932
+"Saguache",2026,6670
+"San Juan",2026,740
+"San Miguel",2026,10664
+"Sedgwick",2026,2361
+"Summit",2026,36759
+"Teller",2026,28235
+"Washington",2026,5045
+"Weld",2026,408513
+"Yuma",2026,10574
+"Adams",2027,623434
+"Alamosa",2027,18295
+"Arapahoe",2027,748246
+"Archuleta",2027,15772
+"Baca",2027,3331
+"Bent",2027,6138
+"Boulder",2027,365121
+"Broomfield",2027,92746
+"Chaffee",2027,22294
+"Cheyenne",2027,1850
+"Clear Creek",2027,10037
+"Conejos",2027,8275
+"Costilla",2027,3789
+"Crowley",2027,5898
+"Custer",2027,4948
+"Delta",2027,32340
+"Denver",2027,825405
+"Dolores",2027,2152
+"Douglas",2027,395444
+"Eagle",2027,65346
+"El Paso",2027,818605
+"Elbert",2027,39606
+"Fremont",2027,48436
+"Garfield",2027,73064
+"Gilpin",2027,6158
+"Grand",2027,18365
+"Gunnison",2027,18670
+"Hinsdale",2027,993
+"Huerfano",2027,6584
+"Jackson",2027,1315
+"Jefferson",2027,635400
+"Kiowa",2027,1317
+"Kit Carson",2027,7999
+"La Plata",2027,69727
+"Lake",2027,8293
+"Larimer",2027,408162
+"Las Animas",2027,14000
+"Lincoln",2027,6412
+"Logan",2027,24752
+"Mesa",2027,171836
+"Mineral",2027,833
+"Moffat",2027,13317
+"Montezuma",2027,33211
+"Montrose",2027,49941
+"Morgan",2027,31419
+"Otero",2027,17932
+"Ouray",2027,5187
+"Park",2027,20731
+"Phillips",2027,4333
+"Pitkin",2027,19666
+"Prowers",2027,11912
+"Pueblo",2027,185179
+"Rio Blanco",2027,6683
+"Rio Grande",2027,11422
+"Routt",2027,30675
+"Saguache",2027,6671
+"San Juan",2027,741
+"San Miguel",2027,10934
+"Sedgwick",2027,2352
+"Summit",2027,37527
+"Teller",2027,28494
+"Washington",2027,5060
+"Weld",2027,421170
+"Yuma",2027,10606
+"Adams",2028,635231
+"Alamosa",2028,18494
+"Arapahoe",2028,758610
+"Archuleta",2028,16119
+"Baca",2028,3308
+"Bent",2028,6162
+"Boulder",2028,368925
+"Broomfield",2028,95240
+"Chaffee",2028,22546
+"Cheyenne",2028,1851
+"Clear Creek",2028,10129
+"Conejos",2028,8308
+"Costilla",2028,3791
+"Crowley",2028,5974
+"Custer",2028,4988
+"Delta",2028,32603
+"Denver",2028,838835
+"Dolores",2028,2162
+"Douglas",2028,401420
+"Eagle",2028,66854
+"El Paso",2028,830828
+"Elbert",2028,41047
+"Fremont",2028,48689
+"Garfield",2028,74470
+"Gilpin",2028,6164
+"Grand",2028,18688
+"Gunnison",2028,18876
+"Hinsdale",2028,1017
+"Huerfano",2028,6577
+"Jackson",2028,1315
+"Jefferson",2028,639716
+"Kiowa",2028,1311
+"Kit Carson",2028,8054
+"La Plata",2028,70912
+"Lake",2028,8373
+"Larimer",2028,414232
+"Las Animas",2028,13981
+"Lincoln",2028,6493
+"Logan",2028,24982
+"Mesa",2028,174824
+"Mineral",2028,837
+"Moffat",2028,13340
+"Montezuma",2028,33821
+"Montrose",2028,51082
+"Morgan",2028,31803
+"Otero",2028,17809
+"Ouray",2028,5190
+"Park",2028,21102
+"Phillips",2028,4342
+"Pitkin",2028,19850
+"Prowers",2028,11897
+"Pueblo",2028,187176
+"Rio Blanco",2028,6710
+"Rio Grande",2028,11428
+"Routt",2028,31424
+"Saguache",2028,6672
+"San Juan",2028,745
+"San Miguel",2028,11204
+"Sedgwick",2028,2347
+"Summit",2028,38238
+"Teller",2028,28745
+"Washington",2028,5075
+"Weld",2028,433937
+"Yuma",2028,10646
+"Adams",2029,647046
+"Alamosa",2029,18693
+"Arapahoe",2029,768962
+"Archuleta",2029,16509
+"Baca",2029,3284
+"Bent",2029,6184
+"Boulder",2029,373024
+"Broomfield",2029,95691
+"Chaffee",2029,22795
+"Cheyenne",2029,1852
+"Clear Creek",2029,10223
+"Conejos",2029,8340
+"Costilla",2029,3793
+"Crowley",2029,6051
+"Custer",2029,5032
+"Delta",2029,32962
+"Denver",2029,850948
+"Dolores",2029,2176
+"Douglas",2029,407340
+"Eagle",2029,68357
+"El Paso",2029,843015
+"Elbert",2029,42377
+"Fremont",2029,48994
+"Garfield",2029,75933
+"Gilpin",2029,6170
+"Grand",2029,19063
+"Gunnison",2029,19080
+"Hinsdale",2029,1041
+"Huerfano",2029,6569
+"Jackson",2029,1315
+"Jefferson",2029,643907
+"Kiowa",2029,1304
+"Kit Carson",2029,8111
+"La Plata",2029,72093
+"Lake",2029,8453
+"Larimer",2029,420280
+"Las Animas",2029,13960
+"Lincoln",2029,6587
+"Logan",2029,25210
+"Mesa",2029,178014
+"Mineral",2029,842
+"Moffat",2029,13363
+"Montezuma",2029,34432
+"Montrose",2029,52219
+"Morgan",2029,32216
+"Otero",2029,17687
+"Ouray",2029,5203
+"Park",2029,21470
+"Phillips",2029,4333
+"Pitkin",2029,20034
+"Prowers",2029,11881
+"Pueblo",2029,189173
+"Rio Blanco",2029,6736
+"Rio Grande",2029,11435
+"Routt",2029,32168
+"Saguache",2029,6672
+"San Juan",2029,745
+"San Miguel",2029,11473
+"Sedgwick",2029,2346
+"Summit",2029,38892
+"Teller",2029,28989
+"Washington",2029,5090
+"Weld",2029,446806
+"Yuma",2029,10681
+"Adams",2030,658865
+"Alamosa",2030,18894
+"Arapahoe",2030,779283
+"Archuleta",2030,16942
+"Baca",2030,3262
+"Bent",2030,6206
+"Boulder",2030,377107
+"Broomfield",2030,96097
+"Chaffee",2030,23040
+"Cheyenne",2030,1848
+"Clear Creek",2030,10319
+"Conejos",2030,8374
+"Costilla",2030,3795
+"Crowley",2030,6128
+"Custer",2030,5079
+"Delta",2030,33417
+"Denver",2030,861706
+"Dolores",2030,2191
+"Douglas",2030,413162
+"Eagle",2030,69748
+"El Paso",2030,855170
+"Elbert",2030,43695
+"Fremont",2030,49354
+"Garfield",2030,77404
+"Gilpin",2030,6178
+"Grand",2030,19487
+"Gunnison",2030,19282
+"Hinsdale",2030,1067
+"Huerfano",2030,6560
+"Jackson",2030,1316
+"Jefferson",2030,647959
+"Kiowa",2030,1298
+"Kit Carson",2030,8169
+"La Plata",2030,73266
+"Lake",2030,8536
+"Larimer",2030,426293
+"Las Animas",2030,13937
+"Lincoln",2030,6673
+"Logan",2030,25438
+"Mesa",2030,181209
+"Mineral",2030,846
+"Moffat",2030,13389
+"Montezuma",2030,35043
+"Montrose",2030,53355
+"Morgan",2030,32631
+"Otero",2030,17566
+"Ouray",2030,5210
+"Park",2030,21834
+"Phillips",2030,4336
+"Pitkin",2030,20218
+"Prowers",2030,11865
+"Pueblo",2030,191163
+"Rio Blanco",2030,6763
+"Rio Grande",2030,11440
+"Routt",2030,32916
+"Saguache",2030,6672
+"San Juan",2030,746
+"San Miguel",2030,11742
+"Sedgwick",2030,2340
+"Summit",2030,39540
+"Teller",2030,29228
+"Washington",2030,5104
+"Weld",2030,459772
+"Yuma",2030,10721
+"Adams",2031,670672
+"Alamosa",2031,19097
+"Arapahoe",2031,789551
+"Archuleta",2031,17418
+"Baca",2031,3241
+"Bent",2031,6228
+"Boulder",2031,381170
+"Broomfield",2031,96454
+"Chaffee",2031,23378
+"Cheyenne",2031,1839
+"Clear Creek",2031,10416
+"Conejos",2031,8408
+"Costilla",2031,3798
+"Crowley",2031,6206
+"Custer",2031,5126
+"Delta",2031,33904
+"Denver",2031,871108
+"Dolores",2031,2208
+"Douglas",2031,418842
+"Eagle",2031,71131
+"El Paso",2031,867280
+"Elbert",2031,44998
+"Fremont",2031,49713
+"Garfield",2031,78878
+"Gilpin",2031,6207
+"Grand",2031,19910
+"Gunnison",2031,19483
+"Hinsdale",2031,1093
+"Huerfano",2031,6549
+"Jackson",2031,1318
+"Jefferson",2031,651854
+"Kiowa",2031,1291
+"Kit Carson",2031,8229
+"La Plata",2031,74435
+"Lake",2031,8621
+"Larimer",2031,432268
+"Las Animas",2031,13912
+"Lincoln",2031,6762
+"Logan",2031,25664
+"Mesa",2031,184402
+"Mineral",2031,850
+"Moffat",2031,13415
+"Montezuma",2031,35654
+"Montrose",2031,54486
+"Morgan",2031,33049
+"Otero",2031,17444
+"Ouray",2031,5216
+"Park",2031,22175
+"Phillips",2031,4340
+"Pitkin",2031,20402
+"Prowers",2031,11847
+"Pueblo",2031,193138
+"Rio Blanco",2031,6792
+"Rio Grande",2031,11446
+"Routt",2031,33670
+"Saguache",2031,6671
+"San Juan",2031,747
+"San Miguel",2031,12016
+"Sedgwick",2031,2332
+"Summit",2031,40181
+"Teller",2031,29465
+"Washington",2031,5118
+"Weld",2031,472825
+"Yuma",2031,10754
+"Adams",2032,682452
+"Alamosa",2032,19300
+"Arapahoe",2032,799748
+"Archuleta",2032,17917
+"Baca",2032,3220
+"Bent",2032,6250
+"Boulder",2032,385203
+"Broomfield",2032,96757
+"Chaffee",2032,23586
+"Cheyenne",2032,1830
+"Clear Creek",2032,10515
+"Conejos",2032,8442
+"Costilla",2032,3800
+"Crowley",2032,6287
+"Custer",2032,5172
+"Delta",2032,34378
+"Denver",2032,879700
+"Dolores",2032,2225
+"Douglas",2032,424353
+"Eagle",2032,72511
+"El Paso",2032,879318
+"Elbert",2032,46285
+"Fremont",2032,50070
+"Garfield",2032,80352
+"Gilpin",2032,6247
+"Grand",2032,20333
+"Gunnison",2032,19683
+"Hinsdale",2032,1120
+"Huerfano",2032,6537
+"Jackson",2032,1320
+"Jefferson",2032,655576
+"Kiowa",2032,1284
+"Kit Carson",2032,8290
+"La Plata",2032,75577
+"Lake",2032,8707
+"Larimer",2032,438222
+"Las Animas",2032,13884
+"Lincoln",2032,6853
+"Logan",2032,25887
+"Mesa",2032,187593
+"Mineral",2032,854
+"Moffat",2032,13441
+"Montezuma",2032,36264
+"Montrose",2032,55610
+"Morgan",2032,33470
+"Otero",2032,17322
+"Ouray",2032,5223
+"Park",2032,22494
+"Phillips",2032,4335
+"Pitkin",2032,20586
+"Prowers",2032,11828
+"Pueblo",2032,195085
+"Rio Blanco",2032,6822
+"Rio Grande",2032,11452
+"Routt",2032,34415
+"Saguache",2032,6669
+"San Juan",2032,748
+"San Miguel",2032,12295
+"Sedgwick",2032,2333
+"Summit",2032,40818
+"Teller",2032,29697
+"Washington",2032,5122
+"Weld",2032,486216
+"Yuma",2032,10792
+"Adams",2033,694192
+"Alamosa",2033,19504
+"Arapahoe",2033,809850
+"Archuleta",2033,18412
+"Baca",2033,3200
+"Bent",2033,6271
+"Boulder",2033,389197
+"Broomfield",2033,97007
+"Chaffee",2033,23814
+"Cheyenne",2033,1820
+"Clear Creek",2033,10615
+"Conejos",2033,8477
+"Costilla",2033,3803
+"Crowley",2033,6374
+"Custer",2033,5216
+"Delta",2033,34854
+"Denver",2033,887496
+"Dolores",2033,2244
+"Douglas",2033,429660
+"Eagle",2033,73886
+"El Paso",2033,891269
+"Elbert",2033,47554
+"Fremont",2033,50424
+"Garfield",2033,81824
+"Gilpin",2033,6288
+"Grand",2033,20754
+"Gunnison",2033,19883
+"Hinsdale",2033,1147
+"Huerfano",2033,6518
+"Jackson",2033,1317
+"Jefferson",2033,659132
+"Kiowa",2033,1276
+"Kit Carson",2033,8354
+"La Plata",2033,76717
+"Lake",2033,8793
+"Larimer",2033,444129
+"Las Animas",2033,13854
+"Lincoln",2033,6942
+"Logan",2033,26107
+"Mesa",2033,190777
+"Mineral",2033,858
+"Moffat",2033,13466
+"Montezuma",2033,36871
+"Montrose",2033,56729
+"Morgan",2033,33921
+"Otero",2033,17200
+"Ouray",2033,5232
+"Park",2033,22789
+"Phillips",2033,4336
+"Pitkin",2033,20768
+"Prowers",2033,11806
+"Pueblo",2033,197003
+"Rio Blanco",2033,6854
+"Rio Grande",2033,11457
+"Routt",2033,35149
+"Saguache",2033,6667
+"San Juan",2033,750
+"San Miguel",2033,12579
+"Sedgwick",2033,2327
+"Summit",2033,41451
+"Teller",2033,29924
+"Washington",2033,5114
+"Weld",2033,499939
+"Yuma",2033,10830
+"Adams",2034,705879
+"Alamosa",2034,19711
+"Arapahoe",2034,819851
+"Archuleta",2034,18910
+"Baca",2034,3180
+"Bent",2034,6291
+"Boulder",2034,393142
+"Broomfield",2034,97202
+"Chaffee",2034,24038
+"Cheyenne",2034,1810
+"Clear Creek",2034,10718
+"Conejos",2034,8512
+"Costilla",2034,3806
+"Crowley",2034,6462
+"Custer",2034,5259
+"Delta",2034,35307
+"Denver",2034,894515
+"Dolores",2034,2263
+"Douglas",2034,434843
+"Eagle",2034,75247
+"El Paso",2034,903133
+"Elbert",2034,48802
+"Fremont",2034,50776
+"Garfield",2034,83289
+"Gilpin",2034,6331
+"Grand",2034,21172
+"Gunnison",2034,20081
+"Hinsdale",2034,1175
+"Huerfano",2034,6495
+"Jackson",2034,1315
+"Jefferson",2034,662534
+"Kiowa",2034,1269
+"Kit Carson",2034,8420
+"La Plata",2034,77854
+"Lake",2034,8882
+"Larimer",2034,449997
+"Las Animas",2034,13822
+"Lincoln",2034,7025
+"Logan",2034,26325
+"Mesa",2034,193949
+"Mineral",2034,862
+"Moffat",2034,13491
+"Montezuma",2034,37477
+"Montrose",2034,57842
+"Morgan",2034,34375
+"Otero",2034,17078
+"Ouray",2034,5242
+"Park",2034,23060
+"Phillips",2034,4334
+"Pitkin",2034,20949
+"Prowers",2034,11784
+"Pueblo",2034,198887
+"Rio Blanco",2034,6887
+"Rio Grande",2034,11462
+"Routt",2034,35873
+"Saguache",2034,6665
+"San Juan",2034,751
+"San Miguel",2034,12867
+"Sedgwick",2034,2318
+"Summit",2034,42084
+"Teller",2034,30148
+"Washington",2034,5095
+"Weld",2034,513736
+"Yuma",2034,10871
+"Adams",2035,717502
+"Alamosa",2035,19919
+"Arapahoe",2035,829740
+"Archuleta",2035,19406
+"Baca",2035,3161
+"Bent",2035,6312
+"Boulder",2035,397034
+"Broomfield",2035,97342
+"Chaffee",2035,24264
+"Cheyenne",2035,1800
+"Clear Creek",2035,10821
+"Conejos",2035,8547
+"Costilla",2035,3809
+"Crowley",2035,6548
+"Custer",2035,5302
+"Delta",2035,35763
+"Denver",2035,900766
+"Dolores",2035,2284
+"Douglas",2035,439878
+"Eagle",2035,76589
+"El Paso",2035,914816
+"Elbert",2035,50028
+"Fremont",2035,51127
+"Garfield",2035,84740
+"Gilpin",2035,6375
+"Grand",2035,21587
+"Gunnison",2035,20277
+"Hinsdale",2035,1203
+"Huerfano",2035,6465
+"Jackson",2035,1312
+"Jefferson",2035,665757
+"Kiowa",2035,1262
+"Kit Carson",2035,8488
+"La Plata",2035,78984
+"Lake",2035,8971
+"Larimer",2035,455823
+"Las Animas",2035,13787
+"Lincoln",2035,7129
+"Logan",2035,26540
+"Mesa",2035,197111
+"Mineral",2035,868
+"Moffat",2035,13514
+"Montezuma",2035,38082
+"Montrose",2035,58946
+"Morgan",2035,34857
+"Otero",2035,16957
+"Ouray",2035,5254
+"Park",2035,23306
+"Phillips",2035,4334
+"Pitkin",2035,21127
+"Prowers",2035,11760
+"Pueblo",2035,200739
+"Rio Blanco",2035,6920
+"Rio Grande",2035,11467
+"Routt",2035,36582
+"Saguache",2035,6663
+"San Juan",2035,753
+"San Miguel",2035,13159
+"Sedgwick",2035,2315
+"Summit",2035,42717
+"Teller",2035,30364
+"Washington",2035,5075
+"Weld",2035,527601
+"Yuma",2035,10913
+"Adams",2036,729054
+"Alamosa",2036,20130
+"Arapahoe",2036,840016
+"Archuleta",2036,19894
+"Baca",2036,3143
+"Bent",2036,6331
+"Boulder",2036,400863
+"Broomfield",2036,97427
+"Chaffee",2036,24470
+"Cheyenne",2036,1790
+"Clear Creek",2036,10925
+"Conejos",2036,8582
+"Costilla",2036,3813
+"Crowley",2036,6630
+"Custer",2036,5344
+"Delta",2036,36211
+"Denver",2036,906269
+"Dolores",2036,2304
+"Douglas",2036,444749
+"Eagle",2036,77911
+"El Paso",2036,926383
+"Elbert",2036,51232
+"Fremont",2036,51473
+"Garfield",2036,86176
+"Gilpin",2036,6399
+"Grand",2036,21999
+"Gunnison",2036,20472
+"Hinsdale",2036,1232
+"Huerfano",2036,6429
+"Jackson",2036,1310
+"Jefferson",2036,668797
+"Kiowa",2036,1255
+"Kit Carson",2036,8557
+"La Plata",2036,80085
+"Lake",2036,9060
+"Larimer",2036,461601
+"Las Animas",2036,13750
+"Lincoln",2036,7225
+"Logan",2036,26752
+"Mesa",2036,200256
+"Mineral",2036,873
+"Moffat",2036,13536
+"Montezuma",2036,38686
+"Montrose",2036,60042
+"Morgan",2036,35341
+"Otero",2036,16837
+"Ouray",2036,5256
+"Park",2036,23527
+"Phillips",2036,4329
+"Pitkin",2036,21279
+"Prowers",2036,11737
+"Pueblo",2036,202553
+"Rio Blanco",2036,6953
+"Rio Grande",2036,11472
+"Routt",2036,37277
+"Saguache",2036,6661
+"San Juan",2036,754
+"San Miguel",2036,13449
+"Sedgwick",2036,2309
+"Summit",2036,43344
+"Teller",2036,30573
+"Washington",2036,5054
+"Weld",2036,541527
+"Yuma",2036,10951
+"Adams",2037,740535
+"Alamosa",2037,20341
+"Arapahoe",2037,850199
+"Archuleta",2037,20389
+"Baca",2037,3126
+"Bent",2037,6351
+"Boulder",2037,404630
+"Broomfield",2037,97461
+"Chaffee",2037,24672
+"Cheyenne",2037,1780
+"Clear Creek",2037,11029
+"Conejos",2037,8617
+"Costilla",2037,3817
+"Crowley",2037,6711
+"Custer",2037,5385
+"Delta",2037,36657
+"Denver",2037,911422
+"Dolores",2037,2325
+"Douglas",2037,449436
+"Eagle",2037,79213
+"El Paso",2037,937826
+"Elbert",2037,52414
+"Fremont",2037,51817
+"Garfield",2037,87602
+"Gilpin",2037,6424
+"Grand",2037,22406
+"Gunnison",2037,20666
+"Hinsdale",2037,1261
+"Huerfano",2037,6393
+"Jackson",2037,1307
+"Jefferson",2037,671686
+"Kiowa",2037,1248
+"Kit Carson",2037,8626
+"La Plata",2037,81174
+"Lake",2037,9148
+"Larimer",2037,467347
+"Las Animas",2037,13711
+"Lincoln",2037,7317
+"Logan",2037,26962
+"Mesa",2037,203380
+"Mineral",2037,877
+"Moffat",2037,13557
+"Montezuma",2037,39290
+"Montrose",2037,61129
+"Morgan",2037,35853
+"Otero",2037,16719
+"Ouray",2037,5266
+"Park",2037,23705
+"Phillips",2037,4333
+"Pitkin",2037,21420
+"Prowers",2037,11713
+"Pueblo",2037,204330
+"Rio Blanco",2037,6986
+"Rio Grande",2037,11478
+"Routt",2037,37956
+"Saguache",2037,6659
+"San Juan",2037,756
+"San Miguel",2037,13738
+"Sedgwick",2037,2307
+"Summit",2037,43974
+"Teller",2037,30775
+"Washington",2037,5034
+"Weld",2037,555058
+"Yuma",2037,10999
+"Adams",2038,751943
+"Alamosa",2038,20550
+"Arapahoe",2038,860292
+"Archuleta",2038,20879
+"Baca",2038,3109
+"Bent",2038,6371
+"Boulder",2038,408333
+"Broomfield",2038,97451
+"Chaffee",2038,24871
+"Cheyenne",2038,1769
+"Clear Creek",2038,11134
+"Conejos",2038,8651
+"Costilla",2038,3822
+"Crowley",2038,6793
+"Custer",2038,5426
+"Delta",2038,37102
+"Denver",2038,916259
+"Dolores",2038,2346
+"Douglas",2038,453725
+"Eagle",2038,80494
+"El Paso",2038,949151
+"Elbert",2038,53576
+"Fremont",2038,52162
+"Garfield",2038,89019
+"Gilpin",2038,6450
+"Grand",2038,22810
+"Gunnison",2038,20858
+"Hinsdale",2038,1290
+"Huerfano",2038,6357
+"Jackson",2038,1305
+"Jefferson",2038,674428
+"Kiowa",2038,1242
+"Kit Carson",2038,8696
+"La Plata",2038,82240
+"Lake",2038,9228
+"Larimer",2038,473056
+"Las Animas",2038,13672
+"Lincoln",2038,7409
+"Logan",2038,27168
+"Mesa",2038,206479
+"Mineral",2038,886
+"Moffat",2038,13577
+"Montezuma",2038,39892
+"Montrose",2038,62207
+"Morgan",2038,36367
+"Otero",2038,16603
+"Ouray",2038,5274
+"Park",2038,23841
+"Phillips",2038,4333
+"Pitkin",2038,21562
+"Prowers",2038,11690
+"Pueblo",2038,206072
+"Rio Blanco",2038,7019
+"Rio Grande",2038,11485
+"Routt",2038,38620
+"Saguache",2038,6657
+"San Juan",2038,758
+"San Miguel",2038,14024
+"Sedgwick",2038,2305
+"Summit",2038,44603
+"Teller",2038,30970
+"Washington",2038,5012
+"Weld",2038,568642
+"Yuma",2038,11032
+"Adams",2039,763278
+"Alamosa",2039,20757
+"Arapahoe",2039,868745
+"Archuleta",2039,21372
+"Baca",2039,3094
+"Bent",2039,6390
+"Boulder",2039,411969
+"Broomfield",2039,97402
+"Chaffee",2039,25067
+"Cheyenne",2039,1759
+"Clear Creek",2039,11240
+"Conejos",2039,8684
+"Costilla",2039,3828
+"Crowley",2039,6875
+"Custer",2039,5467
+"Delta",2039,37537
+"Denver",2039,920808
+"Dolores",2039,2367
+"Douglas",2039,457708
+"Eagle",2039,81756
+"El Paso",2039,960355
+"Elbert",2039,54718
+"Fremont",2039,52505
+"Garfield",2039,90430
+"Gilpin",2039,6466
+"Grand",2039,23210
+"Gunnison",2039,21049
+"Hinsdale",2039,1319
+"Huerfano",2039,6321
+"Jackson",2039,1302
+"Jefferson",2039,677034
+"Kiowa",2039,1236
+"Kit Carson",2039,8766
+"La Plata",2039,83305
+"Lake",2039,9297
+"Larimer",2039,478737
+"Las Animas",2039,13632
+"Lincoln",2039,7509
+"Logan",2039,27373
+"Mesa",2039,209552
+"Mineral",2039,892
+"Moffat",2039,13596
+"Montezuma",2039,40494
+"Montrose",2039,63274
+"Morgan",2039,36882
+"Otero",2039,16489
+"Ouray",2039,5282
+"Park",2039,23935
+"Phillips",2039,4324
+"Pitkin",2039,21711
+"Prowers",2039,11667
+"Pueblo",2039,207779
+"Rio Blanco",2039,7051
+"Rio Grande",2039,11492
+"Routt",2039,39268
+"Saguache",2039,6655
+"San Juan",2039,760
+"San Miguel",2039,14308
+"Sedgwick",2039,2296
+"Summit",2039,45232
+"Teller",2039,31161
+"Washington",2039,4991
+"Weld",2039,582176
+"Yuma",2039,11077
+"Adams",2040,774542
+"Alamosa",2040,20963
+"Arapahoe",2040,877068
+"Archuleta",2040,21859
+"Baca",2040,3078
+"Bent",2040,6408
+"Boulder",2040,415540
+"Broomfield",2040,97318
+"Chaffee",2040,25261
+"Cheyenne",2040,1749
+"Clear Creek",2040,11346
+"Conejos",2040,8717
+"Costilla",2040,3835
+"Crowley",2040,6957
+"Custer",2040,5507
+"Delta",2040,37974
+"Denver",2040,925098
+"Dolores",2040,2389
+"Douglas",2040,461381
+"Eagle",2040,83001
+"El Paso",2040,971444
+"Elbert",2040,55840
+"Fremont",2040,52848
+"Garfield",2040,91836
+"Gilpin",2040,6482
+"Grand",2040,23606
+"Gunnison",2040,21238
+"Hinsdale",2040,1348
+"Huerfano",2040,6285
+"Jackson",2040,1300
+"Jefferson",2040,679518
+"Kiowa",2040,1230
+"Kit Carson",2040,8835
+"La Plata",2040,84342
+"Lake",2040,9361
+"Larimer",2040,484597
+"Las Animas",2040,13592
+"Lincoln",2040,7598
+"Logan",2040,27576
+"Mesa",2040,212598
+"Mineral",2040,897
+"Moffat",2040,13617
+"Montezuma",2040,41095
+"Montrose",2040,64331
+"Morgan",2040,37399
+"Otero",2040,16376
+"Ouray",2040,5303
+"Park",2040,23987
+"Phillips",2040,4324
+"Pitkin",2040,21854
+"Prowers",2040,11645
+"Pueblo",2040,209454
+"Rio Blanco",2040,7083
+"Rio Grande",2040,11500
+"Routt",2040,39900
+"Saguache",2040,6653
+"San Juan",2040,762
+"San Miguel",2040,14590
+"Sedgwick",2040,2298
+"Summit",2040,45859
+"Teller",2040,31349
+"Washington",2040,4970
+"Weld",2040,595661
+"Yuma",2040,11109
+"Adams",2041,785740
+"Alamosa",2041,21168
+"Arapahoe",2041,883712
+"Archuleta",2041,22343
+"Baca",2041,3064
+"Bent",2041,6427
+"Boulder",2041,419043
+"Broomfield",2041,97206
+"Chaffee",2041,25452
+"Cheyenne",2041,1738
+"Clear Creek",2041,11452
+"Conejos",2041,8748
+"Costilla",2041,3842
+"Crowley",2041,7034
+"Custer",2041,5547
+"Delta",2041,38406
+"Denver",2041,929108
+"Dolores",2041,2410
+"Douglas",2041,464746
+"Eagle",2041,84226
+"El Paso",2041,982319
+"Elbert",2041,56944
+"Fremont",2041,53192
+"Garfield",2041,93236
+"Gilpin",2041,6498
+"Grand",2041,23999
+"Gunnison",2041,21425
+"Hinsdale",2041,1378
+"Huerfano",2041,6250
+"Jackson",2041,1297
+"Jefferson",2041,681891
+"Kiowa",2041,1225
+"Kit Carson",2041,8906
+"La Plata",2041,85368
+"Lake",2041,9422
+"Larimer",2041,490646
+"Las Animas",2041,13553
+"Lincoln",2041,7688
+"Logan",2041,27777
+"Mesa",2041,215616
+"Mineral",2041,902
+"Moffat",2041,13637
+"Montezuma",2041,41697
+"Montrose",2041,65379
+"Morgan",2041,37918
+"Otero",2041,16266
+"Ouray",2041,5324
+"Park",2041,23997
+"Phillips",2041,4325
+"Pitkin",2041,21994
+"Prowers",2041,11624
+"Pueblo",2041,211048
+"Rio Blanco",2041,7114
+"Rio Grande",2041,11509
+"Routt",2041,40527
+"Saguache",2041,6652
+"San Juan",2041,762
+"San Miguel",2041,14870
+"Sedgwick",2041,2300
+"Summit",2041,46477
+"Teller",2041,31535
+"Washington",2041,4950
+"Weld",2041,609198
+"Yuma",2041,11141
+"Adams",2042,797398
+"Alamosa",2042,21370
+"Arapahoe",2042,886549
+"Archuleta",2042,22823
+"Baca",2042,3049
+"Bent",2042,6446
+"Boulder",2042,422471
+"Broomfield",2042,97069
+"Chaffee",2042,25640
+"Cheyenne",2042,1728
+"Clear Creek",2042,11560
+"Conejos",2042,8779
+"Costilla",2042,3850
+"Crowley",2042,7112
+"Custer",2042,5587
+"Delta",2042,38834
+"Denver",2042,932825
+"Dolores",2042,2431
+"Douglas",2042,467802
+"Eagle",2042,85430
+"El Paso",2042,993071
+"Elbert",2042,58030
+"Fremont",2042,53536
+"Garfield",2042,94628
+"Gilpin",2042,6513
+"Grand",2042,24388
+"Gunnison",2042,21578
+"Hinsdale",2042,1402
+"Huerfano",2042,6215
+"Jackson",2042,1295
+"Jefferson",2042,683948
+"Kiowa",2042,1220
+"Kit Carson",2042,8976
+"La Plata",2042,86379
+"Lake",2042,9480
+"Larimer",2042,496657
+"Las Animas",2042,13513
+"Lincoln",2042,7778
+"Logan",2042,27976
+"Mesa",2042,218602
+"Mineral",2042,908
+"Moffat",2042,13659
+"Montezuma",2042,42298
+"Montrose",2042,66416
+"Morgan",2042,38439
+"Otero",2042,16156
+"Ouray",2042,5346
+"Park",2042,24002
+"Phillips",2042,4326
+"Pitkin",2042,22132
+"Prowers",2042,11603
+"Pueblo",2042,212606
+"Rio Blanco",2042,7145
+"Rio Grande",2042,11518
+"Routt",2042,41151
+"Saguache",2042,6651
+"San Juan",2042,762
+"San Miguel",2042,15147
+"Sedgwick",2042,2302
+"Summit",2042,47087
+"Teller",2042,31721
+"Washington",2042,4930
+"Weld",2042,622921
+"Yuma",2042,11172
+"Adams",2043,809023
+"Alamosa",2043,21571
+"Arapahoe",2043,889091
+"Archuleta",2043,23300
+"Baca",2043,3036
+"Bent",2043,6465
+"Boulder",2043,425825
+"Broomfield",2043,96912
+"Chaffee",2043,25827
+"Cheyenne",2043,1717
+"Clear Creek",2043,11668
+"Conejos",2043,8808
+"Costilla",2043,3858
+"Crowley",2043,7190
+"Custer",2043,5626
+"Delta",2043,39258
+"Denver",2043,936244
+"Dolores",2043,2452
+"Douglas",2043,470557
+"Eagle",2043,86615
+"El Paso",2043,1003709
+"Elbert",2043,59100
+"Fremont",2043,53882
+"Garfield",2043,96017
+"Gilpin",2043,6529
+"Grand",2043,24775
+"Gunnison",2043,21729
+"Hinsdale",2043,1427
+"Huerfano",2043,6180
+"Jackson",2043,1292
+"Jefferson",2043,685702
+"Kiowa",2043,1216
+"Kit Carson",2043,9048
+"La Plata",2043,87377
+"Lake",2043,9535
+"Larimer",2043,502629
+"Las Animas",2043,13475
+"Lincoln",2043,7868
+"Logan",2043,28173
+"Mesa",2043,221559
+"Mineral",2043,913
+"Moffat",2043,13681
+"Montezuma",2043,42897
+"Montrose",2043,67443
+"Morgan",2043,38963
+"Otero",2043,16048
+"Ouray",2043,5370
+"Park",2043,24003
+"Phillips",2043,4329
+"Pitkin",2043,22269
+"Prowers",2043,11583
+"Pueblo",2043,214132
+"Rio Blanco",2043,7175
+"Rio Grande",2043,11528
+"Routt",2043,41770
+"Saguache",2043,6651
+"San Juan",2043,762
+"San Miguel",2043,15422
+"Sedgwick",2043,2305
+"Summit",2043,47690
+"Teller",2043,31910
+"Washington",2043,4912
+"Weld",2043,636683
+"Yuma",2043,11202
+"Adams",2044,820624
+"Alamosa",2044,21769
+"Arapahoe",2044,891342
+"Archuleta",2044,23774
+"Baca",2044,3022
+"Bent",2044,6484
+"Boulder",2044,429109
+"Broomfield",2044,96740
+"Chaffee",2044,26014
+"Cheyenne",2044,1706
+"Clear Creek",2044,11777
+"Conejos",2044,8836
+"Costilla",2044,3867
+"Crowley",2044,7268
+"Custer",2044,5667
+"Delta",2044,39677
+"Denver",2044,939365
+"Dolores",2044,2472
+"Douglas",2044,473026
+"Eagle",2044,87780
+"El Paso",2044,1014250
+"Elbert",2044,60155
+"Fremont",2044,54230
+"Garfield",2044,97404
+"Gilpin",2044,6544
+"Grand",2044,25158
+"Gunnison",2044,21878
+"Hinsdale",2044,1452
+"Huerfano",2044,6147
+"Jackson",2044,1289
+"Jefferson",2044,687163
+"Kiowa",2044,1212
+"Kit Carson",2044,9120
+"La Plata",2044,88361
+"Lake",2044,9587
+"Larimer",2044,508560
+"Las Animas",2044,13438
+"Lincoln",2044,7957
+"Logan",2044,28369
+"Mesa",2044,224488
+"Mineral",2044,919
+"Moffat",2044,13704
+"Montezuma",2044,43497
+"Montrose",2044,68460
+"Morgan",2044,39490
+"Otero",2044,15941
+"Ouray",2044,5395
+"Park",2044,23999
+"Phillips",2044,4333
+"Pitkin",2044,22404
+"Prowers",2044,11564
+"Pueblo",2044,215629
+"Rio Blanco",2044,7205
+"Rio Grande",2044,11538
+"Routt",2044,42386
+"Saguache",2044,6651
+"San Juan",2044,763
+"San Miguel",2044,15696
+"Sedgwick",2044,2308
+"Summit",2044,48287
+"Teller",2044,32099
+"Washington",2044,4894
+"Weld",2044,650485
+"Yuma",2044,11232
+"Adams",2045,832210
+"Alamosa",2045,21965
+"Arapahoe",2045,893317
+"Archuleta",2045,24245
+"Baca",2045,3010
+"Bent",2045,6504
+"Boulder",2045,432331
+"Broomfield",2045,96557
+"Chaffee",2045,26200
+"Cheyenne",2045,1695
+"Clear Creek",2045,11887
+"Conejos",2045,8863
+"Costilla",2045,3877
+"Crowley",2045,7347
+"Custer",2045,5708
+"Delta",2045,40093
+"Denver",2045,942194
+"Dolores",2045,2493
+"Douglas",2045,475226
+"Eagle",2045,88927
+"El Paso",2045,1024723
+"Elbert",2045,61196
+"Fremont",2045,54582
+"Garfield",2045,98791
+"Gilpin",2045,6559
+"Grand",2045,25538
+"Gunnison",2045,22024
+"Hinsdale",2045,1472
+"Huerfano",2045,6115
+"Jackson",2045,1287
+"Jefferson",2045,688552
+"Kiowa",2045,1208
+"Kit Carson",2045,9193
+"La Plata",2045,89331
+"Lake",2045,9637
+"Larimer",2045,514458
+"Las Animas",2045,13403
+"Lincoln",2045,8046
+"Logan",2045,28563
+"Mesa",2045,227391
+"Mineral",2045,925
+"Moffat",2045,13729
+"Montezuma",2045,44097
+"Montrose",2045,69467
+"Morgan",2045,40020
+"Otero",2045,15835
+"Ouray",2045,5421
+"Park",2045,23993
+"Phillips",2045,4338
+"Pitkin",2045,22539
+"Prowers",2045,11544
+"Pueblo",2045,217099
+"Rio Blanco",2045,7234
+"Rio Grande",2045,11549
+"Routt",2045,42999
+"Saguache",2045,6653
+"San Juan",2045,763
+"San Miguel",2045,15967
+"Sedgwick",2045,2311
+"Summit",2045,48881
+"Teller",2045,32292
+"Washington",2045,4877
+"Weld",2045,664332
+"Yuma",2045,11262
+"Adams",2046,843790
+"Alamosa",2046,22160
+"Arapahoe",2046,895036
+"Archuleta",2046,24715
+"Baca",2046,2997
+"Bent",2046,6524
+"Boulder",2046,435500
+"Broomfield",2046,96366
+"Chaffee",2046,26386
+"Cheyenne",2046,1684
+"Clear Creek",2046,11998
+"Conejos",2046,8890
+"Costilla",2046,3887
+"Crowley",2046,7426
+"Custer",2046,5750
+"Delta",2046,40506
+"Denver",2046,944764
+"Dolores",2046,2514
+"Douglas",2046,477177
+"Eagle",2046,90061
+"El Paso",2046,1035142
+"Elbert",2046,62226
+"Fremont",2046,54937
+"Garfield",2046,100176
+"Gilpin",2046,6573
+"Grand",2046,25916
+"Gunnison",2046,22169
+"Hinsdale",2046,1492
+"Huerfano",2046,6085
+"Jackson",2046,1285
+"Jefferson",2046,689888
+"Kiowa",2046,1205
+"Kit Carson",2046,9269
+"La Plata",2046,90288
+"Lake",2046,9685
+"Larimer",2046,520324
+"Las Animas",2046,13369
+"Lincoln",2046,8134
+"Logan",2046,28756
+"Mesa",2046,229262
+"Mineral",2046,932
+"Moffat",2046,13754
+"Montezuma",2046,44701
+"Montrose",2046,70467
+"Morgan",2046,40554
+"Otero",2046,15728
+"Ouray",2046,5448
+"Park",2046,23984
+"Phillips",2046,4344
+"Pitkin",2046,22673
+"Prowers",2046,11525
+"Pueblo",2046,218546
+"Rio Blanco",2046,7263
+"Rio Grande",2046,11561
+"Routt",2046,43607
+"Saguache",2046,6655
+"San Juan",2046,764
+"San Miguel",2046,16236
+"Sedgwick",2046,2315
+"Summit",2046,49474
+"Teller",2046,32487
+"Washington",2046,4860
+"Weld",2046,678227
+"Yuma",2046,11291
+"Adams",2047,855369
+"Alamosa",2047,22354
+"Arapahoe",2047,896515
+"Archuleta",2047,25182
+"Baca",2047,2984
+"Bent",2047,6544
+"Boulder",2047,438628
+"Broomfield",2047,96170
+"Chaffee",2047,26574
+"Cheyenne",2047,1673
+"Clear Creek",2047,12110
+"Conejos",2047,8916
+"Costilla",2047,3898
+"Crowley",2047,7507
+"Custer",2047,5793
+"Delta",2047,40915
+"Denver",2047,947133
+"Dolores",2047,2534
+"Douglas",2047,478895
+"Eagle",2047,91179
+"El Paso",2047,1045521
+"Elbert",2047,63245
+"Fremont",2047,55297
+"Garfield",2047,101561
+"Gilpin",2047,6586
+"Grand",2047,26292
+"Gunnison",2047,22312
+"Hinsdale",2047,1512
+"Huerfano",2047,6057
+"Jackson",2047,1283
+"Jefferson",2047,691183
+"Kiowa",2047,1202
+"Kit Carson",2047,9346
+"La Plata",2047,91232
+"Lake",2047,9732
+"Larimer",2047,526167
+"Las Animas",2047,13336
+"Lincoln",2047,8222
+"Logan",2047,28948
+"Mesa",2047,231111
+"Mineral",2047,938
+"Moffat",2047,13780
+"Montezuma",2047,45307
+"Montrose",2047,71458
+"Morgan",2047,41092
+"Otero",2047,15622
+"Ouray",2047,5476
+"Park",2047,23938
+"Phillips",2047,4350
+"Pitkin",2047,22807
+"Prowers",2047,11505
+"Pueblo",2047,219975
+"Rio Blanco",2047,7292
+"Rio Grande",2047,11573
+"Routt",2047,44211
+"Saguache",2047,6657
+"San Juan",2047,765
+"San Miguel",2047,16504
+"Sedgwick",2047,2319
+"Summit",2047,50065
+"Teller",2047,32683
+"Washington",2047,4845
+"Weld",2047,692173
+"Yuma",2047,11319
+"Adams",2048,866951
+"Alamosa",2048,22547
+"Arapahoe",2048,897771
+"Archuleta",2048,25646
+"Baca",2048,2972
+"Bent",2048,6565
+"Boulder",2048,441718
+"Broomfield",2048,95971
+"Chaffee",2048,26762
+"Cheyenne",2048,1662
+"Clear Creek",2048,12221
+"Conejos",2048,8943
+"Costilla",2048,3910
+"Crowley",2048,7588
+"Custer",2048,5838
+"Delta",2048,41321
+"Denver",2048,949296
+"Dolores",2048,2555
+"Douglas",2048,480396
+"Eagle",2048,92285
+"El Paso",2048,1055862
+"Elbert",2048,64255
+"Fremont",2048,55661
+"Garfield",2048,102944
+"Gilpin",2048,6599
+"Grand",2048,26665
+"Gunnison",2048,22452
+"Hinsdale",2048,1532
+"Huerfano",2048,6030
+"Jackson",2048,1281
+"Jefferson",2048,692443
+"Kiowa",2048,1199
+"Kit Carson",2048,9426
+"La Plata",2048,92164
+"Lake",2048,9778
+"Larimer",2048,531987
+"Las Animas",2048,13305
+"Lincoln",2048,8310
+"Logan",2048,29138
+"Mesa",2048,232938
+"Mineral",2048,945
+"Moffat",2048,13808
+"Montezuma",2048,45918
+"Montrose",2048,72442
+"Morgan",2048,41634
+"Otero",2048,15516
+"Ouray",2048,5506
+"Park",2048,23890
+"Phillips",2048,4357
+"Pitkin",2048,22941
+"Prowers",2048,11484
+"Pueblo",2048,221386
+"Rio Blanco",2048,7320
+"Rio Grande",2048,11586
+"Routt",2048,44811
+"Saguache",2048,6660
+"San Juan",2048,765
+"San Miguel",2048,16769
+"Sedgwick",2048,2323
+"Summit",2048,50654
+"Teller",2048,32881
+"Washington",2048,4829
+"Weld",2048,706170
+"Yuma",2048,11346
+"Adams",2049,878541
+"Alamosa",2049,22740
+"Arapahoe",2049,898835
+"Archuleta",2049,26110
+"Baca",2049,2960
+"Bent",2049,6586
+"Boulder",2049,444787
+"Broomfield",2049,95769
+"Chaffee",2049,26952
+"Cheyenne",2049,1651
+"Clear Creek",2049,12334
+"Conejos",2049,8970
+"Costilla",2049,3922
+"Crowley",2049,7670
+"Custer",2049,5885
+"Delta",2049,41725
+"Denver",2049,951239
+"Dolores",2049,2576
+"Douglas",2049,481700
+"Eagle",2049,93378
+"El Paso",2049,1066178
+"Elbert",2049,65257
+"Fremont",2049,56030
+"Garfield",2049,104327
+"Gilpin",2049,6613
+"Grand",2049,27036
+"Gunnison",2049,22591
+"Hinsdale",2049,1553
+"Huerfano",2049,6006
+"Jackson",2049,1280
+"Jefferson",2049,693692
+"Kiowa",2049,1196
+"Kit Carson",2049,9509
+"La Plata",2049,93087
+"Lake",2049,9823
+"Larimer",2049,537792
+"Las Animas",2049,13276
+"Lincoln",2049,8397
+"Logan",2049,29327
+"Mesa",2049,234750
+"Mineral",2049,952
+"Moffat",2049,13837
+"Montezuma",2049,46535
+"Montrose",2049,73419
+"Morgan",2049,42182
+"Otero",2049,15409
+"Ouray",2049,5537
+"Park",2049,23843
+"Phillips",2049,4365
+"Pitkin",2049,23075
+"Prowers",2049,11463
+"Pueblo",2049,222788
+"Rio Blanco",2049,7348
+"Rio Grande",2049,11599
+"Routt",2049,45407
+"Saguache",2049,6664
+"San Juan",2049,766
+"San Miguel",2049,17032
+"Sedgwick",2049,2327
+"Summit",2049,51241
+"Teller",2049,33082
+"Washington",2049,4814
+"Weld",2049,720226
+"Yuma",2049,11372
+"Adams",2050,890148
+"Alamosa",2050,22934
+"Arapahoe",2050,899738
+"Archuleta",2050,26571
+"Baca",2050,2949
+"Bent",2050,6607
+"Boulder",2050,447843
+"Broomfield",2050,95566
+"Chaffee",2050,27145
+"Cheyenne",2050,1641
+"Clear Creek",2050,12448
+"Conejos",2050,8997
+"Costilla",2050,3934
+"Crowley",2050,7754
+"Custer",2050,5934
+"Delta",2050,42126
+"Denver",2050,952955
+"Dolores",2050,2597
+"Douglas",2050,482824
+"Eagle",2050,94459
+"El Paso",2050,1076486
+"Elbert",2050,66251
+"Fremont",2050,56406
+"Garfield",2050,105711
+"Gilpin",2050,6626
+"Grand",2050,27406
+"Gunnison",2050,22728
+"Hinsdale",2050,1573
+"Huerfano",2050,5983
+"Jackson",2050,1279
+"Jefferson",2050,694943
+"Kiowa",2050,1193
+"Kit Carson",2050,9595
+"La Plata",2050,94002
+"Lake",2050,9868
+"Larimer",2050,543588
+"Las Animas",2050,13249
+"Lincoln",2050,8484
+"Logan",2050,29516
+"Mesa",2050,236554
+"Mineral",2050,959
+"Moffat",2050,13868
+"Montezuma",2050,47158
+"Montrose",2050,74391
+"Morgan",2050,42734
+"Otero",2050,15302
+"Ouray",2050,5568
+"Park",2050,23797
+"Phillips",2050,4372
+"Pitkin",2050,23209
+"Prowers",2050,11441
+"Pueblo",2050,224184
+"Rio Blanco",2050,7376
+"Rio Grande",2050,11612
+"Routt",2050,45998
+"Saguache",2050,6668
+"San Juan",2050,767
+"San Miguel",2050,17293
+"Sedgwick",2050,2332
+"Summit",2050,51828
+"Teller",2050,33287
+"Washington",2050,4800
+"Weld",2050,734343
+"Yuma",2050,11398
