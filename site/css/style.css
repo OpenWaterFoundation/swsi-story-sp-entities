@@ -33,11 +33,12 @@ iframe {
 }
 
 .blue-bkgd-text a:link{
-   color:#0000ff;
+   color:#f4edee;
+   text-decoration:underline;
 }
 
 .blue-bkgd-text a:visited{
-   color:#16151C;
+   color:#f4edee;
 }
 
 @media(max-width:1200px) {
