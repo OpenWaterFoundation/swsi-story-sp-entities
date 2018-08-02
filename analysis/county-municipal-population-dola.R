@@ -342,25 +342,30 @@ state_historical$State = replace(state_historical$State,
 
 # State 2016 population is 5538180; will use to create new variable
 
-# Access the "muni_pop_2016" dataset and join the state data to it
-muni_state_2016 = muni_pop_2016
+# Access the "muni_pop_2006_2016" dataset and join the state data to it
+muni_state_2016 = muni_pop_2006_2016
 
 # Create new variable of 2016 state population
-muni_state_2016$StatePop2016 = rep(5538180, 271)
+muni_state_2016$StatePop2016 = rep(5538180, 117)
 
 # Calculate municipality's percent of state pop
 muni_state_2016 = muni_state_2016 %>%
   mutate(Percent_State = Pop2016 / StatePop2016 * 100) %>%
-  arrange(desc(Pop2016))
+  arrange(desc(Pop2016)) %>%
+  select(MunicipalityName, Pop2016, Percent_State) %>%
+  mutate(Cumulative_Percent = cumsum(Percent_State))
+  
+# Round percents to 2 decimal place
+muni_state_2016$Percent_State = round(muni_state_2016$Percent_State, digits=2)
+muni_state_2016$Cumulative_Percent = round(muni_state_2016$Cumulative_Percent, digits=1)
 
-# Round to 1 decimal place
-muni_state_2016$Percent_State = round(muni_state_2016$Percent_State, digits=1)
+head(muni_state_2016, n=120)
 
 # Export dataset to csv to be embedded as a table in the Water Entities story
 write.csv(muni_state_2016, file="..\\site\\data\\municipal-population-2016-percent-state.csv", 
 row.names=FALSE)
 
-print(muni_state_2016, n=15)
+
 
 #######################
 # Read in county geojson file (test of adding in spatial data; note that you need 
