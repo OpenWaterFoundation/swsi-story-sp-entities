@@ -356,6 +356,10 @@ muni_state_2016 = muni_state_2016 %>%
 # Round to 1 decimal place
 muni_state_2016$Percent_State = round(muni_state_2016$Percent_State, digits=1)
 
+# Export dataset to csv to be embedded as a table in the Water Entities story
+write.csv(muni_state_2016, file="..\\site\\data\\municipal-population-2016-percent-state.csv", 
+row.names=FALSE)
+
 print(muni_state_2016, n=15)
 
 #######################
