@@ -299,13 +299,13 @@
 			  <p>This map shows municipal population from 1980 to 2016.  Click the "Play" button on the lower-left side of the map to automatically move 
 			  through the years.  Municipalities are color-coded by population and sized by percent change since 1980.</p> 	
 			  <p>The table below shows the 2016 population (the most recent year of available data) for each municipality in the Basin, as well as the percent 
-			  of the total state population (5,538,180) and the cumulative percent of the state population.  Note that unincorporated areas are not included in 
-			  municipal totals, which is why the cumulative percent does not total 85% as stated in the previous page.</p>
+			  of the total state population (5,538,180) and the cumulative percent of the state population.  Note that the cumulative percent does not total 
+			  85% as stated in the previous page.</p>
 
         <div id='clusterize' class='clusterize' style="width: 100%; height: 380px;"></div>
 
         <script>
-          CsvToTable("clusterize", "data/municipal-population-2016-percent-state.csv", {notFormatted: ["FIPS_ID"]});
+          CsvToTable("clusterize", "data/municipal-population-2016-percent-state.csv", {notFormatted: ["FIPS_ID"], decimalPrecision: {"Percent_State": 2, "Cumulative_Percent": 1}});
           // Match header to table when scrolling horizontally
           $('#scrollArea').on('scroll', (function() {
             return function() { 
