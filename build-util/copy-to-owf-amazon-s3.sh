@@ -129,6 +129,14 @@ cp ../site/js/map-files/ditch-service-areas-2005-map.js ${tmpBuildFolder}/js/map
 # Environment
 cp ../site/js/map-files/instream-flow-map.js ${tmpBuildFolder}/js/map-files/instream-flow-map.${version}.js
 
+# Create zip folder if runMode = prepUpload
+if [ "$runMode" == "prepUpload" ]
+	then
+	# Zip files using 7zip
+	echo "Zip site files"
+	7z a -tzip swsi-story-sp-entities.zip ${tmpBuildFolder}/*
+fi
+
 if [ "$runMode" == "upload" ]
 	then
 	# Sync the tmp-build folder to Amazon S3
