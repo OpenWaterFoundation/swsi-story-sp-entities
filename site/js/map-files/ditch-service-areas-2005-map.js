@@ -22,6 +22,24 @@ var ditch_service_areas_map = (function(){
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.satellite'
 	});			
+
+	var streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
+        maxZoom: 18,
+        attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
+        'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        id: 'mapbox.streets'
+    });
+
+    var streetsatellite = L.tileLayer('https://api.mapbox.com/v4/mapbox.streets-satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia3Jpc3RpbnN3YWltIiwiYSI6ImNpc3Rjcnl3bDAzYWMycHBlM2phbDJuMHoifQ.vrDCYwkTZsrA_0FffnzvBw', {
+        maxZoom: 18,
+        attribution: 'Created by the <a href="http://openwaterfoundation.org">Open Water Foundation. </a>' + 
+        'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        id: 'mapbox.streets-satellite'
+    });
 	
 	var map = L.map('mapbox7', {
 		scrollWheelZoom: false,
@@ -32,12 +50,14 @@ var ditch_service_areas_map = (function(){
 	
 // Create an object that contains the satellite and outdoors base layers
     var baseMaps = {
+		"Outdoors": outdoors,
 		"Satellite": satellite,
-		"Outdoors": outdoors
+		"Streets": streets,
+		"Streets & Satellite": streetsatellite
 		};
 
 // Create layer control that allows for switching between grayscale, outdoors and satellite base maps
-    L.control.layers(baseMaps).addTo(map);
+    L.control.layers(baseMaps, null, {position:'topleft'}).addTo(map);
 
 		
 	// Add in IBCC basins layer
