@@ -237,6 +237,24 @@ var municipalites_southplatte_metro_map = (function(){
         
     L.control.layers(baseMaps, null, {position:'topleft'}).addTo(municipalitygeneralmap);	
 
+    /* Bottom Right corner. This shows the current lat and long
+	of the mouse cursor.
+	'º' used for the degree character when the latitude and longitude of the
+	cursor is dispalyed. */
+	L.control.mousePosition({position: 'bottomleft',lngFormatter: function(num) {
+			var direction = (num < 0) ? 'W' : 'E';
+			var formatted = Math.abs(L.Util.formatNum(num, 6)) + 'º ' + direction;
+			return formatted;
+	},
+	latFormatter: function(num) {
+			var direction = (num < 0) ? 'S' : 'N';
+			var formatted = Math.abs(L.Util.formatNum(num, 6)) + 'º ' + direction;
+			return formatted;
+	}}).addTo(municipalitygeneralmap);
+	/* Bottom Right corner. This shows the scale in km and miles of
+	the map. */
+	L.control.scale({position: 'bottomleft',imperial: true}).addTo(municipalitygeneralmap);
+
 	// Return function that need to be accessed by the DOM 
 	return{
 		scrollButtonClickFunction: scrollButtonClick,

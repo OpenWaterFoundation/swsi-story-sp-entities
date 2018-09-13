@@ -34,6 +34,8 @@
     <link href="css/clusterize-0.18.0.css" rel="stylesheet">
     <!-- Style for CsvToTable.js -->
     <link href="css/CsvToTable-0.1.1.css" rel="stylesheet">
+    <!-- Style for L.Control.MousePosition -->
+    <link href="css/L.Control.MousePosition.1.css" rel="stylesheet"/>
 
     <!-- JavaScript Files -->
     <!-- Include d3 to make a simple scale for slider -->
@@ -69,6 +71,8 @@
     <script src="js/clusterize-0.18.0.min.js"></script>
     <!-- CsvToTable Javascript file -->
     <script src="js/CsvToTable-0.1.1.min.js"></script>
+    <!-- L.Control.MousePosition Javascript file -->
+    <script src="js/L.Control.MousePosition.1.js"></script>
 
   	<!-- Population, Water Use, Ag Data, Instream Flow Files -->
   	<script src="data/municipal-population-2006-2016.geojson"></script>
@@ -96,6 +100,14 @@
         },
         content: "Click to toggle mouse scroll wheel behavior.<br> [ x ] Mouse scroll pages forward/back. <br> [ &nbsp; ] Mouse scroll zooms map."
      });
+    })
+
+    var tooltip;
+    $(window).bind("load", function(){
+      tooltip = new jBox('Tooltip', {
+        closeOnMouseleave: true,
+        attach: '.jbox-tooltip'
+      })
     })
   </script>
 
@@ -743,8 +755,8 @@
 			<p>The South Platte Basin has the highest concentration of watershed plans in this dataset.</p>
 			<p>This visualization can also be viewed <a href="http://viz.openwaterfoundation.org/co/cwcb-viz-co-watershed-plans/index.html" target="_blank">here.<img src="images/baseline_launch_black_18dp.png" width="12px"/></a></p>
              </div>
-		    <div class="col-lg-9 side-content">
-              <iframe data-src="http://viz.openwaterfoundation.org/co/cwcb-viz-co-watershed-plans/index.html" scrolling="no" frameborder="0"></iframe>
+		          <div class="col-lg-9 side-content">
+              <img class="jbox-tooltip" title="Click <a href='src=http://viz.openwaterfoundation.org/co/cwcb-viz-co-watershed-plans/index.html'>here</a> to go to online tool" src="images/cwcb-viz-co-watershed-plans.png">
             </div>				
           </div>
         </div> 
