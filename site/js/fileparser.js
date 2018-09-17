@@ -1,3 +1,10 @@
+/**
+ * This javascript class is used to parse a csv file to a JSON object.
+ * The format of JSON objects used in index.html and in the custom map files in js/map-files
+ * require that the data to be organized by date which is what this class handles.
+ * This class constructer takes an array list that specifies the header names in order
+ * to access the data in the file.
+ **/
 class FileParser {
 	constructor(variableArray = [null, null, null, null]){
 		this.datevar = variableArray[0] != null ? variableArray[0] : null;
@@ -8,6 +15,9 @@ class FileParser {
 		this.json;
 	}
 
+	/**
+	 * Getters and Setters for header names if not specified in the constructor
+	 **/
 	setDateVariable(variable){
 		this.datevar = variable;
 	}
@@ -40,6 +50,11 @@ class FileParser {
 		return var3;
 	}
 
+	/**
+	 * Parses the csv file to JSON object
+	 * @param {String} filname - String representing the local path to the csv filename
+	 * @returns {object} JSON Object - The result of converting the csv file to a JSON object.
+	 **/
 	csvToJson(filename){
 		var that = this;
 		return $.ajax({
@@ -65,6 +80,15 @@ class FileParser {
 		})
 	}
 
+	/**
+	 * Converts the Json data from the default returned via Papaparse 
+	 * into the necessary data format with data organized by date.
+	 * @param {object} JSON Object - a JSON Object containing data from the original csv file 
+	 * in the format parsed via Papaparse
+	 * @param {object} that - self referenc to the FileParser object.
+	 * @returns {object} JSON Object - the JSON Object converted to the necessary format organized
+	 * by date.
+	 **/ 
 	convertData(json, that){
 		var firstValue = json.data[0]
 			var year = firstValue[that.datevar];
@@ -84,10 +108,18 @@ class FileParser {
 			return ret;
 	}
 
+	/**
+	 * Returns the data in JSON format
+	 * @returns {object} JSON Object - the JSON Object parsed by FileParser, organized by date.
+	 **/
 	getJsonData(){
 		return this.json;
 	}
 
+	/**
+	 * Returns the data in CSV format
+	 * @returns {object} CSV data - the original data in csv format
+	 **/
 	getCSVData(){
 		return this.csv;
 	}
