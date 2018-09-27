@@ -365,6 +365,8 @@ head(muni_state_2016, n=120)
 write.csv(muni_state_2016, file="..\\site\\data\\municipal-population-2016-percent-state.csv", 
 row.names=FALSE)
 
+test = read.csv("..\\site\\data\\municipal-population-2016-percent-state.csv", header = TRUE)
+
 
 
 #######################
@@ -375,6 +377,27 @@ countyspatial = geojsonio::geojson_read("Colorado_Counties.geojson", what = "sp"
 
 
 
+
+# Statewide testing of cumulative percent (just checking numbers)
+# Access the "muni_pop_2006_2016" dataset and join the state data to it
+muni_state_2016_b = muni_pop_2016
+muni_state_2016_b = as.data.frame(muni_state_2016_b)
+
+# Create new variable of 2016 state population
+muni_state_2016_b$StatePop2016 = rep(5538180, 271)
+
+# Calculate municipality's percent of state pop
+muni_state_2016_b = muni_state_2016_b %>%
+  mutate(Percent_State = Pop2016 / StatePop2016 * 100) %>%
+  arrange(desc(Pop2016)) %>%
+  select(MunicipalityName, Pop2016, Percent_State) %>%
+  mutate(Cumulative_Percent = cumsum(Percent_State))
+  
+# Round percents to 2 decimal place
+muni_state_2016_b$Percent_State = round(muni_state_2016$Percent_State, digits=2)
+muni_state_2016$Cumulative_Percent = round(muni_state_2016$Cumulative_Percent, digits=1)
+
+head(muni_state_2016_b, n=275)
 
 
 

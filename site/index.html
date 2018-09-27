@@ -133,7 +133,10 @@
             </li>				
             <li class="nav-item">
               <a class="nav-link" href="#resources">Resources</a>
-            </li>						
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#instructions">Instructions</a>
+            </li>	
           </ul>
         </div>
       </div>
@@ -150,6 +153,7 @@
 			  <p style="font-size:22px;">The purpose of this story is to provide general context for the number, location and extent of such entities in the basin, 
 			  provide links to useful datasets and highlight important water resources issues.</p>
 			  <p style="font-size:22px;">Background on Colorado water law and other topics is included to provide context and references for Colorado water resources.</p>
+			  <p style="font-size:18px;"><i>See the <a href="#instructions">Instructions</a> page for how to view this story.</i></p>			  
             </div>
 		  </div>
 		</div>
@@ -850,10 +854,39 @@
 			  <a href="https://pixabay.com/" target="_blank">Pixabay<img src="images/baseline_launch_white_18dp.png" width="12px"/></a>.</p>
 			  <p>Horses digging ditch courtesy of the <a href="https://www.poudreheritage.org/" target="_blank">Poudre Heritage Alliance<img src="images/baseline_launch_white_18dp.png" width="12px"/></a>.</p>
         </div>	
-      </div>    	  
+      </div> 
+<!-- Instructions Page -->		  
+	  <div class="section">
+        <div class="container text-center blue-bkgd-text">
+              <h2>Instructions</h2>
+			  <p style="text-align:left;">This story is designed to provide information in one-page sections, each of which should fit within the web browser page.  To move forward 
+			  or backward in the story, use the following options:</p>
+			  <ul>
+			    <li style="text-align:left;">Page Up and Page Down keys</li>
+			    <li style="text-align:left;">Arrow Up and Arrow Down keys</li>				
+				<li style="text-align:left;">Mouse scroll wheel - a slight turn will advance the page automatically</li>
+				<li style="text-align:left;">Menu at the top of the story to navigate to major sections</li>
+				<li style="text-align:left;">Click on the dots on the right side of the screen - hover over a dot to see the title of the page</li>
+			  </ul>	
+			  <p style="text-align:left;">Additional instructions for viewing the story include:</p>
+			  <ul>
+			    <li style="text-align:left;">The content is best viewed on a relatively large display and has not been optimized for mobile devices</li>
+				<li style="text-align:left;">If content does not seem to fit in the browser window, use Ctrl - to reduce font sizes and Ctrl + to increase font sizes</li>
+				<li style="text-align:left;">For interactive maps, the default behavior for the mouse scroll is to advance the story page.  Click on the mouse 
+				icon in the map to change mouse scrolling to zoom behavior.  Once changed, the behavior will apply only to the specific map</li>
+				<li style="text-align:left;">Interactive maps can be repositioned by holding the left mouse button and dragging the map</li>
+				<li style="text-align:left;">Scrollable text areas are provided in some pages and can be scrolled by dragging the scroll bar</li>
+				<li style="text-align:left;">External pages are indicated with a <img src="images/baseline_launch_white_18dp.png" width="12px"/> graphic</li>
+				<li style="text-align:left;">Links to external pages are generally the same font color as normal text but are indicated with underlines</li>
+				<li style="text-align:left;">Visualizations that will slow down the story are linked to as separate pages.  Mouse over the image to see 
+				a popup link</li>
+				<li style="text-align:left;">Interactive maps provide popups to view data.  If the popup flashes, drag the map to reposition it so that 
+				the popup does not occur in the same area as the map instruction box</li>			  
+        </div>	
+      </div>
+   	  
      </div>	  
     </div>
-   </div>
   </body>
 
 
@@ -868,14 +901,14 @@
         $('#fullpage').fullpage({
           licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
           anchors:['top', 'waterresources', 'waterrights', 'wateruseconcepts', 'munic','municpophist', 'countypop', 'muniwatersupply', 'waterproviders', 'wateruse', 'efficiency', 'ag', 'ag2', 'landusechange', 
-		  'agefficiency', 'environment', 'flowprotection', 'envrentities', 'recreation', 'industry', 'resources', 'sources'],
+		  'agefficiency', 'environment', 'flowprotection', 'envrentities', 'recreation', 'industry', 'resources', 'sources', 'instructions'],
           sectionsColor:['#386981','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf','#c3c5bf',
-		   '#c3c5bf','#c3c5bf','#c3c5bf','#386981','#386981'],
+		   '#c3c5bf','#c3c5bf','#c3c5bf','#386981','#386981','#386981'],
           navigation:true,
           navigationPosition:'right',
           navigationTooltips:['South Platte and Metro Basin Water Entities', 'Water Resources', 'Water Rights', 'Water Use Concepts', 'Municipalities', 'Municipal Populations', 'Population Projections',
 		  'Water Supply', 'Water Providers', 'Water Use', 'Water Efficiency', 'Agriculture', 'Agricultural Entities', 'Land Use Change', 'Ag Water Use Efficiency', 'Environment', 'Flow Protection', 'Envr. Entities',
-		  'Recreation', 'Industry','Resources', 'Sources'],
+		  'Recreation', 'Industry','Resources', 'Sources', 'Instructions'],
           recordHistory:false,
           menu:"#navbarResponsive",
           paddingTop:'75px'
