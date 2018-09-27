@@ -73,6 +73,16 @@ iframe {
 	overflow:auto;
 }
 
+.text-right-custom a:link{
+	color:black!important;
+	text-decoration:underline!important;
+}
+
+.text-right-custom a:visited{
+	color:black!important;
+	text-decoration:underline!important;
+}
+
 /* width */
 .custom-scroll::-webkit-scrollbar {
     width: 10px;
@@ -99,6 +109,16 @@ iframe {
 	padding-left:50px!important;
 	max-height:80vh;
 	overflow:auto;
+}
+
+.text-left-custom a:link{
+	color:black!important;
+	text-decoration: underline!important;
+}
+
+.text-left-custom a:visited{
+	color:black!important;
+	text-decoration:underline!important;
 }
 
 .text-image-overlay{

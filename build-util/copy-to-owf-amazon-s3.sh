@@ -8,6 +8,12 @@
 dryrun=""
 #dryrun="--dryrun"
 s3Folder="s3://stories.openwaterfoundation.org/co/swsi-story-sp-entities"
+# runMode indicates what the script should do
+# - upload = prep and upload to Amazon S3,
+#   used when uploading to OWF website
+# - prepUpload = prep the site for upload but don't do it,
+#   used when creating the site folder for southplattebasin.com
+runMode="upload"
 
 # Make sure that this is being run from the build-util folder
 pwd=`pwd`
@@ -28,6 +34,14 @@ if [ "$1" == "" ]
 	exit 0
 fi
 
+if [ "$1" == "prep-upload" ]
+	then
+	# Prep the website for upload in the tmp-build folder but do not actually do the upload.
+	# - the site can then be uploaded to southplattebasin.com
+	# - don't actually do the upload
+	runMode="prepUpload"
+fi
+
 awsProfile="$1"
 
 # Get the version to append to files
@@ -40,7 +54,7 @@ if [ -z "${version}" ]
         exit 1
 fi
 
-# Folder used for temporary files, mainly renamed files to prevent caching
+# Folder used for temporary files, necessary to rename files to prevent caching
 tmpBuildFolder="tmp-build"
 if [ ! -e "${tmpBuildFolder}" ]
         then
@@ -49,9 +63,16 @@ if [ ! -e "${tmpBuildFolder}" ]
         exit 1
 fi
 
-# Sync first, then copy specific files
-aws s3 sync ../site ${s3Folder} ${dryrun} --delete --profile "$awsProfile"
-# Update content of index.html to use versioned files
+# First clean out the contents of the "tmp-build" folder
+echo "Remove files from ${tmpBuildFolder}"
+rm -rf ${tmpBuildFolder}/*
+
+# Copy the entire site into the "tmp-build" folder
+echo "Copy ../site to ${tmpBuildFolder}"
+cp -r ../site/* ${tmpBuildFolder}
+
+# Next, process specific files into the "tmp-build" folder
+# - Update content of index.html to use versioned files to do cache-busting
 # - put the variable definitions first because all are used in index.html update
 countyCssOrig="county-population-forecast-map.css"
 countyCssWithVersion="county-population-forecast-map.${version}.css"
@@ -85,21 +106,39 @@ ditchServiceAreaJsWithVersion="ditch-service-areas-2005-map.${version}.js"
 instreamFlowJsOrig="instream-flow-map.js"
 instreamFlowJsWithVersion="instream-flow-map.${version}.js"
 #
+# Replace references in index.html with files that have versions
+echo "Update index.html with versioned references"
 cat ../site/index.html | sed -e "s/${countyPopJsOrig}/${countyPopJsWithVersion}/g" | sed -e "s/${muniJsOrig}/${muniJsWithVersion}/g" | sed -e "s/${muniPopHistJsOrig}/${muniPopHistJsWithVersion}/g" | sed -e "s/${wp1051JsOrig}/${wp1051JsWithVersion}/g" | sed -e "s/${wpEffJsOrig}/${wpEffJsWithVersion}/g" | sed -e "s/${wpJsOrig}/${wpJsWithVersion}/g" | sed -e "s/${countyCssOrig}/${countyCssWithVersion}/g" | sed -e "s/${cssOrig}/${cssWithVersion}/g" | sed -e "s/${customleafletcssOrig}/${customleafletcssWithVersion}/g" | sed -e "s/${fileParserJsOrig}/${fileParserJsWithVersion}/g" | sed -e "s/${ditchServiceAreaJsOrig}/${ditchServiceAreaJsWithVersion}/g" | sed -e "s/${instreamFlowJsOrig}/${instreamFlowJsWithVersion}/g" > ${tmpBuildFolder}/index.html
-aws s3 cp ${tmpBuildFolder}/index.html ${s3Folder}/index.html ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/css/county-population-forecast-map.css ${s3Folder}/css/county-population-forecast-map.${version}.css ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/css/style.css ${s3Folder}/css/style.${version}.css ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/css/custom-leaflet-style.css ${s3Folder}/css/custom-leaflet-style.${version}.css ${dryrun} --profile "$awsProfile"
+
+# Copy the original files and add version to the filename
+echo "Copy versioned files to ${tmpBuildFolder}"
+cp ../site/css/county-population-forecast-map.css ${tmpBuildFolder}/css/county-population-forecast-map.${version}.css
+cp ../site/css/style.css ${tmpBuildFolder}/css/style.${version}.css
+cp ../site/css/custom-leaflet-style.css ${tmpBuildFolder}/css/custom-leaflet-style.${version}.css
 # General
-aws s3 cp ../site/js/fileparser.js ${s3Folder}/js/fileparser.${version}.js ${dryrun} --profile "$awsProfile"
+cp ../site/js/fileparser.js ${tmpBuildFolder}/js/fileparser.${version}.js
 # Muni
-aws s3 cp ../site/js/map-files/county-population-forecast-map.js ${s3Folder}/js/map-files/county-population-forecast-map.${version}.js ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/js/map-files/municipalities-southplatte-metro-map.js ${s3Folder}/js/map-files/municipalities-southplatte-metro-map.${version}.js ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/js/map-files/municipal-population-historical-map.js ${s3Folder}/js/map-files/municipal-population-historical-map.${version}.js ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/js/map-files/water-providers-1051-data-map.js ${s3Folder}/js/map-files/water-providers-1051-data-map.${version}.js ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/js/map-files/water-providers-efficiency-plans-map.js ${s3Folder}/js/map-files/water-providers-efficiency-plans-map.${version}.js ${dryrun} --profile "$awsProfile"
-aws s3 cp ../site/js/map-files/water-providers-southplatte-metro-map.js ${s3Folder}/js/map-files/water-providers-southplatte-metro-map.${version}.js ${dryrun} --profile "$awsProfile"
+cp ../site/js/map-files/county-population-forecast-map.js ${tmpBuildFolder}/js/map-files/county-population-forecast-map.${version}.js
+cp ../site/js/map-files/municipalities-southplatte-metro-map.js ${tmpBuildFolder}/js/map-files/municipalities-southplatte-metro-map.${version}.js
+cp ../site/js/map-files/municipal-population-historical-map.js ${tmpBuildFolder}/js/map-files/municipal-population-historical-map.${version}.js
+cp ../site/js/map-files/water-providers-1051-data-map.js ${tmpBuildFolder}/js/map-files/water-providers-1051-data-map.${version}.js
+cp ../site/js/map-files/water-providers-efficiency-plans-map.js ${tmpBuildFolder}/js/map-files/water-providers-efficiency-plans-map.${version}.js
+cp ../site/js/map-files/water-providers-southplatte-metro-map.js ${tmpBuildFolder}/js/map-files/water-providers-southplatte-metro-map.${version}.js
 # Agriculture
-aws s3 cp ../site/js/map-files/ditch-service-areas-2005-map.js ${s3Folder}/js/map-files/ditch-service-areas-2005-map.${version}.js ${dryrun} --profile "$awsProfile"
+cp ../site/js/map-files/ditch-service-areas-2005-map.js ${tmpBuildFolder}/js/map-files/ditch-service-areas-2005-map.${version}.js
 # Environment
-aws s3 cp ../site/js/map-files/instream-flow-map.js ${s3Folder}/js/map-files/instream-flow-map.${version}.js ${dryrun} --profile "$awsProfile"
+cp ../site/js/map-files/instream-flow-map.js ${tmpBuildFolder}/js/map-files/instream-flow-map.${version}.js
+
+# Create zip folder if runMode = prepUpload
+if [ "$runMode" == "prepUpload" ]
+	then
+	# Zip files using 7zip
+	echo "Zip site files"
+	7z a -tzip swsi-story-sp-entities.zip ${tmpBuildFolder}/*
+fi
+
+if [ "$runMode" == "upload" ]
+	then
+	# Sync the tmp-build folder to Amazon S3
+	aws s3 sync ${tmpBuildFolder} ${s3Folder} ${dryrun} --delete --profile "$awsProfile"
+fi
