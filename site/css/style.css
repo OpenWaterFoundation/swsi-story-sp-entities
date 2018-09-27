@@ -111,14 +111,9 @@ iframe {
 	overflow:auto;
 }
 
-.text-left-custom a:link{
-	color:black!important;
-	text-decoration: underline!important;
-}
-
-.text-left-custom a:visited{
-	color:black!important;
-	text-decoration:underline!important;
+.text-left-custom a{
+	color:black;
+	text-decoration: underline;
 }
 
 .text-image-overlay{
