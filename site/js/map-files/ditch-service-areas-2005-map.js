@@ -170,8 +170,7 @@ var ditch_service_areas_map = (function(){
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
-			mouseout: resetHighlight,
-			click: zoomToFeature
+			mouseout: resetHighlight
 		});
 	}	
 	
@@ -182,6 +181,18 @@ var ditch_service_areas_map = (function(){
 	}).addTo(map);
 
 	map.attributionControl.addAttribution('Data &copy; <a href="http://water.state.co.us/Home/Pages/default.aspx">Division of Water Resources</a>');
+
+	// Add pop-ups to markers
+	ditchserviceareasmarkers.bindPopup(function(d){
+		var props = d.feature.properties;
+		var str =
+		'<b>Ditch Name: </b>' + ((props.DITCH_NAME) ? props.DITCH_NAME : "") + '<br />' + 
+		"<b>WDID: </b>" + ((props.WDID) ? props.WDID : "") + '<br />' + 
+		"<b>Acreage: </b>" + ((props.ACREAGE) ? props.ACREAGE : "") + '<br />';
+		return str
+	})
+	// Add markers to map
+	ditchserviceareasmarkers.addTo(map);
 
 	// Add a legend to the map
 	var legend = L.control({position: 'bottomright'});
